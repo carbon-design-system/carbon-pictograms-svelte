@@ -1,6 +1,6 @@
 # docs
 
-> List of available pictograms by module name.
+> 458 pictograms total.
 
 ## Usage
 
@@ -12,7 +12,7 @@
 <ModuleName />
 ```
 
-## `ModuleName`
+## List of Pictograms by `ModuleName`
 
 - ActiveServer
 - Advocate

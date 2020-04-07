@@ -36,7 +36,7 @@ function build() {
 
   const docs = [
     "# docs",
-    "> List of available pictograms by module name.",
+    `> ${metadata.total} pictograms total.`,
     "## Usage",
     "```html",
     `<script>
@@ -45,7 +45,7 @@ function build() {
 
      <ModuleName />`,
     "```",
-    "## `ModuleName`",
+    "## List of Pictograms by `ModuleName`",
     pictograms.map(moduleName => `- ${moduleName}`).join("\n")
   ];
 
