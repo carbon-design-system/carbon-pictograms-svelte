@@ -1,0 +1,49 @@
+{
+  "name": "carbon-pictograms-svelte",
+  "version": "10.9.2",
+  "license": "Apache-2.0",
+  "description": "Svelte components for pictograms in digital and software products using the Carbon Design System",
+  "author": "Eric Liu (https://github.com/metonym)",
+  "svelte": "lib/index.js",
+  "main": "lib/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "develop": "tsnd --respawn src",
+    "test": "ts-node node_modules/tape/bin/tape src/**.test.ts",
+    "build": "tsc",
+    "prepublishOnly": "tsc && node dist && prettier --write 'lib/**/*.{js,svelte}' 'docs/*.md'"
+  },
+  "devDependencies": {
+    "@carbon/icon-helpers": "10.6.0",
+    "@carbon/pictograms": "10.9.2",
+    "@types/carbon__icon-helpers": "10.6.0",
+    "@types/fs-extra": "^8.1.0",
+    "@types/node": "^13.11.0",
+    "@types/tape": "^4.2.34",
+    "fs-extra": "^9.0.0",
+    "prettier": "1.19.1",
+    "prettier-plugin-svelte": "0.7.0",
+    "svelte": "^3.20.1",
+    "tape": "^4.13.2",
+    "ts-node": "^8.8.2",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.8.3"
+  },
+  "prettier": {
+    "printWidth": 100
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibm/carbon-pictograms-svelte.git"
+  },
+  "homepage": "https://github.com/ibm/carbon-pictograms-svelte",
+  "bugs": "https://github.com/ibm/carbon-pictograms-svelte/issues",
+  "keywords": [
+    "carbon",
+    "carbon pictograms",
+    "svelte"
+  ],
+  "files": [
+    "lib"
+  ]
+}
