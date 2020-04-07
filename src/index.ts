@@ -37,14 +37,15 @@ function build() {
   const docs = [
     "# docs",
     "> List of available pictograms by module name.",
+    "## Usage",
     "```html",
     `<script>
-       import ModuleName from "carbon-pictograms-svelte/lib/moduleName";
+       import ModuleName from "carbon-pictograms-svelte/lib/ModuleName";
      </script>
 
      <ModuleName />`,
     "```",
-    "## `moduleName`",
+    "## `ModuleName`",
     pictograms.map(moduleName => `- ${moduleName}`).join("\n")
   ];
 

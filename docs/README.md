@@ -2,15 +2,17 @@
 
 > List of available pictograms by module name.
 
+## Usage
+
 ```html
 <script>
-  import ModuleName from "carbon-pictograms-svelte/lib/moduleName";
+  import ModuleName from "carbon-pictograms-svelte/lib/ModuleName";
 </script>
 
 <ModuleName />
 ```
 
-## `moduleName`
+## `ModuleName`
 
 - ActiveServer
 - Advocate
