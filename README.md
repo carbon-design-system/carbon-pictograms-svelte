@@ -146,6 +146,10 @@ The default stroke color for pictograms is `"#000"`. Customize the stroke color 
 <Airplane aria-labelledby="transportation" />
 ```
 
+## [Changelog](CHANGELOG.md)
+
+## [Contributing](CONTRIBUTING.md)
+
 ## License
 
 [Apache-2.0](LICENSE)
