@@ -1,6 +1,6 @@
 # docs
 
-> 458 pictograms total.
+> 482 pictograms total.
 
 ## Usage
 
@@ -52,6 +52,7 @@
 - BerlinTower
 - Bicycle
 - Blockchain
+- BoxPlot
 - Build
 - Building
 - Bulldozer
@@ -64,14 +65,28 @@
 - Capitol
 - Care
 - Cell
+- Chart_3D
+- ChartArea
 - ChartBar
 - ChartBubbleLine
+- ChartBubble
+- ChartCandlestick
+- ChartErrorBar
+- ChartEvaluation
+- ChartHighLow
+- ChartHistogram
 - ChartLine
+- ChartMultiLine
+- ChartParallel
+- ChartRadar
+- ChartRiver
 - ChartScatterplot
+- ChartTSne
 - Cherries
 - ChipCircuit
 - ChipCredit
 - ChipDebit
+- CirclePacking
 - CloudAnalytics
 - CloudAssets
 - CloudBuilderProfessionalServices
@@ -205,6 +220,7 @@
 - HeartHealth
 - Heart
 - HeatMap
+- HeatMap_02
 - HighFive
 - HomeFront
 - HomeGarage
@@ -260,6 +276,7 @@
 - Magnify
 - Marketplace
 - Mas
+- MathCurve
 - Maximize
 - MedicalCharts
 - MedicalStaff
@@ -320,6 +337,7 @@
 - Pills
 - Podcast
 - Police
+- PopulationDiagram
 - Power
 - Presentation
 - Presenter
@@ -331,6 +349,7 @@
 - PrivateNetwork
 - Progress
 - Puzzle
+- QQPlot
 - QuestionAndAnswer
 - Question
 - RainyHeavy
@@ -341,6 +360,7 @@
 - Refinery
 - Refresh
 - RelationshipExtraction
+- RelationshipDiagram
 - RenewTeam
 - Renew
 - Repeat
@@ -361,6 +381,7 @@
 - SatelliteDish
 - Satellite
 - Scale
+- ScatterMatrix
 - Seattle
 - SecureData
 - SecureProfile
@@ -432,6 +453,8 @@
 - Train
 - Transform
 - Trash
+- TreeDiagram
+- TreeMap
 - University
 - UnlockAlt
 - Unlock
@@ -467,6 +490,7 @@
 - Wine
 - WirelessHome
 - WirelessModem
+- WordCloud
 - WreckingBall
 - Yoga_01
 - Yoga_02
