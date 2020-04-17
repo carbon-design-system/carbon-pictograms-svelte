@@ -1,6 +1,6 @@
 language: node_js
-node_js: 10
+node_js: 12
 cache: yarn
 scripts:
   - yarn test
-  - tsc && node dist && prettier --write 'lib/**/*.{js,svelte}' 'docs/*.md'
+  - yarn prepack
