@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-For MacOS, prerequisites include [homebrew](https://docs.brew.sh/Installation), [node](https://nodejs.org/en/download/package-manager/#macos) and [yarn](https://yarnpkg.com/en/docs/install#mac-stable).
+For MacOS, prerequisites include [homebrew](https://docs.brew.sh/Installation), [node (version >=12)](https://nodejs.org/en/download/package-manager/#macos) and [yarn](https://yarnpkg.com/en/docs/install#mac-stable).
 
 Run the following shell commands to install all three prerequisites.
 
@@ -18,13 +18,13 @@ Fork the repo and clone your fork:
 
 ```bash
 git clone <YOUR_FORK>
-cd carbon-icons-svelte
+cd carbon-pictograms-svelte
 ```
 
 Set the original repo as the upstream:
 
 ```bash
-git remote add upstream git@github.com:IBM/carbon-icons-svelte.git
+git remote add upstream git@github.com:IBM/carbon-pictograms-svelte.git
 # verify that the upstream is added
 git remote -v
 ```
@@ -43,11 +43,11 @@ Run `yarn develop` to run and watch the `src` directory.
 
 ### Building
 
-When building, run `yarn build`.
+Run `yarn prepack` to build the library.
 
-First, the library is transpiled to JavaScript in the `dist` folder.
+First, the library from `src` is transpiled to JavaScript in the `dist` folder.
 
-Then, execute the code by running `node dist`.
+Then, the transpiled code is executed which generates the `lib` folder.
 
 ## Submitting a Pull Request
 
