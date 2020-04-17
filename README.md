@@ -146,6 +146,10 @@ The default stroke color for pictograms is `"#000"`. Customize the stroke color 
 <Airplane aria-labelledby="transportation" />
 ```
 
+## Examples
+
+- [examples/webpack](examples/webpack) (Try it on [CodeSandbox](https://codesandbox.io/s/github/IBM/carbon-pictograms-svelte/tree/master/examples/webpack))
+
 ## [Changelog](CHANGELOG.md)
 
 ## [Contributing](CONTRIBUTING.md)

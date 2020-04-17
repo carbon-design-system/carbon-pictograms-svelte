@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "NODE_ENV=production webpack"
+  },
+  "devDependencies": {
+    "carbon-pictograms-svelte": "^10.10.0",
+    "html-webpack-plugin": "^4.2.0",
+    "style-loader": "^1.1.4",
+    "svelte": "^3.20.1",
+    "svelte-loader": "^2.13.6",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
