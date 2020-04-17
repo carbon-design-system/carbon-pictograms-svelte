@@ -7,20 +7,20 @@
   "svelte": "lib/index.js",
   "main": "lib/index.js",
   "sideEffects": false,
+  "engines": {
+    "node": ">=12"
+  },
   "scripts": {
     "develop": "tsnd --respawn src",
     "test": "ts-node node_modules/tape/bin/tape src/**.test.ts",
-    "build": "tsc",
-    "prepublishOnly": "tsc && node dist && prettier --write 'lib/**/*.{js,svelte}' 'docs/*.md'"
+    "prepack": "tsc && node dist && prettier --write 'lib/**/*.{js,svelte}' 'docs/*.md'"
   },
   "devDependencies": {
     "@carbon/icon-helpers": "10.6.0",
-    "@carbon/pictograms": "10.9.2",
+    "@carbon/pictograms": "10.10.0",
     "@types/carbon__icon-helpers": "10.6.0",
-    "@types/fs-extra": "^8.1.0",
     "@types/node": "^13.11.0",
     "@types/tape": "^4.2.34",
-    "fs-extra": "^9.0.0",
     "prettier": "1.19.1",
     "prettier-plugin-svelte": "0.7.0",
     "svelte": "^3.20.1",

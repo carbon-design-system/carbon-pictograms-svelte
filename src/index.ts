@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, removeSync, mkdirSync } from "fs-extra";
+import { readFileSync, writeFileSync, rmdirSync, mkdirSync } from "fs";
 import { BuildIcons } from "@carbon/pictograms";
 import { template } from "./template";
 
@@ -7,7 +7,7 @@ function build() {
   const buildInfo: BuildIcons = JSON.parse(source);
   const metadata = { total: buildInfo.length };
 
-  removeSync("lib");
+  rmdirSync("lib", { recursive: true });
   mkdirSync("lib");
 
   const pictograms: string[] = [];
@@ -31,7 +31,7 @@ function build() {
   writeFileSync("lib/index.js", imports.join(""));
   process.stdout.write(JSON.stringify(metadata, null, 2) + "\n");
 
-  removeSync("docs");
+  rmdirSync("docs", { recursive: true });
   mkdirSync("docs");
 
   const docs = [
