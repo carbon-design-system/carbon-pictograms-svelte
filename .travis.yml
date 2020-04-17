@@ -3,4 +3,4 @@ node_js: 10
 cache: yarn
 scripts:
   - yarn test
-  - yarn build
+  - tsc && node dist && prettier --write 'lib/**/*.{js,svelte}' 'docs/*.md'
