@@ -1,7 +1,6 @@
 # carbon-pictograms-svelte
 
 [![NPM][npm]][npm-url]
-[![Zero dependencies][deps]][deps-badge]
 [![carbon-pictograms-svelte Travis CI build status][build]][build-badge]
 
 > Svelte components for pictograms in digital and software products using the [Carbon Design System](https://github.com/carbon-design-system).
@@ -55,7 +54,7 @@ Refer to [docs/README](docs) for a list of available pictograms.
 All props are optional.
 
 | Name            | Value                        |
-| --------------- | ---------------------------- |
+| :-------------- | :--------------------------- |
 | id              | `string`                     |
 | aria-label      | `string`                     |
 | aria-labelledby | `string`                     |
@@ -162,7 +161,5 @@ The default stroke color for pictograms is `"#000"`. Customize the stroke color 
 
 [npm]: https://img.shields.io/npm/v/carbon-pictograms-svelte.svg?color=blue
 [npm-url]: https://npmjs.com/package/carbon-pictograms-svelte
-[deps]: https://david-dm.org/ibm/carbon-pictograms-svelte/status.svg
-[deps-badge]: https://david-dm.org/ibm/carbon-pictograms-svelte
 [build]: https://travis-ci.com/ibm/carbon-pictograms-svelte.svg?branch=master
 [build-badge]: https://travis-ci.com/ibm/carbon-pictograms-svelte
