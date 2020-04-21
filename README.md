@@ -150,6 +150,8 @@ The default stroke color for pictograms is `"#000"`. Customize the stroke color 
 
 - [examples/webpack](examples/webpack) (Try it on [CodeSandbox](https://codesandbox.io/s/github/IBM/carbon-pictograms-svelte/tree/master/examples/webpack))
 
+- [examples/rollup](examples/rollup) (Try it on [CodeSandbox](https://codesandbox.io/s/github/IBM/carbon-pictograms-svelte/tree/master/examples/rollup))
+
 ## [Changelog](CHANGELOG.md)
 
 ## [Contributing](CONTRIBUTING.md)
