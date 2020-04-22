@@ -31,18 +31,18 @@ npm i carbon-pictograms-svelte
 
 ### Direct Import (recommended)
 
-Import icons directly for faster compiling.
+Import pictograms directly for faster compiling.
 
 ```js
 import Airplane from "carbon-pictograms-svelte/lib/Airplane";
 ```
 
-**Note:** Even if using the base import method, an application bundler like Rollup or Webpack should treeshake unused icons from the production build.
+**Note:** Even if using the base import method, an application bundler like Rollup or Webpack should treeshake unused pictograms from the production build.
 
 #### Import Path Pattern
 
 ```js
-import Icon from "carbon-pictograms-svelte/lib/<ModuleName>";
+import Pictogram from "carbon-pictograms-svelte/lib/<ModuleName>";
 ```
 
 Refer to [docs/README](docs) for a list of available pictograms.
