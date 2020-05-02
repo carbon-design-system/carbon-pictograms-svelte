@@ -2,31 +2,25 @@
   "name": "carbon-pictograms-svelte",
   "version": "10.10.1",
   "license": "Apache-2.0",
-  "description": "Svelte components for pictograms in digital and software products using the Carbon Design System",
+  "description": "Carbon Design System SVG pictograms as Svelte components",
   "author": "Eric Liu (https://github.com/metonym)",
   "svelte": "lib/index.js",
   "main": "lib/index.js",
   "sideEffects": false,
   "scripts": {
-    "develop": "tsnd --respawn src",
-    "test": "tsnd node_modules/tape/bin/tape src/**.test.ts",
-    "prepack": "tsc && node dist && prettier --write 'lib/**/*.{js,svelte}' 'docs/*.md'"
+    "test": "tsnd src/*.test.ts",
+    "prepack": "tsc && node dist/src"
+  },
+  "peerDependencies": {
+    "svelte": "^3.20.x"
   },
   "devDependencies": {
     "@carbon/icon-helpers": "10.6.0",
-    "@carbon/pictograms": "10.10.0",
+    "@carbon/pictograms": "10.10.2",
     "@types/carbon__icon-helpers": "10.6.0",
-    "@types/node": "^13.13.1",
-    "@types/tape": "^4.13.0",
-    "prettier": "1.19.1",
-    "prettier-plugin-svelte": "0.7.0",
-    "svelte": "^3.20.1",
-    "tape": "^4.13.2",
+    "@types/node": "^13.13.4",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.8.3"
-  },
-  "prettier": {
-    "printWidth": 100
   },
   "repository": {
     "type": "git",
@@ -36,8 +30,12 @@
   "bugs": "https://github.com/ibm/carbon-pictograms-svelte/issues",
   "keywords": [
     "carbon",
+    "carbon design system",
     "carbon pictograms",
-    "svelte"
+    "pictograms",
+    "components",
+    "svelte",
+    "svg"
   ],
   "files": [
     "lib"

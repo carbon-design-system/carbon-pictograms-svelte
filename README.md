@@ -3,7 +3,7 @@
 [![NPM][npm]][npm-url]
 [![carbon-pictograms-svelte Travis CI build status][build]][build-badge]
 
-> Svelte components for pictograms in digital and software products using the [Carbon Design System](https://github.com/carbon-design-system).
+> [Carbon Design System](https://github.com/carbon-design-system) SVG pictograms as Svelte components.
 
 This **zero dependency** library builds [Carbon Design System pictograms](https://www.carbondesignsystem.com/guidelines/pictograms/library) as Svelte components. Although best paired with [carbon-components-svelte](https://github.com/IBM/carbon-components-svelte), this library can be consumed standalone.
 

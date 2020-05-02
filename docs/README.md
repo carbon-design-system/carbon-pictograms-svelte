@@ -1,6 +1,6 @@
 # docs
 
-> 482 pictograms total.
+> 482 pictograms from @carbon/pictograms@10.10.2.
 
 ## Usage
 
