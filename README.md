@@ -45,7 +45,7 @@ import Airplane from "carbon-pictograms-svelte/lib/Airplane";
 import Pictogram from "carbon-pictograms-svelte/lib/<ModuleName>";
 ```
 
-Refer to [docs/README](docs) for a list of available pictograms.
+Refer to [PICTOGRAM_INDEX.md](PICTOGRAM_INDEX.md) for a list of available pictograms.
 
 ## API
 

@@ -10,28 +10,42 @@ const writeFile = promisify(fs.writeFile);
 const rmdir = promisify(fs.rmdir);
 const mkdir = promisify(fs.mkdir);
 
+const usage = [
+  "```html",
+  `<script>
+  import ModuleName from "carbon-pictograms-svelte/lib/ModuleName";
+</script>
+
+<ModuleName />`,
+  "```",
+];
+
 (async () => {
   const start = performance.now();
-  const source = await readFile("node_modules/@carbon/pictograms/build-info.json");
-  const buildInfo: BuildIcons = JSON.parse(source.toString());
-  const metadata = { total: buildInfo.length };
+  const source = await readFile(
+    "node_modules/@carbon/pictograms/build-info.json",
+    "utf8"
+  );
+  const buildInfo: BuildIcons = JSON.parse(source);
 
   await rmdir("lib", { recursive: true });
-  await rmdir("docs", { recursive: true });
   await mkdir("lib");
-  await mkdir("docs");
 
   const pictograms: string[] = [];
-  const imports: string[] = [];
+  let imports = "";
 
   buildInfo.forEach(async ({ moduleName, descriptor }) => {
     pictograms.push(moduleName);
-    imports.push(`export { ${moduleName} } from "./${moduleName}";\n`);
+    imports += `export { ${moduleName} } from "./${moduleName}";\n`;
 
     await mkdir(`lib/${moduleName}`);
     await writeFile(
       `lib/${moduleName}/${moduleName}.svelte`,
-      template({ attrs: descriptor.attrs, content: descriptor.content, moduleName })
+      template({
+        attrs: descriptor.attrs,
+        content: descriptor.content,
+        moduleName,
+      })
     );
     await writeFile(
       `lib/${moduleName}/index.js`,
@@ -39,23 +53,24 @@ const mkdir = promisify(fs.mkdir);
     );
   });
 
-  await writeFile("lib/index.js", imports.join(""));
+  await writeFile("lib/index.js", imports);
   await writeFile(
-    "docs/README.md",
-    [
-      "# docs",
-      `> ${metadata.total} pictograms from @carbon/pictograms@${devDependencies["@carbon/pictograms"]}.`,
-      "## Usage",
-      "```html",
-      `<script>
-       import ModuleName from "carbon-pictograms-svelte/lib/ModuleName";
-     </script>
+    "PICTOGRAM_INDEX.md",
+    `
+# docs
 
-     <ModuleName />`,
-      "```",
-      "## List of Pictograms by `ModuleName`",
-      pictograms.map(moduleName => `- ${moduleName}`).join("\n")
-    ].join("\n")
+> ${pictograms.length} pictograms from @carbon/pictograms@${
+      devDependencies["@carbon/pictograms"]
+    }.
+
+## Usage
+
+${usage.join("\n")}
+
+## List of Pictograms by \`ModuleName\`
+
+${pictograms.map((moduleName) => `- ${moduleName}`).join("\n")}
+    `.trim()
   );
 
   const bench = (performance.now() - start) / 1000;
