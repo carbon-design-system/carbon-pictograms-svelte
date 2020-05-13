@@ -39,15 +39,11 @@ yarn install
 
 ### Developing
 
-Run `yarn develop` to run and watch the `src` directory.
+Run `yarn test:tdd` to run tests in watch mode.
 
 ### Building
 
-Run `yarn prepack` to build the library.
-
-First, the library from `src` is transpiled to JavaScript in the `dist` folder.
-
-Then, the transpiled code is executed which generates the `lib` folder.
+Run `yarn prepack` to build the library. Pictograms should be emitted to the `lib` folder.
 
 ## Submitting a Pull Request
 
