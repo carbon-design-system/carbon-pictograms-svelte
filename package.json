@@ -12,9 +12,6 @@
     "test:tdd": "tsnd --respawn src/*.test.ts",
     "prepack": "tsc && node dist/src"
   },
-  "peerDependencies": {
-    "svelte": "^3.20.x"
-  },
   "devDependencies": {
     "@carbon/icon-helpers": "10.6.0",
     "@carbon/pictograms": "10.10.2",
