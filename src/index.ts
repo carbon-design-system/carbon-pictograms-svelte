@@ -57,11 +57,11 @@ const usage = [
   await writeFile(
     "PICTOGRAM_INDEX.md",
     `
-# docs
+# Pictogram Index
 
 > ${pictograms.length} pictograms from @carbon/pictograms@${
       devDependencies["@carbon/pictograms"]
-    }.
+    }
 
 ## Usage
 
