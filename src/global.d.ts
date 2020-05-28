@@ -1,17 +1,42 @@
 declare module "@carbon/pictograms" {
-  import { IconAttributes, IconContent } from "@carbon/icon-helpers";
+  import { IconContent } from "@carbon/icon-helpers";
 
-  export type BuildIcons = ReadonlyArray<{
-    filename: string;
-    basename: string;
-    prefix: [];
+  interface PictogramAttrs {
+    xmlns: "http://www.w3.org/2000/svg";
+    viewBox: "0 0 48 48";
+    width: "48";
+    height: "48";
+  }
+
+  export interface PictogramOutput {
+    moduleName: string;
+    filepath: string;
     descriptor: {
       elem: "svg";
-      attrs: IconAttributes & { width: string; height: string };
-      content: IconContent;
+      attrs: PictogramAttrs;
+      content: IconContent[];
       name: string;
     };
-    moduleName: string;
-    outputOptions: { file: string };
-  }>;
+  }
+
+  export type BuildIcons = {
+    icons: ReadonlyArray<{
+      name: string;
+      friendlyName: string;
+      namespace: [];
+      assets: [
+        {
+          filepath: string;
+          source: string;
+          optimized: {
+            data: string;
+            info: {};
+            path: string;
+          };
+        }
+      ];
+      output: [PictogramOutput];
+      category: string;
+    }>;
+  };
 }

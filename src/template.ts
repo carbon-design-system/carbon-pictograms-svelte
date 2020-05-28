@@ -1,18 +1,9 @@
-import {
-  IconAttributes,
-  IconContent,
-  defaultAttributes,
-  formatAttributes,
-  toString
-} from "@carbon/icon-helpers";
+import { defaultAttributes, toString, Descriptor } from "@carbon/icon-helpers";
+import { PictogramOutput } from "@carbon/pictograms";
 
-export interface TemplateProps {
-  attrs: IconAttributes;
-  content: IconContent;
-  moduleName: string;
-}
+export function template(output: PictogramOutput) {
+  const { moduleName, descriptor } = output;
 
-export function template({ attrs, content, moduleName }: TemplateProps) {
   return `<script>
   let className = undefined;
   export { className as class };
@@ -21,8 +12,10 @@ export function template({ attrs, content, moduleName }: TemplateProps) {
   export let focusable = ${defaultAttributes.focusable};
   export let title = undefined;
   export let style = undefined;
-  export let width = "${attrs.width}";
-  export let height = "${attrs.height}";
+  export let fill = "#161616";
+  export let stroke = "currentColor";
+  export let width = "${descriptor.attrs.width}";
+  export let height = "${descriptor.attrs.height}";
 
   $: ariaLabel = $$props['aria-label'];
   $: ariaLabelledBy = $$props['aria-labelledby'];
@@ -45,25 +38,22 @@ export function template({ attrs, content, moduleName }: TemplateProps) {
   on:mouseleave
   on:keyup
   on:keydown
-  ${formatAttributes({ ...attrs, preserveAspectRatio: "xMidYMid meet" })
-    .split(" ")
-    .filter(attr => !attr.startsWith("width") && !attr.startsWith("height"))
-    .join(" ")}
+  xmlns="${descriptor.attrs.xmlns}"
+  viewBox="${descriptor.attrs.viewBox}"
+  preserveAspectRatio="xMidYMid meet"
   class={className}
+  {fill}
+  {stroke}
   {width}
   {height}
   {style}
   {id}
   {...attributes}>
-  ${content
+  ${descriptor.content
     // @ts-ignore
-    .filter(element => element.elem !== "font" && element.elem !== "text")
-    .map(element => toString(element))
+    .filter((element) => element.elem !== "font" && element.elem !== "text")
+    .map((element) => toString(element as Descriptor))
     .join("")}
-  <slot>
-    {#if title}
-      <title>{title}</title>
-    {/if}
-  </slot>
+  <slot>{#if title}<title>{title}</title>{/if}</slot>
 </svg>`;
 }

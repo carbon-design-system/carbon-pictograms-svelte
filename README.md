@@ -14,9 +14,9 @@ This **zero dependency** library builds [Carbon Design System pictograms](https:
 `carbon-pictograms-svelte` can be installed using `yarn` or `npm`.
 
 ```bash
-yarn add carbon-pictograms-svelte
+yarn add -D carbon-pictograms-svelte
 # OR
-npm i carbon-pictograms-svelte
+npm i -D carbon-pictograms-svelte
 ```
 
 ## Usage
@@ -55,18 +55,20 @@ Refer to [PICTOGRAM_INDEX.md](PICTOGRAM_INDEX.md) for a list of available pictog
 
 All props are optional.
 
-| Name            | Value                        |
-| :-------------- | :--------------------------- |
-| id              | `string`                     |
-| aria-label      | `string`                     |
-| aria-labelledby | `string`                     |
-| tabindex        | `string`                     |
-| title           | `string`                     |
-| focusable       | `boolean` (default: `false`) |
-| class           | `string`                     |
-| style           | `string`                     |
-| width           | `string` (default: `"48"`)   |
-| height          | `string` (default: `"48"`)   |
+| Name            | Value                               |
+| :-------------- | :---------------------------------- |
+| id              | `string`                            |
+| aria-label      | `string`                            |
+| aria-labelledby | `string`                            |
+| tabindex        | `string`                            |
+| title           | `string`                            |
+| focusable       | `boolean` (default: `false`)        |
+| class           | `string`                            |
+| style           | `string`                            |
+| fill            | `string` (default: `"#161616"`      |
+| stroke          | `string` (default `"currentColor"`) |
+| width           | `string` (default: `"48"`)          |
+| height          | `string` (default: `"48"`)          |
 
 #### `title` as a Slot
 
@@ -115,7 +117,15 @@ document.querySelectorAll('[data-carbon-pictogram="Airplane"]');
 
 ### Custom Stroke Color
 
-The default stroke color for pictograms is `"#000"`. Customize the stroke color by defining a global class.
+Customize the stroke color through the `stroke` proop or by defining a global class.
+
+#### `stroke` prop
+
+```html
+<Airplane stroke="blue" />
+```
+
+#### Global class
 
 ```html
 <style>

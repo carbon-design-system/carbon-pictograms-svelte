@@ -23,7 +23,7 @@ const usage = [
 (async () => {
   const start = performance.now();
   const source = await readFile(
-    "node_modules/@carbon/pictograms/build-info.json",
+    "node_modules/@carbon/pictograms/metadata.json",
     "utf8"
   );
   const buildInfo: BuildIcons = JSON.parse(source);
@@ -34,18 +34,15 @@ const usage = [
   const pictograms: string[] = [];
   let imports = "";
 
-  buildInfo.forEach(async ({ moduleName, descriptor }) => {
+  buildInfo.icons.forEach(async ({ output }) => {
+    const { moduleName } = output[0];
     pictograms.push(moduleName);
     imports += `export { ${moduleName} } from "./${moduleName}";\n`;
 
     await mkdir(`lib/${moduleName}`);
     await writeFile(
       `lib/${moduleName}/${moduleName}.svelte`,
-      template({
-        attrs: descriptor.attrs,
-        content: descriptor.content,
-        moduleName,
-      })
+      template(output[0])
     );
     await writeFile(
       `lib/${moduleName}/index.js`,

@@ -78,7 +78,7 @@
         on:click={() => {
           moduleName = pictogram;
         }}>
-        <svelte:component this={pictograms[pictogram]} />
+        <svelte:component this={pictograms[pictogram]} width={72} height={72} />
       </li>
     {/each}
   </ul>
