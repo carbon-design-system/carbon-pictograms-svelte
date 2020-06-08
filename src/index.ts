@@ -67,7 +67,7 @@ ${usage.join("\n")}
 ## List of Pictograms by \`ModuleName\`
 
 ${pictograms.map((moduleName) => `- ${moduleName}`).join("\n")}
-    `.trim()
+    `.trim() + "\n"
   );
 
   const bench = (performance.now() - start) / 1000;
