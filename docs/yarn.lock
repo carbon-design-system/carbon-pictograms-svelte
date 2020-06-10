@@ -823,18 +823,18 @@ caniuse-lite@^1.0.30001061:
   resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001066.tgz#0a8a58a10108f2b9bf38e7b65c237b12fd9c5f04"
   integrity sha512-Gfj/WAastBtfxLws0RCh2sDbTK/8rJuSeZMecrSkNGYxPcv7EzblmDGfWQCFEQcSqYE2BRgQiJh8HOD07N5hIw==
 
-carbon-components-svelte@^0.6.3:
-  version "0.6.3"
-  resolved "https://registry.npmjs.org/carbon-components-svelte/-/carbon-components-svelte-0.6.3.tgz#3bb5514d61026927bc5d614f1bee42b4d475a020"
-  integrity sha512-A/DPlWx6i+LrpL7CbIZbE5pEjYogMJ1P1t+p+kIG9wKAJlOfaYs2JlmwVn5BCNVdGgD3Ju9zN2SkyCI0toMZpA==
+carbon-components-svelte@^0.7.2:
+  version "0.7.2"
+  resolved "https://registry.npmjs.org/carbon-components-svelte/-/carbon-components-svelte-0.7.2.tgz#b23711e7f7d0e58e43bfe8738304e6425020ab3c"
+  integrity sha512-T1lXxob3uPbIlkyBh5UI5K8LSyfqC3SF/NVYY3USCuUZF3MDL9Q0Tbpq6rShmJNNmXKoDJOroda2wyFvVpw3gg==
   dependencies:
     carbon-icons-svelte "10.9.3"
     flatpickr "4.6.3"
 
-carbon-components@~10.10.x:
-  version "10.10.3"
-  resolved "https://registry.npmjs.org/carbon-components/-/carbon-components-10.10.3.tgz#c3076be78fa2df8c430b329615a9ef1f1d2509c8"
-  integrity sha512-uOHcMvQNtqazCqBxXlIaAU6Jmsb1/wE6fhJ3r6wt69MfW42xjCOVAegXDXylCAk1k6F+DR6cx4WsbYMUjOXR3A==
+carbon-components@~10.13.0:
+  version "10.13.0"
+  resolved "https://registry.npmjs.org/carbon-components/-/carbon-components-10.13.0.tgz#1129972c3d16b129d8245cd8264b3f045d6dd974"
+  integrity sha512-BVwmNkt63N9xthoOAFvR+5hpPN/4CWs2a/D2iZHWu8lbFsAskfPnrFbA+74vA6xqLkediw6Tww4GfoxAmBtaKw==
   dependencies:
     flatpickr "4.6.1"
     lodash.debounce "^4.0.8"
@@ -2271,10 +2271,10 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-gh-pages@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/gh-pages/-/gh-pages-2.2.0.tgz#74ebeaca8d2b9a11279dcbd4a39ddfff3e6caa24"
-  integrity sha512-c+yPkNOPMFGNisYg9r4qvsMIjVYikJv7ImFOhPIVPt0+AcRUamZ7zkGRLHz7FKB0xrlZ+ddSOJsZv9XAFVXLmA==
+gh-pages@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/gh-pages/-/gh-pages-3.0.0.tgz#65f3ccd424bfbc7906f31c4bdb524a1147fa8da2"
+  integrity sha512-oaOfVcrSwnqoWUgZ6cmCDM6mUuWyOSG+SHjqxGBawN0F3SKaF5NwbeYDG+w2RNXO2HJ/5Iam4o7dP5NAtoHuwQ==
   dependencies:
     async "^2.6.1"
     commander "^2.18.0"
@@ -5610,10 +5610,10 @@ svelte-loader@^2.13.6:
     loader-utils "^1.1.0"
     svelte-dev-helper "^1.1.9"
 
-svelte@^3.23.0:
-  version "3.23.0"
-  resolved "https://registry.npmjs.org/svelte/-/svelte-3.23.0.tgz#bbcd6887cf588c24a975b14467455abfff9acd3f"
-  integrity sha512-cnyd96bK/Nw5DnYuB1hzm5cl6+I1fpmdKOteA7KLzU9KGLsLmvWsSkSKbcntzODCLmSySN3HjcgTHRo6/rJNTw==
+svelte@^3.23.1:
+  version "3.23.1"
+  resolved "https://registry.npmjs.org/svelte/-/svelte-3.23.1.tgz#b201b9ebc25034cb23562ba284efa3e06f357b7b"
+  integrity sha512-HTKVSDHcn4ztxRl3g425pwihePXkCvn4B2gO5Y3n3GHzHZWxYM9T+l/LHs7HjJjcI7Xl7/ujnfA3S45pz0qXIg==
 
 svgo@^1.0.0:
   version "1.3.2"

@@ -43,7 +43,7 @@ module.exports = {
         use: [
           IS_PROD ? MiniCssExtractPlugin.loader : "style-loader",
           "css-loader",
-          {
+          IS_PROD && {
             loader: "postcss-loader",
             options: {
               plugins: [
@@ -54,7 +54,7 @@ module.exports = {
             },
           },
           "sass-loader",
-        ],
+        ].filter(Boolean),
       },
       { test: /\.(png|jpe?g|svg)$/i, use: [{ loader: "file-loader" }] },
     ],
