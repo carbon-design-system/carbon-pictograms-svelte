@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [10.12.0](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.12.0) - 2020-06-09
+
+- Bump `@carbon/pictograms` build dependency to 10.12.0 (18 new pictograms)
+
 ## [10.11.0](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.11.0) - 2020-05-28
 
 - Bump `@carbon/pictograms` build dependency to 10.11.0
