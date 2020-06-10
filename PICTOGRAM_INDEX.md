@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 482 pictograms from @carbon/pictograms@10.11.0
+> 500 pictograms from @carbon/pictograms@10.12.0
 
 ## Usage
 
@@ -87,6 +87,8 @@
 - ChipCredit
 - ChipDebit
 - CirclePacking
+- ClientFinancing_01
+- ClientFinancing_02
 - CloudAnalytics
 - CloudAssets
 - CloudBuilderProfessionalServices
@@ -116,6 +118,8 @@
 - CoatHanger
 - CognosAnalytics
 - College
+- CommercialFinancing_01
+- CommercialFinancing_02
 - ConceptExpansion
 - ConceptInsights
 - Connect
@@ -185,8 +189,10 @@
 - Feedback
 - FileBackup
 - FileTransfer
+- FinanceStrategy
 - FinancialConsultant
 - FinancialGain
+- FinancialNetworks
 - FinancialNews
 - FireAlarm
 - FireExtinguisher
@@ -199,10 +205,20 @@
 - FreeTrial
 - Fuel
 - Gear
+- GlobalAnalytics
+- GlobalAssetsAndRecovery_01
+- GlobalAssetsAndRecovery_02
 - GlobalBusinessServices
+- GlobalCurrency
+- GlobalExchange
 - GlobalFinanceEuro
+- GlobalFinanceNetwork
 - GlobalFinanceSterling
+- GlobalMarkets
+- GlobalMarketsBar
 - GlobalNetwork
+- GlobalSecurity
+- GlobalStrategy
 - GlobalTechnologyServices
 - Globe
 - GlobeLocations
@@ -315,6 +331,8 @@
 - Office
 - OilPump
 - OilRig
+- OptimizeCashFlow_01
+- OptimizeCashFlow_02
 - Overcast
 - PaperClip
 - Parliament

@@ -2,25 +2,25 @@
 # yarn lockfile v1
 
 
-"@carbon/icon-helpers@10.7.0":
-  version "10.7.0"
-  resolved "https://registry.npmjs.org/@carbon/icon-helpers/-/icon-helpers-10.7.0.tgz#7ad56c3f377bfaa687ccca0b0813011606d6cb28"
-  integrity sha512-zIswRvP4JyZOq7+4A4/ro7K05xVNid/+HxBOSM1ApuqcXg1e1Vl9fg37+rGY/in9v7vVgsmA8s5Arlx1mJzPIw==
+"@carbon/icon-helpers@10.8.0":
+  version "10.8.0"
+  resolved "https://registry.npmjs.org/@carbon/icon-helpers/-/icon-helpers-10.8.0.tgz#4868468119588bd7bc00eda31fe296930aa8858d"
+  integrity sha512-4KD4i+MSH+8jGSqjVllggefsNs9bLUkylhbcb3YQmrMCIhoFcliF9pYnLVbp3HTO17uOf5+UbPK5QHuOpUcu7w==
 
-"@carbon/pictograms@10.11.0":
-  version "10.11.0"
-  resolved "https://registry.npmjs.org/@carbon/pictograms/-/pictograms-10.11.0.tgz#e7934bddd52c34ec91a7a5cd13313429670150c5"
-  integrity sha512-IY75dDh1npqh8rLaBXFht5oq+hWC41xYF8gxETP1hoGliKR5pwwrJsc7QK/Y4Z+avv1PBHzgHIuvfGMxnCYupg==
+"@carbon/pictograms@10.12.0":
+  version "10.12.0"
+  resolved "https://registry.npmjs.org/@carbon/pictograms/-/pictograms-10.12.0.tgz#2e8868d1566d2eb48afb5d37f5b9ba7eb5b3b7b8"
+  integrity sha512-PX90NcIDETS/FoQcNVUolQ02QZwf6zsU1DNSsRZrmv4FDudu7SUJeOlMDT6iOGW+rmvobbLYxh2bRPJU/KIQPg==
 
 "@types/carbon__icon-helpers@10.6.0":
   version "10.6.0"
   resolved "https://registry.npmjs.org/@types/carbon__icon-helpers/-/carbon__icon-helpers-10.6.0.tgz#dea8ab118b43224235cac793d7967009135e73d4"
   integrity sha512-B1b2PQMSJaNCAWSUsE/RFu45pu2o1nbCyA9TZil70/UQtpB7qQ6aoNQgPSVe7h12+AjNjMf3jZSVZVzGS19o9w==
 
-"@types/node@^14.0.11":
-  version "14.0.11"
-  resolved "https://registry.npmjs.org/@types/node/-/node-14.0.11.tgz#61d4886e2424da73b7b25547f59fdcb534c165a3"
-  integrity sha512-lCvvI24L21ZVeIiyIUHZ5Oflv1hhHQ5E1S25IRlKIXaRkVgmXpJMI3wUJkmym2bTbCe+WoIibQnMVAU3FguaOg==
+"@types/node@^14.0.13":
+  version "14.0.13"
+  resolved "https://registry.npmjs.org/@types/node/-/node-14.0.13.tgz#ee1128e881b874c371374c1f72201893616417c9"
+  integrity sha512-rouEWBImiRaSJsVA+ITTFM6ZxibuAlTuNOCyxVbwreu6k6+ujs7DfnU9o+PShFhET78pMBl3eH+AGSI5eOTkPA==
 
 "@types/strip-bom@^3.0.0":
   version "3.0.0"
