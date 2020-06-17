@@ -1,7 +1,8 @@
 import { strict as test } from "assert";
 import { template } from "./template";
+import { PictogramOutput } from "@carbon/pictograms";
 
-const props = {
+const props: PictogramOutput = {
   moduleName: "Airplane",
   filepath: "airplane/index.js",
   descriptor: {

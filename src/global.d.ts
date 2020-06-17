@@ -1,6 +1,4 @@
 declare module "@carbon/pictograms" {
-  import { IconContent } from "@carbon/icon-helpers";
-
   interface PictogramAttrs {
     xmlns: "http://www.w3.org/2000/svg";
     viewBox: "0 0 48 48";
@@ -14,7 +12,7 @@ declare module "@carbon/pictograms" {
     descriptor: {
       elem: "svg";
       attrs: PictogramAttrs;
-      content: IconContent[];
+      content: { elem: string; attrs: object }[];
       name: string;
     };
   }
