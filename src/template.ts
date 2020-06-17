@@ -1,4 +1,4 @@
-import { defaultAttributes, toString, Descriptor } from "@carbon/icon-helpers";
+import { defaultAttributes, toString } from "@carbon/icon-helpers";
 import { PictogramOutput } from "@carbon/pictograms";
 
 export function template(output: PictogramOutput) {
@@ -50,9 +50,8 @@ export function template(output: PictogramOutput) {
   {id}
   {...attributes}>
   ${descriptor.content
-    // @ts-ignore
     .filter((element) => element.elem !== "font" && element.elem !== "text")
-    .map((element) => toString(element as Descriptor))
+    .map((element) => toString(element))
     .join("")}
   <slot>{#if title}<title>{title}</title>{/if}</slot>
 </svg>`;
