@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 500 pictograms from @carbon/pictograms@10.12.0
+> 500 pictograms from @carbon/pictograms@10.13.0
 
 ## Usage
 

@@ -2,15 +2,15 @@
 # yarn lockfile v1
 
 
-"@carbon/icon-helpers@10.8.0":
-  version "10.8.0"
-  resolved "https://registry.npmjs.org/@carbon/icon-helpers/-/icon-helpers-10.8.0.tgz#4868468119588bd7bc00eda31fe296930aa8858d"
-  integrity sha512-4KD4i+MSH+8jGSqjVllggefsNs9bLUkylhbcb3YQmrMCIhoFcliF9pYnLVbp3HTO17uOf5+UbPK5QHuOpUcu7w==
+"@carbon/icon-helpers@10.9.0":
+  version "10.9.0"
+  resolved "https://registry.npmjs.org/@carbon/icon-helpers/-/icon-helpers-10.9.0.tgz#5aee08e9d253d3bf6f996bc61f739660c62cbb21"
+  integrity sha512-JtmCXV7iIc+N5RqQQy+MGT8T+5KcF7+BUKADvHnJKZ8o+ncF5gI4hmrP450dQD76mikI4fqQ0dQflaosesdSPw==
 
-"@carbon/pictograms@10.12.0":
-  version "10.12.0"
-  resolved "https://registry.npmjs.org/@carbon/pictograms/-/pictograms-10.12.0.tgz#2e8868d1566d2eb48afb5d37f5b9ba7eb5b3b7b8"
-  integrity sha512-PX90NcIDETS/FoQcNVUolQ02QZwf6zsU1DNSsRZrmv4FDudu7SUJeOlMDT6iOGW+rmvobbLYxh2bRPJU/KIQPg==
+"@carbon/pictograms@10.13.0":
+  version "10.13.0"
+  resolved "https://registry.npmjs.org/@carbon/pictograms/-/pictograms-10.13.0.tgz#76b59c40cad6b4a56240340930bd4423184dd8a6"
+  integrity sha512-ioBuU/Y8xPTj9XQxeuyduzPn48unz+p1EKENNCLsYOE8Lm++3BzLkVdKRFPcAVyPVSivOZESj+YnWSdYcUw8+A==
 
 "@types/carbon__icon-helpers@10.7.0":
   version "10.7.0"
