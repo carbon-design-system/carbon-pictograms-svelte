@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 500 pictograms from @carbon/pictograms@10.13.0
+> 574 pictograms from @carbon/pictograms@10.14.0
 
 ## Usage
 
@@ -15,6 +15,7 @@
 ## List of Pictograms by `ModuleName`
 
 - ActiveServer
+- AddDevice
 - Advocate
 - Agriculture
 - AirConditioner
@@ -40,6 +41,7 @@
 - AugmentedReality
 - Austin
 - AutomateModularManagement
+- AutomationDecision
 - Automobile
 - Bag
 - Bangalore
@@ -51,6 +53,7 @@
 - BerlinCathedral
 - BerlinTower
 - Bicycle
+- Blender
 - Blockchain
 - BoxPlot
 - Build
@@ -64,6 +67,8 @@
 - Camera
 - Capitol
 - Care
+- CargoCrane
+- CargoShip
 - Cell
 - Chart_3D
 - ChartArea
@@ -71,17 +76,23 @@
 - ChartBubble
 - ChartBubbleLine
 - ChartCandlestick
+- ChartCustom
 - ChartErrorBar
 - ChartEvaluation
 - ChartHighLow
 - ChartHistogram
 - ChartLine
 - ChartMultiLine
+- ChartMultiType
 - ChartParallel
+- ChartPie
 - ChartRadar
 - ChartRiver
 - ChartScatterplot
+- ChartStepper
+- ChartSunburst
 - ChartTSne
+- Cheese
 - Cherries
 - ChipCircuit
 - ChipCredit
@@ -89,6 +100,8 @@
 - CirclePacking
 - ClientFinancing_01
 - ClientFinancing_02
+- ClothesRack_01
+- ClothesRack_02
 - CloudAnalytics
 - CloudAssets
 - CloudBuilderProfessionalServices
@@ -116,6 +129,7 @@
 - CloudyPartial
 - CloudyWindy
 - CoatHanger
+- CodeSyntax
 - CognosAnalytics
 - College
 - CommercialFinancing_01
@@ -123,25 +137,32 @@
 - ConceptExpansion
 - ConceptInsights
 - Connect
+- ConnectedEcosystem
+- ConnectedNodesToTheCloud
 - Console
 - ConsoleWireless
 - Construct
+- ConsumerEngagementFoodJourney
 - Conversation
 - CopenhagenPlanetarium
 - CopenhagenSnekkja
+- Coronavirus
 - CreditCard
 - Crop
 - CustomerService
 - DataBackup
 - DataInsights
 - DataProcessing
+- DataSet
 - DataStorage
 - Delete
 - DeliverInsights
 - DeliveryTruck
 - DesignAndDevelopment_01
 - DesignAndDevelopment_02
+- DesignThinkingTeam
 - Desktop
+- DeveloperZOs
 - Devops
 - Dialogue
 - Digital
@@ -161,6 +182,7 @@
 - DuplicateFile
 - Education
 - Electric
+- ElectricCar
 - ElectricCharge
 - Elevator
 - Embed
@@ -185,6 +207,10 @@
 - FaceVerySatisfied
 - Factory
 - Farm
+- Farm_01
+- Farm_02
+- Farmer_01
+- Farmer_02
 - Faucet
 - Feedback
 - FileBackup
@@ -197,14 +223,18 @@
 - FireAlarm
 - FireExtinguisher
 - Firewall
+- FirstAid
 - FlowChart
 - FlowChartDetail
+- Flower_01
+- Flower_02
 - Fog
 - Folder
 - Forklift
 - FreeTrial
 - Fuel
 - Gear
+- Gift
 - GlobalAnalytics
 - GlobalAssetsAndRecovery_01
 - GlobalAssetsAndRecovery_02
@@ -217,6 +247,7 @@
 - GlobalMarkets
 - GlobalMarketsBar
 - GlobalNetwork
+- GlobalPartner
 - GlobalSecurity
 - GlobalStrategy
 - GlobalTechnologyServices
@@ -251,6 +282,7 @@
 - Idea
 - Ideate
 - Innovate
+- InspectData
 - Integration
 - Intelligence
 - Intercom
@@ -290,6 +322,8 @@
 - MadridSkyscrapers
 - MadridStatue
 - Magnify
+- ManagingContractualFlow
+- ManagingItems
 - Marketplace
 - Mas
 - MathCurve
@@ -310,8 +344,14 @@
 - MobileChat
 - MobileDevices
 - MobilePhone
+- MonitoredItemOnConveyor
 - MortarAndPestle
 - Moscow
+- MovementInOverlappingNetworks
+- MovementOfGoods_01
+- MovementOfGoods_02
+- MovementOfGoods_03
+- MovementOfItems
 - Mqa
 - Multitask
 - Munich
@@ -323,6 +363,7 @@
 - Networking_03
 - Networking_04
 - Networking_05
+- Networking_06
 - Nice
 - NightClear
 - NycBrooklyn
@@ -353,6 +394,8 @@
 - PetriCulture
 - PillBottle_01
 - Pills
+- PlanningAnalytics
+- PlayerFlow
 - Podcast
 - Police
 - PopulationDiagram
@@ -365,6 +408,7 @@
 - PrivateNetwork_01
 - PrivateNetworkAlt
 - PrivateNetworkAlt_01
+- Process
 - Progress
 - Puzzle
 - QQPlot
@@ -392,6 +436,7 @@
 - Robotics
 - Rome
 - SaasEnablement
+- SampleFile
 - SanFrancisco
 - SanFranciscoFog
 - SaoPaulo
@@ -407,6 +452,7 @@
 - SecurityShield
 - ServerRack
 - Servers
+- Shirt
 - Shop
 - ShoppingCart
 - Shower
@@ -415,8 +461,11 @@
 - Slider
 - Sneaker
 - Snow
+- Socks
 - SoftIceCream
 - SoftlayerEnablement
+- SolarField
+- SolarPanel
 - Solve
 - Spaceship
 - Speech
@@ -427,20 +476,37 @@
 - StationaryBicycle
 - Steel
 - SteeringWheel
+- StemLeafPlot
 - Stethoscope
 - Strategy
 - StrategyDirect
 - StrategyMove
 - StrategyPlay
 - Streamline
+- Summit
 - Sunny
 - SunnyHazy
+- SupplyChainOptimization_01
+- SupplyChainOptimization_02
 - SupportServices
 - SwipeLeft
 - SwipeRight
+- SystemsDevopsAnalyze
+- SystemsDevopsBuild
+- SystemsDevopsCicdPipeline
+- SystemsDevopsCode
+- SystemsDevopsDeploy
+- SystemsDevopsMonitor
+- SystemsDevopsPlan
+- SystemsDevopsProvision
+- SystemsDevopsRelease
+- SystemsDevopsTest
+- TShirt
 - Tags
 - Target
 - TargetArea
+- TeamAlignment
+- Teammates
 - TelAviv
 - Telecom
 - Telephone
@@ -451,6 +517,7 @@
 - TestTubes
 - TextToSpeech
 - Time
+- TimePlot
 - TimeLapse
 - Toggle
 - TokyoCherryBlossom
@@ -470,16 +537,23 @@
 - TradeoffAnalytics
 - Train
 - Transform
+- Transparency_01
+- Transparency_02
 - Trash
 - TreeDiagram
 - TreeMap
+- Trousers
+- Trust
 - University
 - Unlock
 - UnlockAlt
 - Upload
 - UploadAlt
+- User
 - UserAnalytics
 - UserInsights
+- UserInterface
+- UserProfile
 - UserSearch
 - Vancouver
 - Video
