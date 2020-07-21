@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 574 pictograms from @carbon/pictograms@10.14.0
+> 598 pictograms from @carbon/pictograms@10.15.0
 
 ## Usage
 
@@ -16,6 +16,7 @@
 
 - ActiveServer
 - AddDevice
+- AddDocument
 - Advocate
 - Agriculture
 - AirConditioner
@@ -43,6 +44,7 @@
 - AutomateModularManagement
 - AutomationDecision
 - Automobile
+- Backpack
 - Bag
 - Bangalore
 - Bee
@@ -143,6 +145,7 @@
 - ConsoleWireless
 - Construct
 - ConsumerEngagementFoodJourney
+- Contract
 - Conversation
 - CopenhagenPlanetarium
 - CopenhagenSnekkja
@@ -167,11 +170,13 @@
 - Dialogue
 - Digital
 - Dining
+- DistributionLedger
 - Dna
 - DoNot
 - Docker
 - Doctor
 - DocumentConversion
+- DocumentSecurity
 - DoorHandle
 - Download
 - DownloadAlt
@@ -186,6 +191,7 @@
 - ElectricCharge
 - Elevator
 - Embed
+- EmployeeInsights
 - Engine
 - EnterpriseDesignThinking
 - EnterpriseDesignThinkingAlt
@@ -213,6 +219,7 @@
 - Farmer_02
 - Faucet
 - Feedback
+- Feedback_02
 - FileBackup
 - FileTransfer
 - FinanceStrategy
@@ -253,7 +260,9 @@
 - GlobalTechnologyServices
 - Globe
 - GlobeLocations
+- Goals
 - Group
+- Growth
 - Hail
 - HailHeavy
 - HailMixed
@@ -269,6 +278,7 @@
 - HeatMap
 - HeatMap_02
 - HighFive
+- Hills
 - HomeFront
 - HomeGarage
 - HomeProfile
@@ -279,9 +289,11 @@
 - HybridCloudServices
 - IbmIx
 - IbmZ
+- IdBadge
 - Idea
 - Ideate
 - Innovate
+- Insights
 - InspectData
 - Integration
 - Intelligence
@@ -353,9 +365,12 @@
 - MovementOfGoods_03
 - MovementOfItems
 - Mqa
+- Mri
+- MriPatient
 - Multitask
 - Munich
 - NaturalLanguageClassifier
+- NaturalLanguageUnderstanding
 - Network
 - NetworkServices
 - Networking_01
@@ -400,6 +415,7 @@
 - Police
 - PopulationDiagram
 - Power
+- Pregnant
 - Presentation
 - Presenter
 - Price
@@ -412,8 +428,10 @@
 - Progress
 - Puzzle
 - QQPlot
+- QrCode
 - Question
 - QuestionAndAnswer
+- Racetrack
 - Rainy
 - RainyHeavy
 - Rank
@@ -427,6 +445,7 @@
 - RenewTeam
 - Repeat
 - Report
+- Research
 - Reset
 - ResetHybridCloud
 - ResetSettings
@@ -472,6 +491,7 @@
 - SpeechAlphabetAExpanded
 - SpeechToText
 - Speedometer
+- Sports
 - StairsPlanView
 - StationaryBicycle
 - Steel
@@ -536,6 +556,8 @@
 - Tractor
 - TradeoffAnalytics
 - Train
+- TransactionalBlockchain
+- TransactionalTrust
 - Transform
 - Transparency_01
 - Transparency_02
@@ -584,6 +606,8 @@
 - WirelessModem
 - WordCloud
 - WreckingBall
+- XRay_01
+- XRay_02
 - Yoga_01
 - Yoga_02
 - Yoga_03
