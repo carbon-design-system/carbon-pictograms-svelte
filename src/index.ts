@@ -64,14 +64,14 @@ const usage = [
 
     /**
      * Stroke color
-     * @type {string} [stroke=currentColor]
+     * @type {string} [stroke="currentColor"]
      */
     stroke?: string;
 
     /** @type {string} [width="48"] */
     width?: string;
 
-    /** @type {string} [height"48"] */
+    /** @type {string} [height="48"] */
     height?: string;
   };
 
