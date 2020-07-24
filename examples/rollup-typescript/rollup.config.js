@@ -1,7 +1,5 @@
 import svelte from "rollup-plugin-svelte";
 import resolve from "@rollup/plugin-node-resolve";
-import commonjs from "@rollup/plugin-commonjs";
-import livereload from "rollup-plugin-livereload";
 import { terser } from "rollup-plugin-terser";
 import sveltePreprocess from "svelte-preprocess";
 import typescript from "@rollup/plugin-typescript";
@@ -50,7 +48,6 @@ export default {
       },
     }),
     resolve({ browser: true, dedupe: ["svelte"] }),
-    commonjs(),
     typescript({ sourceMap: !production }),
     !production && serve(),
     production && terser(),
