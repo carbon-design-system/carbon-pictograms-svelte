@@ -2,7 +2,7 @@ import * as fs from "fs";
 import { BuildIcons } from "@carbon/pictograms";
 import { performance } from "perf_hooks";
 import { promisify } from "util";
-import { devDependencies } from "../package.json";
+import { name, devDependencies } from "../package.json";
 import { template } from "./template";
 
 const readFile = promisify(fs.readFile);
@@ -28,16 +28,65 @@ const usage = [
   );
   const buildInfo: BuildIcons = JSON.parse(source);
 
+  await rmdir("types", { recursive: true });
+  await mkdir("types");
+
   await rmdir("lib", { recursive: true });
   await mkdir("lib");
 
   const pictograms: string[] = [];
   let imports = "";
+  let definitions = `declare class Pictogram {
+  $$prop_def: {
+    /** @type {string} [id] */
+    id?: string;
+
+    /** @type {string} [class] */
+    class?: string;
+
+    /** @type {string} [tabindex] */
+    tabindex?: string;
+
+    /** @type {boolean} [focusable] */
+    focusable?: boolean;
+
+    /** @type {string} [title] */
+    title?: string;
+
+    /** @type {string} [style] */
+    style?: string;
+
+    /**
+     * Fill color
+     * @type {string} [fill="#161616"]
+     */
+    fill?: string;
+
+    /**
+     * Stroke color
+     * @type {string} [stroke="currentColor"]
+     */
+    stroke?: string;
+
+    /** @type {string} [width="48"] */
+    width?: string;
+
+    /** @type {string} [height="48"] */
+    height?: string;
+  };
+
+  $$slot_def: {
+    /** @type {{}} [default] */
+    default?: {};
+  };
+}
+`;
 
   buildInfo.icons.forEach(async ({ output }) => {
     const { moduleName } = output[0];
     pictograms.push(moduleName);
     imports += `export { ${moduleName} } from "./${moduleName}";\n`;
+    definitions += `export class ${moduleName} extends Pictogram {}\n`;
 
     await mkdir(`lib/${moduleName}`);
     await writeFile(
@@ -50,15 +99,22 @@ const usage = [
     );
   });
 
+  const metadata = `${pictograms.length} pictograms from @carbon/pictograms@${devDependencies["@carbon/pictograms"]}`;
+
+  await writeFile(
+    "types/index.d.ts",
+    `// Type definitions for ${name}
+// ${metadata}
+
+${definitions}`
+  );
   await writeFile("lib/index.js", imports);
   await writeFile(
     "PICTOGRAM_INDEX.md",
     `
 # Pictogram Index
 
-> ${pictograms.length} pictograms from @carbon/pictograms@${
-      devDependencies["@carbon/pictograms"]
-    }
+> ${metadata}
 
 ## Usage
 
