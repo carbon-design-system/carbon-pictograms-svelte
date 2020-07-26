@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [10.15.2](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.15.2) - 2020-07-26
+
+- Use ambient module declarations in types (e.g. `"carbon-pictograms/lib/Airplane"`) to encourage direct imports
+
 ## [10.15.1](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.15.1) - 2020-07-24
 
 - Add TypeScript type definitions

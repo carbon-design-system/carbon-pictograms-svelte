@@ -163,6 +163,8 @@ Customize the stroke color through the `stroke` proop or by defining a global cl
 
 - [examples/rollup](examples/rollup) (Try it on [CodeSandbox](https://codesandbox.io/s/github/IBM/carbon-pictograms-svelte/tree/master/examples/rollup))
 
+- [examples/rollup-typescript](examples/rollup-typescript)
+
 ## [Changelog](CHANGELOG.md)
 
 ## [Contributing](CONTRIBUTING.md)

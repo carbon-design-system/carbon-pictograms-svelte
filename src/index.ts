@@ -28,9 +28,6 @@ const usage = [
   );
   const buildInfo: BuildIcons = JSON.parse(source);
 
-  await rmdir("types", { recursive: true });
-  await mkdir("types");
-
   await rmdir("lib", { recursive: true });
   await mkdir("lib");
 
@@ -86,7 +83,7 @@ const usage = [
     const { moduleName } = output[0];
     pictograms.push(moduleName);
     imports += `export { ${moduleName} } from "./${moduleName}";\n`;
-    definitions += `export class ${moduleName} extends Pictogram {}\n`;
+    definitions += `declare module "carbon-pictograms-svelte/lib/${moduleName}" { export default class ${moduleName} extends Pictogram {} }\n`;
 
     await mkdir(`lib/${moduleName}`);
     await writeFile(
@@ -102,7 +99,7 @@ const usage = [
   const metadata = `${pictograms.length} pictograms from @carbon/pictograms@${devDependencies["@carbon/pictograms"]}`;
 
   await writeFile(
-    "types/index.d.ts",
+    "lib/index.d.ts",
     `// Type definitions for ${name}
 // ${metadata}
 
