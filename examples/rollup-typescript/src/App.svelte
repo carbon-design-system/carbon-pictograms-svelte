@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { ActiveServer, BerlinTower } from "carbon-pictograms-svelte";
+  import ActiveServer from "carbon-pictograms-svelte/lib/ActiveServer";
+  import BerlinTower from "carbon-pictograms-svelte/lib/BerlinTower";
 </script>
 
 <ActiveServer stroke="blue" />

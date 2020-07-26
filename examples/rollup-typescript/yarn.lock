@@ -150,10 +150,10 @@ callsites@^3.0.0:
   resolved "https://registry.npmjs.org/callsites/-/callsites-3.1.0.tgz#b3630abd8943432f54b3f0519238e33cd7df2f73"
   integrity sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==
 
-carbon-pictograms-svelte@^10.15.1:
-  version "10.15.1"
-  resolved "https://registry.npmjs.org/carbon-pictograms-svelte/-/carbon-pictograms-svelte-10.15.1.tgz#84de1907794ce6b1a9e2b363fcfd8220d1640cd4"
-  integrity sha512-iiI1I6zTO75LvkdFE5HfeJyZ2w3kYV4xbJYihtXGGVD7f7tEBv9LnHZviF//5nmGqp4/5paLTxII33qPIXEHHQ==
+carbon-pictograms-svelte@^10.15.2:
+  version "10.15.2"
+  resolved "https://registry.npmjs.org/carbon-pictograms-svelte/-/carbon-pictograms-svelte-10.15.2.tgz#576a93250f3698a036222d5528293025649ef149"
+  integrity sha512-rT4jFIJvFIpAp188aOj8qcjIF5LGVsXcdV1tD1FKYu+BaNNej4VEiFrSDskt5xzhZbFAB5CMVw3mrw46CxhgtQ==
 
 chalk@^2.0.0:
   version "2.4.2"
