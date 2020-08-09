@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 598 pictograms from @carbon/pictograms@10.15.0
+> 600 pictograms from @carbon/pictograms@10.16.0
 
 ## Usage
 
@@ -287,7 +287,9 @@
 - Hurricane
 - HybridCloud
 - HybridCloudServices
+- IbmCloud
 - IbmIx
+- IbmWatson
 - IbmZ
 - IdBadge
 - Idea
