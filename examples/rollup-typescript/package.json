@@ -8,19 +8,19 @@
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^8.0.0",
-    "@rollup/plugin-typescript": "^4.0.0",
-    "@tsconfig/svelte": "^1.0.0",
-    "carbon-pictograms-svelte": "^10.15.2",
-    "rollup": "^2.3.4",
+    "@rollup/plugin-typescript": "^5.0.2",
+    "@tsconfig/svelte": "^1.0.8",
+    "carbon-pictograms-svelte": "^10.16.0",
+    "rollup": "^2.23.1",
     "rollup-plugin-svelte": "^5.0.3",
-    "rollup-plugin-terser": "^5.1.2",
-    "svelte": "^3.0.0",
-    "svelte-check": "^0.1.0",
-    "svelte-preprocess": "^4.0.0",
-    "tslib": "^2.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.24.1",
+    "svelte-check": "^1.0.11",
+    "svelte-preprocess": "^4.0.10",
+    "tslib": "^2.0.1",
     "typescript": "^3.9.3"
   },
   "dependencies": {
-    "sirv-cli": "^1.0.0"
+    "sirv-cli": "^1.0.5"
   }
 }
