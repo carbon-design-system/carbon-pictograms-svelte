@@ -76,6 +76,9 @@ const usage = [
     /** @type {{}} [default] */
     default?: {};
   };
+
+  /** stub 'on:event' directive as any */
+  $on(eventname: string, handler: (e: Event) => any): () => void;
 }
 `;
 
