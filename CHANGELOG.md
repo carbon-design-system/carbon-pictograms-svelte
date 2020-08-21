@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [10.17.0](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.17.0) - 2020-08-21
+
+- In the TypeScript definitions, rename the `Pictogram` class to `CarbonPictogram`
+- Bump `@carbon/pictograms` build dependency to 10.17.0 (9 new pictograms)
+
 ## [10.16.0](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.16.0) - 2020-08-09
 
 - Fix TypeScript definitions to stub `on:eventname` directive
