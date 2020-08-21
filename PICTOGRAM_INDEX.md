@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 600 pictograms from @carbon/pictograms@10.16.0
+> 609 pictograms from @carbon/pictograms@10.17.0
 
 ## Usage
 
@@ -179,6 +179,8 @@
 - DocumentSecurity
 - DoorHandle
 - Download
+- Download_01
+- Download_02
 - DownloadAlt
 - DubaiPalmIslands
 - DubaiSkyscraper
@@ -204,6 +206,8 @@
 - ExpandUser
 - ExpandVert
 - Export
+- Export_01
+- Export_02
 - ExportAlt
 - Eye
 - FaceDissatisfied
@@ -325,6 +329,7 @@
 - London
 - LondonBigBen
 - LondonExpandedBase
+- Love
 - Lungs
 - MachineLearning_01
 - MachineLearning_02
@@ -572,6 +577,8 @@
 - Unlock
 - UnlockAlt
 - Upload
+- Upload_01
+- Upload_02
 - UploadAlt
 - User
 - UserAnalytics
@@ -581,6 +588,8 @@
 - UserSearch
 - Vancouver
 - Video
+- Video_01
+- Video_02
 - VideoAlt
 - VideoChat
 - VideoPlay

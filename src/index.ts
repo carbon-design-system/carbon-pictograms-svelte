@@ -33,7 +33,7 @@ const usage = [
 
   const pictograms: string[] = [];
   let imports = "";
-  let definitions = `declare class Pictogram {
+  let definitions = `declare class CarbonPictogram {
   $$prop_def: {
     /** @type {string} [id] */
     id?: string;
@@ -79,14 +79,13 @@ const usage = [
 
   /** stub 'on:event' directive as any */
   $on(eventname: string, handler: (e: Event) => any): () => void;
-}
-`;
+}\n\n`;
 
   buildInfo.icons.forEach(async ({ output }) => {
     const { moduleName } = output[0];
     pictograms.push(moduleName);
     imports += `export { ${moduleName} } from "./${moduleName}";\n`;
-    definitions += `declare module "carbon-pictograms-svelte/lib/${moduleName}" { export default class ${moduleName} extends Pictogram {} }\n`;
+    definitions += `declare module "carbon-pictograms-svelte/lib/${moduleName}" { export default class ${moduleName} extends CarbonPictogram {} }\n`;
 
     await mkdir(`lib/${moduleName}`);
     await writeFile(
