@@ -7,10 +7,10 @@
   resolved "https://registry.npmjs.org/@carbon/icon-helpers/-/icon-helpers-10.9.0.tgz#5aee08e9d253d3bf6f996bc61f739660c62cbb21"
   integrity sha512-JtmCXV7iIc+N5RqQQy+MGT8T+5KcF7+BUKADvHnJKZ8o+ncF5gI4hmrP450dQD76mikI4fqQ0dQflaosesdSPw==
 
-"@carbon/pictograms@10.17.0":
-  version "10.17.0"
-  resolved "https://registry.npmjs.org/@carbon/pictograms/-/pictograms-10.17.0.tgz#389d1b8e55e3ca59b766a0823b9c957af5c9f681"
-  integrity sha512-Nadsf5jhg0ZU88GQxt8Det/ZoUrOdfr0MQwhSP0S0ab7L0EWX52f6JeibmMtgBmMAMVQNkZbbAg7tSFo0WFhLg==
+"@carbon/pictograms@10.18.0":
+  version "10.18.0"
+  resolved "https://registry.npmjs.org/@carbon/pictograms/-/pictograms-10.18.0.tgz#c7953b2c58196431ae49877a472617fa41acbc88"
+  integrity sha512-ZNss+t+mW6IkfPS/FA7srZE+8Db8jXKuXB+xFVRgP6RvQeUVp46FhUvEbhBasgV3eKx89tyjeuhfoxpOOg5Rog==
 
 "@types/carbon__icon-helpers@10.7.0":
   version "10.7.0"

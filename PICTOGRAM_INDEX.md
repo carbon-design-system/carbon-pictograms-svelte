@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 609 pictograms from @carbon/pictograms@10.17.0
+> 609 pictograms from @carbon/pictograms@10.18.0
 
 ## Usage
 
