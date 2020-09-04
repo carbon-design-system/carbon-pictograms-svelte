@@ -16,7 +16,7 @@ export default {
     svelte({
       dev: !production,
       css: (css) => {
-        css.write("public/build/bundle.css", !production);
+        css.write("bundle.css", !production);
       },
     }),
     resolve({ browser: true, dedupe: ["svelte"] }),
