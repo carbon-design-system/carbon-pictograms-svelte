@@ -99,7 +99,6 @@ export declare class CarbonPictogram {
     const { moduleName } = output[0];
     pictograms.push(moduleName);
     imports += `export { ${moduleName} } from "./${moduleName}";\n`;
-    //definitions += `declare module "carbon-pictograms-svelte/lib/${moduleName}" { export default class ${moduleName} extends CarbonPictogram {} }\n`;
     definitions += `export { ${moduleName} } from "./${moduleName}";\n`;
 
     await mkdir(`lib/${moduleName}`);
