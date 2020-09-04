@@ -74,22 +74,25 @@
   <ul class="bx--row bx--no-gutter">
     {#each Object.keys(pictograms) as pictogram, i (pictogram)}
       <li
-        class:match={match(value.trim(), pictogram)}
-        on:click={() => {
+        class:match="{match(value.trim(), pictogram)}"
+        on:click="{() => {
           moduleName = pictogram;
-        }}>
-        <svelte:component this={pictograms[pictogram]} width={72} height={72} />
+        }}">
+        <svelte:component
+          this="{pictograms[pictogram]}"
+          width="{72}"
+          height="{72}" />
       </li>
     {/each}
   </ul>
 </main>
 
-<Modal passiveModal open={moduleName != null} modalHeading={moduleName}>
+<Modal passiveModal open="{moduleName != null}" modalHeading="{moduleName}">
   <CodeSnippet
     light
     type="multi"
-    on:click={() => {
+    on:click="{() => {
       copy(code);
-    }}
-    {code} />
+    }}"
+    code="{code}" />
 </Modal>
