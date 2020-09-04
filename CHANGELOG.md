@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [10.18.0](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.18.0) - 2020-09-04
+
+- Use new Svelte component events interface in TypeScript definitions
+- Bump `@carbon/pictograms` build dependency to 10.18.0 (no new pictograms)
+- Bump `ts-node-dev`, `typescript`, `@types/node`
+- Bump dependencies in `examples/`
+
 ## [10.17.0](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.17.0) - 2020-08-21
 
 - In the TypeScript definitions, rename the `Pictogram` class to `CarbonPictogram`
