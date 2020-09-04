@@ -1,5 +1,5 @@
 /node_modules
-/build
+/public/build
 .DS_Store
 yarn-debug.log*
 yarn-error.log*

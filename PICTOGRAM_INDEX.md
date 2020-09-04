@@ -1,15 +1,15 @@
 # Pictogram Index
 
-> 609 pictograms from @carbon/pictograms@10.17.0
+> 609 pictograms from @carbon/pictograms@10.18.0
 
 ## Usage
 
 ```html
 <script>
-  import ModuleName from "carbon-pictograms-svelte/lib/ModuleName";
+  import Pictogram from "carbon-pictograms-svelte/lib/Pictogram";
 </script>
 
-<ModuleName />
+<Pictogram />
 ```
 
 ## List of Pictograms by `ModuleName`

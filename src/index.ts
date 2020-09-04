@@ -13,10 +13,10 @@ const mkdir = promisify(fs.mkdir);
 const usage = [
   "```html",
   `<script>
-  import ModuleName from "carbon-pictograms-svelte/lib/ModuleName";
+  import Pictogram from "carbon-pictograms-svelte/lib/Pictogram";
 </script>
 
-<ModuleName />`,
+<Pictogram />`,
   "```",
 ];
 
@@ -33,7 +33,16 @@ const usage = [
 
   const pictograms: string[] = [];
   let imports = "";
-  let definitions = `declare class CarbonPictogram {
+  let definitions = `export interface CarbonPictogramEvents {
+  click: MouseEvent,
+  mouseover: MouseEvent,
+  mouseenter: MouseEvent,
+  mouseleave: MouseEvent,
+  keyup: KeyboardEvent,
+  keydown: KeyboardEvent
+}
+
+export declare class CarbonPictogram {
   $$prop_def: {
     /** @type {string} [id] */
     id?: string;
@@ -77,15 +86,21 @@ const usage = [
     default?: {};
   };
 
-  /** stub 'on:event' directive as any */
-  $on(eventname: string, handler: (e: Event) => any): () => void;
+  $$events_def: CarbonPictogramEvents;
+
+  /**
+   * stub $on method from svelte-shims.d.ts
+   * https://github.com/sveltejs/language-tools/blob/master/packages/svelte2tsx/svelte-shims.d.ts#L48
+   */
+  $on<K extends keyof CarbonPictogramEvents>(event: K, handler: (e: CarbonPictogramEvents[K]) => any): void;
 }\n\n`;
 
   buildInfo.icons.forEach(async ({ output }) => {
     const { moduleName } = output[0];
     pictograms.push(moduleName);
     imports += `export { ${moduleName} } from "./${moduleName}";\n`;
-    definitions += `declare module "carbon-pictograms-svelte/lib/${moduleName}" { export default class ${moduleName} extends CarbonPictogram {} }\n`;
+    //definitions += `declare module "carbon-pictograms-svelte/lib/${moduleName}" { export default class ${moduleName} extends CarbonPictogram {} }\n`;
+    definitions += `export { ${moduleName} } from "./${moduleName}";\n`;
 
     await mkdir(`lib/${moduleName}`);
     await writeFile(
@@ -95,6 +110,13 @@ const usage = [
     await writeFile(
       `lib/${moduleName}/index.js`,
       `import ${moduleName} from "./${moduleName}.svelte";\nexport { ${moduleName} };\nexport default ${moduleName};`
+    );
+    await writeFile(
+      `lib/${moduleName}/index.d.ts`,
+      `import { CarbonPictogram } from "../";
+
+export class ${moduleName} extends CarbonPictogram {}
+export default ${moduleName};\n`
     );
   });
 
