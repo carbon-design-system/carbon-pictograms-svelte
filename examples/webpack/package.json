@@ -4,16 +4,13 @@
     "start": "webpack-dev-server",
     "build": "NODE_ENV=production webpack"
   },
-  "dependencies": {
-    "carbon-pictograms-svelte": "^10.10.0",
-    "svelte": "^3.20.x"
-  },
   "devDependencies": {
-    "html-webpack-plugin": "^4.2.0",
-    "style-loader": "^1.1.4",
+    "carbon-pictograms-svelte": "^10.18.0",
+    "svelte": "^3.24.1",
+    "html-webpack-plugin": "^4.4.1",
     "svelte-loader": "^2.13.6",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
