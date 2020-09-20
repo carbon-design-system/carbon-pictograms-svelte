@@ -11,7 +11,7 @@
   "scripts": {
     "test": "tsnd --transpile-only src/*.test.ts",
     "test:tdd": "tsnd --respawn --transpile-only src/*.test.ts",
-    "prepack": "tsnd --transpile-only src && prettier --write --plugin-search-dir=. ./**/*.svelte"
+    "prepack": "tsnd --transpile-only src && prettier --write 'lib/**/*.svelte'"
   },
   "devDependencies": {
     "@carbon/icon-helpers": "10.9.0",
@@ -40,7 +40,6 @@
     "svg"
   ],
   "files": [
-    "lib",
-    "types"
+    "lib"
   ]
 }
