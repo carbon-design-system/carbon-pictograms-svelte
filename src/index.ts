@@ -44,45 +44,58 @@ const usage = [
 
 export declare class CarbonPictogram {
   $$prop_def: {
-    /** @type {string} [id] */
+    /**
+     * @type {string} [id]
+     */
     id?: string;
 
-    /** @type {string} [class] */
+    /**
+     * @type {string} [class]
+     */
     class?: string;
 
-    /** @type {string} [tabindex] */
+    /**
+     * @type {string} [tabindex]
+     */
     tabindex?: string;
 
-    /** @type {boolean} [focusable] */
+    /**
+     * @type {boolean} [focusable=false]
+     */
     focusable?: boolean;
 
-    /** @type {string} [title] */
+    /**
+     * @type {string} [title]
+     */
     title?: string;
 
-    /** @type {string} [style] */
+    /**
+     * @type {string} [style]
+     */
     style?: string;
 
     /**
-     * Fill color
      * @type {string} [fill="#161616"]
      */
     fill?: string;
 
     /**
-     * Stroke color
      * @type {string} [stroke="currentColor"]
      */
     stroke?: string;
 
-    /** @type {string} [width="48"] */
+    /**
+     * @type {string} [width="48"]
+     */
     width?: string;
 
-    /** @type {string} [height="48"] */
+    /**
+     * @type {string} [height="48"]
+     */
     height?: string;
   };
 
   $$slot_def: {
-    /** @type {{}} [default] */
     default?: {};
   };
 
