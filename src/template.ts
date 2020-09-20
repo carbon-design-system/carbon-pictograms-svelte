@@ -6,15 +6,55 @@ export function template(output: PictogramOutput) {
 
   return `<script>
   let className = undefined;
+
+  /**
+   * @type {string} [class]
+   */
   export { className as class };
+
+  /**
+   * @type {string} [id]
+   */
   export let id = undefined;
+
+  /**
+   * @type {string} [tabindex]
+   */
   export let tabindex = undefined;
+
+  /**
+   * @type {boolean} [focusable=false]
+   */
   export let focusable = ${defaultAttributes.focusable};
+
+  /**
+   * @type {string} [title]
+   */
   export let title = undefined;
+
+  /**
+   * @type {string} [style]
+   */
   export let style = undefined;
+
+  /**
+   * @type {string} [fill="#161616"]
+   */
   export let fill = "#161616";
+
+  /**
+   * @type {string} [stroke="currentColor"]
+   */
   export let stroke = "currentColor";
+
+  /**
+   * @type {string} [width="48"]
+   */
   export let width = "${descriptor.attrs.width}";
+
+  /**
+   * @type {string} [height="48"]
+   */
   export let height = "${descriptor.attrs.height}";
 
   $: ariaLabel = $$props['aria-label'];
