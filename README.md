@@ -1,6 +1,7 @@
 # carbon-pictograms-svelte
 
 [![NPM][npm]][npm-url]
+![npm](https://img.shields.io/npm/dt/carbon-pictograms-svelte)
 [![carbon-pictograms-svelte Travis CI build status][build]][build-badge]
 
 > [Carbon Design System](https://github.com/carbon-design-system) SVG pictograms as Svelte components.
@@ -15,7 +16,7 @@ Try it in the [Svelte REPL](https://svelte.dev/repl/88b99674d0f24a3a8948d3760f8b
 
 `carbon-pictograms-svelte` can be installed using `yarn` or `npm`.
 
-```bash
+```sh
 yarn add -D carbon-pictograms-svelte
 # OR
 npm i -D carbon-pictograms-svelte
@@ -25,7 +26,7 @@ npm i -D carbon-pictograms-svelte
 
 ### Base Import
 
-```html
+```svelte
 <script>
   import { Airplane } from "carbon-pictograms-svelte";
 </script>
@@ -76,7 +77,7 @@ All props are optional.
 
 `title` can be passed as a prop or through the slot as an element.
 
-```html
+```svelte
 <Airplane title="Airplane" />
 <!-- OR -->
 <Airplane>
@@ -88,7 +89,7 @@ All props are optional.
 
 Event directives are forwarded to the SVG element.
 
-```html
+```svelte
 <Airplane
   on:click="{() => {}}"
   on:mouseenter="{() => {}}"
@@ -103,7 +104,7 @@ Event directives are forwarded to the SVG element.
 
 Each pictogram embeds its module name in the `data-carbon-pictogram` selector for querying. This may be useful for automated testing in a headless browser.
 
-```html
+```svelte
 <svg data-carbon-pictogram="Airplane">...</svg>
 ```
 
@@ -123,13 +124,13 @@ Customize the stroke color through the `stroke` proop or by defining a global cl
 
 #### `stroke` prop
 
-```html
+```svelte
 <Airplane stroke="blue" />
 ```
 
 #### Global class
 
-```html
+```svelte
 <style>
   :global(svg.custom-class) {
     stroke: blue;
