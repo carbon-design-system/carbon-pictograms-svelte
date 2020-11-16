@@ -112,7 +112,7 @@ export declare class CarbonPictogram {
     const { moduleName } = output[0];
     pictograms.push(moduleName);
     imports += `export { ${moduleName} } from "./${moduleName}";\n`;
-    definitions += `export { ${moduleName} } from "./${moduleName}";\n`;
+    definitions += `export declare class ${moduleName} extends CarbonPictogram {}\n`;
 
     await mkdir(`lib/${moduleName}`);
     await writeFile(
@@ -125,10 +125,7 @@ export declare class CarbonPictogram {
     );
     await writeFile(
       `lib/${moduleName}/index.d.ts`,
-      `import { CarbonPictogram } from "../";
-
-export class ${moduleName} extends CarbonPictogram {}
-export default ${moduleName};\n`
+      `export { ${moduleName} as default } from "../";\n`
     );
   });
 
