@@ -4,7 +4,7 @@
 
 ## Usage
 
-```html
+```svelte
 <script>
   import Pictogram from "carbon-pictograms-svelte/lib/Pictogram";
 </script>

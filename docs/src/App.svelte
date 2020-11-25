@@ -1,12 +1,26 @@
 <script>
-  import { Search, Modal, CodeSnippet } from "carbon-components-svelte";
+  import {
+    ClickableTile,
+    Grid,
+    Row,
+    Column,
+    Content,
+    Select,
+    SelectItem,
+    Search,
+    Modal,
+    CodeSnippet,
+  } from "carbon-components-svelte";
   import * as pictograms from "carbon-pictograms-svelte";
   import copy from "clipboard-copy";
   import { match } from "fuzzy";
+  import Header from "./Header.svelte";
 
   let value = "";
   let moduleName = null;
+  let theme = "g100";
 
+  $: document.documentElement.setAttribute("theme", theme);
   $: code = `<script>
   import ${moduleName} from "carbon-pictograms-svelte/lib/${moduleName}";
 <\/script>
@@ -19,80 +33,88 @@
     overflow-y: scroll;
   }
 
-  :global(body.bx--body--with-modal-open) {
-    overflow-y: scroll;
-  }
-
-  .logo {
+  .flex {
     display: flex;
-    align-items: baseline;
-  }
-
-  .logo span {
-    margin-left: 0.25rem;
+    align-items: flex-end;
+    margin-bottom: var(--cds-layout-03);
   }
 
   ul {
     display: flex;
     flex-wrap: wrap;
-    list-style: none;
   }
 
-  li {
-    margin: 0.25rem 0.5rem;
-    cursor: pointer;
+  :global(.bx--tile) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 16);
+    min-width: 9.3875rem;
+    flex: 0 0 auto;
   }
 
-  .bx--row {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  li:not(.match) {
+  :global(.bx--tile:not(.match)) {
     display: none;
+  }
+
+  :global(#select-theme) {
+    width: 9rem;
   }
 </style>
 
-<main class="bx--grid">
-  <div class="bx--row">
-    <div class="bx--col">
-      <div class="logo">
-        <h5>
-          <a href="https://github.com/IBM/carbon-pictograms-svelte">
-            carbon-pictograms-svelte
-          </a>
-        </h5>
-        <span>v{window.VERSION}</span>
-      </div>
-    </div>
-  </div>
-  <div class="bx--row">
-    <div class="bx--col">
-      <Search placeholder="Search pictograms..." autofocus small bind:value />
-    </div>
-  </div>
-  <ul class="bx--row bx--no-gutter">
-    {#each Object.keys(pictograms) as pictogram, i (pictogram)}
-      <li
-        class:match="{match(value.trim(), pictogram)}"
-        on:click="{() => {
-          moduleName = pictogram;
-        }}">
-        <svelte:component
-          this="{pictograms[pictogram]}"
-          width="{72}"
-          height="{72}" />
-      </li>
-    {/each}
-  </ul>
-</main>
+<Header />
 
-<Modal passiveModal open="{moduleName != null}" modalHeading="{moduleName}">
+<Modal passiveModal open={moduleName != null} modalHeading={moduleName}>
   <CodeSnippet
     light
     type="multi"
-    on:click="{() => {
+    on:click={() => {
       copy(code);
-    }}"
-    code="{code}" />
+    }}
+    {code} />
 </Modal>
+
+<Content style="background: none; padding: var(--cds-spacing-06) 0;">
+  <Grid>
+    <Row>
+      <Column>
+        <div class="flex">
+          <Select
+            id="select-theme"
+            size="xl"
+            labelText="Carbon theme"
+            bind:selected={theme}>
+            <SelectItem value="white" text="White" />
+            <SelectItem value="g10" text="Gray 10" />
+            <SelectItem value="g90" text="Gray 90" />
+            <SelectItem value="g100" text="Gray 100" />
+          </Select>
+          <Search
+            style="border-left: 1px solid var(--cds-ui-03);"
+            titleText="Search"
+            labelText="Search"
+            placeholder={`Search pictograms by name (e.g. "Airplane")`}
+            bind:value />
+        </div>
+      </Column>
+    </Row>
+    <Row>
+      <Column>
+        <ul>
+          {#each Object.keys(pictograms) as pictogram (pictogram)}
+            <ClickableTile
+              class={match(value.trim(), pictogram) && 'match'}
+              on:click={() => {
+                moduleName = pictogram;
+              }}>
+              <svelte:component
+                this={pictograms[pictogram]}
+                width={72}
+                height={72} />
+            </ClickableTile>
+          {/each}
+        </ul>
+      </Column>
+    </Row>
+  </Grid>
+</Content>

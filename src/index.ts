@@ -11,7 +11,7 @@ const rmdir = promisify(fs.rmdir);
 const mkdir = promisify(fs.mkdir);
 
 const usage = [
-  "```html",
+  "```svelte",
   `<script>
   import Pictogram from "carbon-pictograms-svelte/lib/Pictogram";
 </script>
