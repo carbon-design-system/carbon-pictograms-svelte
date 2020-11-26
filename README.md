@@ -1,7 +1,8 @@
 # carbon-pictograms-svelte
 
 [![NPM][npm]][npm-url]
-![npm](https://img.shields.io/npm/dt/carbon-pictograms-svelte)
+![npm downloads to date](https://img.shields.io/npm/dt/carbon-pictograms-svelte?color=0f62fe&style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/ibm/carbon-pictograms-svelte?color=0f62fe&style=for-the-badge)
 [![carbon-pictograms-svelte Travis CI build status][build]][build-badge]
 
 > [Carbon Design System](https://github.com/carbon-design-system) SVG pictograms as Svelte components.
@@ -176,7 +177,7 @@ Customize the stroke color through the `stroke` proop or by defining a global cl
 
 [Apache-2.0](LICENSE)
 
-[npm]: https://img.shields.io/npm/v/carbon-pictograms-svelte.svg?color=blue
+[npm]: https://img.shields.io/npm/v/carbon-pictograms-svelte.svg?color=0f62fe&style=for-the-badge
 [npm-url]: https://npmjs.com/package/carbon-pictograms-svelte
-[build]: https://travis-ci.com/ibm/carbon-pictograms-svelte.svg?branch=master
+[build]: https://img.shields.io/travis/com/ibm/carbon-pictograms-svelte?color=24a148&style=for-the-badge
 [build-badge]: https://travis-ci.com/ibm/carbon-pictograms-svelte
