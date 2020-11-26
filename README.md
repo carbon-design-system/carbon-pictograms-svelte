@@ -1,8 +1,8 @@
 # carbon-pictograms-svelte
 
 [![NPM][npm]][npm-url]
-![npm downloads to date](https://img.shields.io/npm/dt/carbon-pictograms-svelte?color=262626&style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/ibm/carbon-pictograms-svelte?color=262626&style=for-the-badge)
+![npm downloads to date](https://img.shields.io/npm/dt/carbon-pictograms-svelte?color=262626&style=for-the-badge)
 [![carbon-pictograms-svelte Travis CI build status][build]][build-badge]
 
 > [Carbon Design System](https://github.com/carbon-design-system) SVG pictograms as Svelte components.
@@ -45,7 +45,7 @@ import Airplane from "carbon-pictograms-svelte/lib/Airplane";
 import Airplane from "carbon-pictograms-svelte/lib/Airplane/Airplane.svelte";
 ```
 
-**Note:** Even if using the base import method, an application bundler like Rollup or Webpack should treeshake unused pictograms from the production build.
+**Note:** Even if using the base import method, an application bundler like Rollup or webpack should [treeshake](https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking) unused imports.
 
 #### Import Path Pattern
 
