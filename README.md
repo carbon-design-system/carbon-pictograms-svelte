@@ -1,8 +1,8 @@
 # carbon-pictograms-svelte
 
 [![NPM][npm]][npm-url]
-![npm downloads to date](https://img.shields.io/npm/dt/carbon-pictograms-svelte?color=0f62fe&style=for-the-badge)
-![GitHub](https://img.shields.io/github/license/ibm/carbon-pictograms-svelte?color=0f62fe&style=for-the-badge)
+![npm downloads to date](https://img.shields.io/npm/dt/carbon-pictograms-svelte?color=262626&style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/ibm/carbon-pictograms-svelte?color=262626&style=for-the-badge)
 [![carbon-pictograms-svelte Travis CI build status][build]][build-badge]
 
 > [Carbon Design System](https://github.com/carbon-design-system) SVG pictograms as Svelte components.
@@ -13,7 +13,7 @@ Try it in the [Svelte REPL](https://svelte.dev/repl/88b99674d0f24a3a8948d3760f8b
 
 ## [Preview](https://ibm.github.io/carbon-pictograms-svelte/)
 
-## Getting Started
+## Install
 
 `carbon-pictograms-svelte` can be installed using `yarn` or `npm`.
 
@@ -41,6 +41,8 @@ Import pictograms directly for faster compiling.
 
 ```js
 import Airplane from "carbon-pictograms-svelte/lib/Airplane";
+// OR
+import Airplane from "carbon-pictograms-svelte/lib/Airplane/Airplane.svelte";
 ```
 
 **Note:** Even if using the base import method, an application bundler like Rollup or Webpack should treeshake unused pictograms from the production build.
@@ -177,7 +179,7 @@ Customize the stroke color through the `stroke` proop or by defining a global cl
 
 [Apache-2.0](LICENSE)
 
-[npm]: https://img.shields.io/npm/v/carbon-pictograms-svelte.svg?color=0f62fe&style=for-the-badge
+[npm]: https://img.shields.io/npm/v/carbon-pictograms-svelte.svg?color=262626&style=for-the-badge
 [npm-url]: https://npmjs.com/package/carbon-pictograms-svelte
 [build]: https://img.shields.io/travis/com/ibm/carbon-pictograms-svelte?color=24a148&style=for-the-badge
 [build-badge]: https://travis-ci.com/ibm/carbon-pictograms-svelte
