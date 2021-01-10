@@ -1,98 +1,36 @@
-import { defaultAttributes, toString } from "@carbon/icon-helpers";
+import { toString } from "@carbon/icon-helpers";
 import { PictogramOutput } from "@carbon/pictograms";
 
-export function template(output: PictogramOutput) {
-  const { moduleName, descriptor } = output;
-
+export function template({ descriptor }: PictogramOutput) {
   return `<script>
-  let className = undefined;
-
   /**
-   * @type {string} [class]
-   */
-  export { className as class };
-
-  /**
-   * @type {string} [id]
-   */
-  export let id = undefined;
-
-  /**
-   * @type {string} [tabindex]
+   * @type {string}
    */
   export let tabindex = undefined;
 
   /**
-   * @type {boolean} [focusable=false]
+   * @type {string}
    */
-  export let focusable = ${defaultAttributes.focusable};
+  export let fill = "${descriptor.attrs.fill}";
 
-  /**
-   * @type {string} [title]
-   */
-  export let title = undefined;
-
-  /**
-   * @type {string} [style]
-   */
-  export let style = undefined;
-
-  /**
-   * @type {string} [fill="#161616"]
-   */
-  export let fill = "#161616";
-
-  /**
-   * @type {string} [stroke="currentColor"]
-   */
-  export let stroke = "currentColor";
-
-  /**
-   * @type {string} [width="48"]
-   */
-  export let width = "${descriptor.attrs.width}";
-
-  /**
-   * @type {string} [height="48"]
-   */
-  export let height = "${descriptor.attrs.height}";
-
-  $: ariaLabel = $$props['aria-label'];
-  $: ariaLabelledBy = $$props['aria-labelledby'];
-  $: labelled = ariaLabel || ariaLabelledBy || title;
+  $: labelled =  $$props["aria-label"] || $$props["aria-labelledby"] || $$props["title"];
   $: attributes = {
-    'aria-label': ariaLabel,
-    'aria-labelledby': ariaLabelledBy,
-    'aria-hidden': labelled ? undefined : true,
-    role: labelled ? 'img' : undefined,
-    focusable: tabindex === '0' ? true : focusable,
+    "aria-hidden": labelled ? undefined : true,
+    role: labelled ? "img" : undefined,
+    focusable: tabindex === "0" ? true : undefined,
     tabindex
   };
 </script>
 
 <svg
-  data-carbon-pictogram="${moduleName}"
-  on:click
-  on:mouseover
-  on:mouseenter
-  on:mouseleave
-  on:keyup
-  on:keydown
+  preserveAspectRatio="xMidYMid meet"
   xmlns="${descriptor.attrs.xmlns}"
   viewBox="${descriptor.attrs.viewBox}"
-  preserveAspectRatio="xMidYMid meet"
-  class={className}
+  width="${descriptor.attrs.width}"
+  height="${descriptor.attrs.height}"
   {fill}
-  {stroke}
-  {width}
-  {height}
-  {style}
-  {id}
-  {...attributes}>
-  ${descriptor.content
-    .filter((element) => element.elem !== "font" && element.elem !== "text")
-    .map((element) => toString(element))
-    .join("")}
-  <slot>{#if title}<title>{title}</title>{/if}</slot>
+  {...attributes}
+  {...$$restProps}>
+  ${descriptor.content.map((element) => toString(element)).join("")}
 </svg>`;
 }

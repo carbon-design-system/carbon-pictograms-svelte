@@ -22,7 +22,7 @@
 
   $: document.documentElement.setAttribute("theme", theme);
   $: code = `<script>
-  import ${moduleName} from "carbon-pictograms-svelte/lib/${moduleName}";
+  import ${moduleName} from "carbon-pictograms-svelte/lib/${moduleName}.svelte";
 <\/script>
 
 <${moduleName} />`;
@@ -107,10 +107,7 @@
               on:click={() => {
                 moduleName = pictogram;
               }}>
-              <svelte:component
-                this={pictograms[pictogram]}
-                width={72}
-                height={72} />
+              <svelte:component this={pictograms[pictogram]} />
             </ClickableTile>
           {/each}
         </ul>

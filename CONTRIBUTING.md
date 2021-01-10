@@ -45,6 +45,10 @@ Run `yarn test:tdd` to run tests in watch mode.
 
 Run `yarn prepack` to build the library. Pictograms should be emitted to the `lib` folder.
 
+### Validating Types
+
+Run `yarn validate` to run `svelte-check` to validate the TypeScript definitions.
+
 ## Submitting a Pull Request
 
 ### Sync Your Fork

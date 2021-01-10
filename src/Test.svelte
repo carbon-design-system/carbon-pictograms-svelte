@@ -1,7 +1,9 @@
 <script lang="ts">
-  import ActiveServer from "../lib/ActiveServer";
-  import BerlinTower from "../lib/BerlinTower";
+  import { AddDevice } from "../types";
+  import ActiveServer from "../types/ActiveServer";
+  import BerlinTower from "../types/BerlinTower";
 </script>
 
-<ActiveServer stroke="blue" />
-<BerlinTower />
+<AddDevice aria-label="Add Device" />
+<ActiveServer class="class" style="fill: red" title="" tabindex="0" />
+<BerlinTower fill="" />

@@ -4,140 +4,69 @@ import { performance } from "perf_hooks";
 import { promisify } from "util";
 import { name, devDependencies } from "../package.json";
 import { template } from "./template";
+import { ComponentParser } from "sveld";
+import writeTsDefinitions from "sveld/lib/writer/writer-ts-definitions";
+import { ParsedExports } from "sveld/lib/parse-exports";
 
 const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
 const rmdir = promisify(fs.rmdir);
 const mkdir = promisify(fs.mkdir);
 
-const usage = [
-  "```svelte",
-  `<script>
-  import Pictogram from "carbon-pictograms-svelte/lib/Pictogram";
-</script>
-
-<Pictogram />`,
-  "```",
-];
-
 (async () => {
   const start = performance.now();
   const source = await readFile(
     "node_modules/@carbon/pictograms/metadata.json",
-    "utf8"
+    "utf-8"
   );
   const buildInfo: BuildIcons = JSON.parse(source);
 
+  await rmdir("types", { recursive: true });
   await rmdir("lib", { recursive: true });
   await mkdir("lib");
 
-  const pictograms: string[] = [];
+  const parser = new ComponentParser();
+  const components = new Map();
+  const exports: ParsedExports = {};
+
   let imports = "";
-  let definitions = `export interface CarbonPictogramEvents {
-  click: MouseEvent,
-  mouseover: MouseEvent,
-  mouseenter: MouseEvent,
-  mouseleave: MouseEvent,
-  keyup: KeyboardEvent,
-  keydown: KeyboardEvent
-}
 
-export declare class CarbonPictogram {
-  $$prop_def: {
-    /**
-     * @type {string} [id]
-     */
-    id?: string;
-
-    /**
-     * @type {string} [class]
-     */
-    class?: string;
-
-    /**
-     * @type {string} [tabindex]
-     */
-    tabindex?: string;
-
-    /**
-     * @type {boolean} [focusable=false]
-     */
-    focusable?: boolean;
-
-    /**
-     * @type {string} [title]
-     */
-    title?: string;
-
-    /**
-     * @type {string} [style]
-     */
-    style?: string;
-
-    /**
-     * @type {string} [fill="#161616"]
-     */
-    fill?: string;
-
-    /**
-     * @type {string} [stroke="currentColor"]
-     */
-    stroke?: string;
-
-    /**
-     * @type {string} [width="48"]
-     */
-    width?: string;
-
-    /**
-     * @type {string} [height="48"]
-     */
-    height?: string;
-  };
-
-  $$slot_def: {
-    default?: {};
-  };
-
-  $$events_def: CarbonPictogramEvents;
-
-  /**
-   * stub $on method from svelte-shims.d.ts
-   * https://github.com/sveltejs/language-tools/blob/master/packages/svelte2tsx/svelte-shims.d.ts#L48
-   */
-  $on<K extends keyof CarbonPictogramEvents>(event: K, handler: (e: CarbonPictogramEvents[K]) => any): void;
-}\n\n`;
-
-  buildInfo.icons.forEach(async ({ output }) => {
+  const pictograms = buildInfo.icons.map(async ({ output }) => {
     const { moduleName } = output[0];
-    pictograms.push(moduleName);
-    imports += `export { ${moduleName} } from "./${moduleName}";\n`;
-    definitions += `export declare class ${moduleName} extends CarbonPictogram {}\n`;
 
-    await mkdir(`lib/${moduleName}`);
-    await writeFile(
-      `lib/${moduleName}/${moduleName}.svelte`,
-      template(output[0])
-    );
-    await writeFile(
-      `lib/${moduleName}/index.js`,
-      `import ${moduleName} from "./${moduleName}.svelte";\nexport { ${moduleName} };\nexport default ${moduleName};`
-    );
-    await writeFile(
-      `lib/${moduleName}/index.d.ts`,
-      `export { ${moduleName} as default } from "../";\n`
-    );
+    imports += `export { default as ${moduleName} } from "./${moduleName}.svelte";\n`;
+
+    const source = template(output[0]);
+    const ts_file_path = `./${moduleName}.d.ts`;
+
+    components.set(moduleName, {
+      moduleName,
+      filePath: ts_file_path,
+      ...parser.parseSvelteComponent(source, {
+        moduleName,
+        filePath: ts_file_path,
+      }),
+    });
+
+    exports[moduleName] = {
+      source: `./${moduleName}.svelte`,
+      default: false,
+    };
+
+    await writeFile(`lib/${moduleName}.svelte`, source);
+
+    return moduleName;
   });
 
   const metadata = `${pictograms.length} pictograms from @carbon/pictograms@${devDependencies["@carbon/pictograms"]}`;
 
-  await writeFile(
-    "lib/index.d.ts",
-    `// Type definitions for ${name}
-// ${metadata}
+  writeTsDefinitions(components, {
+    preamble: `// Type definitions for ${name}\n// ${metadata}\n\n`,
+    exports,
+    inputDir: "lib",
+    outDir: "types",
+  });
 
-${definitions}`
-  );
   await writeFile("lib/index.js", imports);
   await writeFile(
     "PICTOGRAM_INDEX.md",
@@ -148,7 +77,13 @@ ${definitions}`
 
 ## Usage
 
-${usage.join("\n")}
+\`\`\`svelte
+<script>
+  import Pictogram from "carbon-pictograms-svelte/lib/Pictogram.svelte";
+</script>
+
+<Pictogram />
+\`\`\`
 
 ## List of Pictograms by \`ModuleName\`
 

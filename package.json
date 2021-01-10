@@ -6,21 +6,24 @@
   "author": "Eric Liu (https://github.com/metonym)",
   "svelte": "./lib/index.js",
   "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
+  "types": "./types/index.d.ts",
   "sideEffects": false,
   "scripts": {
     "test": "tsnd --transpile-only src/*.test.ts",
     "test:tdd": "tsnd --respawn --transpile-only src/*.test.ts",
-    "prepack": "tsnd --transpile-only src"
+    "prepack": "tsnd --transpile-only src",
+    "validate": "svelte-check --workspace=src"
   },
   "devDependencies": {
-    "@carbon/icon-helpers": "10.9.0",
-    "@carbon/pictograms": "10.18.0",
-    "@types/carbon__icon-helpers": "10.7.1",
-    "@types/node": "^14.14.7",
-    "svelte": "^3.29.7",
-    "ts-node-dev": "1.0.0",
-    "typescript": "^4.0.5"
+    "@carbon/icon-helpers": "^10.11.0",
+    "@carbon/pictograms": "11.1.0",
+    "@types/carbon__icon-helpers": "^10.7.1",
+    "@types/node": "^14.14.20",
+    "sveld": "^0.6.1",
+    "svelte": "^3.31.2",
+    "svelte-check": "^1.1.26",
+    "ts-node-dev": "^1.1.1",
+    "typescript": "^4.1.3"
   },
   "repository": {
     "type": "git",
@@ -38,6 +41,7 @@
     "svg"
   ],
   "files": [
-    "lib"
+    "lib",
+    "types"
   ]
 }
