@@ -13,7 +13,29 @@ Svelte version >=3.31 is required to use this library with TypeScript.
 
 Try it in the [Svelte REPL](https://svelte.dev/repl/88b99674d0f24a3a8948d3760f8ba999?version=3.24.1).
 
-## [Preview](https://ibm.github.io/carbon-pictograms-svelte/) · [Index](PICTOGRAM_INDEX.md)
+## [Preview](https://ibm.github.io/carbon-pictograms-svelte/) · [Pictogram Index](PICTOGRAM_INDEX.md)
+
+**Table of Contents**
+
+- [Install](#install)
+  - [Folder Structure](#folder-structure)
+- [Usage](#usage)
+  - [Base Import](#base-import)
+  - [Direct Import (recommended)](#direct-import-recommended)
+    - [Import Path Pattern](#import-path-pattern)
+- [API](#api)
+  - [Props](#props)
+- [Recipes](#recipes)
+  - [Custom Fill Color](#custom-fill-color)
+    - [`fill` prop](#fill-prop)
+    - [Global class](#global-class)
+  - [Labelled](#labelled)
+  - [Labelled with Focus](#labelled-with-focus)
+  - [Labelled by](#labelled-by)
+- [Examples](#examples)
+- [Changelog](#changelog)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Install
 
@@ -88,14 +110,14 @@ Refer to [PICTOGRAM_INDEX.md](PICTOGRAM_INDEX.md) for a list of available pictog
 
 ## Recipes
 
-### Custom Stroke Color
+### Custom Fill Color
 
-Customize the stroke color through the `stroke` proop or by defining a global class.
+Customize the fill color using the `fill` prop or by defining a global class.
 
-#### `stroke` prop
+#### `fill` prop
 
 ```svelte
-<Airplane stroke="blue" />
+<Airplane fill="blue" />
 ```
 
 #### Global class
@@ -103,7 +125,7 @@ Customize the stroke color through the `stroke` proop or by defining a global cl
 ```svelte
 <style>
   :global(svg.custom-class) {
-    stroke: blue;
+    fill: blue;
   }
 </style>
 
