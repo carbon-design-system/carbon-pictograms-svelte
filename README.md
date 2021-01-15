@@ -13,7 +13,7 @@ Svelte version >=3.31 is required to use this library with TypeScript.
 
 Try it in the [Svelte REPL](https://svelte.dev/repl/88b99674d0f24a3a8948d3760f8ba999?version=3.24.1).
 
-## [Preview](https://ibm.github.io/carbon-pictograms-svelte/)
+## [Preview](https://ibm.github.io/carbon-pictograms-svelte/) · [Index](PICTOGRAM_INDEX.md)
 
 ## Install
 
@@ -23,6 +23,26 @@ Try it in the [Svelte REPL](https://svelte.dev/repl/88b99674d0f24a3a8948d3760f8b
 yarn add -D carbon-pictograms-svelte
 # OR
 npm i -D carbon-pictograms-svelte
+```
+
+### Folder Structure
+
+The downloaded package contains two folders:
+
+- `lib`: Pictograms as uncompiled Svelte source code
+- `types`: TypeScript definitions
+
+```bash
+# node_modules/carbon-pictograms-svelte
+│
+└───📁 lib                  # Svelte source code
+│   └──index.js
+│   └──ActiveServer.svelte
+│   └──...
+└───📁 types                # TypeScript definitions
+    └──index.d.ts
+    └──ActiveServer.d.ts
+    └──...
 ```
 
 ## Usage
