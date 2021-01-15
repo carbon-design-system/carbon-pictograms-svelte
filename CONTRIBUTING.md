@@ -47,7 +47,9 @@ Run `yarn prepack` to build the library. Pictograms should be emitted to the `li
 
 ### Validating Types
 
-Run `yarn validate` to run `svelte-check` to validate the TypeScript definitions.
+Run `yarn validate` to validate the TypeScript definitions using `svelte-check`.
+
+Note: you must first build the library first.
 
 ## Submitting a Pull Request
 
