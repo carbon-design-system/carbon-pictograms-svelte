@@ -31,10 +31,13 @@ const mkdir = promisify(fs.mkdir);
 
   let imports = "";
 
-  const pictograms = buildInfo.icons.map(async ({ output }) => {
+  const pictograms: string[] = [];
+
+  buildInfo.icons.forEach(async ({ output }) => {
     const { moduleName } = output[0];
 
     imports += `export { default as ${moduleName} } from "./${moduleName}.svelte";\n`;
+    pictograms.push(moduleName);
 
     const source = template(output[0]);
     const ts_file_path = `./${moduleName}.d.ts`;
@@ -54,8 +57,6 @@ const mkdir = promisify(fs.mkdir);
     };
 
     await writeFile(`lib/${moduleName}.svelte`, source);
-
-    return moduleName;
   });
 
   const metadata = `${pictograms.length} pictograms from @carbon/pictograms@${devDependencies["@carbon/pictograms"]}`;
