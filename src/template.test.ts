@@ -3,120 +3,31 @@ import { template } from "./template";
 import { PictogramOutput } from "@carbon/pictograms";
 
 const props: PictogramOutput = {
-  moduleName: "Airplane",
-  filepath: "airplane/index.js",
+  moduleName: "ActiveServer",
+  filepath: "active--server/index.js",
   descriptor: {
     elem: "svg",
     attrs: {
       xmlns: "http://www.w3.org/2000/svg",
-      viewBox: "0 0 48 48",
-      width: "48",
-      height: "48",
+      viewBox: "0 0 32 32",
+      fill: "currentColor",
+      width: 64,
+      height: 64,
     },
     content: [
       {
         elem: "path",
         attrs: {
-          fill: "none",
-          "stroke-linejoin": "round",
-          "stroke-miterlimit": "10",
-          "stroke-width": ".72",
           d:
-            "M22,13.169C22,11.762,22.592,9,24,9s2,2.762,2,4.169v5.342L37,27v4.5l-10.995-6.22L26,33.5l4,3.5v2l-6-2l-6,2v-2l4-3.5V13.169z M29,20.923V18 M32,23.335V20 M19,18v2.873L11,27v4.5l9-5.195 M16,23.175V20",
+            "M30.396,20.229l-1.933-0.518l0.186-0.695l1.933,0.518L30.396,20.229z M1.604,20.229l-0.187-0.695\tl1.932-0.518l0.187,0.695L1.604,20.229z M31,16.36h-2v-0.72h2V16.36z M3,16.36H1v-0.72h2V16.36z M28.649,12.983l-0.186-0.695\tl1.933-0.518l0.186,0.695L28.649,12.983z M3.35,12.983l-1.932-0.518l0.187-0.695l1.932,0.518L3.35,12.983z M24,31.36H8\tc-0.199,0-0.36-0.161-0.36-0.36V1c0-0.199,0.161-0.36,0.36-0.36h16c0.199,0,0.36,0.161,0.36,0.36v30\tC24.36,31.199,24.199,31.36,24,31.36z M8.36,30.64h15.28V1.36H8.36V30.64z M20,11.36h-8v-0.72h8V11.36z M20,8.36h-8V7.64h8V8.36z M20,5.36h-8V4.64h8V5.36z",
         },
       },
     ],
-    name: "airplane",
+    name: "active--server",
   },
 };
 
-const expected = `<script>
-  let className = undefined;
+const expected =
+  '<script>  /**   * @type {string}   */  export let tabindex = undefined;  /**   * @type {string}   */  export let fill = "currentColor";  $: labelled =  $$props["aria-label"] || $$props["aria-labelledby"] || $$props["title"];  $: attributes = {    "aria-hidden": labelled ? undefined : true,    role: labelled ? "img" : undefined,    focusable: tabindex === "0" ? true : undefined,    tabindex  };</script><svg  preserveAspectRatio="xMidYMid meet"  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32"  width="64"  height="64"  {fill}  {...attributes}  {...$$restProps}>  <path d="M30.396,20.229l-1.933-0.518l0.186-0.695l1.933,0.518L30.396,20.229z M1.604,20.229l-0.187-0.695\tl1.932-0.518l0.187,0.695L1.604,20.229z M31,16.36h-2v-0.72h2V16.36z M3,16.36H1v-0.72h2V16.36z M28.649,12.983l-0.186-0.695\tl1.933-0.518l0.186,0.695L28.649,12.983z M3.35,12.983l-1.932-0.518l0.187-0.695l1.932,0.518L3.35,12.983z M24,31.36H8\tc-0.199,0-0.36-0.161-0.36-0.36V1c0-0.199,0.161-0.36,0.36-0.36h16c0.199,0,0.36,0.161,0.36,0.36v30\tC24.36,31.199,24.199,31.36,24,31.36z M8.36,30.64h15.28V1.36H8.36V30.64z M20,11.36h-8v-0.72h8V11.36z M20,8.36h-8V7.64h8V8.36z M20,5.36h-8V4.64h8V5.36z"></path></svg>';
 
-  /**
-   * @type {string} [class]
-   */
-  export { className as class };
-
-  /**
-   * @type {string} [id]
-   */
-  export let id = undefined;
-
-  /**
-   * @type {string} [tabindex]
-   */
-  export let tabindex = undefined;
-
-  /**
-   * @type {boolean} [focusable=false]
-   */
-  export let focusable = false;
-
-  /**
-   * @type {string} [title]
-   */
-  export let title = undefined;
-
-  /**
-   * @type {string} [style]
-   */
-  export let style = undefined;
-
-  /**
-   * @type {string} [fill="#161616"]
-   */
-  export let fill = "#161616";
-
-  /**
-   * @type {string} [stroke="currentColor"]
-   */
-  export let stroke = "currentColor";
-
-  /**
-   * @type {string} [width="48"]
-   */
-  export let width = "48";
-
-  /**
-   * @type {string} [height="48"]
-   */
-  export let height = "48";
-
-  $: ariaLabel = $$props['aria-label'];
-  $: ariaLabelledBy = $$props['aria-labelledby'];
-  $: labelled = ariaLabel || ariaLabelledBy || title;
-  $: attributes = {
-    'aria-label': ariaLabel,
-    'aria-labelledby': ariaLabelledBy,
-    'aria-hidden': labelled ? undefined : true,
-    role: labelled ? 'img' : undefined,
-    focusable: tabindex === '0' ? true : focusable,
-    tabindex
-  };
-</script>
-
-<svg
-  data-carbon-pictogram="Airplane"
-  on:click
-  on:mouseover
-  on:mouseenter
-  on:mouseleave
-  on:keyup
-  on:keydown
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 48 48"
-  preserveAspectRatio="xMidYMid meet"
-  class={className}
-  {fill}
-  {stroke}
-  {width}
-  {height}
-  {style}
-  {id}
-  {...attributes}>
-  <path fill="none" stroke-linejoin="round" stroke-miterlimit="10" stroke-width=".72" d="M22,13.169C22,11.762,22.592,9,24,9s2,2.762,2,4.169v5.342L37,27v4.5l-10.995-6.22L26,33.5l4,3.5v2l-6-2l-6,2v-2l4-3.5V13.169z M29,20.923V18 M32,23.335V20 M19,18v2.873L11,27v4.5l9-5.195 M16,23.175V20"></path>
-  <slot>{#if title}<title>{title}</title>{/if}</slot>
-</svg>`;
-
-test.equal(template(props), expected);
+test.equal(template(props).replace(/\n/g, ""), expected);

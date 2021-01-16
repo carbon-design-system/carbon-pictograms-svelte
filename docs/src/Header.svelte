@@ -47,7 +47,7 @@
       icon={{ render: LogoGithub20 }}
       href="https://github.com/IBM/carbon-pictograms-svelte"
       target="_blank" />
-    <HeaderAction>
+    <HeaderAction transition={false}>
       <HeaderPanelLinks>
         <HeaderPanelDivider>Carbon Svelte portfolio</HeaderPanelDivider>
         <HeaderPanelLink href="https://github.com/IBM/carbon-components-svelte">

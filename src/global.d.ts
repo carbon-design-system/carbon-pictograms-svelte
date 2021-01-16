@@ -1,9 +1,10 @@
 declare module "@carbon/pictograms" {
   interface PictogramAttrs {
     xmlns: "http://www.w3.org/2000/svg";
-    viewBox: "0 0 48 48";
-    width: "48";
-    height: "48";
+    viewBox: "0 0 32 32";
+    fill: "currentColor";
+    width: 64;
+    height: 64;
   }
 
   export interface PictogramOutput {

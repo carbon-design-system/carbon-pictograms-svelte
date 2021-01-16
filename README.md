@@ -9,9 +9,33 @@
 
 This **zero dependency** library builds [Carbon Design System pictograms](https://www.carbondesignsystem.com/guidelines/pictograms/library) as Svelte components. Although best paired with [carbon-components-svelte](https://github.com/IBM/carbon-components-svelte), this library can be consumed standalone.
 
+Svelte version >=3.31 is required to use this library with TypeScript.
+
 Try it in the [Svelte REPL](https://svelte.dev/repl/88b99674d0f24a3a8948d3760f8ba999?version=3.24.1).
 
-## [Preview](https://ibm.github.io/carbon-pictograms-svelte/)
+## [Preview](https://ibm.github.io/carbon-pictograms-svelte/) · [Pictogram Index](PICTOGRAM_INDEX.md)
+
+**Table of Contents**
+
+- [Install](#install)
+  - [Folder Structure](#folder-structure)
+- [Usage](#usage)
+  - [Base Import](#base-import)
+  - [Direct Import (recommended)](#direct-import-recommended)
+    - [Import Path Pattern](#import-path-pattern)
+- [API](#api)
+  - [Props](#props)
+- [Recipes](#recipes)
+  - [Custom Fill Color](#custom-fill-color)
+    - [`fill` prop](#fill-prop)
+    - [Global class](#global-class)
+  - [Labelled](#labelled)
+  - [Labelled with Focus](#labelled-with-focus)
+  - [Labelled by](#labelled-by)
+- [Examples](#examples)
+- [Changelog](#changelog)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Install
 
@@ -21,6 +45,26 @@ Try it in the [Svelte REPL](https://svelte.dev/repl/88b99674d0f24a3a8948d3760f8b
 yarn add -D carbon-pictograms-svelte
 # OR
 npm i -D carbon-pictograms-svelte
+```
+
+### Folder Structure
+
+The downloaded package contains two folders:
+
+- `lib`: Pictograms as uncompiled Svelte source code
+- `types`: TypeScript definitions
+
+```bash
+# node_modules/carbon-pictograms-svelte
+│
+└───📁 lib                  # Svelte source code
+│   └──index.js
+│   └──ActiveServer.svelte
+│   └──...
+└───📁 types                # TypeScript definitions
+    └──index.d.ts
+    └──ActiveServer.d.ts
+    └──...
 ```
 
 ## Usage
@@ -40,9 +84,7 @@ npm i -D carbon-pictograms-svelte
 Import pictograms directly for faster compiling.
 
 ```js
-import Airplane from "carbon-pictograms-svelte/lib/Airplane";
-// OR
-import Airplane from "carbon-pictograms-svelte/lib/Airplane/Airplane.svelte";
+import Airplane from "carbon-pictograms-svelte/lib/Airplane.svelte";
 ```
 
 **Note:** Even if using the base import method, an application bundler like Rollup or webpack should [treeshake](https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking) unused imports.
@@ -50,7 +92,7 @@ import Airplane from "carbon-pictograms-svelte/lib/Airplane/Airplane.svelte";
 #### Import Path Pattern
 
 ```js
-import Pictogram from "carbon-pictograms-svelte/lib/<ModuleName>";
+import Pictogram from "carbon-pictograms-svelte/lib/<ModuleName>.svelte";
 ```
 
 Refer to [PICTOGRAM_INDEX.md](PICTOGRAM_INDEX.md) for a list of available pictograms.
@@ -59,76 +101,23 @@ Refer to [PICTOGRAM_INDEX.md](PICTOGRAM_INDEX.md) for a list of available pictog
 
 ### Props
 
-All props are optional.
+`$$restProps` are forwarded to the `svg` element.
 
-| Name            | Value                               |
-| :-------------- | :---------------------------------- |
-| id              | `string`                            |
-| aria-label      | `string`                            |
-| aria-labelledby | `string`                            |
-| tabindex        | `string`                            |
-| title           | `string`                            |
-| focusable       | `boolean` (default: `false`)        |
-| class           | `string`                            |
-| style           | `string`                            |
-| fill            | `string` (default: `"#161616"`      |
-| stroke          | `string` (default `"currentColor"`) |
-| width           | `string` (default: `"48"`)          |
-| height          | `string` (default: `"48"`)          |
-
-#### `title` as a Slot
-
-`title` can be passed as a prop or through the slot as an element.
-
-```svelte
-<Airplane title="Airplane" />
-<!-- OR -->
-<Airplane>
-  <title>Airplane</title>
-</Airplane>
-```
-
-### Forwarded Events
-
-Event directives are forwarded to the SVG element.
-
-```svelte
-<Airplane
-  on:click="{() => {}}"
-  on:mouseenter="{() => {}}"
-  on:mouseover="{() => {}}"
-  on:mouseleave="{() => {}}"
-  on:keyup="{() => {}}"
-  on:keydown="{() => {}}"
-/>
-```
-
-### `data-carbon-pictogram` selector
-
-Each pictogram embeds its module name in the `data-carbon-pictogram` selector for querying. This may be useful for automated testing in a headless browser.
-
-```svelte
-<svg data-carbon-pictogram="Airplane">...</svg>
-```
-
-```js
-// selects all carbon pictograms
-document.querySelectorAll("[data-carbon-pictogram]");
-
-// selects all `Airplane` pictograms
-document.querySelectorAll('[data-carbon-pictogram="Airplane"]');
-```
+| Name     | Value                             |
+| :------- | :-------------------------------- |
+| tabindex | `string` (default: `undefined`)   |
+| fill     | `string` (default: `currentColor` |
 
 ## Recipes
 
-### Custom Stroke Color
+### Custom Fill Color
 
-Customize the stroke color through the `stroke` proop or by defining a global class.
+Customize the fill color using the `fill` prop or by defining a global class.
 
-#### `stroke` prop
+#### `fill` prop
 
 ```svelte
-<Airplane stroke="blue" />
+<Airplane fill="blue" />
 ```
 
 #### Global class
@@ -136,7 +125,7 @@ Customize the stroke color through the `stroke` proop or by defining a global cl
 ```svelte
 <style>
   :global(svg.custom-class) {
-    stroke: blue;
+    fill: blue;
   }
 </style>
 
