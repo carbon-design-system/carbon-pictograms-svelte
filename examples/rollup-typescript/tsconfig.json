@@ -5,5 +5,5 @@
     "types": ["svelte", "carbon-pictograms-svelte"]
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules/*", "__sapper__/*", "public/*"]
+  "exclude": ["node_modules/*", "public/*"]
 }

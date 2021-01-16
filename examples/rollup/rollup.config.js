@@ -14,10 +14,8 @@ export default {
   },
   plugins: [
     svelte({
-      dev: !production,
-      css: (css) => {
-        css.write("bundle.css", !production);
-      },
+      emitCss: false,
+      compilerOptions: { dev: !production },
     }),
     resolve({ browser: true, dedupe: ["svelte"] }),
     production && terser(),

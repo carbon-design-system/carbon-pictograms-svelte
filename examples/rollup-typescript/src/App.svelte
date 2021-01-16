@@ -1,9 +1,9 @@
 <script lang="ts">
-  import ActiveServer from "carbon-pictograms-svelte/lib/ActiveServer";
-  import BerlinTower from "carbon-pictograms-svelte/lib/BerlinTower";
+  import ActiveServer from "carbon-pictograms-svelte/lib/ActiveServer.svelte";
+  import BerlinTower from "carbon-pictograms-svelte/lib/BerlinTower.svelte";
 </script>
 
-<ActiveServer stroke="blue" />
+<ActiveServer fill="blue" />
 <BerlinTower />
 
 <!-- Try typing "<Airp..." -->
