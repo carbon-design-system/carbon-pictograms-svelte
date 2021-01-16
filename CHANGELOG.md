@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [11.0.0](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v11.0.0) - 2021-01-16
+
+**Breaking Changes**
+
+- upgrade `@carbon/pictograms` to v11.1.0 (net +56 pictograms)
+- remove forwarded events, slots
+- reduce exported props to `tabindex` and `fill`
+- default `svg` width/height updated to `"64"` from `"48"`
+- default `fill` updated to `"currentColor"` from `"#161616"`
+- TypeScript definitions use `SvelteComponentTyped`; requires Svelte version >=v3.31
+- direct import method has changed from "carbon-pictograms-svelte/lib/Pictogram/Pictogram.svelte" to "carbon-pictograms-svelte/lib/Pictogram.svelte"
+
 ## [10.18.1](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.18.1) - 2020-11-16
 
 - Refactor TypeScript definitions to be more concise/performant
