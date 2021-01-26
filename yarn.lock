@@ -2,15 +2,15 @@
 # yarn lockfile v1
 
 
-"@carbon/icon-helpers@^10.11.0":
-  version "10.11.0"
-  resolved "https://registry.npmjs.org/@carbon/icon-helpers/-/icon-helpers-10.11.0.tgz#e5e4dc8f849725858ae222017d5460dc4acddc2c"
-  integrity sha512-dnK8LB95M0OcUVQ2n3NOV2hwW6ku+5+N+SRvwLihtXeRPkpVv7dy9GojBC5aSd3+U3MJVOjVu8614S38DZk0pw==
+"@carbon/icon-helpers@^10.12.0":
+  version "10.12.0"
+  resolved "https://registry.npmjs.org/@carbon/icon-helpers/-/icon-helpers-10.12.0.tgz#8bf34bc7fbe81e0dc8c96a107ab0e8a44558f3c4"
+  integrity sha512-/jhEFXGKzYtY9FQc0dhobbiIPVLY2V1O3KUxxUTiRM0V3IQ+ti2a9ucXKlvcfj8twIQUdCxAcbN6n5zLqW/fRw==
 
-"@carbon/pictograms@11.1.0":
-  version "11.1.0"
-  resolved "https://registry.npmjs.org/@carbon/pictograms/-/pictograms-11.1.0.tgz#d61c2a9d377254b16f31c79a81df2d07c3df302c"
-  integrity sha512-L8dnJP85a1KXdl2Rzf+xMvtxnK/PB6tNkjwAV4NBteNCbvcFz/tXvdqiukw52tH7hDt/DGy9fa+IpPiDPseQOQ==
+"@carbon/pictograms@11.2.0":
+  version "11.2.0"
+  resolved "https://registry.npmjs.org/@carbon/pictograms/-/pictograms-11.2.0.tgz#3ad3842fe82e03a560af2838ca0a47b73a641734"
+  integrity sha512-FYWNlMCXC6CXTyZBQCGTJGX/LKmRhc7XIUKTT5pwi7IALnhwol6WjZkVEiOb4ef1N8PhqcLQ//Uc3gEtpAQIpQ==
 
 "@rollup/plugin-node-resolve@^11.0.1":
   version "11.0.1"
@@ -48,10 +48,10 @@
   resolved "https://registry.npmjs.org/@types/node/-/node-14.14.20.tgz#f7974863edd21d1f8a494a73e8e2b3658615c340"
   integrity sha512-Y93R97Ouif9JEOWPIUyU+eyIdyRqQR0I8Ez1dzku4hDx34NWh4HbtIc3WNzwB1Y9ULvNGeu5B8h8bVL5cAk4/A==
 
-"@types/node@^14.14.21":
-  version "14.14.21"
-  resolved "https://registry.npmjs.org/@types/node/-/node-14.14.21.tgz#d934aacc22424fe9622ebf6857370c052eae464e"
-  integrity sha512-cHYfKsnwllYhjOzuC5q1VpguABBeecUp24yFluHpn/BQaVxB1CuQ1FSRZCzrPxrkIfWISXV2LbeoBthLWg0+0A==
+"@types/node@^14.14.22":
+  version "14.14.22"
+  resolved "https://registry.npmjs.org/@types/node/-/node-14.14.22.tgz#0d29f382472c4ccf3bd96ff0ce47daf5b7b84b18"
+  integrity sha512-g+f/qj/cNcqKkc3tFqlXOYjrmZA+jNBiDzbP3kH+B+otKFqAdPgVTGP1IeKRdMml/aE69as5S4FqtxAbl+LaMw==
 
 "@types/pug@^2.0.4":
   version "2.0.4"
@@ -835,10 +835,10 @@ sveld@^0.6.1:
     rollup-plugin-svelte "^7.0.0"
     svelte "^3.31.2"
 
-svelte-check@^1.1.27:
-  version "1.1.27"
-  resolved "https://registry.npmjs.org/svelte-check/-/svelte-check-1.1.27.tgz#ca02d00497f75879cc8311695d84a84b69c94f84"
-  integrity sha512-ashkoqmzOFXe+bI50RvciE2+RBwU+NmjLJeDc72DmWrNjLVj+f3oJcRp0nIeCGeEi4qHCXNGFJg2lzQdUHkT8g==
+svelte-check@^1.1.28:
+  version "1.1.28"
+  resolved "https://registry.npmjs.org/svelte-check/-/svelte-check-1.1.28.tgz#f7ef1cff9a0b05368880c6a4a523cdc9c1edeb1a"
+  integrity sha512-jp1i8JImIwyH8gp2G9nLZ1+HXUgxPbuuT4StzeAvHdQ27b0u8XANoODcjl2w15i1J33EiH4S4CE9M3o9kau4cg==
   dependencies:
     chalk "^4.0.0"
     chokidar "^3.4.1"
@@ -863,6 +863,11 @@ svelte@^3.31.2:
   version "3.31.2"
   resolved "https://registry.npmjs.org/svelte/-/svelte-3.31.2.tgz#d2ddf6cacbb95e4cc3796207510b660a25586324"
   integrity sha512-TxZGrXzX2ggFH3BIKY5fmbeMdJuZrMIMDYPMX6R9255bueuYIuVaBQSLUeY2oD7W4IdeqRZiAVGCjDw2POKBRA==
+
+svelte@^3.32.0:
+  version "3.32.0"
+  resolved "https://registry.npmjs.org/svelte/-/svelte-3.32.0.tgz#06d7dcdf65e62a708c74231f7099569df43e3af6"
+  integrity sha512-+EA3qfKDG0uB16s7m1z9Nc1o01G7YC4eq1cnHOzCy+fKsvGAJrjhjBIM3zCW2eZUu639UbHQElaOPQWUjBN3Yw==
 
 to-regex-range@^5.0.1:
   version "5.0.1"

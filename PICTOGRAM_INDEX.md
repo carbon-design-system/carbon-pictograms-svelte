@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 665 pictograms from @carbon/pictograms@11.1.0
+> 715 pictograms from @carbon/pictograms@11.2.0
 
 ## Usage
 
@@ -14,6 +14,7 @@
 
 ## List of Pictograms by `ModuleName`
 
+- AcceleratedComputing
 - ActiveServer
 - AddDevice
 - AddDocument
@@ -43,6 +44,7 @@
 - Archive
 - AsiaAustralia
 - Assets
+- Atlanta
 - AugmentedReality
 - Austin
 - AutomateModularManagement
@@ -60,22 +62,28 @@
 - BerlinCathedral
 - BerlinTower
 - Bicycle
+- BirthdayCake
 - Blender
 - Blockchain
 - BostonZakimBridge
 - BoxPlot
+- Budapest
 - BugVirusMalware
 - Build
 - BuildLeadershipAndCulture
 - Building
 - Bulldozer
 - Bus
+- BusinessContinuity
+- CPlusPlusLanguage
+- CLanguage
 - Cafe
 - CairoGizaPlateau
 - Calendar
 - CalendarDate
 - CalendarEvent
 - Camera
+- CanadaMapleLeaf
 - Capitol
 - Care
 - CargoCrane
@@ -148,10 +156,12 @@
 - CloudyPartial
 - CloudyWindy
 - CoatHanger
+- CobolLanguage
 - CodeSyntax
 - CognosAnalytics
 - Collaboration
 - College
+- ColorContrast
 - CommercialFinancing_01
 - CommercialFinancing_02
 - ConceptExpansion
@@ -164,6 +174,7 @@
 - ConsoleWireless
 - Construct
 - ConsumerEngagementFoodJourney
+- ContainersAndCloudNative
 - ContinuousSecurity
 - Contract
 - Conversation
@@ -172,9 +183,13 @@
 - Coronavirus
 - CreditCard
 - Crop
+- Cupcake
 - CustomerService
+- Dashboard
+- DataApis
 - DataBackup
 - DataInsights
+- DataPrivacy
 - DataProcessing
 - DataSecurity
 - DataSet
@@ -188,6 +203,7 @@
 - Desktop
 - DetectAndStopAdvancingThreats
 - DeveloperZOs
+- DevicePairing
 - Devops
 - Dialogue
 - Digital
@@ -211,6 +227,7 @@
 - DublinBrewery
 - DublinCastle
 - DuplicateFile
+- Earth
 - Education
 - Electric
 - ElectricCar
@@ -258,6 +275,8 @@
 - FireExtinguisher
 - Firewall
 - FirstAid
+- FlashStorage
+- FlashingContent
 - FlowChart
 - FlowChartDetail
 - Flower_01
@@ -265,6 +284,7 @@
 - Fog
 - Folder
 - Forklift
+- Fragile
 - FreeTrial
 - Fuel
 - Gear
@@ -288,6 +308,7 @@
 - GlobalTechnologyServices
 - Globe
 - GlobeLocations
+- GoLanguage
 - Goals
 - GovernUsersAndIdentities
 - Group
@@ -318,14 +339,20 @@
 - Humid
 - Hurricane
 - HybridCloud
+- HybridCloud_02
 - HybridCloudServices
+- IbmAutomationPlatform
 - IbmCloud
 - IbmIx
 - IbmZ
+- IbmZAndLinuxoneMultiFrame
+- IbmZAndLinuxoneSingleFrame
+- IbmZPartition
 - IdBadge
 - Idea
 - Ideate
 - IdentityTrustAssessment
+- InfrastructureSecurity
 - Innovate
 - Insights
 - InspectData
@@ -333,11 +360,15 @@
 - Intelligence
 - Intercom
 - IotMunich
+- ItInfrastructureSoftware
 - Java
 - Javascript
 - Justice
+- KeepDry
 - KeyUsers
+- Keyboard
 - KnowsDarkData
+- KualaLumpur
 - Language_01
 - Language_02
 - Language_03
@@ -425,6 +456,7 @@
 - Office
 - OilPump
 - OilRig
+- Okinawa
 - OptimizeCashFlow_01
 - OptimizeCashFlow_02
 - Overcast
@@ -450,9 +482,11 @@
 - PersonalityInsights
 - PetriCulture
 - PillBottle_01
+- PhpLanguage
 - Pills
 - PlanningAnalytics
 - PlayerFlow
+- PliLanguage
 - Podcast
 - Police
 - PopulationDiagram
@@ -478,6 +512,7 @@
 - QrCode
 - Question
 - QuestionAndAnswer
+- RLanguage
 - Racetrack
 - Rainy
 - RainyHeavy
@@ -500,6 +535,7 @@
 - ResetSettings
 - RetrieveAndRank
 - RichTextFormat
+- RioDeJaneiro
 - Robot
 - Robotics
 - RockOn
@@ -509,6 +545,7 @@
 - SanFrancisco
 - SanFranciscoFog
 - SaoPaulo
+- SapHana
 - Satellite
 - SatelliteDish
 - Scale
@@ -523,6 +560,7 @@
 - SecurityIntelligence
 - SecurityShield
 - SelectRange
+- ServerOperatingSystems
 - ServerRack
 - Servers
 - Shirt
@@ -531,6 +569,7 @@
 - Shower
 - Singapore
 - SingleSignOn
+- Slack
 - Slider
 - Sneaker
 - Snow
@@ -547,6 +586,7 @@
 - SpeechToText
 - Speedometer
 - Sports
+- StackLimitation
 - StairsPlanView
 - StationaryBicycle
 - Steel
@@ -554,6 +594,8 @@
 - StemLeafPlot
 - Stethoscope
 - Stockholm
+- StorageAreaNetworks
+- StorageProduct
 - Strategy
 - StrategyAndRisk
 - StrategyDirect
@@ -580,6 +622,7 @@
 - SystemsDevopsTest
 - TShirt
 - Tags
+- TapeStorage
 - Target
 - TargetArea
 - TeamAlignment
@@ -595,6 +638,10 @@
 - Tennis
 - TestTubes
 - TextToSpeech
+- TextEquivalent
+- TextInput
+- TextLayout
+- ThisSideUp
 - ThreatManagement
 - Time
 - TimeLapse
@@ -624,11 +671,13 @@
 - Transparency_01
 - Transparency_02
 - Trash
+- Tree
 - TreeDiagram
 - TreeMap
 - Trousers
 - Trust
 - TrustedUser
+- TwoPersonLift
 - UnauthorizedUserAccess
 - UnderUtilizedSecurity
 - UnifyEndpointManagement
@@ -662,6 +711,7 @@
 - Weather
 - WebDeveloper
 - Webcast
+- WeddingCake
 - Wheat
 - Wifi
 - WindPower
