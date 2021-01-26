@@ -87,7 +87,7 @@ Import pictograms directly for faster compiling.
 import Airplane from "carbon-pictograms-svelte/lib/Airplane.svelte";
 ```
 
-**Note:** Even if using the base import method, an application bundler like Rollup or webpack should [treeshake](https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking) unused imports.
+**Note:** Even if using the base import method, an application bundler like Rollup or webpack should [tree shake](https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking) unused imports.
 
 #### Import Path Pattern
 
