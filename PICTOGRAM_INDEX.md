@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 715 pictograms from @carbon/pictograms@11.2.0
+> 740 pictograms from @carbon/pictograms@11.3.0
 
 ## Usage
 
@@ -42,6 +42,7 @@
 - Application
 - ApplicationSecurity
 - Archive
+- ArtTools_01
 - AsiaAustralia
 - Assets
 - Atlanta
@@ -65,6 +66,7 @@
 - BirthdayCake
 - Blender
 - Blockchain
+- Bluepages
 - BostonZakimBridge
 - BoxPlot
 - Budapest
@@ -175,6 +177,7 @@
 - Construct
 - ConsumerEngagementFoodJourney
 - ContainersAndCloudNative
+- ContentDesign
 - ContinuousSecurity
 - Contract
 - Conversation
@@ -200,6 +203,8 @@
 - DesignAndDevelopment_01
 - DesignAndDevelopment_02
 - DesignThinkingTeam
+- DesignLeadership
+- DesignResearch
 - Desktop
 - DetectAndStopAdvancingThreats
 - DeveloperZOs
@@ -213,6 +218,7 @@
 - DistributionLedger
 - Dna
 - DoNot
+- DoNot_02
 - Docker
 - Doctor
 - DoctorPatient
@@ -234,6 +240,7 @@
 - ElectricCharge
 - Elevator
 - Embed
+- EmergencyExit
 - EmployeeInsights
 - EndpointProtection
 - Engine
@@ -250,6 +257,7 @@
 - Export_01
 - Export_02
 - Eye
+- EyewashStation
 - FaceDissatisfied
 - FaceNeutral
 - FaceSatisfied
@@ -398,6 +406,7 @@
 - MadridSkyscrapers
 - MadridStatue
 - Magnify
+- MailVerse
 - ManagingContractualFlow
 - ManagingItems
 - Marketplace
@@ -413,6 +422,7 @@
 - MexicoCityAngelOfIndependence
 - MexicoCityMuseoSoumaya
 - Microorganisms
+- Microphone
 - Microscope
 - MilanDuomoDiMilano
 - MilanSkyscrapers
@@ -447,6 +457,7 @@
 - Networking_06
 - Nice
 - NightClear
+- NoSmoking
 - NycBrooklyn
 - NycChryslerBuilding
 - NycManhattan_01
@@ -459,7 +470,9 @@
 - Okinawa
 - OptimizeCashFlow_01
 - OptimizeCashFlow_02
+- Organization
 - Overcast
+- Overview
 - PaperClip
 - ParisArcDeTriomphe
 - ParisLouvre
@@ -505,6 +518,7 @@
 - PrivateNetwork_03
 - PrivateNetwork_04
 - Process
+- ProfessionalMarketplace
 - Progress
 - ProtectCriticalAssets
 - Puzzle
@@ -540,7 +554,9 @@
 - Robotics
 - RockOn
 - Rome
+- RotateDevice
 - SaasEnablement
+- SalesConnect
 - SampleFile
 - SanFrancisco
 - SanFranciscoFog
@@ -586,8 +602,12 @@
 - SpeechToText
 - Speedometer
 - Sports
+- Sprout
 - StackLimitation
+- Stairs
+- StairsDown
 - StairsPlanView
+- StairsUp
 - StationaryBicycle
 - Steel
 - SteeringWheel
@@ -621,6 +641,8 @@
 - SystemsDevopsRelease
 - SystemsDevopsTest
 - TShirt
+- TabletDevice
+- TabletDeviceCheck
 - Tags
 - TapeStorage
 - Target
@@ -688,6 +710,7 @@
 - Upload_02
 - User
 - UserAnalytics
+- UserExperienceDesign
 - UserInsights
 - UserInterface
 - UserProfile
@@ -699,6 +722,7 @@
 - VideoPlay
 - Virus
 - Vision
+- VisualDesign
 - VisualInsights
 - VisualRecognition
 - Warning_01
@@ -721,6 +745,7 @@
 - WirelessHome
 - WirelessModem
 - WordCloud
+- Workday
 - WorldCommunityGrid
 - WreckingBall
 - XRay_01
