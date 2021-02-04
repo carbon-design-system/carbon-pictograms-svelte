@@ -1,5 +1,5 @@
 // Type definitions for carbon-pictograms-svelte
-// 740 pictograms from @carbon/pictograms@11.3.0-rc.0
+// 740 pictograms from @carbon/pictograms@11.3.0
 
 export { default as AcceleratedComputing } from "./AcceleratedComputing";
 export { default as ActiveServer } from "./ActiveServer";

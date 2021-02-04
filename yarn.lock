@@ -7,10 +7,10 @@
   resolved "https://registry.npmjs.org/@carbon/icon-helpers/-/icon-helpers-10.12.0.tgz#8bf34bc7fbe81e0dc8c96a107ab0e8a44558f3c4"
   integrity sha512-/jhEFXGKzYtY9FQc0dhobbiIPVLY2V1O3KUxxUTiRM0V3IQ+ti2a9ucXKlvcfj8twIQUdCxAcbN6n5zLqW/fRw==
 
-"@carbon/pictograms@11.3.0-rc.0":
-  version "11.3.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@carbon/pictograms/-/pictograms-11.3.0-rc.0.tgz#b0d003441444ca7a40662f8cbdd28ae2354c2903"
-  integrity sha512-ig5KF7BibuGdw4neKHGso09K2puhBtfa6NS47dEOh9/6GqnNnqHKk+xDbEtYM83JUTAtjcwsStLfKFwjvr7dJA==
+"@carbon/pictograms@11.3.0":
+  version "11.3.0"
+  resolved "https://registry.yarnpkg.com/@carbon/pictograms/-/pictograms-11.3.0.tgz#c2a20a0ca4f47937c8c536440e42b49b4023850d"
+  integrity sha512-KTQRdnLPOmQV+gzlFXxByo9+GuFngq0wD5UZOXDlig/CQtgWuWOz9rFHcfLTxfH3GsdMV5ehEwfz/g18Lt5p1g==
 
 "@rollup/plugin-node-resolve@^11.0.1":
   version "11.0.1"
