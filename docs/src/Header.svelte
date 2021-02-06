@@ -44,7 +44,7 @@
 
   <HeaderUtilities>
     <HeaderActionLink
-      icon={{ render: LogoGithub20 }}
+      icon={LogoGithub20}
       href="https://github.com/IBM/carbon-pictograms-svelte"
       target="_blank" />
     <HeaderAction transition={false}>

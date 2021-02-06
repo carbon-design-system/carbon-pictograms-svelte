@@ -687,13 +687,13 @@ camelcase@^5.0.0, camelcase@^5.3.1:
   resolved "https://registry.npmjs.org/camelcase/-/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
-carbon-components-svelte@^0.26.0:
-  version "0.26.0"
-  resolved "https://registry.npmjs.org/carbon-components-svelte/-/carbon-components-svelte-0.26.0.tgz#6b3ff3fe20ad508b5f217c513c9493e33f415812"
-  integrity sha512-F4/FZCfhNXeSJijBkrMpGFyhG9tnOM91psmkZo140pwlMVHmI14ae1cdxTki0riSon2Hcu1TGCPVK36fgcM4pQ==
+carbon-components-svelte@^0.28.0:
+  version "0.28.0"
+  resolved "https://registry.yarnpkg.com/carbon-components-svelte/-/carbon-components-svelte-0.28.0.tgz#85fe751320113b46679a4bf1ebdd614f838f170a"
+  integrity sha512-FXaq7pXODt+wHc8lKRyqem+QUWeNiXlzPK+BI7DXVlgK9TPFicbemugAM0o+Gt0xz9gLnZQ3LTNlRZ2wug2Oww==
   dependencies:
     carbon-icons-svelte "^10.21.0"
-    flatpickr "4.6.3"
+    flatpickr "4.6.9"
 
 carbon-icons-svelte@^10.21.0:
   version "10.21.0"
@@ -701,7 +701,7 @@ carbon-icons-svelte@^10.21.0:
   integrity sha512-5NNaRdmbS4N36dUGNj72Ys3VqVjH3fZ69AhYUHx+bH02GFYCwAaE49qjtP77kP7DKMtDV9NmMEti/P/JB83aYQ==
 
 carbon-pictograms-svelte@../:
-  version "11.0.1"
+  version "11.2.0"
 
 chalk@^2.4.2:
   version "2.4.2"
@@ -1644,10 +1644,10 @@ findup-sync@^3.0.0:
     micromatch "^3.0.4"
     resolve-dir "^1.0.1"
 
-flatpickr@4.6.3:
-  version "4.6.3"
-  resolved "https://registry.npmjs.org/flatpickr/-/flatpickr-4.6.3.tgz#15a8b76b6e34e3a072861250503a5995b9d3bc60"
-  integrity sha512-007VucCkqNOMMb9ggRLNuJowwaJcyOh4sKAFcdGfahfGc7JQbf94zSzjdBq/wVyHWUEs5o3+idhFZ0wbZMRmVQ==
+flatpickr@4.6.9:
+  version "4.6.9"
+  resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-4.6.9.tgz#9a13383e8a6814bda5d232eae3fcdccb97dc1499"
+  integrity sha512-F0azNNi8foVWKSF+8X+ZJzz8r9sE1G4hl06RyceIaLvyltKvDl6vqk9Lm/6AUUCi5HWaIjiUbk7UpeE/fOXOpw==
 
 flush-write-stream@^1.0.0:
   version "1.1.1"
@@ -3955,10 +3955,10 @@ svelte-loader@^2.13.6:
     loader-utils "^1.1.0"
     svelte-dev-helper "^1.1.9"
 
-svelte@^3.31.2:
-  version "3.31.2"
-  resolved "https://registry.npmjs.org/svelte/-/svelte-3.31.2.tgz#d2ddf6cacbb95e4cc3796207510b660a25586324"
-  integrity sha512-TxZGrXzX2ggFH3BIKY5fmbeMdJuZrMIMDYPMX6R9255bueuYIuVaBQSLUeY2oD7W4IdeqRZiAVGCjDw2POKBRA==
+svelte@^3.32.1:
+  version "3.32.1"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.32.1.tgz#c4b6e35517d0ed77e652cc8964ef660afa2f70f3"
+  integrity sha512-j1KmD2ZOU0RGq1/STDXjwfh0/eJ/Deh2NXyuz1bpR9eOcz9yImn4CGxXdbSAN7cMTm9a7IyPUIbuBCzu/pXK0g==
 
 tapable@^1.0.0, tapable@^1.1.3:
   version "1.1.3"
