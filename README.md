@@ -7,9 +7,7 @@
 
 > [Carbon Design System](https://github.com/carbon-design-system) SVG pictograms as Svelte components.
 
-This **zero dependency** library builds [Carbon Design System pictograms](https://www.carbondesignsystem.com/guidelines/pictograms/library) as Svelte components. Although best paired with [carbon-components-svelte](https://github.com/IBM/carbon-components-svelte), this library can be consumed standalone.
-
-Svelte version >=3.31 is required to use this library with TypeScript.
+This zero dependency library builds [Carbon Design System pictograms](https://www.carbondesignsystem.com/guidelines/pictograms/library) as Svelte components. Although best paired with [carbon-components-svelte](https://github.com/IBM/carbon-components-svelte), this library can be consumed standalone.
 
 Try it in the [Svelte REPL](https://svelte.dev/repl/88b99674d0f24a3a8948d3760f8ba999?version=3.24.1).
 
@@ -151,6 +149,10 @@ Customize the fill color using the `fill` prop or by defining a global class.
 
 <Airplane aria-labelledby="transportation" />
 ```
+
+## TypeScript support
+
+Svelte version 3.31 or greater is required to use this library with TypeScript.
 
 ## Examples
 
