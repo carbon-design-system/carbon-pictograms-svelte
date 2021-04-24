@@ -37,12 +37,14 @@ Try it in the [Svelte REPL](https://svelte.dev/repl/88b99674d0f24a3a8948d3760f8b
 
 ## Install
 
-`carbon-pictograms-svelte` can be installed using `yarn` or `npm`.
+`carbon-pictograms-svelte` can be installed using `yarn` or `npm` or `pnpm`.
 
 ```sh
 yarn add -D carbon-pictograms-svelte
 # OR
 npm i -D carbon-pictograms-svelte
+# OR
+pnpm i -D carbon-pictograms-svelte
 ```
 
 ### Folder Structure
