@@ -9,10 +9,9 @@
   "types": "./types/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "test": "tsnd --transpile-only src/*.test.ts",
-    "test:tdd": "tsnd --respawn --transpile-only src/*.test.ts",
     "prepack": "tsnd --transpile-only src",
-    "validate": "svelte-check --workspace=src"
+    "test": "tsnd --transpile-only src/*.test.ts",
+    "test:types": "svelte-check --workspace=src"
   },
   "devDependencies": {
     "@carbon/icon-helpers": "^10.16.0",

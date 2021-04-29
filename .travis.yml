@@ -4,4 +4,4 @@ cache: yarn
 scripts:
   - yarn test
   - yarn prepack
-  - yarn validate
+  - yarn test:types
