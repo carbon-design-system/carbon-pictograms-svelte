@@ -13,28 +13,6 @@ Try it in the [Svelte REPL](https://svelte.dev/repl/88b99674d0f24a3a8948d3760f8b
 
 ## [Preview](https://ibm.github.io/carbon-pictograms-svelte/) · [Pictogram Index](PICTOGRAM_INDEX.md)
 
-**Table of Contents**
-
-- [Install](#install)
-  - [Folder Structure](#folder-structure)
-- [Usage](#usage)
-  - [Base Import](#base-import)
-  - [Direct Import (recommended)](#direct-import-recommended)
-    - [Import Path Pattern](#import-path-pattern)
-- [API](#api)
-  - [Props](#props)
-- [Recipes](#recipes)
-  - [Custom Fill Color](#custom-fill-color)
-    - [`fill` prop](#fill-prop)
-    - [Global class](#global-class)
-  - [Labelled](#labelled)
-  - [Labelled with Focus](#labelled-with-focus)
-  - [Labelled by](#labelled-by)
-- [Examples](#examples)
-- [Changelog](#changelog)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Install
 
 `carbon-pictograms-svelte` can be installed using `yarn` or `npm`.
@@ -43,26 +21,6 @@ Try it in the [Svelte REPL](https://svelte.dev/repl/88b99674d0f24a3a8948d3760f8b
 yarn add -D carbon-pictograms-svelte
 # OR
 npm i -D carbon-pictograms-svelte
-```
-
-### Folder Structure
-
-The downloaded package contains two folders:
-
-- `lib`: Pictograms as uncompiled Svelte source code
-- `types`: TypeScript definitions
-
-```bash
-# node_modules/carbon-pictograms-svelte
-│
-└───📁 lib                  # Svelte source code
-│   └──index.js
-│   └──ActiveServer.svelte
-│   └──...
-└───📁 types                # TypeScript definitions
-    └──index.d.ts
-    └──ActiveServer.d.ts
-    └──...
 ```
 
 ## Usage
