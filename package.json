@@ -1,9 +1,9 @@
 {
   "name": "carbon-pictograms-svelte",
-  "version": "11.2.0",
+  "version": "11.3.0",
   "license": "Apache-2.0",
   "description": "Carbon Design System SVG pictograms as Svelte components",
-  "author": "Eric Liu (https://github.com/metonym)",
+  "author": "IBM",
   "svelte": "./lib/index.js",
   "main": "./lib/index.js",
   "types": "./types/index.d.ts",
