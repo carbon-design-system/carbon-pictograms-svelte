@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-10.16.0.tgz#66f20b9bba49c6ec4c956b8e9e7ec65bdf40da8f"
   integrity sha512-cN1sM0xvlDEN1pYPDWoHcikGysCTnfA49/12H92dBkn14fpRmB87shIe3hzKlW6h4QP7CrnF0hB5SCkA2KC7Ng==
 
-"@carbon/pictograms@11.9.0-rc.0":
-  version "11.9.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@carbon/pictograms/-/pictograms-11.9.0-rc.0.tgz#17b19bde4a2c1516691775960fa7ea45b88aad43"
-  integrity sha512-Ht5nE95WtjpAadTcDevmtI1gE0aGHTP/+QqT5a9PPZ10ztSzjNOi4nejHZhxnrW+hN44oYlr99PMg9qs/PGanw==
+"@carbon/pictograms@11.9.0":
+  version "11.9.0"
+  resolved "https://registry.yarnpkg.com/@carbon/pictograms/-/pictograms-11.9.0.tgz#e5145d44afc5670e8fff08c419ef11c584cd7bdd"
+  integrity sha512-F9lnUJP8aIhlPr9KbskDjpGZdJ4l9kpEF6H2UGbNfujgB13arQWoXdP66SOSefAq/5NLnuv/S4IVrJaSejzLRg==
 
 "@nodelib/fs.scandir@2.1.4":
   version "2.1.4"
@@ -940,10 +940,10 @@ svelte@^3.31.2:
   resolved "https://registry.npmjs.org/svelte/-/svelte-3.31.2.tgz#d2ddf6cacbb95e4cc3796207510b660a25586324"
   integrity sha512-TxZGrXzX2ggFH3BIKY5fmbeMdJuZrMIMDYPMX6R9255bueuYIuVaBQSLUeY2oD7W4IdeqRZiAVGCjDw2POKBRA==
 
-svelte@^3.37.0:
-  version "3.37.0"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.37.0.tgz#dc7cd24bcc275cdb3f8c684ada89e50489144ccd"
-  integrity sha512-TRF30F4W4+d+Jr2KzUUL1j8Mrpns/WM/WacxYlo5MMb2E5Qy2Pk1Guj6GylxsW9OnKQl1tnF8q3hG/hQ3h6VUA==
+svelte@^3.38.0:
+  version "3.38.0"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.38.0.tgz#8ac83558bc7beda7541fc4a347b03cf7006d5447"
+  integrity sha512-V0CbyzvXEka7zQtRYt++cpPh0zxxDUTIeNlq4KncGXn2qHnQFZ2i4L4+2QOfLwOudb9cewJeegupBQcscnBaaA==
 
 to-regex-range@^5.0.1:
   version "5.0.1"
