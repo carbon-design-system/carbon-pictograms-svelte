@@ -12,7 +12,6 @@
     CodeSnippet,
   } from "carbon-components-svelte";
   import * as pictograms from "carbon-pictograms-svelte";
-  import copy from "clipboard-copy";
   import { match } from "fuzzy";
   import Header from "./Header.svelte";
 
@@ -27,6 +26,57 @@
 
 <${moduleName} />`;
 </script>
+
+<Header />
+
+<Modal passiveModal open={moduleName != null} modalHeading={moduleName}>
+  <CodeSnippet light type="multi" {code} />
+</Modal>
+
+<Content style="background: none; padding: var(--cds-spacing-06) 0;">
+  <Grid>
+    <Row>
+      <Column>
+        <div class="flex">
+          <Select
+            id="select-theme"
+            size="xl"
+            labelText="Carbon theme"
+            bind:selected={theme}
+          >
+            <SelectItem value="white" text="White" />
+            <SelectItem value="g10" text="Gray 10" />
+            <SelectItem value="g90" text="Gray 90" />
+            <SelectItem value="g100" text="Gray 100" />
+          </Select>
+          <Search
+            style="border-left: 1px solid var(--cds-ui-03);"
+            titleText="Search"
+            labelText="Search"
+            placeholder={`Search pictograms by name (e.g. "Airplane")`}
+            bind:value
+          />
+        </div>
+      </Column>
+    </Row>
+    <Row>
+      <Column>
+        <ul>
+          {#each Object.keys(pictograms) as pictogram (pictogram)}
+            <ClickableTile
+              class={match(value.trim(), pictogram) && "match"}
+              on:click={() => {
+                moduleName = pictogram;
+              }}
+            >
+              <svelte:component this={pictograms[pictogram]} />
+            </ClickableTile>
+          {/each}
+        </ul>
+      </Column>
+    </Row>
+  </Grid>
+</Content>
 
 <style>
   :global(body) {
@@ -61,57 +111,3 @@
     width: 9rem;
   }
 </style>
-
-<Header />
-
-<Modal passiveModal open={moduleName != null} modalHeading={moduleName}>
-  <CodeSnippet
-    light
-    type="multi"
-    on:click={() => {
-      copy(code);
-    }}
-    {code} />
-</Modal>
-
-<Content style="background: none; padding: var(--cds-spacing-06) 0;">
-  <Grid>
-    <Row>
-      <Column>
-        <div class="flex">
-          <Select
-            id="select-theme"
-            size="xl"
-            labelText="Carbon theme"
-            bind:selected={theme}>
-            <SelectItem value="white" text="White" />
-            <SelectItem value="g10" text="Gray 10" />
-            <SelectItem value="g90" text="Gray 90" />
-            <SelectItem value="g100" text="Gray 100" />
-          </Select>
-          <Search
-            style="border-left: 1px solid var(--cds-ui-03);"
-            titleText="Search"
-            labelText="Search"
-            placeholder={`Search pictograms by name (e.g. "Airplane")`}
-            bind:value />
-        </div>
-      </Column>
-    </Row>
-    <Row>
-      <Column>
-        <ul>
-          {#each Object.keys(pictograms) as pictogram (pictogram)}
-            <ClickableTile
-              class={match(value.trim(), pictogram) && 'match'}
-              on:click={() => {
-                moduleName = pictogram;
-              }}>
-              <svelte:component this={pictograms[pictogram]} />
-            </ClickableTile>
-          {/each}
-        </ul>
-      </Column>
-    </Row>
-  </Grid>
-</Content>
