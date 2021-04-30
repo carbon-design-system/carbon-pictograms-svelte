@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 740 pictograms from @carbon/pictograms@11.3.0
+> 769 pictograms from @carbon/pictograms@11.9.0
 
 ## Usage
 
@@ -22,6 +22,12 @@
 - AdvancedThreats
 - Advocate
 - Agriculture
+- AiEthics
+- AiTrust
+- AiPrivacy
+- AiTransparency
+- AiExplainability
+- AiRobustness
 - AirConditioner
 - Airplane
 - Alarm
@@ -42,6 +48,7 @@
 - Application
 - ApplicationSecurity
 - Archive
+- ArgentinaObelisk
 - ArtTools_01
 - AsiaAustralia
 - Assets
@@ -53,6 +60,7 @@
 - Automobile
 - BabyBottle
 - Backpack
+- Badge
 - Bag
 - Bangalore
 - Barcelona
@@ -69,6 +77,7 @@
 - Bluepages
 - BostonZakimBridge
 - BoxPlot
+- Broom
 - Budapest
 - BugVirusMalware
 - Build
@@ -116,6 +125,8 @@
 - Cheese
 - Cherries
 - Chicago
+- ChileEasterIsland
+- ChileHandOfTheDesert
 - ChipCircuit
 - ChipCredit
 - ChipDebit
@@ -149,6 +160,7 @@
 - CloudPakForData
 - CloudPakForIntegration
 - CloudPakForMulticloudManagement
+- CloudPakForNetworkAutomation
 - CloudPakForSecurity
 - CloudPakSystem
 - Cloudy
@@ -164,8 +176,10 @@
 - Collaboration
 - College
 - ColorContrast
+- ColombiaCathedralOfLasLajas
 - CommercialFinancing_01
 - CommercialFinancing_02
+- CompostBin
 - ConceptExpansion
 - ConceptInsights
 - ConditionBuilder
@@ -234,6 +248,7 @@
 - DublinCastle
 - DuplicateFile
 - Earth
+- EcuadorQuito
 - Education
 - Electric
 - ElectricCar
@@ -264,6 +279,7 @@
 - FaceVeryDissatisfied
 - FaceVerySatisfied
 - Factory
+- Fairness
 - Farm_01
 - Farm_02
 - Farmer_01
@@ -342,6 +358,8 @@
 - HomeFront
 - HomeGarage
 - HomeProfile
+- HongKong
+- HongKongCityscape
 - Hospital
 - Hpi
 - Humid
@@ -360,6 +378,7 @@
 - Idea
 - Ideate
 - IdentityTrustAssessment
+- IndiaSouthAsia
 - InfrastructureSecurity
 - Innovate
 - Insights
@@ -367,6 +386,7 @@
 - Integration
 - Intelligence
 - Intercom
+- Invoice
 - IotMunich
 - ItInfrastructureSoftware
 - Java
@@ -395,6 +415,7 @@
 - London
 - LondonBigBen
 - Love
+- Luggage
 - Lungs
 - MachineLearning_01
 - MachineLearning_02
@@ -493,6 +514,7 @@
 - Person_08
 - Person_09
 - PersonalityInsights
+- PeruMachuPicchu
 - PetriCulture
 - PillBottle_01
 - PhpLanguage
@@ -535,6 +557,7 @@
 - Rank
 - Receipt
 - Recycle
+- RecycleBin
 - Refinery
 - Refresh
 - RelationshipDiagram
@@ -570,11 +593,13 @@
 - SecureData
 - SecureHybridCloud
 - SecureProfile
+- SecureSearch
 - Security
 - SecurityAsAService
 - SecurityHygiene
 - SecurityIntelligence
 - SecurityShield
+- SelectProduct
 - SelectRange
 - ServerOperatingSystems
 - ServerRack
@@ -644,6 +669,7 @@
 - TabletDevice
 - TabletDeviceCheck
 - Tags
+- TaipeiBubbleTea
 - TapeStorage
 - Target
 - TargetArea
@@ -657,6 +683,7 @@
 - Television
 - TemperatureHigh
 - TemperatureLow
+- TemporaryBadge
 - Tennis
 - TestTubes
 - TextToSpeech
@@ -706,6 +733,7 @@
 - University
 - Unlock_01
 - Unlock_02
+- UruguayPalacioSalvo
 - Upload_01
 - Upload_02
 - User
@@ -716,6 +744,7 @@
 - UserProfile
 - UserSearch
 - Vancouver
+- VenezuelaNationalPantheonOfVenezuela
 - Video_01
 - Video_02
 - VideoChat
