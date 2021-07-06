@@ -17,7 +17,7 @@
 
   let value = "";
   let moduleName = null;
-  let theme = "g100";
+  let theme = "white";
 
   $: document.documentElement.setAttribute("theme", theme);
   $: code = `<script>
@@ -46,11 +46,16 @@
           >
             <SelectItem value="white" text="White" />
             <SelectItem value="g10" text="Gray 10" />
+            <SelectItem value="g80" text="Gray 80" />
             <SelectItem value="g90" text="Gray 90" />
             <SelectItem value="g100" text="Gray 100" />
           </Select>
           <Search
             style="border-left: 1px solid var(--cds-ui-03);"
+            autocomplete="off"
+            autocorrect="off"
+            autocapitalize="off"
+            spellcheck="false"
             titleText="Search"
             labelText="Search"
             placeholder={`Search pictograms by name (e.g. "Airplane")`}
