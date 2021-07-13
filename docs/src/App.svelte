@@ -29,7 +29,14 @@
 
 <Header />
 
-<Modal passiveModal open={moduleName != null} modalHeading={moduleName}>
+<Modal
+  passiveModal
+  open={moduleName != null}
+  modalHeading={moduleName}
+  on:transitionend={({ detail }) => {
+    if (!detail.open) moduleName = null;
+  }}
+>
   <CodeSnippet light type="multi" {code} />
 </Modal>
 
