@@ -42,5 +42,8 @@
   "files": [
     "lib",
     "types"
+  ],
+  "contributors": [
+    "Eric Liu (https://github.com/metonym)"
   ]
 }
