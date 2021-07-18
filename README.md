@@ -9,17 +9,23 @@
 
 This zero dependency library builds [Carbon Design System pictograms](https://www.carbondesignsystem.com/guidelines/pictograms/library) as Svelte components. Although best paired with [carbon-components-svelte](https://github.com/IBM/carbon-components-svelte), this library can be consumed standalone.
 
-Try it in the [Svelte REPL](https://svelte.dev/repl/88b99674d0f24a3a8948d3760f8ba999?version=3.24.1).
+Try it in the [Svelte REPL](https://svelte.dev/repl/88b99674d0f24a3a8948d3760f8ba999).
 
 ## [Preview](https://ibm.github.io/carbon-pictograms-svelte/) · [Pictogram Index](PICTOGRAM_INDEX.md)
 
-## Install
+## Installation
 
-`carbon-pictograms-svelte` can be installed using `yarn` or `npm`.
+Install `carbon-pictograms-svelte` as a development dependency.
+
+**Yarn**
 
 ```sh
 yarn add -D carbon-pictograms-svelte
-# OR
+```
+
+**NPM**
+
+```sh
 npm i -D carbon-pictograms-svelte
 ```
 
