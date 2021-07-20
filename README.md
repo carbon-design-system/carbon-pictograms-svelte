@@ -11,7 +11,7 @@ This zero dependency library builds [Carbon Design System pictograms](https://ww
 
 Try it in the [Svelte REPL](https://svelte.dev/repl/88b99674d0f24a3a8948d3760f8ba999).
 
-## [Preview](https://ibm.github.io/carbon-pictograms-svelte/) · [Pictogram Index](PICTOGRAM_INDEX.md)
+## [Preview](https://carbon-design-system.github.io/carbon-pictograms-svelte/) · [Pictogram Index](PICTOGRAM_INDEX.md)
 
 ## Installation
 

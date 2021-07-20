@@ -5,31 +5,31 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [11.3.0](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v11.3.0) - 2021-04-30
+## [11.3.0](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v11.3.0) - 2021-04-30
 
 **Features**
 
 - upgrade `@carbon/pictograms` to v11.9.0 (net +29 pictograms)
 
-## [11.2.0](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v11.2.0) - 2021-02-04
+## [11.2.0](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v11.2.0) - 2021-02-04
 
 **Features**
 
 - upgrade `@carbon/pictograms` to v11.3.0 (net +25 pictograms)
 
-## [11.1.0](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v11.1.0) - 2021-01-25
+## [11.1.0](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v11.1.0) - 2021-01-25
 
 **Features**
 
 - upgrade `@carbon/pictograms` to v11.2.0 (net +50 pictograms)
 
-## [11.0.1](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v11.0.1) - 2021-01-16
+## [11.0.1](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v11.0.1) - 2021-01-16
 
 **Fixes**
 
 - correctly list Pictogram module names in `PICTOGRAM_INDEX.md`
 
-## [11.0.0](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v11.0.0) - 2021-01-16
+## [11.0.0](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v11.0.0) - 2021-01-16
 
 **Breaking Changes**
 
@@ -41,27 +41,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - TypeScript definitions use `SvelteComponentTyped`; requires Svelte version >=v3.31
 - direct import method has changed from "carbon-pictograms-svelte/lib/Pictogram/Pictogram.svelte" to "carbon-pictograms-svelte/lib/Pictogram.svelte"
 
-## [10.18.1](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.18.1) - 2020-11-16
+## [10.18.1](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v10.18.1) - 2020-11-16
 
 **Fixes**
 
 - refactor TypeScript definitions to be more concise/performant
 
-## [10.18.0](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.18.0) - 2020-09-04
+## [10.18.0](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v10.18.0) - 2020-09-04
 
 **Features**
 
 - bump `@carbon/pictograms` build dependency to 10.18.0 (no new pictograms)
 - use new Svelte component events interface in TypeScript definitions
 
-## [10.17.0](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.17.0) - 2020-08-21
+## [10.17.0](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v10.17.0) - 2020-08-21
 
 **Features**
 
 - bump `@carbon/pictograms` build dependency to 10.17.0 (net +9 pictograms)
 - rename the `Pictogram` TypeScript class to `CarbonPictogram`
 
-## [10.16.0](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.16.0) - 2020-08-09
+## [10.16.0](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v10.16.0) - 2020-08-09
 
 **Features**
 
@@ -71,75 +71,75 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - stub `on:eventname` directive in TypeScript definitions
 
-## [10.15.2](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.15.2) - 2020-07-26
+## [10.15.2](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v10.15.2) - 2020-07-26
 
 **Fixes**
 
 - use ambient module declarations in types (e.g. `"carbon-pictograms/lib/Airplane"`) to encourage direct imports
 
-## [10.15.1](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.15.1) - 2020-07-24
+## [10.15.1](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v10.15.1) - 2020-07-24
 
 **Features**
 
 - add TypeScript type definitions
 
-## [10.15.0](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.15.0) - 2020-07-20
+## [10.15.0](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v10.15.0) - 2020-07-20
 
 **Features**
 
 - bump `@carbon/pictograms` build dependency to 10.15.0 (net +24 pictograms)
 
-## [10.14.0](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.14.0) - 2020-07-01
+## [10.14.0](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v10.14.0) - 2020-07-01
 
 **Features**
 
 - bump `@carbon/pictograms` build dependency to 10.14.0 (net +74 pictograms)
 
-## [10.13.0](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.13.0) - 2020-06-19
+## [10.13.0](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v10.13.0) - 2020-06-19
 
 **Features**
 
 - bump `@carbon/pictograms` build dependency to 10.13.0
 
-## [10.12.0](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.12.0) - 2020-06-09
+## [10.12.0](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v10.12.0) - 2020-06-09
 
 **Features**
 
 - bump `@carbon/pictograms` build dependency to 10.12.0 (net +18 pictograms)
 
-## [10.11.0](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.11.0) - 2020-05-28
+## [10.11.0](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v10.11.0) - 2020-05-28
 
 **Features**
 
 - bump `@carbon/pictograms` build dependency to 10.11.0
 - add `fill`, `stroke` props
 
-## [10.10.3](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.10.3) - 2020-05-13
+## [10.10.3](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v10.10.3) - 2020-05-13
 
 **Features**
 
 - remove `peerDependencies`
 - publish `PICTOGRAM_INDEX.md`
 
-## [10.10.2](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.10.2) - 2020-05-02
+## [10.10.2](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v10.10.2) - 2020-05-02
 
 **Fixes**
 
 - include svelte@3.20.x as a peer dependency
 
-## [10.10.1](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.10.1) - 2020-04-21
+## [10.10.1](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v10.10.1) - 2020-04-21
 
 **Fixes**
 
 - remove `engines` field from `package.json` to remove installation warning
 
-## [10.10.0](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.10.0) - 2020-04-17
+## [10.10.0](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v10.10.0) - 2020-04-17
 
 **Features**
 
 - bump `@carbon/pictograms` build dependency to 10.10.0
 - use recursive `fs.rmdirSync` (requires Node.js version >=12 when running locally)
 
-## [10.9.2](https://github.com/IBM/carbon-pictograms-svelte/releases/tag/v10.9.2) - 2020-04-06
+## [10.9.2](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v10.9.2) - 2020-04-06
 
 - initial release using `@carbon/pictograms@10.9.2`, `@carbon/icon-helpers@10.6.0`
