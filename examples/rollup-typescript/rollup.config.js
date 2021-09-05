@@ -41,11 +41,9 @@ export default {
   },
   plugins: [
     svelte({
-      dev: !production,
+      emitCss: false,
+      compilerOptions: { dev: !production, },
       preprocess: sveltePreprocess(),
-      css: (css) => {
-        css.write("public/build/bundle.css");
-      },
     }),
     resolve({ browser: true, dedupe: ["svelte"] }),
     typescript({ sourceMap: !production }),

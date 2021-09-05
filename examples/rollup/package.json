@@ -5,11 +5,11 @@
     "build": "rollup -c"
   },
   "dependencies": {
-    "carbon-pictograms-svelte": "^11.3.0",
-    "svelte": "^3.38.3"
+    "carbon-pictograms-svelte": "^11.5.0",
+    "svelte": "^3.42.4"
   },
   "devDependencies": {
-    "rollup": "^2.53.2",
+    "rollup": "^2.56.3",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-svelte": "^7.1.0",
     "rollup-plugin-terser": "^7.0.2"
