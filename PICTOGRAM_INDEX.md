@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 769 pictograms from @carbon/pictograms@11.14.0
+> 803 pictograms from @carbon/pictograms@11.17.0
 
 ## Usage
 
@@ -23,11 +23,11 @@
 - Advocate
 - Agriculture
 - AiEthics
-- AiTrust
-- AiPrivacy
-- AiTransparency
 - AiExplainability
+- AiPrivacy
 - AiRobustness
+- AiTransparency
+- AiTrust
 - AirConditioner
 - Airplane
 - Alarm
@@ -82,12 +82,13 @@
 - BugVirusMalware
 - Build
 - BuildLeadershipAndCulture
+- BuildApplicationsAnywhere
 - Building
 - Bulldozer
 - Bus
 - BusinessContinuity
-- CPlusPlusLanguage
 - CLanguage
+- CPlusPlusLanguage
 - Cafe
 - CairoGizaPlateau
 - Calendar
@@ -116,9 +117,11 @@
 - ChartMultiType
 - ChartParallel
 - ChartPie
+- ChartQuadrantPlot
 - ChartRadar
 - ChartRiver
 - ChartScatterplot
+- ChartScreePlot
 - ChartStepper
 - ChartSunburst
 - ChartTSne
@@ -144,6 +147,8 @@
 - CloudEcosystem
 - CloudGuidelines
 - CloudManagedServices
+- CloudNative_01
+- CloudNative_02
 - CloudOracle
 - CloudPartners
 - CloudPlanning
@@ -169,14 +174,15 @@
 - CloudyHumid
 - CloudyPartial
 - CloudyWindy
+- Cluster
 - CoatHanger
 - CobolLanguage
 - CodeSyntax
 - CognosAnalytics
 - Collaboration
 - College
-- ColorContrast
 - ColombiaCathedralOfLasLajas
+- ColorContrast
 - CommercialFinancing_01
 - CommercialFinancing_02
 - CompostBin
@@ -184,12 +190,16 @@
 - ConceptInsights
 - ConditionBuilder
 - Connect
+- ConnectApplications
 - ConnectedEcosystem
 - ConnectedNodesToTheCloud
 - Console
 - ConsoleWireless
 - Construct
 - ConsumerEngagementFoodJourney
+- Container
+- ContainerMicroservices
+- ContainerizedApplications
 - ContainersAndCloudNative
 - ContentDesign
 - ContinuousSecurity
@@ -214,11 +224,11 @@
 - Delete
 - DeliverInsights
 - DeliveryTruck
+- DesignLeadership
+- DesignResearch
 - DesignAndDevelopment_01
 - DesignAndDevelopment_02
 - DesignThinkingTeam
-- DesignLeadership
-- DesignResearch
 - Desktop
 - DetectAndStopAdvancingThreats
 - DeveloperZOs
@@ -249,6 +259,7 @@
 - DuplicateFile
 - Earth
 - EcuadorQuito
+- Edge
 - Education
 - Electric
 - ElectricCar
@@ -297,6 +308,7 @@
 - FinancialNews
 - FireAlarm
 - FireExtinguisher
+- Firefighter
 - Firewall
 - FirstAid
 - FlashStorage
@@ -337,6 +349,7 @@
 - GovernUsersAndIdentities
 - Group
 - Growth
+- Guitar
 - Hail
 - HailHeavy
 - HailMixed
@@ -366,14 +379,16 @@
 - Hurricane
 - HybridCloud
 - HybridCloud_02
+- HybridCloudInfrastructure
 - HybridCloudServices
 - IbmAutomationPlatform
 - IbmCloud
 - IbmIx
+- IbmRpa
 - IbmZ
+- IbmZPartition
 - IbmZAndLinuxoneMultiFrame
 - IbmZAndLinuxoneSingleFrame
-- IbmZPartition
 - IdBadge
 - Idea
 - Ideate
@@ -383,6 +398,7 @@
 - Innovate
 - Insights
 - InspectData
+- Insurance
 - Integration
 - Intelligence
 - Intercom
@@ -391,12 +407,15 @@
 - ItInfrastructureSoftware
 - Java
 - Javascript
+- Juice
 - Justice
 - KeepDry
 - KeyUsers
 - Keyboard
 - KnowsDarkData
 - KualaLumpur
+- Kubernetes
+- KubernetesPod
 - Language_01
 - Language_02
 - Language_03
@@ -428,6 +447,7 @@
 - MadridStatue
 - Magnify
 - MailVerse
+- ManageApplicationsAnywhere
 - ManagingContractualFlow
 - ManagingItems
 - Marketplace
@@ -489,6 +509,7 @@
 - OilPump
 - OilRig
 - Okinawa
+- OpenSource
 - OptimizeCashFlow_01
 - OptimizeCashFlow_02
 - Organization
@@ -516,8 +537,8 @@
 - PersonalityInsights
 - PeruMachuPicchu
 - PetriCulture
-- PillBottle_01
 - PhpLanguage
+- PillBottle_01
 - Pills
 - PlanningAnalytics
 - PlayerFlow
@@ -525,6 +546,7 @@
 - Podcast
 - Police
 - PopulationDiagram
+- PortlandBuilding
 - Power
 - PragueCharlesBridgeTower
 - PragueDancingHouse_01
@@ -546,6 +568,7 @@
 - Puzzle
 - QQPlot
 - QrCode
+- QuantumComputing
 - Question
 - QuestionAndAnswer
 - RLanguage
@@ -555,9 +578,11 @@
 - RaleighNc
 - RandomSamples
 - Rank
+- ReadOnly
 - Receipt
 - Recycle
 - RecycleBin
+- RedHatApplications
 - Refinery
 - Refresh
 - RelationshipDiagram
@@ -601,8 +626,10 @@
 - SecurityShield
 - SelectProduct
 - SelectRange
+- SeoulGyeongbokgungPalace
 - ServerOperatingSystems
 - ServerRack
+- Serverless
 - Servers
 - Shirt
 - Shop
@@ -616,6 +643,7 @@
 - Snow
 - SocialWork_01
 - SocialWork_02
+- SocialWorker
 - Socks
 - SoftIceCream
 - SoftlayerEnablement
@@ -655,6 +683,7 @@
 - SupportServices
 - SwipeLeft
 - SwipeRight
+- Synergy
 - SystemsDevopsAnalyze
 - SystemsDevopsBuild
 - SystemsDevopsCicdPipeline
@@ -673,6 +702,7 @@
 - TapeStorage
 - Target
 - TargetArea
+- Teacher
 - TeamAlignment
 - Teammates
 - TelAviv
@@ -686,10 +716,10 @@
 - TemporaryBadge
 - Tennis
 - TestTubes
-- TextToSpeech
 - TextEquivalent
 - TextInput
 - TextLayout
+- TextToSpeech
 - ThisSideUp
 - ThreatManagement
 - Time
@@ -730,12 +760,14 @@
 - UnauthorizedUserAccess
 - UnderUtilizedSecurity
 - UnifyEndpointManagement
+- UniversalExperiences
 - University
 - Unlock_01
 - Unlock_02
-- UruguayPalacioSalvo
 - Upload_01
 - Upload_02
+- UruguayPalacioSalvo
+- UruguaySolDeMayo
 - User
 - UserAnalytics
 - UserExperienceDesign
@@ -749,6 +781,8 @@
 - Video_02
 - VideoChat
 - VideoPlay
+- VirtualServer
+- VirtualStorage
 - Virus
 - Vision
 - VisualDesign
