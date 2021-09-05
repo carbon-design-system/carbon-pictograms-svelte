@@ -2,7 +2,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
-const CopyPlugin = require("copy-webpack-plugin");
 const { version } = require("../package.json");
 const webpack = require("webpack");
 
@@ -19,7 +18,7 @@ const paths = {
 module.exports = {
   mode: NODE_ENV,
   stats: "errors-only",
-  devtool: PROD ? false : "cheap-eval-source-map",
+  devtool: PROD ? false : "source-map",
   entry: { bundle: [paths.entry] },
   resolve: {
     alias: { svelte: path.resolve("node_modules", "svelte") },
@@ -45,7 +44,6 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new CopyPlugin([{ from: paths.public }]),
     new MiniCssExtractPlugin({
       filename: PROD ? "[name].[chunkhash].css" : "[name].css",
     }),
