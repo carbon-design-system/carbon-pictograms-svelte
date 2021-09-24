@@ -11,7 +11,7 @@ This zero dependency library builds [Carbon Design System pictograms](https://ww
 
 Try it in the [Svelte REPL](https://svelte.dev/repl/88b99674d0f24a3a8948d3760f8ba999).
 
-## [Preview](https://carbon-design-system.github.io/carbon-pictograms-svelte/) · [Pictogram Index](PICTOGRAM_INDEX.md)
+## [Preview](https://carbon-pictograms-svelte.onrender.com/) · [Pictogram Index](PICTOGRAM_INDEX.md)
 
 ## Installation
 
@@ -117,14 +117,6 @@ Customize the fill color using the `fill` prop or by defining a global class.
 ## TypeScript support
 
 Svelte version 3.31 or greater is required to use this library with TypeScript.
-
-## Examples
-
-- [examples/webpack](examples/webpack) (Try it on [CodeSandbox](https://codesandbox.io/s/github/IBM/carbon-pictograms-svelte/tree/master/examples/webpack))
-
-- [examples/rollup](examples/rollup) (Try it on [CodeSandbox](https://codesandbox.io/s/github/IBM/carbon-pictograms-svelte/tree/master/examples/rollup))
-
-- [examples/rollup-typescript](examples/rollup-typescript)
 
 ## [Changelog](CHANGELOG.md)
 
