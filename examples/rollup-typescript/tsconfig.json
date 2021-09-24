@@ -1,9 +1,0 @@
-{
-  "extends": "@tsconfig/svelte/tsconfig.json",
-  "compilerOptions": {
-    "importsNotUsedAsValues": "remove",
-    "types": ["svelte", "carbon-pictograms-svelte"]
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules/*", "public/*"]
-}
