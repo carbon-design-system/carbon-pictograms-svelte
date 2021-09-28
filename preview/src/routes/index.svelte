@@ -106,7 +106,7 @@
         <ul>
           {#each pictogramNames as pictogram (pictogram)}
             {#if filteredModuleNames.includes(pictogram)}
-              <ClickableTile on:click={() => (moduleName = pictogram)}>
+              <ClickableTile title="{pictogram}" on:click={() => (moduleName = pictogram)}>
                 <svelte:component this={pictograms[pictogram]} />
               </ClickableTile>
             {/if}
