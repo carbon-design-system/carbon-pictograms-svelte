@@ -13,15 +13,15 @@
     "test:types": "svelte-check --workspace src"
   },
   "devDependencies": {
-    "@carbon/icon-helpers": "^10.21.0",
-    "@carbon/pictograms": "11.17.0",
+    "@carbon/icon-helpers": "^10.24.0",
+    "@carbon/pictograms": "11.19.0",
     "@types/carbon__icon-helpers": "^10.7.2",
-    "@types/node": "^16.7.10",
-    "sveld": "^0.8.2",
-    "svelte": "^3.42.4",
-    "svelte-check": "^2.2.5",
+    "@types/node": "^16.10.3",
+    "sveld": "^0.10.2",
+    "svelte": "^3.43.1",
+    "svelte-check": "^2.2.6",
     "ts-node-dev": "^1.1.8",
-    "typescript": "^4.4.2"
+    "typescript": "^4.4.3"
   },
   "repository": {
     "type": "git",
