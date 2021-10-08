@@ -28,6 +28,12 @@ yarn add -D carbon-pictograms-svelte
 npm i -D carbon-pictograms-svelte
 ```
 
+**pnpm**
+
+```sh
+pnpm i -D carbon-pictograms-svelte
+```
+
 ## Usage
 
 ### Base Import
