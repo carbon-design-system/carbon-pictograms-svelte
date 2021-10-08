@@ -4,11 +4,13 @@ import { PictogramOutput } from "@carbon/pictograms";
 export function template({ descriptor }: PictogramOutput) {
   return `<script>
   /**
+   * Set a tabindex value
    * @type {string}
    */
   export let tabindex = undefined;
 
   /**
+   * Set a custom SVG fill color
    * @type {string}
    */
   export let fill = "${descriptor.attrs.fill}";

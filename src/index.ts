@@ -40,7 +40,7 @@ const mkdir = promisify(fs.mkdir);
     pictograms.push(moduleName);
 
     const source = template(output[0]);
-    const ts_file_path = `./${moduleName}.d.ts`;
+    const ts_file_path = `./${moduleName}.svelte.d.ts`;
 
     components.set(moduleName, {
       moduleName,

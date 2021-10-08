@@ -3,68 +3,35 @@
 [![NPM][npm]][npm-url]
 ![GitHub](https://img.shields.io/github/license/ibm/carbon-pictograms-svelte?color=262626&style=for-the-badge)
 ![npm downloads to date](https://img.shields.io/npm/dt/carbon-pictograms-svelte?color=262626&style=for-the-badge)
-[![carbon-pictograms-svelte Travis CI build status][build]][build-badge]
 
 > [Carbon Design System](https://github.com/carbon-design-system) SVG pictograms as Svelte components.
 
 This zero dependency library builds [Carbon Design System pictograms](https://www.carbondesignsystem.com/guidelines/pictograms/library) as Svelte components. Although best paired with [carbon-components-svelte](https://github.com/IBM/carbon-components-svelte), this library can be consumed standalone.
 
-Try it in the [Svelte REPL](https://svelte.dev/repl/88b99674d0f24a3a8948d3760f8ba999?version=3.24.1).
+Try it in the [Svelte REPL](https://svelte.dev/repl/88b99674d0f24a3a8948d3760f8ba999).
 
-## [Preview](https://ibm.github.io/carbon-pictograms-svelte/) · [Pictogram Index](PICTOGRAM_INDEX.md)
+## [Preview](https://carbon-pictograms-svelte.onrender.com/) · [Pictogram Index](PICTOGRAM_INDEX.md)
 
-**Table of Contents**
+## Installation
 
-- [Install](#install)
-  - [Folder Structure](#folder-structure)
-- [Usage](#usage)
-  - [Base Import](#base-import)
-  - [Direct Import (recommended)](#direct-import-recommended)
-    - [Import Path Pattern](#import-path-pattern)
-- [API](#api)
-  - [Props](#props)
-- [Recipes](#recipes)
-  - [Custom Fill Color](#custom-fill-color)
-    - [`fill` prop](#fill-prop)
-    - [Global class](#global-class)
-  - [Labelled](#labelled)
-  - [Labelled with Focus](#labelled-with-focus)
-  - [Labelled by](#labelled-by)
-- [Examples](#examples)
-- [Changelog](#changelog)
-- [Contributing](#contributing)
-- [License](#license)
+Install `carbon-pictograms-svelte` as a development dependency.
 
-## Install
-
-`carbon-pictograms-svelte` can be installed using `yarn` or `npm` or `pnpm`.
+**Yarn**
 
 ```sh
 yarn add -D carbon-pictograms-svelte
-# OR
-npm i -D carbon-pictograms-svelte
-# OR
-pnpm i -D carbon-pictograms-svelte
 ```
 
-### Folder Structure
+**NPM**
 
-The downloaded package contains two folders:
+```sh
+npm i -D carbon-pictograms-svelte
+```
 
-- `lib`: Pictograms as uncompiled Svelte source code
-- `types`: TypeScript definitions
+**pnpm**
 
-```bash
-# node_modules/carbon-pictograms-svelte
-│
-└───📁 lib                  # Svelte source code
-│   └──index.js
-│   └──ActiveServer.svelte
-│   └──...
-└───📁 types                # TypeScript definitions
-    └──index.d.ts
-    └──ActiveServer.d.ts
-    └──...
+```sh
+pnpm i -D carbon-pictograms-svelte
 ```
 
 ## Usage
@@ -156,17 +123,15 @@ Customize the fill color using the `fill` prop or by defining a global class.
 
 Svelte version 3.31 or greater is required to use this library with TypeScript.
 
-## Examples
-
-- [examples/webpack](examples/webpack) (Try it on [CodeSandbox](https://codesandbox.io/s/github/IBM/carbon-pictograms-svelte/tree/master/examples/webpack))
-
-- [examples/rollup](examples/rollup) (Try it on [CodeSandbox](https://codesandbox.io/s/github/IBM/carbon-pictograms-svelte/tree/master/examples/rollup))
-
-- [examples/rollup-typescript](examples/rollup-typescript)
-
 ## [Changelog](CHANGELOG.md)
 
 ## [Contributing](CONTRIBUTING.md)
+
+## Deploying
+
+The pictogram preview is deployed to [Render](https://render.com) as a Static Site. See [render.yaml](render.yaml) for details.
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/carbon-design-system/carbon-pictograms-svelte)
 
 ## License
 
@@ -174,5 +139,3 @@ Svelte version 3.31 or greater is required to use this library with TypeScript.
 
 [npm]: https://img.shields.io/npm/v/carbon-pictograms-svelte.svg?color=262626&style=for-the-badge
 [npm-url]: https://npmjs.com/package/carbon-pictograms-svelte
-[build]: https://img.shields.io/travis/com/ibm/carbon-pictograms-svelte?color=24a148&style=for-the-badge
-[build-badge]: https://travis-ci.com/ibm/carbon-pictograms-svelte
