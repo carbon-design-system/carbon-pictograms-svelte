@@ -11,11 +11,11 @@
     Content,
     Theme,
   } from "carbon-components-svelte";
-  import * as pictograms from "../../../lib";
+  import FocusKey from "svelte-focus-key";
   import fuzzy from "fuzzy";
   import Header from "$lib/Header.svelte";
+  import * as pictograms from "../../../lib";
   import { version } from "../../../package.json";
-  import FocusKey from "svelte-focus-key";
 
   const { match } = fuzzy;
 
@@ -37,6 +37,7 @@
 </script>
 
 <FocusKey element={ref} />
+
 <Header {version} />
 
 <Modal
