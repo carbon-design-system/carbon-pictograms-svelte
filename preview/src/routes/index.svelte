@@ -15,6 +15,7 @@
   import fuzzy from "fuzzy";
   import Header from "$lib/Header.svelte";
   import { version } from "../../../package.json";
+  import FocusKey from "svelte-focus-key";
 
   const { match } = fuzzy;
 
@@ -35,14 +36,7 @@
   $: code = `<script>\n  import ${moduleName} from "carbon-pictograms-svelte/lib/${moduleName}.svelte";\n<\/script>\n\n<${moduleName} />`;
 </script>
 
-<svelte:body
-  on:keydown={(e) => {
-    if (e.key === "/" && document.activeElement !== ref) {
-      e.preventDefault();
-      ref.focus();
-    }
-  }} />
-
+<FocusKey element={ref} />
 <Header {version} />
 
 <Modal
@@ -106,7 +100,10 @@
         <ul>
           {#each pictogramNames as pictogram (pictogram)}
             {#if filteredModuleNames.includes(pictogram)}
-              <ClickableTile title="{pictogram}" on:click={() => (moduleName = pictogram)}>
+              <ClickableTile
+                title={pictogram}
+                on:click={() => (moduleName = pictogram)}
+              >
                 <svelte:component this={pictograms[pictogram]} />
               </ClickableTile>
             {/if}
