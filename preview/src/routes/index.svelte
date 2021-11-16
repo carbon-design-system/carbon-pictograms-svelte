@@ -18,21 +18,15 @@
   import { version } from "../../../package.json";
 
   const { match } = fuzzy;
+  const pictogramNames = Object.keys(pictograms);
 
   let ref = null;
+  let moduleName = null;
   let value = "";
-
-  $: pictogramNames = Object.keys(pictograms);
-  $: filteredModuleNames = pictogramNames.filter((name) => match(value, name));
-
   let theme = "white";
 
-  $: if (typeof document !== "undefined") {
-    document.documentElement.setAttribute("theme", theme);
-  }
-
-  let moduleName = null;
-
+  $: filteredModuleNames = pictogramNames.filter((name) => match(value, name));
+  $: document.documentElement.setAttribute("theme", theme);
   $: code = `<script>\n  import ${moduleName} from "carbon-pictograms-svelte/lib/${moduleName}.svelte";\n<\/script>\n\n<${moduleName} />`;
 </script>
 
@@ -116,18 +110,8 @@
 </Content>
 
 <style>
-  .flex {
-    display: flex;
-    align-items: flex-end;
-  }
-
   :global(body) {
     overflow-y: scroll;
-  }
-
-  ul {
-    display: flex;
-    flex-wrap: wrap;
   }
 
   :global(.bx--tile) {
@@ -145,5 +129,15 @@
 
   :global(.text-02) {
     color: var(--cds-text-02);
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flex {
+    display: flex;
+    align-items: flex-end;
   }
 </style>
