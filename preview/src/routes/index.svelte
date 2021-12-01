@@ -30,7 +30,7 @@
   $: code = `<script>\n  import ${moduleName} from "carbon-pictograms-svelte/lib/${moduleName}.svelte";\n<\/script>\n\n<${moduleName} />`;
 </script>
 
-<FocusKey element={ref} />
+<FocusKey element={ref} selectText />
 
 <Header {version} />
 
