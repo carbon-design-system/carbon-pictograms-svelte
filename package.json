@@ -6,9 +6,6 @@
   "svelte": "./lib/index.js",
   "main": "./lib/index.js",
   "types": "./types/index.d.ts",
-  "exports": {
-    "import": "./lib/index.js"
-  },
   "sideEffects": false,
   "scripts": {
     "prepack": "tsnd --transpile-only src",
@@ -47,5 +44,6 @@
   ],
   "contributors": [
     "Eric Liu (https://github.com/metonym)"
-  ]
+  ],
+  "type": "module"
 }
