@@ -21,8 +21,9 @@ const mkdir = promisify(fs.mkdir);
   );
   const buildInfo: BuildIcons = JSON.parse(source);
 
-  await rmdir("types", { recursive: true });
-  await rmdir("lib", { recursive: true });
+  if (fs.existsSync("types")) await rmdir("types", { recursive: true });
+  if (fs.existsSync("lib")) await rmdir("lib", { recursive: true });
+  await mkdir("types");
   await mkdir("lib");
 
   const parser = new ComponentParser();
