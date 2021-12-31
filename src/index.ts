@@ -21,9 +21,7 @@ const mkdir = promisify(fs.mkdir);
   );
   const buildInfo: BuildIcons = JSON.parse(source);
 
-  if (fs.existsSync("types")) await rmdir("types", { recursive: true });
   if (fs.existsSync("lib")) await rmdir("lib", { recursive: true });
-  await mkdir("types");
   await mkdir("lib");
 
   const parser = new ComponentParser();
@@ -66,7 +64,7 @@ const mkdir = promisify(fs.mkdir);
     preamble: `// Type definitions for ${name}\n// ${metadata}\n\n`,
     exports,
     inputDir: "lib",
-    outDir: "types",
+    outDir: "lib",
   });
 
   await writeFile("lib/index.js", imports);

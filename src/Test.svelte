@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { AddDevice, AiEthics } from "../types";
-  import ActiveServer from "../types/ActiveServer.svelte";
-  import Airplane from "../types/Airplane.svelte";
-  import BerlinTower from "../types/BerlinTower.svelte";
+  import { AddDevice, AiEthics } from "../lib";
+  import ActiveServer from "../lib/ActiveServer.svelte";
+  import Airplane from "../lib/Airplane.svelte";
+  import BerlinTower from "../lib/BerlinTower.svelte";
 </script>
 
 <AddDevice aria-label="Add Device" />

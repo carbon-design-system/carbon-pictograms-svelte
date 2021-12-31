@@ -5,7 +5,7 @@
   "description": "Carbon Design System SVG pictograms as Svelte components",
   "svelte": "./lib/index.js",
   "main": "./lib/index.js",
-  "types": "./types/index.d.ts",
+  "types": "./lib/index.d.ts",
   "sideEffects": false,
   "scripts": {
     "prepack": "tsnd --transpile-only src",
@@ -39,8 +39,7 @@
     "svg"
   ],
   "files": [
-    "lib",
-    "types"
+    "lib"
   ],
   "contributors": [
     "Eric Liu (https://github.com/metonym)"
