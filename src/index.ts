@@ -10,7 +10,7 @@ import { ParsedExports } from "sveld/lib/parse-exports";
 
 const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
-const rmdir = promisify(fs.rmdir);
+const rmdir = promisify(fs.rm);
 const mkdir = promisify(fs.mkdir);
 
 (async () => {
