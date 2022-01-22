@@ -26,7 +26,9 @@
   let theme = "white";
 
   $: filteredModuleNames = pictogramNames.filter((name) => match(value, name));
-  $: document.documentElement.setAttribute("theme", theme);
+  $: if (typeof document !== "undefined") {
+    document.documentElement.setAttribute("theme", theme);
+  }
   $: code = `<script>\n  import ${moduleName} from "carbon-pictograms-svelte/lib/${moduleName}.svelte";\n<\/script>\n\n<${moduleName} />`;
 </script>
 
