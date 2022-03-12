@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
+    "esModuleInterop": true,
     "lib": ["esnext"],
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "strict": true
-  },
-  "include": ["src", "types"]
+  }
 }
