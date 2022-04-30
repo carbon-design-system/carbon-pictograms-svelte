@@ -4,23 +4,16 @@ import { PictogramOutput } from "@carbon/pictograms";
 export function template({ descriptor }: PictogramOutput) {
   return `<script>
   /**
-   * Set a tabindex value
+   * Specify the pictogram title.
    * @type {string}
    */
-  export let tabindex = undefined;
-
-  /**
-   * Set a custom SVG fill color
-   * @type {string}
-   */
-  export let fill = "${descriptor.attrs.fill}";
+  export let title = undefined;
 
   $: labelled =  $$props["aria-label"] || $$props["aria-labelledby"] || $$props["title"];
   $: attributes = {
     "aria-hidden": labelled ? undefined : true,
     role: labelled ? "img" : undefined,
-    focusable: tabindex === "0" ? true : undefined,
-    tabindex
+    focusable: Number($$props["tabindex"]) === 0  ? true : undefined,
   };
 </script>
 
@@ -30,7 +23,8 @@ export function template({ descriptor }: PictogramOutput) {
   viewBox="${descriptor.attrs.viewBox}"
   width="${descriptor.attrs.width}"
   height="${descriptor.attrs.height}"
-  {fill}
+  fill="${descriptor.attrs.fill}"
+  {title}
   {...attributes}
   {...$$restProps}>
   ${descriptor.content.map((element) => toString(element)).join("")}
