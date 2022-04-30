@@ -6,7 +6,7 @@
 </script>
 
 <AddDevice aria-label="Add Device" />
-<ActiveServer class="class" style="fill: red" title="" tabindex="0" />
+<ActiveServer class="class" style="fill: red" title="" tabindex={0} />
 <BerlinTower fill="#000" />
 
 <Airplane aria-label="Airplane" />
