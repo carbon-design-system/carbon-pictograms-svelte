@@ -11,7 +11,7 @@
     HeaderPanelDivider,
     SkipToContent,
   } from "carbon-components-svelte";
-  import { LogoGithub20 } from "carbon-icons-svelte";
+  import { LogoGithub } from "carbon-icons-svelte";
 </script>
 
 <Header aria-label="Navigation" href="/">
@@ -26,7 +26,7 @@
 
   <HeaderUtilities>
     <HeaderActionLink
-      icon={LogoGithub20}
+      icon={LogoGithub}
       href="https://github.com/carbon-design-system/carbon-pictograms-svelte"
       target="_blank"
     />
