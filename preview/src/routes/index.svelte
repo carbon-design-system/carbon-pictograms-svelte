@@ -57,6 +57,7 @@
         <div class="flex">
           <Theme
             bind:theme
+            persist
             render="select"
             select={{
               id: "select-theme",
