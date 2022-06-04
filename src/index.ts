@@ -1,25 +1,20 @@
 import * as fs from "fs";
-import { BuildIcons } from "@carbon/pictograms";
+import type { BuildIcons } from "@carbon/pictograms";
+import buildInfo from "@carbon/pictograms/metadata.json";
 import { performance } from "perf_hooks";
 import { promisify } from "util";
-import { name, devDependencies } from "../package.json";
-import { template } from "./template";
 import { ComponentParser } from "sveld";
 import writeTsDefinitions from "sveld/lib/writer/writer-ts-definitions";
-import { ParsedExports } from "sveld/lib/parse-exports";
+import type { ParsedExports } from "sveld/lib/parse-exports";
+import { name, devDependencies } from "../package.json";
+import { template } from "./template";
 
-const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
 const rmdir = promisify(fs.rm);
 const mkdir = promisify(fs.mkdir);
 
 (async () => {
   const start = performance.now();
-  const source = await readFile(
-    "node_modules/@carbon/pictograms/metadata.json",
-    "utf-8"
-  );
-  const buildInfo: BuildIcons = JSON.parse(source);
 
   if (fs.existsSync("lib")) await rmdir("lib", { recursive: true });
   await mkdir("lib");
@@ -32,7 +27,7 @@ const mkdir = promisify(fs.mkdir);
 
   const pictograms: string[] = [];
 
-  buildInfo.icons.forEach(async ({ output }) => {
+  (buildInfo as BuildIcons).icons.forEach(async ({ output }) => {
     const { moduleName } = output[0];
 
     imports += `export { default as ${moduleName} } from "./${moduleName}.svelte";\n`;
