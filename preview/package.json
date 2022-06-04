@@ -7,8 +7,8 @@
     "preview": "svelte-kit preview"
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "1.0.0-next.32",
-    "@sveltejs/kit": "1.0.0-next.345",
+    "@sveltejs/adapter-static": "1.0.0-next.34",
+    "@sveltejs/kit": "1.0.0-next.348",
     "carbon-components-svelte": "^0.64.3",
     "carbon-icons-svelte": "^11.1.0",
     "carbon-preprocess-svelte": "^0.9.0",
