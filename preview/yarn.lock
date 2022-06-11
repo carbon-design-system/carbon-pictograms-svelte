@@ -17,15 +17,15 @@
   dependencies:
     tiny-glob "^0.2.9"
 
-"@sveltejs/kit@1.0.0-next.348":
-  version "1.0.0-next.348"
-  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-1.0.0-next.348.tgz#82ae2d99617d91e87472677238a2cd93a787111d"
-  integrity sha512-K9dfgzIbotWmbcdCsQ6ROGs9R+bsGWwmSdN6l6km1QV5esQehqg1UYHGD9q0VJsg4rJg/zmKVBYo0oBquSHPZw==
+"@sveltejs/kit@1.0.0-next.350":
+  version "1.0.0-next.350"
+  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-1.0.0-next.350.tgz#b90fc2f337b518837664b47c0fe77a978d00c1ce"
+  integrity sha512-qkZNjp7yIj6t91+wMhmMtGJH0Lb89OaKdVXUDy92CS5/4OHRTKcQPdfOKs4no/upkS3RiFb+rEpOkYqTMcPUXg==
   dependencies:
     "@sveltejs/vite-plugin-svelte" "^1.0.0-next.46"
     chokidar "^3.5.3"
     sade "^1.8.1"
-    vite "^2.9.9"
+    vite "^2.9.10"
 
 "@sveltejs/vite-plugin-svelte@^1.0.0-next.46":
   version "1.0.0-next.47"
@@ -94,10 +94,10 @@ buffer-crc32@^0.2.5:
   resolved "https://registry.yarnpkg.com/buffer-crc32/-/buffer-crc32-0.2.13.tgz#0d333e3f00eac50aa1454abd30ef8c2a5d9a7242"
   integrity sha1-DTM+PwDqxQqhRUq9MO+MKl2ackI=
 
-carbon-components-svelte@^0.64.3:
-  version "0.64.3"
-  resolved "https://registry.yarnpkg.com/carbon-components-svelte/-/carbon-components-svelte-0.64.3.tgz#ec4f950e8da17097a2810c71433de83f8c486491"
-  integrity sha512-N4stSTV71Mkw1bXrh2Ui5PFXRGlniWqTK3ASZpscvj/a7rJc0eQ7D7/+wgSoszehb0ST0H6g2cy2LUFexwSeYg==
+carbon-components-svelte@^0.65.1:
+  version "0.65.1"
+  resolved "https://registry.yarnpkg.com/carbon-components-svelte/-/carbon-components-svelte-0.65.1.tgz#2626367d6458f7064325f764d8a732931c37b2e7"
+  integrity sha512-MZzKohUye5bv/mBstCLtxATvfGiLQetP0COIKV49s6pwcbN4X9yjlo4LBLBeX4xA3BdbPJp/LfbT9GNKfR4lBQ==
   dependencies:
     flatpickr "4.6.9"
 
@@ -677,10 +677,10 @@ util-deprecate@^1.0.2:
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
 
-vite@^2.9.9:
-  version "2.9.9"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-2.9.9.tgz#8b558987db5e60fedec2f4b003b73164cb081c5e"
-  integrity sha512-ffaam+NgHfbEmfw/Vuh6BHKKlI/XIAhxE5QSS7gFLIngxg171mg1P3a4LSRME0z2ZU1ScxoKzphkipcYwSD5Ew==
+vite@^2.9.10:
+  version "2.9.12"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-2.9.12.tgz#b1d636b0a8ac636afe9d83e3792d4895509a941b"
+  integrity sha512-suxC36dQo9Rq1qMB2qiRorNJtJAdxguu5TMvBHOc/F370KvqAe9t48vYp+/TbPKRNrMh/J55tOUmkuIqstZaew==
   dependencies:
     esbuild "^0.14.27"
     postcss "^8.4.13"
