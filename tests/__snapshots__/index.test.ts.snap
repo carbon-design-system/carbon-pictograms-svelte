@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`Library has exports 1`] = `
+exports[`carbon-pictograms-svelte > imports 2`] = `
 [
   "AcceleratedComputing",
   "ActiveServer",

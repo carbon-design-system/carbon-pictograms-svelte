@@ -83,13 +83,13 @@ Customize the fill color using the `fill` prop or by defining a global class.
 #### Global class
 
 ```svelte
+<Airplane class="custom-class" />
+
 <style>
   :global(svg.custom-class) {
     fill: blue;
   }
 </style>
-
-<Airplane class="custom-class" />
 ```
 
 ### Labelled

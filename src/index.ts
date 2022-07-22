@@ -1,23 +1,18 @@
-import * as fs from "fs";
+import fsp from "fs/promises";
 import type { BuildIcons } from "@carbon/pictograms";
 import buildInfo from "@carbon/pictograms/metadata.json";
 import { performance } from "perf_hooks";
-import { promisify } from "util";
 import { ComponentParser } from "sveld";
 import writeTsDefinitions from "sveld/lib/writer/writer-ts-definitions";
 import type { ParsedExports } from "sveld/lib/parse-exports";
 import { name, devDependencies } from "../package.json";
 import { template } from "./template";
 
-const writeFile = promisify(fs.writeFile);
-const rmdir = promisify(fs.rm);
-const mkdir = promisify(fs.mkdir);
-
-(async () => {
+export const buildPictograms = async () => {
   const start = performance.now();
 
-  if (fs.existsSync("lib")) await rmdir("lib", { recursive: true });
-  await mkdir("lib");
+  await fsp.rm("lib", { recursive: true, force: true });
+  await fsp.mkdir("lib");
 
   const parser = new ComponentParser();
   const components = new Map();
@@ -50,7 +45,7 @@ const mkdir = promisify(fs.mkdir);
       default: false,
     };
 
-    await writeFile(`lib/${moduleName}.svelte`, source);
+    await fsp.writeFile(`lib/${moduleName}.svelte`, source);
   });
 
   const metadata = `${pictograms.length} pictograms from @carbon/pictograms@${devDependencies["@carbon/pictograms"]}`;
@@ -62,8 +57,8 @@ const mkdir = promisify(fs.mkdir);
     outDir: "lib",
   });
 
-  await writeFile("lib/index.js", imports);
-  await writeFile(
+  await fsp.writeFile("lib/index.js", imports);
+  await fsp.writeFile(
     "PICTOGRAM_INDEX.md",
     `
 # Pictogram Index
@@ -88,4 +83,5 @@ ${pictograms.map((moduleName) => `- ${moduleName}`).join("\n")}
 
   const bench = (performance.now() - start) / 1000;
   console.log(`Built ${pictograms.length} pictograms in ${bench.toFixed(2)}s.`);
-})();
+  return pictograms;
+};

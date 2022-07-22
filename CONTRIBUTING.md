@@ -2,17 +2,7 @@
 
 ## Getting Started
 
-For MacOS, prerequisites include [homebrew](https://docs.brew.sh/Installation), [node (version >=12)](https://nodejs.org/en/download/package-manager/#macos) and [yarn](https://yarnpkg.com/en/docs/install#mac-stable).
-
-Run the following shell commands to install all three prerequisites.
-
-```bash
-# installs homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-# installs both yarn and node (if not installed)
-brew install yarn
-```
+For MacOS, prerequisites include Node and Yarn.
 
 Fork the repo and clone your fork:
 
@@ -24,7 +14,7 @@ cd carbon-pictograms-svelte
 Set the original repo as the upstream:
 
 ```bash
-git remote add upstream git@github.com:IBM/carbon-pictograms-svelte.git
+git remote add upstream git@github.com:carbon-design-system/carbon-pictograms-svelte.git
 # verify that the upstream is added
 git remote -v
 ```
@@ -37,19 +27,11 @@ yarn install
 
 ## Workflow
 
-### Developing
-
-Run `yarn test:tdd` to run tests in watch mode.
-
 ### Building
 
-Run `yarn prepack` to build the library. Pictograms should be emitted to the `lib` folder.
+Pictograms are generated using `vitest` as a test runner.
 
-### Validating Types
-
-Run `yarn validate` to validate the TypeScript definitions using `svelte-check`.
-
-Note: you must first build the library first.
+Run `yarn prepack` to build the library. Pictograms should be emitted to the `lib` folder and tests should pass.
 
 ## Submitting a Pull Request
 
