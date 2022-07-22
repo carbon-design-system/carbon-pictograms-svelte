@@ -1,5 +1,5 @@
 .DS_Store
-/lib
-/node_modules
-yarn-debug.log*
-yarn-error.log*
+.svelte-kit
+lib
+node_modules
+build
