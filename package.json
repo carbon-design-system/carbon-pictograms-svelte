@@ -8,9 +8,8 @@
   "types": "./lib/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "prepack": "tsnd --transpile-only src",
-    "test": "vitest",
-    "test:types": "svelte-check --workspace src"
+    "prepack": "yarn test run",
+    "test": "vitest"
   },
   "devDependencies": {
     "@carbon/icon-helpers": "^10.31.0",
