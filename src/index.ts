@@ -1,4 +1,4 @@
-import * as fs from "fs";
+import fs from "fs";
 import type { BuildIcons } from "@carbon/pictograms";
 import buildInfo from "@carbon/pictograms/metadata.json";
 import { performance } from "perf_hooks";
@@ -13,7 +13,7 @@ const writeFile = promisify(fs.writeFile);
 const rmdir = promisify(fs.rm);
 const mkdir = promisify(fs.mkdir);
 
-(async () => {
+export const buildPictograms = async () => {
   const start = performance.now();
 
   if (fs.existsSync("lib")) await rmdir("lib", { recursive: true });
@@ -88,4 +88,5 @@ ${pictograms.map((moduleName) => `- ${moduleName}`).join("\n")}
 
   const bench = (performance.now() - start) / 1000;
   console.log(`Built ${pictograms.length} pictograms in ${bench.toFixed(2)}s.`);
-})();
+  return pictograms;
+};
