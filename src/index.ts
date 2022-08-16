@@ -48,7 +48,7 @@ export const buildPictograms = async () => {
 
   const metadata = `${pictograms.length} pictograms from @carbon/pictograms@${devDependencies["@carbon/pictograms"]}`;
 
-  writeTsDefinitions(components, {
+  await writeTsDefinitions(components, {
     preamble: `// Type definitions for ${name}\n// ${metadata}\n\n`,
     exports,
     inputDir: "lib",
