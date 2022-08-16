@@ -1,7 +1,6 @@
 import fsp from "fs/promises";
 import type { BuildIcons } from "@carbon/pictograms";
 import buildInfo from "@carbon/pictograms/metadata.json";
-import { performance } from "perf_hooks";
 import { ComponentParser } from "sveld";
 import writeTsDefinitions from "sveld/lib/writer/writer-ts-definitions";
 import type { ParsedExports } from "sveld/lib/parse-exports";
@@ -9,8 +8,7 @@ import { name, devDependencies } from "../package.json";
 import { template } from "./template";
 
 export const buildPictograms = async () => {
-  const start = performance.now();
-
+  console.time("Built in");
   await fsp.rm("lib", { recursive: true, force: true });
   await fsp.mkdir("lib");
 
@@ -81,7 +79,6 @@ ${pictograms.map((moduleName) => `- ${moduleName}`).join("\n")}
     `.trim() + "\n"
   );
 
-  const bench = (performance.now() - start) / 1000;
-  console.log(`Built ${pictograms.length} pictograms in ${bench.toFixed(2)}s.`);
+  console.timeEnd("Built in");
   return pictograms;
 };
