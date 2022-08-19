@@ -8,7 +8,7 @@ describe("carbon-pictograms-svelte", () => {
 
   beforeAll(async () => {
     pictograms = await buildPictograms();
-  });
+  }, 30_000);
 
   test("imports", () => {
     expect(pictograms.length).toMatchInlineSnapshot("901");
