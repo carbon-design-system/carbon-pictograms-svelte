@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { AddDevice, AiEthics } from "../lib";
+  import { AddDevice, AiEthics, Websites } from "../lib";
   import ActiveServer from "../lib/ActiveServer.svelte";
   import Airplane from "../lib/Airplane.svelte";
   import BerlinTower from "../lib/BerlinTower.svelte";
@@ -17,3 +17,4 @@
 <Airplane aria-labelledby="transportation" />
 
 <AiEthics />
+<Websites />
