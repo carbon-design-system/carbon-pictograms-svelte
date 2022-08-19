@@ -11,7 +11,7 @@ describe("carbon-pictograms-svelte", () => {
   });
 
   test("imports", () => {
-    expect(pictograms.length).toMatchInlineSnapshot("803");
+    expect(pictograms.length).toMatchInlineSnapshot("901");
     expect(pictograms).toMatchSnapshot();
   });
 

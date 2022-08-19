@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 803 pictograms from @carbon/pictograms@12.2.0
+> 901 pictograms from @carbon/pictograms@12.4.0
 
 ## Usage
 
@@ -15,12 +15,15 @@
 ## List of Pictograms by `ModuleName`
 
 - AcceleratedComputing
+- AcceleratingTransformation
+- AccessManagement
 - ActiveServer
 - AddDevice
 - AddDocument
 - AdvancedFraudProtection
 - AdvancedThreats
 - Advocate
+- AgilityWithHybridMulticloud
 - Agriculture
 - AiEthics
 - AiExplainability
@@ -47,17 +50,22 @@
 - Apple
 - Application
 - ApplicationSecurity
+- Apps
 - Archive
 - ArgentinaObelisk
 - ArtTools_01
 - AsiaAustralia
 - Assets
 - Atlanta
+- AudioData
+- AuditTrail
 - AugmentedReality
 - Austin
 - AutomateModularManagement
+- Automated
 - AutomationDecision
 - Automobile
+- Availability
 - BabyBottle
 - Backpack
 - Badge
@@ -79,6 +87,8 @@
 - BoxPlot
 - Broom
 - Budapest
+- BudapestCitadella
+- BudapestLabSkyline
 - BugVirusMalware
 - Build
 - BuildLeadershipAndCulture
@@ -87,6 +97,7 @@
 - Bulldozer
 - Bus
 - BusinessContinuity
+- BusinessContinuity_02
 - CLanguage
 - CPlusPlusLanguage
 - Cafe
@@ -125,6 +136,7 @@
 - ChartStepper
 - ChartSunburst
 - ChartTSne
+- ChartTwoYAxis
 - Cheese
 - Cherries
 - Chicago
@@ -133,6 +145,7 @@
 - ChipCircuit
 - ChipCredit
 - ChipDebit
+- ChooseHowToGetStarted
 - CirclePacking
 - ClientFinancing_01
 - ClientFinancing_02
@@ -146,12 +159,15 @@
 - CloudDownload
 - CloudEcosystem
 - CloudGuidelines
+- CloudInfrastructureManagement
 - CloudManagedServices
 - CloudNative_01
 - CloudNative_02
+- CloudNative_03
 - CloudOracle
 - CloudPartners
 - CloudPlanning
+- CloudPlatform
 - CloudSap
 - CloudServices
 - CloudServicesPricing
@@ -177,6 +193,7 @@
 - Cluster
 - CoatHanger
 - CobolLanguage
+- Code
 - CodeSyntax
 - CognosAnalytics
 - Collaboration
@@ -185,14 +202,17 @@
 - ColorContrast
 - CommercialFinancing_01
 - CommercialFinancing_02
+- Compliant
 - CompostBin
 - ConceptExpansion
 - ConceptInsights
 - ConditionBuilder
+- ConfidentialComputing
 - Connect
 - ConnectApplications
 - ConnectedEcosystem
 - ConnectedNodesToTheCloud
+- Connectivity
 - Console
 - ConsoleWireless
 - Construct
@@ -202,9 +222,13 @@
 - ContainerizedApplications
 - ContainersAndCloudNative
 - ContentDesign
+- Continuous
 - ContinuousSecurity
 - Contract
+- Control
+- ControlsFramework
 - Conversation
+- Cookie
 - CopenhagenPlanetarium
 - CopenhagenSnekkja
 - Coronavirus
@@ -212,15 +236,20 @@
 - Crop
 - Cupcake
 - CustomerService
+- Customizable
 - Dashboard
 - DataApis
 - DataBackup
 - DataInsights
 - DataPrivacy
+- DataPrivacy_02
+- DataPrivacyKey
 - DataProcessing
 - DataSecurity
 - DataSet
 - DataStorage
+- DataTransfer
+- DecisionVelocity
 - Delete
 - DeliverInsights
 - DeliveryTruck
@@ -233,6 +262,7 @@
 - DetectAndStopAdvancingThreats
 - DeveloperZOs
 - DevicePairing
+- DevicesAtIbm
 - Devops
 - Dialogue
 - Digital
@@ -258,9 +288,11 @@
 - DublinCastle
 - DuplicateFile
 - Earth
+- EaseOfUse
 - EcuadorQuito
 - Edge
 - Education
+- Efficient
 - Electric
 - ElectricCar
 - ElectricCharge
@@ -268,6 +300,7 @@
 - Embed
 - EmergencyExit
 - EmployeeInsights
+- Encryption
 - EndpointProtection
 - Engine
 - EnterpriseDesignThinking_01
@@ -277,11 +310,14 @@
 - EscalatorDown
 - EscalatorUp
 - EuropeAfrica
+- EventDriven
 - ExpandHorz
 - ExpandUser
 - ExpandVert
 - Export_01
 - Export_02
+- ExtendTheDataCenter
+- Extensible
 - Eye
 - EyewashStation
 - FaceDissatisfied
@@ -295,12 +331,16 @@
 - Farm_02
 - Farmer_01
 - Farmer_02
+- Fast
+- FasterInnovationWithPartners
 - Faucet
+- FaultTolerant
 - Feedback_01
 - Feedback_02
 - FileBackup
 - FileTransfer
 - FilterVariable
+- FilterAndGroupData
 - FinanceStrategy
 - FinancialConsultant
 - FinancialGain
@@ -313,6 +353,10 @@
 - FirstAid
 - FlashStorage
 - FlashingContent
+- Flexibility
+- Flexibility_02
+- FlexibleCompute
+- FlexibleInfrastructure
 - FlowChart
 - FlowChartDetail
 - Flower_01
@@ -323,6 +367,7 @@
 - Fragile
 - FreeTrial
 - Fuel
+- FullyManaged
 - Gear
 - GetAheadOfRiskAndCompliance
 - Gift
@@ -347,6 +392,7 @@
 - GoLanguage
 - Goals
 - GovernUsersAndIdentities
+- GreenEnergy
 - Group
 - Growth
 - Guitar
@@ -366,7 +412,10 @@
 - HeatMap_01
 - HeatMap_02
 - HighFive
+- HighPerformance
 - HighRiskUsers
+- HighVolumeData
+- HighlyAvailable
 - Hills
 - HomeFront
 - HomeGarage
@@ -389,17 +438,23 @@
 - IbmZPartition
 - IbmZAndLinuxoneMultiFrame
 - IbmZAndLinuxoneSingleFrame
+- IbmZ16
+- IbmZ16MultiFrame
+- IbmZ16PlusCloud
+- IbmZ16SingleFrame
 - IdBadge
 - Idea
 - Ideate
 - IdentityTrustAssessment
 - IndiaSouthAsia
 - InfrastructureSecurity
+- InnerSource
 - Innovate
 - Insights
 - InspectData
 - Insurance
 - Integration
+- Integration_02
 - Intelligence
 - Intercom
 - Invoice
@@ -410,6 +465,7 @@
 - Juice
 - Justice
 - KeepDry
+- KeepYourOwnKey
 - KeyUsers
 - Keyboard
 - KnowsDarkData
@@ -423,6 +479,8 @@
 - Language_05
 - LanguageTranslation
 - Launch
+- Leader
+- LiftAndShift
 - Lightning
 - ListBullet
 - ListCheckbox
@@ -434,6 +492,7 @@
 - London
 - LondonBigBen
 - Love
+- LoweringRisk
 - Luggage
 - Lungs
 - MachineLearning_01
@@ -472,6 +531,8 @@
 - MobileChat
 - MobileDevices
 - MobilePhone
+- Modernize
+- Monitor
 - MonitoredItemOnConveyor
 - MortarAndPestle
 - Moscow
@@ -496,6 +557,8 @@
 - Networking_04
 - Networking_05
 - Networking_06
+- NewFinancialCustomerExperiences
+- NewRevenueStreams
 - Nice
 - NightClear
 - NoSmoking
@@ -510,6 +573,8 @@
 - OilRig
 - Okinawa
 - OpenSource
+- OperationalEfficiency
+- OperateOffline
 - OptimizeCashFlow_01
 - OptimizeCashFlow_02
 - Organization
@@ -524,6 +589,7 @@
 - PartnerRelationship
 - Path
 - Pattern
+- PayForWhatYouUse
 - Perfume
 - Person_01
 - Person_02
@@ -551,6 +617,7 @@
 - PragueCharlesBridgeTower
 - PragueDancingHouse_01
 - PragueDancingHouse_02
+- Predictability
 - Pregnant
 - Prescription
 - Presentation
@@ -562,12 +629,15 @@
 - PrivateNetwork_03
 - PrivateNetwork_04
 - Process
+- Productivity
 - ProfessionalMarketplace
 - Progress
 - ProtectCriticalAssets
+- ProvenTechnology
 - Puzzle
 - QQPlot
 - QrCode
+- QuantumSafe
 - QuantumComputing
 - Question
 - QuestionAndAnswer
@@ -578,15 +648,21 @@
 - RaleighNc
 - RandomSamples
 - Rank
+- ReactToData
 - ReadOnly
+- RealTime
 - Receipt
 - Recycle
 - RecycleBin
 - RedHatApplications
+- RedefiningFinancialServices
+- ReducingCost
 - Refinery
 - Refresh
 - RelationshipDiagram
 - RelationshipExtraction
+- Reliability
+- Reliability_02
 - Renew
 - RenewTeam
 - Repeat
@@ -595,6 +671,8 @@
 - Reset
 - ResetHybridCloud
 - ResetSettings
+- Resilience
+- ResourceHealth
 - RetrieveAndRank
 - RichTextFormat
 - RioDeJaneiro
@@ -612,7 +690,9 @@
 - SapHana
 - Satellite
 - SatelliteDish
+- SaveTime
 - Scale
+- Scale_02
 - ScatterMatrix
 - Seattle
 - SecureData
@@ -620,6 +700,7 @@
 - SecureProfile
 - SecureSearch
 - Security
+- Security_02
 - SecurityAsAService
 - SecurityHygiene
 - SecurityIntelligence
@@ -631,6 +712,7 @@
 - ServerRack
 - Serverless
 - Servers
+- SharingData
 - Shirt
 - Shop
 - ShoppingCart
@@ -661,6 +743,7 @@
 - StairsDown
 - StairsPlanView
 - StairsUp
+- StartForFree
 - StationaryBicycle
 - Steel
 - SteeringWheel
@@ -674,13 +757,17 @@
 - StrategyDirect
 - StrategyMove
 - StrategyPlay
+- StreamingData
 - Streamline
+- StreamlineOperations
+- Subsecond
 - Summit
 - Sunny
 - SunnyHazy
 - SupplyChainOptimization_01
 - SupplyChainOptimization_02
 - SupportServices
+- Sustainability
 - SwipeLeft
 - SwipeRight
 - Synergy
@@ -705,6 +792,7 @@
 - Teacher
 - TeamAlignment
 - Teammates
+- TechnicalOwner
 - TelAviv
 - Telecom
 - Telemedicine
@@ -716,6 +804,7 @@
 - TemporaryBadge
 - Tennis
 - TestTubes
+- TextData
 - TextEquivalent
 - TextInput
 - TextLayout
@@ -747,6 +836,7 @@
 - TransactionalTrust
 - Transform_01
 - Transform_02
+- TransformData
 - Transparency_01
 - Transparency_02
 - Trash
@@ -755,6 +845,7 @@
 - TreeMap
 - Trousers
 - Trust
+- Trusted
 - TrustedUser
 - TwoPersonLift
 - UnauthorizedUserAccess
@@ -764,6 +855,7 @@
 - University
 - Unlock_01
 - Unlock_02
+- UnstructuredData
 - Upload_01
 - Upload_02
 - UruguayPalacioSalvo
@@ -783,8 +875,12 @@
 - VideoPlay
 - VirtualServer
 - VirtualStorage
+- Virtualization
 - Virus
+- Visibility
 - Vision
+- Visionary
+- VisualData
 - VisualDesign
 - VisualInsights
 - VisualRecognition
@@ -798,6 +894,7 @@
 - Weather
 - WebDeveloper
 - Webcast
+- Websites
 - WeddingCake
 - Wheat
 - Wifi
@@ -817,3 +914,4 @@
 - Yoga_02
 - Yoga_03
 - Yoga_04
+- ZeroTrust
