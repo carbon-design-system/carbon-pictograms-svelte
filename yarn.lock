@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-10.32.0.tgz#700c3ffbe6350cf481f174c0fb06c9a4269a5248"
   integrity sha512-t5kAnx0STZhUo6F0cLnnecKHYg2I7w84i53XiKZz3FGqiEZLFMpljKnQDe6/I7VNwzgBq0PN1dlDhZ8qqKXj5Q==
 
-"@carbon/pictograms@12.4.0":
-  version "12.4.0"
-  resolved "https://registry.yarnpkg.com/@carbon/pictograms/-/pictograms-12.4.0.tgz#72f86c9d94e52c6f2291af7055802e295508b70b"
-  integrity sha512-btHn72nv2uBQ81VTbPRDByDMQryGxRMbig/oPzUX3E4r591O5nX3jXB3dq+TGDHFB9+jN+GTjsavddip9Uon8g==
+"@carbon/pictograms@12.5.0":
+  version "12.5.0"
+  resolved "https://registry.yarnpkg.com/@carbon/pictograms/-/pictograms-12.5.0.tgz#5d116786f15088c20b80e25c2c48978c618f226e"
+  integrity sha512-6wuXX34XdozYZq+JFpmaW03thRCzfU3YVzTy/RRj6pdmSxxpaX1lcp9m0TFHP5ePqVbHSPeNLu7MeG8jLe0fwQ==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
