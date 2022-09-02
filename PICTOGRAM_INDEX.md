@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 901 pictograms from @carbon/pictograms@12.4.0
+> 961 pictograms from @carbon/pictograms@12.5.0
 
 ## Usage
 
@@ -23,11 +23,14 @@
 - AdvancedFraudProtection
 - AdvancedThreats
 - Advocate
+- Agility
 - AgilityWithHybridMulticloud
 - Agriculture
+- Ai
 - AiEthics
 - AiExplainability
 - AiPrivacy
+- AiReady
 - AiRobustness
 - AiTransparency
 - AiTrust
@@ -43,6 +46,7 @@
 - AmsterdamWindmill
 - Analyze
 - AnalyzesData
+- AnalyzingContainers
 - AnonymousUsers
 - Apartment
 - Api
@@ -55,6 +59,7 @@
 - ArgentinaObelisk
 - ArtTools_01
 - AsiaAustralia
+- AssessmentUsed
 - Assets
 - Atlanta
 - AudioData
@@ -79,6 +84,7 @@
 - BerlinCathedral
 - BerlinTower
 - Bicycle
+- BigData
 - BirthdayCake
 - Blender
 - Blockchain
@@ -92,6 +98,7 @@
 - BugVirusMalware
 - Build
 - BuildLeadershipAndCulture
+- BuildAndDeployPipeline
 - BuildApplicationsAnywhere
 - Building
 - Bulldozer
@@ -196,6 +203,7 @@
 - Code
 - CodeSyntax
 - CognosAnalytics
+- CollaborateWithTeams
 - Collaboration
 - College
 - ColombiaCathedralOfLasLajas
@@ -210,6 +218,8 @@
 - ConfidentialComputing
 - Connect
 - ConnectApplications
+- ConnectToCloud
+- ConnectedDevices
 - ConnectedEcosystem
 - ConnectedNodesToTheCloud
 - Connectivity
@@ -220,12 +230,14 @@
 - Container
 - ContainerMicroservices
 - ContainerizedApplications
+- Containers
 - ContainersAndCloudNative
 - ContentDesign
 - Continuous
 - ContinuousSecurity
 - Contract
 - Control
+- ControlPanel
 - ControlsFramework
 - Conversation
 - Cookie
@@ -235,24 +247,31 @@
 - CreditCard
 - Crop
 - Cupcake
+- CustomWorkloads
+- CustomReports
 - CustomerService
 - Customizable
 - Dashboard
 - DataApis
 - DataBackup
+- DataCenters
 - DataInsights
 - DataPrivacy
 - DataPrivacy_02
 - DataPrivacyKey
 - DataProcessing
+- DataProtectionDataSecurity
 - DataSecurity
 - DataSet
 - DataStorage
 - DataTransfer
 - DecisionVelocity
+- DeepLearning
 - Delete
 - DeliverInsights
 - DeliveryTruck
+- DeployingContainers
+- Deployment
 - DesignLeadership
 - DesignResearch
 - DesignAndDevelopment_01
@@ -260,10 +279,12 @@
 - DesignThinkingTeam
 - Desktop
 - DetectAndStopAdvancingThreats
+- DeveloperTools
 - DeveloperZOs
 - DevicePairing
 - DevicesAtIbm
 - Devops
+- DevopsToolchain
 - Dialogue
 - Digital
 - DigitalId
@@ -278,17 +299,21 @@
 - DoctorPatient
 - DocumentConversion
 - DocumentSecurity
+- Documentation
 - DoorHandle
 - Download_01
 - Download_02
+- DragAndDropInterface
 - Dropper
 - DubaiPalmIslands
 - DubaiSkyscraper
 - DublinBrewery
 - DublinCastle
 - DuplicateFile
+- DynamicWorkloads
 - Earth
 - EaseOfUse
+- Ecosystem
 - EcuadorQuito
 - Edge
 - Education
@@ -296,6 +321,7 @@
 - Electric
 - ElectricCar
 - ElectricCharge
+- ElementsOfTheCloud
 - Elevator
 - Embed
 - EmergencyExit
@@ -314,10 +340,12 @@
 - ExpandHorz
 - ExpandUser
 - ExpandVert
+- Expansion
 - Export_01
 - Export_02
 - ExtendTheDataCenter
 - Extensible
+- ExtractText
 - Eye
 - EyewashStation
 - FaceDissatisfied
@@ -361,14 +389,17 @@
 - FlowChartDetail
 - Flower_01
 - Flower_02
+- FocusOnCode
 - Fog
 - Folder
+- Forecasting
 - Forklift
 - Fragile
 - FreeTrial
 - Fuel
 - FullyManaged
 - Gear
+- GeographicFlexibility
 - GetAheadOfRiskAndCompliance
 - Gift
 - GlobalAnalytics
@@ -380,6 +411,7 @@
 - GlobalFinanceEuro
 - GlobalFinanceNetwork
 - GlobalFinanceSterling
+- GlobalFootprint
 - GlobalMarkets
 - GlobalMarketsBar
 - GlobalNetwork
@@ -392,6 +424,7 @@
 - GoLanguage
 - Goals
 - GovernUsersAndIdentities
+- GraphicIntensiveWorkloads
 - GreenEnergy
 - Group
 - Growth
@@ -411,6 +444,7 @@
 - HeartHealth
 - HeatMap_01
 - HeatMap_02
+- HelpDesk
 - HighFive
 - HighPerformance
 - HighRiskUsers
@@ -445,6 +479,8 @@
 - IdBadge
 - Idea
 - Ideate
+- IdentifyAndAccess
+- IdentifyAndResolveIssues
 - IdentityTrustAssessment
 - IndiaSouthAsia
 - InfrastructureSecurity
@@ -501,12 +537,14 @@
 - MachineLearning_04
 - MachineLearning_05
 - MachineLearning_06
+- MachineLearning_07
 - MadridCathedral
 - MadridSkyscrapers
 - MadridStatue
 - Magnify
 - MailVerse
 - ManageApplicationsAnywhere
+- ManagingContainers
 - ManagingContractualFlow
 - ManagingItems
 - Marketplace
@@ -549,8 +587,10 @@
 - NaturalLanguageClassifier
 - NaturalLanguageUnderstanding
 - Network
+- NetworkOfDevices
 - NetworkProtection
 - NetworkServices
+- NetworkTraffic
 - Networking_01
 - Networking_02
 - Networking_03
@@ -562,6 +602,7 @@
 - Nice
 - NightClear
 - NoSmoking
+- Notifications
 - NycBrooklyn
 - NycChryslerBuilding
 - NycManhattan_01
@@ -572,9 +613,14 @@
 - OilPump
 - OilRig
 - Okinawa
+- OnPremise
+- OnPremiseToCloud
 - OpenSource
-- OperationalEfficiency
 - OperateOffline
+- OperatingSystem
+- OperationalMetrics
+- OperationalEfficiency
+- Optimize
 - OptimizeCashFlow_01
 - OptimizeCashFlow_02
 - Organization
@@ -587,6 +633,7 @@
 - ParisPompidouCenter
 - Parliament
 - PartnerRelationship
+- Partnership
 - Path
 - Pattern
 - PayForWhatYouUse
@@ -618,6 +665,7 @@
 - PragueDancingHouse_01
 - PragueDancingHouse_02
 - Predictability
+- PredictiveAnalytics
 - Pregnant
 - Prescription
 - Presentation
@@ -634,6 +682,7 @@
 - Progress
 - ProtectCriticalAssets
 - ProvenTechnology
+- PublicCloudToPrivateCloud
 - Puzzle
 - QQPlot
 - QrCode
@@ -673,12 +722,14 @@
 - ResetSettings
 - Resilience
 - ResourceHealth
+- Resources
 - RetrieveAndRank
 - RichTextFormat
 - RioDeJaneiro
 - Robot
 - Robotics
 - RockOn
+- Rocket
 - Rome
 - RotateDevice
 - SaasEnablement
@@ -693,6 +744,7 @@
 - SaveTime
 - Scale
 - Scale_02
+- ScalingContainers
 - ScatterMatrix
 - Seattle
 - SecureData
@@ -721,6 +773,7 @@
 - SingleSignOn
 - Slack
 - Slider
+- SmallComponentsMakingALargerWhole
 - Sneaker
 - Snow
 - SocialWork_01
@@ -766,6 +819,7 @@
 - SunnyHazy
 - SupplyChainOptimization_01
 - SupplyChainOptimization_02
+- Support
 - SupportServices
 - Sustainability
 - SwipeLeft
@@ -832,6 +886,7 @@
 - Tractor
 - TradeoffAnalytics
 - Train
+- Training
 - TransactionalBlockchain
 - TransactionalTrust
 - Transform_01
@@ -843,6 +898,7 @@
 - Tree
 - TreeDiagram
 - TreeMap
+- Troubleshooting
 - Trousers
 - Trust
 - Trusted
@@ -860,6 +916,7 @@
 - Upload_02
 - UruguayPalacioSalvo
 - UruguaySolDeMayo
+- UseTheLanguageOfYourChoice
 - User
 - UserAnalytics
 - UserExperienceDesign
@@ -873,9 +930,11 @@
 - Video_02
 - VideoChat
 - VideoPlay
+- ViewGraphsAndDashboard
 - VirtualServer
 - VirtualStorage
 - Virtualization
+- Virtualization_02
 - Virus
 - Visibility
 - Vision
@@ -906,6 +965,7 @@
 - WirelessModem
 - WordCloud
 - Workday
+- Workflows
 - WorldCommunityGrid
 - WreckingBall
 - XRay_01
