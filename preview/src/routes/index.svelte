@@ -44,13 +44,13 @@
     if (!detail.open) moduleName = null;
   }}
 >
-  <div style="margin-bottom: var(--cds-spacing-06);">
+  <div class:pictogram-preview={true}>
     <svelte:component this={pictograms[moduleName]} />
   </div>
   <CodeSnippet light type="multi" {code} />
 </Modal>
 
-<Content style="background: none; padding: 0;">
+<Content>
   <Grid padding>
     <Row>
       <Column>
@@ -113,6 +113,10 @@
 </Content>
 
 <style>
+  :global(.bx--content) {
+    padding: 0;
+  }
+
   :global(body) {
     overflow-y: scroll;
   }
@@ -142,5 +146,9 @@
   .flex {
     display: flex;
     align-items: flex-end;
+  }
+
+  .pictogram-preview {
+    margin-bottom: var(--cds-spacing-06);
   }
 </style>
