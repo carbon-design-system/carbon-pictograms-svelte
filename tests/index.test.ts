@@ -1,19 +1,14 @@
-import { describe, beforeAll, test, expect } from "vitest";
+import { describe, test, expect } from "vitest";
 import type { PictogramOutput } from "@carbon/pictograms";
 import { buildPictograms } from "../src";
 import { template } from "../src/template";
 
 describe("carbon-pictograms-svelte", () => {
-  let pictograms: string[] = [];
-
-  beforeAll(async () => {
-    pictograms = await buildPictograms();
-  }, 30_000);
-
-  test("imports", () => {
+  test("imports", async () => {
+    const pictograms = await buildPictograms();
     expect(pictograms.length).toMatchInlineSnapshot("961");
     expect(pictograms).toMatchSnapshot();
-  });
+  }, 30_000);
 
   test("template", () => {
     const props: PictogramOutput = {
