@@ -25,7 +25,9 @@
   let value = "";
   let theme = "white";
 
-  $: filteredModuleNames = pictogramNames.filter((name) => match(value, name));
+  $: filteredModuleNames = pictogramNames.filter((name) =>
+    match(value.trim().replace(/\s+/g, ""), name)
+  );
   $: if (typeof document !== "undefined") {
     document.documentElement.setAttribute("theme", theme);
   }
