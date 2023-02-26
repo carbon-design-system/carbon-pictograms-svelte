@@ -1,12 +1,12 @@
-import { describe, test, expect } from "vitest";
 import type { PictogramOutput } from "@carbon/pictograms";
+import { describe, expect, test } from "vitest";
 import { buildPictograms } from "../src";
 import { template } from "../src/template";
 
 describe("carbon-pictograms-svelte", () => {
   test("imports", async () => {
     const pictograms = await buildPictograms();
-    expect(pictograms.length).toMatchInlineSnapshot("961");
+    expect(pictograms.length).toMatchInlineSnapshot("962");
     expect(pictograms).toMatchSnapshot();
   }, 30_000);
 
