@@ -3,7 +3,14 @@
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+and this project adheres to
+[Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [12.3.0](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v12.3.0) - 2022-09-02
+
+**Features**
+
+- upgrade `@carbon/pictograms` to v12.13.0 (net +1 pictogram)
 
 ## [12.2.0](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v12.2.0) - 2022-09-02
 
@@ -39,7 +46,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 **Breaking Changes**
 
-- use the `.svelte.d.ts` extension for TypeScript definitions to enable direct imports
+- use the `.svelte.d.ts` extension for TypeScript definitions to enable direct
+  imports
 
 ## [11.5.0](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v11.5.0) - 2021-09-05
 
@@ -86,8 +94,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - reduce exported props to `tabindex` and `fill`
 - default `svg` width/height updated to `"64"` from `"48"`
 - default `fill` updated to `"currentColor"` from `"#161616"`
-- TypeScript definitions use `SvelteComponentTyped`; requires Svelte version >=v3.31
-- direct import method has changed from "carbon-pictograms-svelte/lib/Pictogram/Pictogram.svelte" to "carbon-pictograms-svelte/lib/Pictogram.svelte"
+- TypeScript definitions use `SvelteComponentTyped`; requires Svelte
+  version >=v3.31
+- direct import method has changed from
+  "carbon-pictograms-svelte/lib/Pictogram/Pictogram.svelte" to
+  "carbon-pictograms-svelte/lib/Pictogram.svelte"
 
 ## [10.18.1](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v10.18.1) - 2020-11-16
 
@@ -123,7 +134,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 **Fixes**
 
-- use ambient module declarations in types (e.g. `"carbon-pictograms/lib/Airplane"`) to encourage direct imports
+- use ambient module declarations in types (e.g.
+  `"carbon-pictograms/lib/Airplane"`) to encourage direct imports
 
 ## [10.15.1](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v10.15.1) - 2020-07-24
 
@@ -186,8 +198,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 **Features**
 
 - bump `@carbon/pictograms` build dependency to 10.10.0
-- use recursive `fs.rmdirSync` (requires Node.js version >=12 when running locally)
+- use recursive `fs.rmdirSync` (requires Node.js version >=12 when running
+  locally)
 
 ## [10.9.2](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v10.9.2) - 2020-04-06
 
-- initial release using `@carbon/pictograms@10.9.2`, `@carbon/icon-helpers@10.6.0`
+- initial release using `@carbon/pictograms@10.9.2`,
+  `@carbon/icon-helpers@10.6.0`
