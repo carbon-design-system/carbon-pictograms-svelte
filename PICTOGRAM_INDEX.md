@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 961 pictograms from @carbon/pictograms@12.6.0
+> 962 pictograms from @carbon/pictograms@12.13.0
 
 ## Usage
 
@@ -51,6 +51,7 @@
 - Apartment
 - Api
 - AppDeveloper
+- AppModernization
 - Apple
 - Application
 - ApplicationSecurity
