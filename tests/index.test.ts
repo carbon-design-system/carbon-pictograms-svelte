@@ -6,7 +6,7 @@ import { template } from "../src/template";
 describe("carbon-pictograms-svelte", () => {
   test("imports", async () => {
     const pictograms = await buildPictograms();
-    expect(pictograms.length).toMatchInlineSnapshot("962");
+    expect(pictograms.length).toMatchInlineSnapshot("966");
     expect(pictograms).toMatchSnapshot();
   }, 30_000);
 

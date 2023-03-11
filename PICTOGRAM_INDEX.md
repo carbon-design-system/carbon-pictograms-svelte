@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 962 pictograms from @carbon/pictograms@12.13.0
+> 966 pictograms from @carbon/pictograms@12.14.0
 
 ## Usage
 
@@ -116,6 +116,8 @@
 - Camera
 - CanadaMapleLeaf
 - Capitol
+- CarbonForIbmDotcom
+- CarbonForIbmProduct
 - Care
 - CargoCrane
 - CargoShip
@@ -270,6 +272,7 @@
 - DeepLearning
 - Delete
 - DeliverInsights
+- Delivered
 - DeliveryTruck
 - DeployingContainers
 - Deployment
@@ -580,6 +583,7 @@
 - MovementOfGoods_02
 - MovementOfGoods_03
 - MovementOfItems
+- MovingDolly
 - Mqa
 - Mri
 - MriPatient
