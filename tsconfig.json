@@ -4,7 +4,11 @@
     "lib": ["esnext", "DOM"],
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "strict": true
+    "strict": true,
+    "paths": {
+      "carbon-pictograms-svelte": ["./lib"],
+      "carbon-pictograms-svelte/lib/*": ["./lib/*"]
+    }
   },
   "include": ["src", "tests"]
 }

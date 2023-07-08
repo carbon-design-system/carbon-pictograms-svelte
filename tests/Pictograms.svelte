@@ -1,11 +1,16 @@
 <script lang="ts">
-  import { AddDevice, AiEthics, Websites, Containers } from "../lib";
-  import ActiveServer from "../lib/ActiveServer.svelte";
-  import Airplane from "../lib/Airplane.svelte";
-  import BerlinTower from "../lib/BerlinTower.svelte";
+  import {
+    AddDevice,
+    AiEthics,
+    Websites,
+    Containers,
+  } from "carbon-pictograms-svelte";
+  import ActiveServer from "carbon-pictograms-svelte/lib/ActiveServer.svelte";
+  import Airplane from "carbon-pictograms-svelte/lib/Airplane.svelte";
+  import BerlinTower from "carbon-pictograms-svelte/lib/BerlinTower.svelte";
 </script>
 
-<AddDevice aria-label="Add Device" />
+<AddDevice data-test-id="" aria-label="Add Device" />
 <ActiveServer class="class" style="fill: red" title="" tabindex={0} />
 <BerlinTower fill="#000" />
 
