@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 966 pictograms from @carbon/pictograms@12.14.0
+> 983 pictograms from @carbon/pictograms@^12.19.1
 
 ## Usage
 
@@ -23,6 +23,7 @@
 - AdvancedFraudProtection
 - AdvancedThreats
 - Advocate
+- AdvocateMask
 - Agility
 - AgilityWithHybridMulticloud
 - Agriculture
@@ -229,6 +230,8 @@
 - Console
 - ConsoleWireless
 - Construct
+- ConstructionWorker
+- ConstructionWorkerMask
 - ConsumerEngagementFoodJourney
 - Container
 - ContainerMicroservices
@@ -250,6 +253,14 @@
 - CreditCard
 - Crop
 - Cupcake
+- CurveCubic
+- CurveExponential
+- CurveInverse
+- CurveLinear
+- CurveLogarithmic
+- CurveLogistic
+- CurvePower
+- CurveQuadratic
 - CustomWorkloads
 - CustomReports
 - CustomerService
@@ -691,6 +702,7 @@
 - Puzzle
 - QQPlot
 - QrCode
+- Quantum
 - QuantumSafe
 - QuantumComputing
 - Question
@@ -927,6 +939,7 @@
 - UserExperienceDesign
 - UserInsights
 - UserInterface
+- UserMask
 - UserProfile
 - UserSearch
 - Vancouver
@@ -955,6 +968,10 @@
 - WashingtonDcCapitol
 - WashingtonDcMonument
 - WatsonLogo
+- Watsonx
+- WatsonxAi
+- WatsonxData
+- WatsonxGovernance
 - Weather
 - WebDeveloper
 - Webcast
