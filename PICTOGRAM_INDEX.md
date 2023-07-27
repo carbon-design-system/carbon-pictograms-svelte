@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 983 pictograms from @carbon/pictograms@^12.19.2
+> 1024 pictograms from @carbon/pictograms@^12.20.0
 
 ## Usage
 
@@ -62,6 +62,7 @@
 - ArtTools_01
 - AsiaAustralia
 - AssessmentUsed
+- AssetManagement
 - Assets
 - Atlanta
 - AudioData
@@ -77,7 +78,10 @@
 - Backpack
 - Badge
 - Bag
+- Balloon
+- BalloonHotAir
 - Bangalore
+- Banking
 - Barcelona
 - Bee
 - BeijingMunicipal
@@ -116,6 +120,7 @@
 - CalendarEvent
 - Camera
 - CanadaMapleLeaf
+- Candy
 - Capitol
 - CarbonForIbmDotcom
 - CarbonForIbmProduct
@@ -189,6 +194,7 @@
 - CloudVmware
 - CloudPakFamily
 - CloudPakForApplications
+- CloudPakForBusinessAutomation
 - CloudPakForData
 - CloudPakForIntegration
 - CloudPakForMulticloudManagement
@@ -250,6 +256,7 @@
 - CopenhagenPlanetarium
 - CopenhagenSnekkja
 - Coronavirus
+- Coupon
 - CreditCard
 - Crop
 - Cupcake
@@ -343,6 +350,7 @@
 - EmployeeInsights
 - Encryption
 - EndpointProtection
+- EnergyCrisis
 - Engine
 - EnterpriseDesignThinking_01
 - EnterpriseDesignThinking_02
@@ -350,8 +358,14 @@
 - ErlenmeyerFlask
 - EscalatorDown
 - EscalatorUp
+- EsgReporting_01
+- EsgReporting_02
 - EuropeAfrica
 - EventDriven
+- EventAutomation
+- EventEndpointManagement
+- EventProcessing
+- EventStreams
 - ExpandHorz
 - ExpandUser
 - ExpandVert
@@ -391,9 +405,11 @@
 - FinancialNews
 - FireAlarm
 - FireExtinguisher
+- Firecracker
 - Firefighter
 - Firewall
 - FirstAid
+- Flag
 - FlashStorage
 - FlashingContent
 - Flexibility
@@ -439,8 +455,12 @@
 - GoLanguage
 - Goals
 - GovernUsersAndIdentities
+- Government_01
+- Government_02
 - GraphicIntensiveWorkloads
 - GreenEnergy
+- GreenIt_01
+- GreenIt_02
 - Group
 - Growth
 - Guitar
@@ -450,6 +470,7 @@
 - HamburgPhilharmone
 - Handicap
 - HandicapActive
+- Handshake
 - HardDrive
 - HardDriveNetwork
 - HardIceCream
@@ -529,10 +550,12 @@
 - Language_04
 - Language_05
 - LanguageTranslation
+- Lantern
 - Launch
 - Leader
 - LiftAndShift
 - Lightning
+- Link
 - ListBullet
 - ListCheckbox
 - Location
@@ -567,6 +590,8 @@
 - MasterThreatHunting
 - MathCurve
 - Maximize
+- Medal_01
+- Medal_02
 - Medical
 - MedicalCharts
 - MedicalStaff
@@ -587,6 +612,8 @@
 - Modernize
 - Monitor
 - MonitoredItemOnConveyor
+- MoonCake
+- MoonFull
 - MortarAndPestle
 - Moscow
 - MovementInOverlappingNetworks
@@ -600,6 +627,7 @@
 - MriPatient
 - Multitask
 - Munich
+- Music
 - NaturalLanguageClassifier
 - NaturalLanguageUnderstanding
 - Network
@@ -640,6 +668,7 @@
 - OptimizeCashFlow_01
 - OptimizeCashFlow_02
 - Organization
+- Ornament
 - Overcast
 - Overview
 - PaperClip
@@ -740,6 +769,7 @@
 - Resilience
 - ResourceHealth
 - Resources
+- RetailSustainable
 - RetrieveAndRank
 - RichTextFormat
 - RioDeJaneiro
@@ -762,6 +792,7 @@
 - Scale
 - Scale_02
 - ScalingContainers
+- ScanCode
 - ScatterMatrix
 - Seattle
 - SecureData
@@ -781,6 +812,8 @@
 - ServerRack
 - Serverless
 - Servers
+- ShanghaiOrientalPearlTower
+- ShanghaiCityscape
 - SharingData
 - Shirt
 - Shop
@@ -793,6 +826,7 @@
 - SmallComponentsMakingALargerWhole
 - Sneaker
 - Snow
+- Snowflake
 - SocialWork_01
 - SocialWork_02
 - SocialWorker
@@ -834,11 +868,17 @@
 - Summit
 - Sunny
 - SunnyHazy
+- SupplyChain_01
+- SupplyChain_02
 - SupplyChainOptimization_01
 - SupplyChainOptimization_02
 - Support
 - SupportServices
 - Sustainability
+- Sustainability_02
+- Sustainability_03
+- Sustainability_04
+- SustainabilityStrategy
 - SwipeLeft
 - SwipeRight
 - Synergy
@@ -915,6 +955,7 @@
 - Tree
 - TreeDiagram
 - TreeMap
+- Trophy
 - Troubleshooting
 - Trousers
 - Trust

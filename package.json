@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@carbon/icon-helpers": "^10.43.0",
-    "@carbon/pictograms": "^12.19.2",
+    "@carbon/pictograms": "^12.20.0",
     "@sveltejs/vite-plugin-svelte": "^2.4.3",
     "@types/carbon__icon-helpers": "^10.7.2",
     "sveld": "^0.19.0",

@@ -15,10 +15,10 @@
   resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-10.43.0.tgz#f7c603cf6f076c4261a9f6b1824c9ee9e337396e"
   integrity sha512-4suJAup+1IMQtQDZR/vUfnMy4Lvz1DiD+qmhNoqeBzBlNCXg43VBNy01lUA3bTvsCx2eRJ/2vhOUlqEE6EQO4g==
 
-"@carbon/pictograms@^12.19.2":
-  version "12.19.2"
-  resolved "https://registry.yarnpkg.com/@carbon/pictograms/-/pictograms-12.19.2.tgz#e17b2e63f2ed4e6d762476a6b8c7f2aed8f3d2d2"
-  integrity sha512-nJMAii33LBY7Clk9wys0yoeZ4VMZXu0r993WLFV8MADW3eXtnpjbT64/f5kt5lEZv12h47HmtUaA1DgFYiLZtw==
+"@carbon/pictograms@^12.20.0":
+  version "12.20.0"
+  resolved "https://registry.yarnpkg.com/@carbon/pictograms/-/pictograms-12.20.0.tgz#bc867f35e04a69cf18103d3731c93e89d1b458b5"
+  integrity sha512-XQZWgW5YePMB8T5tTn/ENDbMnooP0sd+2WU+90+Z3qXDpcFVbzSVgsmnPHEGeqNYTIFyTKjhVhZxY6XXHgfS7g==
 
 "@esbuild/android-arm64@0.18.11":
   version "0.18.11"

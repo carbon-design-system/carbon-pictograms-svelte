@@ -1,5 +1,6 @@
 <script lang="ts">
   import {
+    AssetManagement,
     AddDevice,
     AiEthics,
     Websites,
@@ -8,6 +9,8 @@
   import ActiveServer from "carbon-pictograms-svelte/lib/ActiveServer.svelte";
   import Airplane from "carbon-pictograms-svelte/lib/Airplane.svelte";
   import BerlinTower from "carbon-pictograms-svelte/lib/BerlinTower.svelte";
+
+  const component = AssetManagement;
 </script>
 
 <AddDevice data-test-id="" aria-label="Add Device" />
@@ -24,3 +27,5 @@
 <AiEthics />
 <Websites />
 <Containers />
+
+<svelte:component this={component} height={24} />
