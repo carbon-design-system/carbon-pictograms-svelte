@@ -11,14 +11,14 @@
     "test": "vitest"
   },
   "devDependencies": {
-    "@carbon/icon-helpers": "^10.43.0",
-    "@carbon/pictograms": "^12.20.0",
-    "@sveltejs/vite-plugin-svelte": "^2.4.3",
+    "@carbon/icon-helpers": "^10.44.0",
+    "@carbon/pictograms": "^12.22.0",
+    "@sveltejs/vite-plugin-svelte": "^2.4.5",
     "@types/carbon__icon-helpers": "^10.7.2",
     "sveld": "^0.19.0",
-    "svelte": "^4.1.1",
-    "typescript": "^5.1.6",
-    "vitest": "^0.33.0"
+    "svelte": "^4.2.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.3"
   },
   "repository": {
     "type": "git",
