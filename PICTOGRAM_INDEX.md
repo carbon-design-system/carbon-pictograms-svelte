@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1115 pictograms from @carbon/pictograms@^12.23.0
+> 1135 pictograms from @carbon/pictograms@12.27.0-rc.0
 
 ## Usage
 
@@ -36,6 +36,10 @@
 - AiRobustness
 - AiTransparency
 - AiTrust
+- AiGovernanceLifecycleFactsheet
+- AiGovernanceModel
+- AiGovernanceModelTuned
+- AiGovernancePrompt
 - AirConditioner
 - Airplane
 - Alarm
@@ -133,8 +137,11 @@
 - CanadaMapleLeaf
 - Candy
 - Capitol
+- Carbon
+- CarbonForCloud
 - CarbonForIbmDotcom
 - CarbonForIbmProduct
+- Cardboard
 - Care
 - CargoCrane
 - CargoShip
@@ -446,6 +453,7 @@
 - FlashingContent
 - Flexibility
 - Flexibility_02
+- Flexible
 - FlexibleCompute
 - FlexibleInfrastructure
 - FlowChart
@@ -457,6 +465,7 @@
 - Folder
 - Forecasting
 - Forklift
+- FountainDrinking
 - Fragile
 - FreeTrial
 - Fuel
@@ -602,11 +611,13 @@
 - Lantern
 - Launch
 - Leader
+- Library
 - LiftAndShift
 - Lightning
 - Link
 - ListBullet
 - ListCheckbox
+- Literature
 - LoadBalancer
 - Location
 - Lock_01
@@ -615,6 +626,7 @@
 - LockedNetwork_02
 - London
 - LondonBigBen
+- LoopHearing
 - Love
 - LoweringRisk
 - Luggage
@@ -862,6 +874,7 @@
 - Satellite
 - SatelliteDish
 - SaveTime
+- Scalable
 - Scale
 - Scale_02
 - ScalingContainers
@@ -900,6 +913,7 @@
 - Shop
 - ShoppingCart
 - Shower
+- Silence
 - Singapore
 - SingleSignOn
 - Slack
@@ -933,6 +947,7 @@
 - StairsUp
 - StartForFree
 - StartUps
+- StationHydration
 - StationaryBicycle
 - Steel
 - SteeringWheel
@@ -941,6 +956,8 @@
 - Stockholm
 - Storage
 - StorageAreaNetworks
+- StorageForDataAndAi
+- StorageForResiliency
 - StorageProduct
 - Strategy
 - StrategyAndRisk
@@ -1039,6 +1056,8 @@
 - Transparency_01
 - Transparency_02
 - Trash
+- TrashBurnable
+- TrashNonBurnable
 - Tree
 - TreeDiagram
 - TreeMap
@@ -1097,6 +1116,7 @@
 - WashingtonDc
 - WashingtonDcCapitol
 - WashingtonDcMonument
+- WasteElectronic
 - WatsonLogo
 - Watsonx
 - WatsonxAi
