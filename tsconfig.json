@@ -8,7 +8,8 @@
     "paths": {
       "carbon-pictograms-svelte": ["./lib"],
       "carbon-pictograms-svelte/lib/*": ["./lib/*"]
-    }
+    },
+    "types": ["bun-types"]
   },
   "include": ["src", "tests"]
 }

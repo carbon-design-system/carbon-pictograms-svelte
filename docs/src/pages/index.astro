@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+---
+import Home from "../components/index.svelte";
+---
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -9,9 +12,8 @@
       content="Carbon Design System pictograms as Svelte components"
     />
     <title>Carbon Pictograms Svelte</title>
-    %sveltekit.head%
   </head>
   <body>
-    <div>%sveltekit.body%</div>
+    <Home client:load />
   </body>
 </html>

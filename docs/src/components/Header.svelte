@@ -1,6 +1,4 @@
 <script>
-  export let version = undefined;
-
   import {
     Header,
     HeaderUtilities,
@@ -11,7 +9,8 @@
     HeaderPanelDivider,
     SkipToContent,
   } from "carbon-components-svelte";
-  import { LogoGithub } from "carbon-icons-svelte";
+  import LogoGithub from "./LogoGithub.svelte";
+  import { version } from "../../../package.json";
 </script>
 
 <Header aria-label="Navigation" href="/">
