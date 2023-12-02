@@ -13,7 +13,7 @@
   } from "carbon-components-svelte";
   import FocusKey from "svelte-focus-key";
   import fuzzy from "fuzzy";
-  import Header from "$lib/Header.svelte";
+  import Header from "./Header.svelte";
   import * as pictograms from "../../../lib";
   import { version } from "../../../package.json";
 
