@@ -1,5 +1,4 @@
 <script>
-  import "carbon-components-svelte/css/all.css";
   import {
     ClickableTile,
     Search,
