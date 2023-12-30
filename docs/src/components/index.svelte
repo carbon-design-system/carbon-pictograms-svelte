@@ -99,7 +99,7 @@
     </Row>
     <Row>
       <Column>
-        <ul>
+        <div class="grid">
           {#each pictogramNames as pictogram (pictogram)}
             {#if filteredModuleNames.includes(pictogram)}
               <ClickableTile
@@ -110,7 +110,7 @@
               </ClickableTile>
             {/if}
           {/each}
-        </ul>
+        </div>
       </Column>
     </Row>
   </Grid>
@@ -129,9 +129,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: calc(100% / 16);
-    min-width: 9.3875rem;
-    flex: 0 0 auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   :global(#select-theme) {
@@ -142,9 +141,9 @@
     color: var(--cds-text-02);
   }
 
-  ul {
-    display: flex;
-    flex-wrap: wrap;
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   }
 
   .flex {
