@@ -9,6 +9,7 @@
     Column,
     Content,
     Theme,
+    SelectSkeleton,
   } from "carbon-components-svelte";
   import FocusKey from "svelte-focus-key";
   import fuzzy from "fuzzy";
@@ -27,9 +28,7 @@
   $: filteredModuleNames = pictogramNames.filter((name) =>
     match(value.trim().replace(/\s+/g, ""), name)
   );
-  $: if (typeof document !== "undefined") {
-    document.documentElement.setAttribute("theme", theme);
-  }
+  $: mounted = typeof document !== "undefined";
   $: code = `<script>\n  import ${moduleName} from "carbon-pictograms-svelte/lib/${moduleName}.svelte";\n<\/script>\n\n<${moduleName} />`;
 </script>
 
@@ -56,18 +55,22 @@
     <Row>
       <Column>
         <div class="flex">
-          <Theme
-            bind:theme
-            persist
-            render="select"
-            select={{
-              id: "select-theme",
-              size: "xl",
-              labelText: "Carbon theme",
-              themes: ["white", "g10", "g80", "g90", "g100"],
-            }}
-          />
+          {#if mounted}
+            <Theme
+              bind:theme
+              persist
+              render="select"
+              select={{
+                id: "select-theme",
+                labelText: "Carbon theme",
+                themes: ["white", "g10", "g80", "g90", "g100"],
+              }}
+            />
+          {:else}
+            <SelectSkeleton id="select-theme" />
+          {/if}
           <Search
+            size="lg"
             style="border-left: 1px solid var(--cds-ui-03);"
             autocomplete="off"
             autocorrect="off"
