@@ -15,7 +15,6 @@
   import fuzzy from "fuzzy";
   import Header from "./Header.svelte";
   import * as pictograms from "../../../lib";
-  import { version } from "../../../package.json";
 
   const { match } = fuzzy;
   const pictogramNames = Object.keys(pictograms);
@@ -34,7 +33,7 @@
 
 <FocusKey element={ref} selectText />
 
-<Header {version} />
+<Header />
 
 <Modal
   passiveModal
