@@ -66,7 +66,7 @@
               }}
             />
           {:else}
-            <SelectSkeleton id="select-theme" />
+            <SelectSkeleton id="select-theme-skeleton" />
           {/if}
           <Search
             size="lg"
@@ -134,6 +134,13 @@
 
   :global(#select-theme) {
     width: 8rem;
+  }
+
+  :global(#select-theme-skeleton) {
+    position: relative;
+    height: 64px;
+    top: 2px;
+    min-width: 8rem;
   }
 
   :global(.text-02) {
