@@ -29,6 +29,12 @@
   );
   $: mounted = typeof document !== "undefined";
   $: code = `<script>\n  import ${moduleName} from "carbon-pictograms-svelte/lib/${moduleName}.svelte";\n<\/script>\n\n<${moduleName} />`;
+  $: if (mounted) {
+    document.documentElement.style.setProperty(
+      "color-scheme",
+      ["white", "g10"].includes(theme) ? "light" : "dark"
+    );
+  }
 </script>
 
 <FocusKey element={ref} selectText />
