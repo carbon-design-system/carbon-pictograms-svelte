@@ -20,13 +20,13 @@
     "prepack": "bun test"
   },
   "devDependencies": {
-    "@carbon/icon-helpers": "^10.44.0",
+    "@carbon/icon-helpers": "latest",
     "@carbon/pictograms": "12.27.0-rc.0",
     "@types/bun": "latest",
-    "@types/carbon__icon-helpers": "^10.7.2",
-    "sveld": "^0.19.0",
-    "svelte": "^4.2.1",
-    "typescript": "^5.2.2"
+    "@types/carbon__icon-helpers": "latest",
+    "sveld": "latest",
+    "svelte": "latest",
+    "typescript": "latest"
   },
   "repository": {
     "type": "git",
