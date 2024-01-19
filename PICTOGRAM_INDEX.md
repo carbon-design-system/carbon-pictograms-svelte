@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1135 pictograms from @carbon/pictograms@12.27.0-rc.0
+> 1173 pictograms from @carbon/pictograms@12.30.0
 
 ## Usage
 
@@ -52,6 +52,7 @@
 - AmsterdamWindmill
 - Analytics
 - Analyze
+- AnalyzeCode
 - AnalyzesData
 - AnalyzingContainers
 - AnonymousUsers
@@ -99,6 +100,7 @@
 - Bee
 - BeijingMunicipal
 - BeijingTower
+- BentoBoxTray
 - BerlinBrandenburgGate
 - BerlinCathedral
 - BerlinTower
@@ -180,6 +182,16 @@
 - ChipCredit
 - ChipDebit
 - ChooseHowToGetStarted
+- CicsConfigurationManagerForZOs
+- CicsDeploymentAssistant
+- CicsExplorer
+- CicsInterdependencyAnalyzerForZOs
+- CicsPerformanceAnalyzerForZOs
+- CicsTransactionGateway
+- CicsTransactionServerForZOs
+- CicsTx
+- CicsVsamRecoveryForZOs
+- CicsVsamTransparencyForZOs
 - CirclePacking
 - ClientFinancing_01
 - ClientFinancing_02
@@ -350,6 +362,7 @@
 - Dna
 - DoNot
 - DoNot_02
+- DoNotStep
 - Docker
 - Doctor
 - DoctorPatient
@@ -463,6 +476,9 @@
 - FocusOnCode
 - Fog
 - Folder
+- Football
+- FootballField
+- FootballGoalPost
 - Forecasting
 - Forklift
 - FountainDrinking
@@ -475,6 +491,7 @@
 - GeographicFlexibility
 - GetAheadOfRiskAndCompliance
 - Gift
+- GlassBottleAndMetalCan
 - GlobalAnalytics
 - GlobalAssetsAndRecovery_01
 - GlobalAssetsAndRecovery_02
@@ -496,10 +513,15 @@
 - GlobeLocations
 - GoLanguage
 - Goals
+- GolfBag
+- GolfBall
+- GolfClub
+- GolfHole
 - GovernUsersAndIdentities
 - Government_01
 - Government_02
 - GpuComputing
+- Gramophone
 - GraphicDesign
 - GraphicIntensiveWorkloads
 - GreenEnergy
@@ -560,6 +582,7 @@
 - IbmRpa
 - IbmZ
 - IbmZPartition
+- IbmZAndCloudModernizationStack
 - IbmZAndLinuxoneMultiFrame
 - IbmZAndLinuxoneSingleFrame
 - IbmZ16
@@ -615,6 +638,7 @@
 - LiftAndShift
 - Lightning
 - Link
+- Liquids
 - ListBullet
 - ListCheckbox
 - Literature
@@ -643,6 +667,7 @@
 - MadridStatue
 - Magnify
 - MailVerse
+- MainframeQualitiesOfService
 - ManageApplicationsAnywhere
 - ManagedHosting_01
 - ManagedHosting_02
@@ -664,6 +689,7 @@
 - MedicalStaff
 - Melbourne
 - Memory
+- MetalCan
 - Meter
 - MexicoCityAngelOfIndependence
 - MexicoCityMuseoSoumaya
@@ -774,6 +800,7 @@
 - PillBottle_01
 - Pills
 - PlanningAnalytics
+- Plastics
 - PlatformAsAService
 - PlayerFlow
 - PliLanguage
@@ -917,6 +944,7 @@
 - Singapore
 - SingleSignOn
 - Slack
+- SliceCode
 - Slider
 - SmallComponentsMakingALargerWhole
 - SmallToMediumBusinessSmb
@@ -938,9 +966,11 @@
 - SpeechToText
 - Speedometer
 - Sports
+- Spotlight
 - Sprout
 - Spss
 - StackLimitation
+- Stage
 - Stairs
 - StairsDown
 - StairsPlanView
@@ -959,6 +989,7 @@
 - StorageForDataAndAi
 - StorageForResiliency
 - StorageProduct
+- StorageSystems
 - Strategy
 - StrategyAndRisk
 - StrategyDirect
@@ -1018,6 +1049,9 @@
 - TemperatureLow
 - TemporaryBadge
 - Tennis
+- TennisBall
+- TennisNet
+- TennisRacquet
 - TestTubes
 - TextData
 - TextEquivalent
@@ -1120,6 +1154,9 @@
 - WatsonLogo
 - Watsonx
 - WatsonxAi
+- WatsonxCodeAssistant
+- WatsonxCodeAssistantForZ
+- WatsonxCodeAssistantForZRefactor
 - WatsonxData
 - WatsonxGovernance
 - Weather
@@ -1129,6 +1166,7 @@
 - Websphere
 - WeddingCake
 - Wheat
+- Whistle
 - Wifi
 - WindPower
 - Windows
