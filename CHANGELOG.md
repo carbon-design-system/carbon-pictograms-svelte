@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [12.10.0](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v12.10.0) - 2024-01-19
+
+**Features**
+
+- upgrade `@carbon/pictograms` to v12.30.0 (net +38 pictograms)
+
 ## [12.9.2](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v12.9.2) - 2023-12-16
 
 **Fixes**
