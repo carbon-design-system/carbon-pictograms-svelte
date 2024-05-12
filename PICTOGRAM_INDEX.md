@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1173 pictograms from @carbon/pictograms@12.30.0
+> 1183 pictograms from @carbon/pictograms@12.36.0
 
 ## Usage
 
@@ -114,6 +114,8 @@
 - BostonZakimBridge
 - BoxPlot
 - Broom
+- BucharestNationalTheatre
+- BucharestRomanianAthenaeum
 - Budapest
 - BudapestCitadella
 - BudapestLabSkyline
@@ -197,6 +199,7 @@
 - ClientFinancing_02
 - ClothesRack_01
 - ClothesRack_02
+- Cloud
 - CloudAnalytics
 - CloudAssets
 - CloudBuilderProfessionalServices
@@ -580,6 +583,7 @@
 - IbmCloud
 - IbmIx
 - IbmRpa
+- IbmUkLabsHursley
 - IbmZ
 - IbmZPartition
 - IbmZAndCloudModernizationStack
@@ -622,6 +626,7 @@
 - KeyUsers
 - Keyboard
 - KnowsDarkData
+- KochiHouseboat
 - KualaLumpur
 - Kubernetes
 - KubernetesPod
@@ -770,6 +775,7 @@
 - OptimizeCashFlow_02
 - Organization
 - Ornament
+- OsakaTsutenkakuTower
 - Overcast
 - Overview
 - PaperClip
@@ -886,6 +892,7 @@
 - Robotics
 - RockOn
 - Rocket
+- RomaniaTheGateOfTheKiss
 - Rome
 - RotateDevice
 - SaasEnablement
@@ -935,6 +942,7 @@
 - Servers
 - ShanghaiCityscape
 - ShanghaiOrientalPearlTower
+- ShanghaiSkyline
 - SharingData
 - Shirt
 - Shop
@@ -1144,6 +1152,7 @@
 - VisualDesign
 - VisualInsights
 - VisualRecognition
+- WalldorfIbmInnovationStudios
 - Warning_01
 - Warning_02
 - Washer
@@ -1187,3 +1196,4 @@
 - Yoga_03
 - Yoga_04
 - ZeroTrust
+- Zurich
