@@ -24,7 +24,6 @@
     "@carbon/pictograms": "12.43.0",
     "@types/bun": "latest",
     "culls": "^0.1.1",
-    "sveld": "latest",
     "svelte": "^5.0.3",
     "typescript": "latest"
   },
