@@ -14,20 +14,18 @@ Try it in the [Svelte REPL](https://svelte.dev/repl/88b99674d0f24a3a8948d3760f8b
 
 ## Installation
 
-Install `carbon-pictograms-svelte` as a development dependency.
-
 ```sh
 # npm
-npm i -D carbon-pictograms-svelte
+npm i carbon-pictograms-svelte
 
 # pnpm
-pnpm i -D carbon-pictograms-svelte
+pnpm i carbon-pictograms-svelte
 
 # Yarn
-yarn add -D carbon-pictograms-svelte
+yarn add carbon-pictograms-svelte
 
 # Bun
-bun add -D carbon-pictograms-svelte
+bun add carbon-pictograms-svelte
 ```
 
 ## Usage
