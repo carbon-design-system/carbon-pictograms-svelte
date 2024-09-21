@@ -23,7 +23,6 @@
     "@carbon/icon-helpers": "latest",
     "@carbon/pictograms": "12.36.0",
     "@types/bun": "latest",
-    "@types/carbon__icon-helpers": "latest",
     "sveld": "latest",
     "svelte": "latest",
     "typescript": "latest"
