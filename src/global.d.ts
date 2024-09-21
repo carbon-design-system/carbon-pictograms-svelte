@@ -39,3 +39,9 @@ declare module "@carbon/pictograms" {
     }>;
   };
 }
+
+declare module "@carbon/pictograms/metadata.json" {
+  import type { BuildIcons } from "@carbon/pictograms";
+  const value: BuildIcons;
+  export default value;
+}

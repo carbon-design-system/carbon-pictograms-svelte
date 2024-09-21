@@ -1,10 +1,9 @@
+import buildInfo from "@carbon/pictograms/metadata.json" assert { type: "json" };
 import fsp from "fs/promises";
-import type { BuildIcons } from "@carbon/pictograms";
-import buildInfo from "@carbon/pictograms/metadata.json";
 import { ComponentParser } from "sveld";
-import writeTsDefinitions from "sveld/lib/writer/writer-ts-definitions";
 import type { ParsedExports } from "sveld/lib/parse-exports";
-import { name, devDependencies } from "../package.json";
+import writeTsDefinitions from "sveld/lib/writer/writer-ts-definitions";
+import { devDependencies, name } from "../package.json" assert { type: "json" };
 import { template } from "./template";
 
 export const buildPictograms = async () => {
@@ -20,7 +19,7 @@ export const buildPictograms = async () => {
 
   const pictograms: string[] = [];
 
-  (buildInfo as BuildIcons).icons.forEach(async ({ output }) => {
+  buildInfo.icons.forEach(async ({ output }) => {
     const { moduleName } = output[0];
 
     imports += `export { default as ${moduleName} } from "./${moduleName}.svelte";\n`;
