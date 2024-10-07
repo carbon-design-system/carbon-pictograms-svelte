@@ -1,4 +1,5 @@
 <script>
+  // @ts-check
   import {
     ClickableTile,
     Search,
@@ -22,6 +23,8 @@
   let ref = null;
   let moduleName = null;
   let value = "";
+
+  /** @type {import("svelte").ComponentProps<Theme>["theme"]} */
   let theme = "white";
 
   $: filteredModuleNames = pictogramNames.filter((name) =>
@@ -81,7 +84,6 @@
             autocorrect="off"
             autocapitalize="off"
             spellcheck="false"
-            titleText="Search"
             labelText="Search"
             placeholder={`Search pictograms (e.g. "Airplane")`}
             bind:ref
