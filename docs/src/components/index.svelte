@@ -106,18 +106,19 @@
     </Row>
     <Row>
       <Column>
-        <div class="grid">
+        <ul class="grid">
           {#each pictogramNames as pictogram (pictogram)}
-            {#if filteredModuleNames.includes(pictogram)}
+            {@const isFiltered = filteredModuleNames.includes(pictogram)}
+            <li style:display={isFiltered ? "inline" : "none"}>
               <ClickableTile
                 title={pictogram}
                 on:click={() => (moduleName = pictogram)}
               >
                 <svelte:component this={pictograms[pictogram]} />
               </ClickableTile>
-            {/if}
+            </li>
           {/each}
-        </div>
+        </ul>
       </Column>
     </Row>
   </Grid>
