@@ -24,7 +24,7 @@
     "@carbon/pictograms": "12.36.0",
     "@types/bun": "latest",
     "sveld": "latest",
-    "svelte": "latest",
+    "svelte": "^5.0.3",
     "typescript": "latest"
   },
   "repository": {
