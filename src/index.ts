@@ -1,5 +1,5 @@
 import buildInfo from "@carbon/pictograms/metadata.json" assert { type: "json" };
-import fsp from "fs/promises";
+import { $ } from "bun";
 import { ComponentParser } from "sveld";
 import type { ParsedExports } from "sveld/lib/parse-exports";
 import writeTsDefinitions from "sveld/lib/writer/writer-ts-definitions";
@@ -8,8 +8,8 @@ import { template } from "./template";
 
 export const buildPictograms = async () => {
   console.time("Built in");
-  await fsp.rm("lib", { recursive: true, force: true });
-  await fsp.mkdir("lib");
+  await $`rm -rf lib`;
+  await $`mkdir lib`;
 
   const parser = new ComponentParser();
   const components = new Map();
@@ -42,7 +42,7 @@ export const buildPictograms = async () => {
       default: false,
     };
 
-    await fsp.writeFile(`lib/${moduleName}.svelte`, source);
+    await Bun.write(`lib/${moduleName}.svelte`, source);
   });
 
   const metadata = `${pictograms.length} pictograms from @carbon/pictograms@${devDependencies["@carbon/pictograms"]}`;
@@ -54,8 +54,8 @@ export const buildPictograms = async () => {
     outDir: "lib",
   });
 
-  await fsp.writeFile("lib/index.js", imports);
-  await fsp.writeFile(
+  await Bun.write("lib/index.js", imports);
+  await Bun.write(
     "PICTOGRAM_INDEX.md",
     `
 # Pictogram Index
