@@ -7,7 +7,7 @@ test("imports", async () => {
   const pictograms = await buildPictograms();
   expect(pictograms.length).toEqual(1183);
   expect(pictograms).toMatchSnapshot();
-}, 30_000);
+});
 
 test("template", () => {
   const props: PictogramOutput = {
