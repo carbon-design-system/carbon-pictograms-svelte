@@ -22,7 +22,9 @@ jobs:
         run: bun install
 
       - name: Build package
-        run: bun prepack
+        run: |
+          bun run prepack
+          bun run build:prune-package
 
       - name: Publish package
         env:
