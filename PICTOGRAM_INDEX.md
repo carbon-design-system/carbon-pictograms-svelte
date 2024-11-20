@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1183 pictograms from @carbon/pictograms@12.36.0
+> 1187 pictograms from @carbon/pictograms@12.43.0
 
 ## Usage
 
@@ -617,6 +617,7 @@
 - Invoice
 - IotMunich
 - ItInfrastructureSoftware
+- JapanMtFuji
 - Java
 - Javascript
 - Juice
@@ -670,6 +671,7 @@
 - MadridCathedral
 - MadridSkyscrapers
 - MadridStatue
+- MagicWand
 - Magnify
 - MailVerse
 - MainframeQualitiesOfService
@@ -865,6 +867,7 @@
 - RedHatApplications
 - RedefiningFinancialServices
 - ReducingCost
+- ReferenceArchitecture
 - Refinery
 - Refresh
 - RelationshipDiagram
@@ -1176,6 +1179,7 @@
 - WeddingCake
 - Wheat
 - Whistle
+- WhitePaper
 - Wifi
 - WindPower
 - Windows
