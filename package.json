@@ -17,13 +17,13 @@
     }
   },
   "scripts": {
-    "prepack": "bun test",
-    "build:prune-package": "bun scripts/prune-package.ts"
+    "prepack": "bun test"
   },
   "devDependencies": {
     "@carbon/icon-helpers": "latest",
     "@carbon/pictograms": "12.43.0",
     "@types/bun": "latest",
+    "culls": "^0.1.1",
     "sveld": "latest",
     "svelte": "^5.0.3",
     "typescript": "latest"
