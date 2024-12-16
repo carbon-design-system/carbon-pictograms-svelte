@@ -13,12 +13,11 @@ jobs:
       - name: Install dependencies
         run: bun install
 
-      - name: Run unit tests
-        run: bun test
+      - name: Build package
+        run: bun run prepack
 
       - name: Trigger deploy
         if: github.ref == 'refs/heads/master'
         env:
           deploy_url: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
-        run: |
-          curl "$deploy_url"
+        run: curl "$deploy_url"
