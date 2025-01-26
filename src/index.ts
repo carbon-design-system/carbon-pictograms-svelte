@@ -1,8 +1,5 @@
 import buildInfo from "@carbon/pictograms/metadata.json" assert { type: "json" };
 import { $ } from "bun";
-import { ComponentParser } from "sveld";
-import type { ParsedExports } from "sveld/lib/parse-exports";
-import writeTsDefinitions from "sveld/lib/writer/writer-ts-definitions";
 import { devDependencies, name } from "../package.json" assert { type: "json" };
 import { template } from "./template";
 
@@ -11,56 +8,60 @@ export const buildPictograms = async () => {
   await $`rm -rf lib`;
   await $`mkdir lib`;
 
-  const parser = new ComponentParser();
-  const components = new Map();
-  const exports: ParsedExports = {};
+  let definitions = `import type { SvelteComponentTyped } from "svelte";
+import type { SvelteHTMLElements } from "svelte/elements";
 
-  let imports = "";
+export type CarbonPictogramProps = SvelteHTMLElements["svg"] & {
+  /**
+   * Specify the pictogram title.
+   * @default undefined
+   */
+  title?: string;
+}
+
+export declare class CarbonPictogram extends SvelteComponentTyped<
+  CarbonPictogramProps,
+  Record<string, any>,
+  {}
+> {}\n\n`;
+
+  let libExport = "";
 
   const pictograms: string[] = [];
 
   buildInfo.icons.forEach(async ({ output }) => {
     const { moduleName } = output[0];
 
-    imports += `export { default as ${moduleName} } from "./${moduleName}.svelte";\n`;
     pictograms.push(moduleName);
 
-    const source = template(output[0]);
-    const ts_file_path = `./${moduleName}.svelte.d.ts`;
+    definitions += `export declare class ${moduleName} extends CarbonPictogram {}\n`;
+    libExport += `export { default as ${moduleName} } from "./${moduleName}.svelte";\n`;
 
-    components.set(moduleName, {
-      moduleName,
-      filePath: ts_file_path,
-      ...parser.parseSvelteComponent(source, {
-        moduleName,
-        filePath: ts_file_path,
-      }),
-    });
+    const fileName = `lib/${moduleName}.svelte`;
 
-    exports[moduleName] = {
-      source: `./${moduleName}.svelte`,
-      default: false,
-    };
-
-    await Bun.write(`lib/${moduleName}.svelte`, source);
+    Bun.write(fileName, template(output[0]));
+    Bun.write(
+      fileName + ".d.ts",
+      `export { ${moduleName} as default } from "./";\n`
+    );
   });
 
-  const metadata = `${pictograms.length} pictograms from @carbon/pictograms@${devDependencies["@carbon/pictograms"]}`;
+  const packageMetadata = `${pictograms.length} pictograms from @carbon/pictograms@${devDependencies["@carbon/pictograms"]}`;
 
-  await writeTsDefinitions(components, {
-    preamble: `// Type definitions for ${name}\n// ${metadata}\n\n`,
-    exports,
-    inputDir: "lib",
-    outDir: "lib",
-  });
+  await Bun.write(
+    "lib/index.d.ts",
+    `// Type definitions for ${name}
+// ${packageMetadata}
 
-  await Bun.write("lib/index.js", imports);
+${definitions}`
+  );
+  await Bun.write("lib/index.js", libExport);
   await Bun.write(
     "PICTOGRAM_INDEX.md",
     `
 # Pictogram Index
 
-> ${metadata}
+> ${packageMetadata}
 
 ## Usage
 

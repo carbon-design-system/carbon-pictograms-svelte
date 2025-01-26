@@ -27,6 +27,6 @@ export function template({ descriptor }: PictogramOutput) {
   {title}
   {...attributes}
   {...$$restProps}>
-  ${descriptor.content.map((element) => toString(element)).join("")}
+  ${descriptor.content.map(toString).join("")}
 </svg>`;
 }
