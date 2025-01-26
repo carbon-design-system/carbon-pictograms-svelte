@@ -100,6 +100,27 @@ You can use `fill` to customize the color or pass any other valid `svg` attribut
 <Airplane tabindex={0} />
 ```
 
+## TypeScript
+
+This library offers TypeScript support for Svelte 4 and Svelte 5.
+
+For Svelte 3 compatibility, use [`carbon-pictograms-svelte@12.12.0`](https://github.com/carbon-design-system/carbon-pictograms-svelte/tree/v12.12.0).
+
+For convenience, a `CarbonPictogramProps` type is exported from the library.
+
+```svelte
+<script lang="ts">
+  import Airplane from "carbon-pictograms-svelte/lib/Airplane.svelte";
+  import type { CarbonPictogramProps } from "carbon-pictograms-svelte";
+
+  const props: CarbonPictogramProps = {
+    title: "Airplane",
+  };
+</script>
+
+<Airplane {...props} />
+```
+
 ## [Changelog](CHANGELOG.md)
 
 ## [Contributing](CONTRIBUTING.md)

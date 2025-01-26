@@ -8,7 +8,7 @@ export const buildPictograms = async () => {
   await $`rm -rf lib`;
   await $`mkdir lib`;
 
-  let definitions = `import type { SvelteComponentTyped } from "svelte";
+  let definitions = `import type { Component } from "svelte";
 import type { SvelteHTMLElements } from "svelte/elements";
 
 export type CarbonPictogramProps = SvelteHTMLElements["svg"] & {
@@ -17,13 +17,7 @@ export type CarbonPictogramProps = SvelteHTMLElements["svg"] & {
    * @default undefined
    */
   title?: string;
-}
-
-export declare class CarbonPictogram extends SvelteComponentTyped<
-  CarbonPictogramProps,
-  Record<string, any>,
-  {}
-> {}\n\n`;
+}\n\n`;
 
   let libExport = "";
 
@@ -34,7 +28,7 @@ export declare class CarbonPictogram extends SvelteComponentTyped<
 
     pictograms.push(moduleName);
 
-    definitions += `export declare class ${moduleName} extends CarbonPictogram {}\n`;
+    definitions += `export declare const ${moduleName}: Component<CarbonPictogramProps>;\n`;
     libExport += `export { default as ${moduleName} } from "./${moduleName}.svelte";\n`;
 
     const fileName = `lib/${moduleName}.svelte`;
