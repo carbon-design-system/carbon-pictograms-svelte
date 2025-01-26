@@ -30,92 +30,75 @@ bun add carbon-pictograms-svelte
 
 ## Usage
 
-### Base Import
+### Direct Import
+
+Import the icon from the `carbon-pictograms-svelte/lib` folder. See the [Pictogram Index](PICTOGRAM_INDEX.md) for a list of supported pictograms.
 
 ```svelte
 <script>
-  import { Airplane } from "carbon-pictograms-svelte";
+  import Airplane from "carbon-pictograms-svelte/lib/Airplane.svelte";
 </script>
 
 <Airplane />
 ```
 
-### Direct Import (recommended)
+### Base Import with Preprocessor
 
-Import pictograms directly for faster compiling.
+> [!TIP]
+> Use [optimizeImports](https://github.com/carbon-design-system/carbon-preprocess-svelte#optimizeimports) from [carbon-preprocess-svelte](https://github.com/carbon-design-system/carbon-preprocess-svelte) to speed up development times.
 
-```js
-import Airplane from "carbon-pictograms-svelte/lib/Airplane.svelte";
+Due to the size of the library, importing directly from the barrel file may result in slow development times, since the entire barrel file is imported (thousands of pictograms).
+
+[optimizeImports](https://github.com/carbon-design-system/carbon-preprocess-svelte#optimizeimports) is a Svelte preprocessor that optimizes import paths from Carbon Svelte libraries. It enables you to use the barrel file import syntax without importing the entire library.
+
+For example, the following is automatically re-written by `optimizeImports`:
+
+```diff
+- import { Airplane } from "carbon-pictograms-svelte";
++ import Airplane from "carbon-pictograms-svelte/lib/Airplane.svelte";
 ```
 
-**Note:** Even if using the base import method, an application bundler like Rollup or webpack should [tree shake](https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking) unused imports.
+This offers the best of both worlds:
 
-#### Import Path Pattern
-
-```js
-import Pictogram from "carbon-pictograms-svelte/lib/<ModuleName>.svelte";
-```
-
-Refer to [PICTOGRAM_INDEX.md](PICTOGRAM_INDEX.md) for a list of available pictograms.
+- Concise import syntax
+- Fast development times (only the icons you need are imported)
 
 ## API
 
-### Props
+All props are optional.
+
+| Name  | Type     | Default value |
+| :---- | :------- | :------------ |
+| title | `string` | `undefined`   |
+
+### Custom props
 
 `$$restProps` are forwarded to the `svg` element.
 
-| Name     | Value                             |
-| :------- | :-------------------------------- |
-| tabindex | `string` (default: `undefined`)   |
-| fill     | `string` (default: `currentColor` |
-
-## Recipes
-
-### Custom Fill Color
-
-Customize the fill color using the `fill` prop or by defining a global class.
-
-#### `fill` prop
+You can use `fill` to customize the color or pass any other valid `svg` attribute to the component.
 
 ```svelte
-<Airplane fill="blue" />
-```
-
-#### Global class
-
-```svelte
-<Airplane class="custom-class" />
-
-<style>
-  :global(svg.custom-class) {
-    fill: blue;
-  }
-</style>
+<Airplane fill="red" class="icon" />
 ```
 
 ### Labelled
 
-```html
+```svelte
 <Airplane aria-label="Airplane" />
-```
-
-### Labelled with Focus
-
-```html
-<Airplane aria-label="Airplane" tabindex="0" />
 ```
 
 ### Labelled by
 
-```html
+```svelte
 <label id="transportation">Transportation</label>
-
 <Airplane aria-labelledby="transportation" />
 ```
 
-## TypeScript support
+### Focusable
 
-Svelte version 3.31 or greater is required to use this library with TypeScript.
+```svelte
+<Airplane tabindex={0} />
+```
 
 ## [Changelog](CHANGELOG.md)
 
