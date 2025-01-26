@@ -11,16 +11,12 @@ export const buildPictograms = async () => {
   let definitions = `import type { SvelteComponentTyped } from "svelte";
 import type { SvelteHTMLElements } from "svelte/elements";
 
-type RestProps = SvelteHTMLElements["svg"];
-
-export interface CarbonPictogramProps extends RestProps {
+export type CarbonPictogramProps = SvelteHTMLElements["svg"] & {
   /**
    * Specify the pictogram title.
    * @default undefined
    */
   title?: string;
-
-  [key: \`data-\${string}\`]: any;
 }
 
 export declare class CarbonPictogram extends SvelteComponentTyped<
