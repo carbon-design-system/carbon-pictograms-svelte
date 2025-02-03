@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1187 pictograms from @carbon/pictograms@12.43.0
+> 1197 pictograms from @carbon/pictograms@12.45.1
 
 ## Usage
 
@@ -85,6 +85,7 @@
 - AutomationSoftware
 - Automobile
 - Availability
+- B2bCommerce
 - BabyBottle
 - BackUpAndRestore
 - Backpack
@@ -391,6 +392,8 @@
 - Edge
 - Education
 - Efficient
+- EhningenTechCampus_01
+- EhningenTechCampus_02
 - Electric
 - ElectricCar
 - ElectricCharge
@@ -581,7 +584,9 @@
 - HyperProtectVirtualServers
 - IbmAutomationPlatform
 - IbmCloud
+- IbmGranite
 - IbmIx
+- IbmOneMadisonAvenue
 - IbmRpa
 - IbmUkLabsHursley
 - IbmZ
@@ -816,6 +821,7 @@
 - Police
 - PopulationDiagram
 - PortlandBuilding
+- PoughkeepsieBridge
 - Power
 - PowerOn
 - PragueCharlesBridgeTower
@@ -845,6 +851,7 @@
 - Puzzle
 - QQPlot
 - QrCode
+- Qiskit
 - Quantum
 - QuantumSafe
 - QuantumComputing
@@ -1009,6 +1016,7 @@
 - StreamingData
 - Streamline
 - StreamlineOperations
+- StuttgartTvTower
 - Subsecond
 - Summit
 - Sunny
@@ -1166,11 +1174,13 @@
 - WatsonLogo
 - Watsonx
 - WatsonxAi
+- WatsonxAssistant
 - WatsonxCodeAssistant
 - WatsonxCodeAssistantForZ
 - WatsonxCodeAssistantForZRefactor
 - WatsonxData
 - WatsonxGovernance
+- WavingHand
 - Weather
 - WebDeveloper
 - Webcast
