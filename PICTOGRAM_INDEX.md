@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1197 pictograms from @carbon/pictograms@12.45.1
+> 1212 pictograms from @carbon/pictograms@12.46.0
 
 ## Usage
 
@@ -42,6 +42,7 @@
 - AiGovernancePrompt
 - AirConditioner
 - Airplane
+- Airport
 - Alarm
 - AlchemyDataNews
 - AlchemyLanguage
@@ -119,6 +120,8 @@
 - BucharestRomanianAthenaeum
 - Budapest
 - BudapestCitadella
+- BudapestCorvin7
+- BudapestHungarianAutoClub
 - BudapestLabSkyline
 - BugVirusMalware
 - Build
@@ -248,6 +251,7 @@
 - CoatHanger
 - CobolLanguage
 - Code
+- CodeExplanation
 - CodeSyntax
 - CognosAnalytics
 - CollaborateWithTeams
@@ -401,6 +405,7 @@
 - Elevator
 - Embed
 - EmergencyExit
+- Emissions
 - EmployeeInsights
 - Encryption
 - EndpointProtection
@@ -584,6 +589,7 @@
 - HyperProtectVirtualServers
 - IbmAutomationPlatform
 - IbmCloud
+- IbmIbv
 - IbmGranite
 - IbmIx
 - IbmOneMadisonAvenue
@@ -594,6 +600,7 @@
 - IbmZAndCloudModernizationStack
 - IbmZAndLinuxoneMultiFrame
 - IbmZAndLinuxoneSingleFrame
+- IbmZOsContainerPlatform
 - IbmZ16
 - IbmZ16MultiFrame
 - IbmZ16PlusCloud
@@ -617,6 +624,7 @@
 - Integration_02
 - Integration_03
 - Intelligence
+- IntelligentInfrastructure
 - Intercom
 - InternetOfThings
 - Invoice
@@ -659,6 +667,7 @@
 - Lock_02
 - LockedNetwork_01
 - LockedNetwork_02
+- Lockers
 - London
 - LondonBigBen
 - LoopHearing
@@ -673,6 +682,7 @@
 - MachineLearning_05
 - MachineLearning_06
 - MachineLearning_07
+- MachineLearningModel
 - MadridCathedral
 - MadridSkyscrapers
 - MadridStatue
@@ -812,6 +822,7 @@
 - PhpLanguage
 - PillBottle_01
 - Pills
+- Pipeline
 - PlanningAnalytics
 - Plastics
 - PlatformAsAService
@@ -859,6 +870,7 @@
 - QuestionAndAnswer
 - RLanguage
 - Racetrack
+- Raindrop
 - Rainy
 - RainyHeavy
 - RaleighNc
@@ -898,6 +910,7 @@
 - RetrieveAndRank
 - RichTextFormat
 - RioDeJaneiro
+- Road
 - Robot
 - Robotics
 - RockOn
@@ -1083,6 +1096,7 @@
 - TimeLapse
 - TimePlot
 - Toggle
+- Toilet
 - TokyoCherryBlossom
 - TokyoGates
 - TokyoTemple
@@ -1120,6 +1134,7 @@
 - Trust
 - Trusted
 - TrustedUser
+- Tunnel
 - TwoPersonLift
 - UnauthorizedUserAccess
 - UnderUtilizedSecurity
