@@ -1,7 +1,7 @@
-import buildInfo from "@carbon/pictograms/metadata.json" assert { type: "json" };
+import buildInfo from "@carbon/pictograms/metadata.json" with { type: "json" };
 import { $ } from "bun";
-import { devDependencies, name } from "../package.json" assert { type: "json" };
-import { template } from "./template";
+import pkg from "../package.json" with { type: "json" };
+import { template } from "./template.js";
 
 export const buildPictograms = async () => {
   console.time("Built in");
@@ -40,11 +40,11 @@ export type CarbonPictogramProps = SvelteHTMLElements["svg"] & {
     );
   });
 
-  const packageMetadata = `${pictograms.length} pictograms from @carbon/pictograms@${devDependencies["@carbon/pictograms"]}`;
+  const packageMetadata = `${pictograms.length} pictograms from @carbon/pictograms@${pkg.devDependencies["@carbon/pictograms"]}`;
 
   await Bun.write(
     "lib/index.d.ts",
-    `// Type definitions for ${name}
+    `// Type definitions for ${pkg.name}
 // ${packageMetadata}
 
 ${definitions}`
