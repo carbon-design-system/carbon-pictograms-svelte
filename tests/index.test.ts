@@ -1,7 +1,7 @@
 import type { PictogramOutput } from "@carbon/pictograms";
 import { expect, test } from "bun:test";
-import { buildPictograms } from "../src";
-import { template } from "../src/template";
+import { buildPictograms } from "../src/index.js";
+import { template } from "../src/template.js";
 
 test("imports", async () => {
   const pictograms = await buildPictograms();
