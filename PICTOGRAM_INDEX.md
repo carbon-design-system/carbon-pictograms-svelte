@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1212 pictograms from @carbon/pictograms@12.46.0
+> 1264 pictograms from @carbon/pictograms@12.48.0
 
 ## Usage
 
@@ -25,7 +25,9 @@
 - AdvancedThreats
 - Advocate
 - AdvocateMask
+- Agile
 - Agility
+- Agility_02
 - AgilityWithHybridMulticloud
 - Agriculture
 - Ai
@@ -44,9 +46,11 @@
 - Airplane
 - Airport
 - Alarm
+- Albatross
 - AlchemyDataNews
 - AlchemyLanguage
 - AlchemyVision
+- Alien
 - Americas
 - AmsterdamCanal
 - AmsterdamFarm
@@ -99,6 +103,8 @@
 - Banking
 - Barcelona
 - BareMetal
+- BaselMunster
+- BaselTownHall
 - Bee
 - BeijingMunicipal
 - BeijingTower
@@ -106,6 +112,7 @@
 - BerlinBrandenburgGate
 - BerlinCathedral
 - BerlinTower
+- BeverageCarton
 - Bicycle
 - BigData
 - BirthdayCake
@@ -115,6 +122,7 @@
 - Bluepages
 - BostonZakimBridge
 - BoxPlot
+- Briefcase
 - Broom
 - BucharestNationalTheatre
 - BucharestRomanianAthenaeum
@@ -138,11 +146,13 @@
 - CPlusPlusLanguage
 - Cafe
 - CairoGizaPlateau
+- CairoGizaSphinx
 - Calendar
 - CalendarDate
 - CalendarEvent
 - Camera
 - CanadaMapleLeaf
+- Canary
 - Candy
 - Capitol
 - Carbon
@@ -259,6 +269,7 @@
 - College
 - ColombiaCathedralOfLasLajas
 - ColorContrast
+- Colors
 - CommercialFinancing_01
 - CommercialFinancing_02
 - Compliant
@@ -267,6 +278,7 @@
 - ConceptExpansion
 - ConceptInsights
 - ConditionBuilder
+- Condor
 - ConfidentialComputing
 - Connect
 - ConnectApplications
@@ -376,6 +388,7 @@
 - DoctorPatient
 - DocumentConversion
 - DocumentSecurity
+- DocumentSecurity_02
 - Documentation
 - DoorHandle
 - Download_01
@@ -389,6 +402,7 @@
 - DuplicateFile
 - DynamicWorkloads
 - ECommerce
+- Eagle
 - Earth
 - EaseOfUse
 - Ecosystem
@@ -408,9 +422,13 @@
 - Emissions
 - EmployeeInsights
 - Encryption
+- Encryption_02
 - EndpointProtection
 - EnergyCrisis
+- EngagementInclusion_01
+- EngagementInclusion_02
 - Engine
+- Engineer
 - Enterprise
 - EnterpriseDesignThinking_01
 - EnterpriseDesignThinking_02
@@ -446,6 +464,7 @@
 - FaceVerySatisfied
 - Factory
 - Fairness
+- Falcon
 - Farm_01
 - Farm_02
 - Farmer_01
@@ -492,6 +511,7 @@
 - FootballGoalPost
 - Forecasting
 - Forklift
+- FoundationModel
 - FountainDrinking
 - Fragile
 - FreeTrial
@@ -502,6 +522,7 @@
 - GeographicFlexibility
 - GetAheadOfRiskAndCompliance
 - Gift
+- GlassBottle
 - GlassBottleAndMetalCan
 - GlobalAnalytics
 - GlobalAssetsAndRecovery_01
@@ -509,6 +530,7 @@
 - GlobalBusinessServices
 - GlobalCurrency
 - GlobalExchange
+- GlobalCurrency_02
 - GlobalFinanceEuro
 - GlobalFinanceNetwork
 - GlobalFinanceSterling
@@ -540,6 +562,7 @@
 - GreenIt_02
 - Group
 - Growth
+- GrowthMindset
 - Guitar
 - Hail
 - HailHeavy
@@ -553,6 +576,7 @@
 - HardIceCream
 - Hazy
 - Headphones
+- Health
 - Healthcare
 - Heart
 - HeartHealth
@@ -575,6 +599,7 @@
 - Hospital
 - Hpi
 - Humid
+- Hummingbird
 - Hurricane
 - HybridCloud
 - HybridCloud_02
@@ -600,7 +625,11 @@
 - IbmZAndCloudModernizationStack
 - IbmZAndLinuxoneMultiFrame
 - IbmZAndLinuxoneSingleFrame
+- IbmZOpenAutomationUtilities
 - IbmZOsContainerPlatform
+- IbmZOsPackageManager
+- IbmZAndCloudModernizationStackProvisioning
+- IbmZOpenEnterpriseLanguages
 - IbmZ16
 - IbmZ16MultiFrame
 - IbmZ16PlusCloud
@@ -653,6 +682,7 @@
 - Lantern
 - Launch
 - Leader
+- Leadership
 - Library
 - LiftAndShift
 - Lightning
@@ -705,6 +735,7 @@
 - Maximize
 - Medal_01
 - Medal_02
+- Medal_03
 - MediaAndEntertainment
 - Medical
 - MedicalCharts
@@ -736,6 +767,7 @@
 - MoonCake
 - MortarAndPestle
 - Moscow
+- Motion
 - MovementInOverlappingNetworks
 - MovementOfGoods_01
 - MovementOfGoods_02
@@ -746,6 +778,7 @@
 - Mri
 - MriPatient
 - Multitask
+- Mumbai
 - Munich
 - Music
 - NaturalLanguageClassifier
@@ -776,6 +809,8 @@
 - NycManhattan_02
 - NycStatueOfLiberty
 - NycWorldTradeCenter
+- Observability_01
+- Observability_02
 - Office
 - OilPump
 - OilRig
@@ -793,10 +828,14 @@
 - Organization
 - Ornament
 - OsakaTsutenkakuTower
+- Osprey
 - Overcast
 - Overview
+- Paper
 - PaperClip
+- PaperConfidential
 - ParisArcDeTriomphe
+- ParisEiffelTower
 - ParisLouvre
 - ParisNotreDame
 - ParisPompidouCenter
@@ -806,6 +845,7 @@
 - Path
 - Pattern
 - PayForWhatYouUse
+- Performance
 - Perfume
 - Person_01
 - Person_02
@@ -824,6 +864,7 @@
 - Pills
 - Pipeline
 - PlanningAnalytics
+- PlasticBottle
 - Plastics
 - PlatformAsAService
 - PlayerFlow
@@ -833,6 +874,8 @@
 - PopulationDiagram
 - PortlandBuilding
 - PoughkeepsieBridge
+- PoughkeepsieIbmClocktower
+- PoughkeepsieMidHudsonBridge
 - Power
 - PowerOn
 - PragueCharlesBridgeTower
@@ -903,6 +946,7 @@
 - ResetHybridCloud
 - ResetSettings
 - Resilience
+- Resilience_02
 - ResourceHealth
 - Resources
 - Retail
@@ -928,6 +972,7 @@
 - SaoPaulo
 - Sap
 - SapHana
+- SapSuccessfactors
 - Satellite
 - SatelliteDish
 - SaveTime
@@ -1047,6 +1092,8 @@
 - SustainabilityStrategy
 - SwipeLeft
 - SwipeRight
+- SydneyMlcCentre
+- SydneyOperaHouse
 - Synergy
 - SystemsDevopsAnalyze
 - SystemsDevopsBuild
@@ -1077,6 +1124,7 @@
 - TelemedicineMobile
 - Telephone
 - Television
+- TelumIiChip
 - TemperatureHigh
 - TemperatureLow
 - TemporaryBadge
@@ -1122,9 +1170,13 @@
 - TransformData
 - Transparency_01
 - Transparency_02
+- TransparencyAndTrust_01
+- TransparencyAndTrust_02
 - Trash
 - TrashBurnable
+- TrashContainer
 - TrashNonBurnable
+- TravelAndExpenses
 - Tree
 - TreeDiagram
 - TreeMap
