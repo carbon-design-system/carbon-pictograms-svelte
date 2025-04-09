@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1264 pictograms from @carbon/pictograms@12.48.0
+> 1295 pictograms from @carbon/pictograms@12.49.0
 
 ## Usage
 
@@ -26,10 +26,13 @@
 - Advocate
 - AdvocateMask
 - Agile
+- AgileCoaching
 - Agility
 - Agility_02
 - AgilityWithHybridMulticloud
 - Agriculture
+- AhmedabadJamaMasjid
+- AhmedabadSabarmatiAshram
 - Ai
 - AiEthics
 - AiExplainability
@@ -519,6 +522,7 @@
 - FullyManaged
 - FunctionsAsAService
 - Gear
+- GeodesicMontrealBiosphere
 - GeographicFlexibility
 - GetAheadOfRiskAndCompliance
 - Gift
@@ -529,8 +533,8 @@
 - GlobalAssetsAndRecovery_02
 - GlobalBusinessServices
 - GlobalCurrency
-- GlobalExchange
 - GlobalCurrency_02
+- GlobalExchange
 - GlobalFinanceEuro
 - GlobalFinanceNetwork
 - GlobalFinanceSterling
@@ -614,8 +618,20 @@
 - HyperProtectVirtualServers
 - IbmAutomationPlatform
 - IbmCloud
-- IbmIbv
+- IbmElm
+- IbmElmDcc
+- IbmElmGcm
+- IbmElmInsights
+- IbmElmMethodComposer
+- IbmElmPublishing
+- IbmElmReporting
+- IbmEngineeringRequirementDoors
+- IbmEngineeringSystemsDesignRhapsody
+- IbmEngineeringSystemsDesignRhapsodyModelManager
+- IbmEngineeringTestManagement
+- IbmEngineeringWorkflowManagement
 - IbmGranite
+- IbmIbv
 - IbmIx
 - IbmOneMadisonAvenue
 - IbmRpa
@@ -623,17 +639,20 @@
 - IbmZ
 - IbmZPartition
 - IbmZAndCloudModernizationStack
+- IbmZAndCloudModernizationStackProvisioning
 - IbmZAndLinuxoneMultiFrame
 - IbmZAndLinuxoneSingleFrame
 - IbmZOpenAutomationUtilities
+- IbmZOpenEnterpriseLanguages
 - IbmZOsContainerPlatform
 - IbmZOsPackageManager
-- IbmZAndCloudModernizationStackProvisioning
-- IbmZOpenEnterpriseLanguages
 - IbmZ16
 - IbmZ16MultiFrame
 - IbmZ16PlusCloud
 - IbmZ16SingleFrame
+- IbmZ17
+- IbmZ17MultiFrame
+- IbmZ17SingleFrame
 - IdBadge
 - Idea
 - Ideate
@@ -666,13 +685,17 @@
 - Justice
 - KeepDry
 - KeepYourOwnKey
+- KeyLifecycle
 - KeyUsers
 - Keyboard
+- Keystores
+- KeystoresExternal
 - KnowsDarkData
 - KochiHouseboat
 - KualaLumpur
 - Kubernetes
 - KubernetesPod
+- LandingPage
 - Language_01
 - Language_02
 - Language_03
@@ -733,6 +756,7 @@
 - MasterThreatHunting
 - MathCurve
 - Maximize
+- McgillUniversityMorriceHall
 - Medal_01
 - Medal_02
 - Medal_03
@@ -763,6 +787,7 @@
 - Modernize
 - Monitor
 - MonitoredItemOnConveyor
+- MontrealOlympicStadium
 - MoonFull
 - MoonCake
 - MortarAndPestle
@@ -904,8 +929,8 @@
 - PublicCloudToPrivateCloud
 - Puzzle
 - QQPlot
-- QrCode
 - Qiskit
+- QrCode
 - Quantum
 - QuantumSafe
 - QuantumComputing
@@ -1027,6 +1052,7 @@
 - Sneaker
 - Snow
 - Snowflake
+- SocialTile
 - SocialWork_01
 - SocialWork_02
 - SocialWorker
@@ -1041,6 +1067,7 @@
 - Speech
 - SpeechToText
 - Speedometer
+- SponsorUserProgram
 - Sports
 - Spotlight
 - Sprout
@@ -1111,6 +1138,7 @@
 - Tags
 - TaipeiBubbleTea
 - TapeStorage
+- TapeStorage_02
 - Target
 - TargetArea
 - Teacher
@@ -1163,6 +1191,7 @@
 - TradeoffAnalytics
 - Train
 - Training
+- TransactionData
 - TransactionalBlockchain
 - TransactionalTrust
 - Transform_01
@@ -1211,6 +1240,7 @@
 - UserProfile
 - UserSearch
 - Vancouver
+- Vault
 - VenezuelaNationalPantheonOfVenezuela
 - Video_01
 - Video_02
@@ -1249,6 +1279,7 @@
 - WatsonxGovernance
 - WavingHand
 - Weather
+- WebBanners
 - WebDeveloper
 - Webcast
 - Websites
