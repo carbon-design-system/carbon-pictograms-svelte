@@ -5,10 +5,10 @@
       "name": "carbon-pictograms-svelte",
       "devDependencies": {
         "@carbon/icon-helpers": "latest",
-        "@carbon/pictograms": "12.49.0",
+        "@carbon/pictograms": "12.50.0",
         "@types/bun": "latest",
         "culls": "^0.1.1",
-        "svelte": "^5.23.0",
+        "svelte": "^5.28.0",
         "typescript": "latest",
       },
     },
@@ -18,7 +18,7 @@
 
     "@carbon/icon-helpers": ["@carbon/icon-helpers@10.57.0", "", { "dependencies": { "@ibm/telemetry-js": "^1.5.0" } }, "sha512-wQPpq7iwgyOUdCn64HJmIC/J3IVM1b5FDSFo9w/aJ4MjgXtZDiTWd7qHGGw4svUj3I0ucb3LiWgX3/IJAG4xGQ=="],
 
-    "@carbon/pictograms": ["@carbon/pictograms@12.49.0", "", { "dependencies": { "@ibm/telemetry-js": "^1.5.0" } }, "sha512-UE3A4vSutcQF+kqW1i6ItrzL0s9Ft2D5nXob32/ceehA10l9EkTVZR4YETif2tp8LcylhgwLqSUKjABEX7s/NA=="],
+    "@carbon/pictograms": ["@carbon/pictograms@12.50.0", "", { "dependencies": { "@ibm/telemetry-js": "^1.5.0" } }, "sha512-E//6iryebWA996aYBXKfjMjOWGoo/+DL9WGUeew77LL1lPg9H2Klbn5eOzaZ1cqTr+eOF3VpmRy43QnROLyusw=="],
 
     "@ibm/telemetry-js": ["@ibm/telemetry-js@1.9.0", "", { "bin": { "ibmtelemetry": "dist/collect.js" } }, "sha512-dTOnqZs03csS6/oLXWUXKYTVJiy9jwfpj4gIhSfPUeTXsfwlOjtGEae+Am3bzbFhsOpf74f5LXGBPjz7T+Nv0g=="],
 
