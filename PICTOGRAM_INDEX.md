@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1295 pictograms from @carbon/pictograms@12.49.0
+> 1333 pictograms from @carbon/pictograms@12.50.0
 
 ## Usage
 
@@ -17,6 +17,7 @@
 - AcceleratedComputing
 - AcceleratingTransformation
 - AccessManagement
+- Accessibility
 - ActiveServer
 - AdTech
 - AddDevice
@@ -120,6 +121,7 @@
 - BigData
 - BirthdayCake
 - Blender
+- BlochSphere
 - Blockchain
 - Blockchain_02
 - Bluepages
@@ -264,7 +266,12 @@
 - CoatHanger
 - CobolLanguage
 - Code
+- CodeConversion
 - CodeExplanation
+- CodeGeneration
+- CodeGenerationChat
+- CodeGenerationInline
+- CodeReverseEngineering
 - CodeSyntax
 - CognosAnalytics
 - CollaborateWithTeams
@@ -276,6 +283,8 @@
 - CommercialFinancing_01
 - CommercialFinancing_02
 - Compliant
+- ComposerEdit
+- Compost
 - CompostBin
 - Compute
 - ConceptExpansion
@@ -317,6 +326,7 @@
 - Coupon
 - CreditCard
 - Crop
+- Crosshairs
 - Cupcake
 - CurveCubic
 - CurveExponential
@@ -330,6 +340,8 @@
 - CustomReports
 - CustomerService
 - Customizable
+- DallasReunionTower
+- DallasSkyline
 - Dashboard
 - DataApis
 - DataBackup
@@ -342,6 +354,7 @@
 - DataProcessing
 - DataProtectionDataSecurity
 - DataScience
+- DataScientist
 - DataSecurity
 - DataSet
 - DataStorage
@@ -365,6 +378,7 @@
 - DesignAndDevelopment_02
 - DesignThinkingTeam
 - Desktop
+- Destination
 - DetectAndStopAdvancingThreats
 - DevAndTest
 - DeveloperTools
@@ -432,6 +446,7 @@
 - EngagementInclusion_02
 - Engine
 - Engineer
+- EnsureDataQuality
 - Enterprise
 - EnterpriseDesignThinking_01
 - EnterpriseDesignThinking_02
@@ -490,6 +505,7 @@
 - FinancialServices
 - FireAlarm
 - FireExtinguisher
+- FireHose
 - Firecracker
 - Firefighter
 - Firewall
@@ -521,7 +537,10 @@
 - Fuel
 - FullyManaged
 - FunctionsAsAService
+- GastroHealth
 - Gear
+- GenerateAi
+- GenerateCode
 - GeodesicMontrealBiosphere
 - GeographicFlexibility
 - GetAheadOfRiskAndCompliance
@@ -555,6 +574,7 @@
 - GolfClub
 - GolfHole
 - GovernUsersAndIdentities
+- Governance
 - Government_01
 - Government_02
 - GpuComputing
@@ -567,6 +587,7 @@
 - Group
 - Growth
 - GrowthMindset
+- GuadalajaraSeal
 - Guitar
 - Hail
 - HailHeavy
@@ -578,6 +599,7 @@
 - HardDrive
 - HardDriveNetwork
 - HardIceCream
+- HardPrompt
 - Hazy
 - Headphones
 - Health
@@ -652,6 +674,7 @@
 - IbmZ16SingleFrame
 - IbmZ17
 - IbmZ17MultiFrame
+- IbmZ17PlusCloud
 - IbmZ17SingleFrame
 - IdBadge
 - Idea
@@ -659,6 +682,7 @@
 - IdentifyAndAccess
 - IdentifyAndResolveIssues
 - IdentityTrustAssessment
+- IncidentReporter
 - IndiaSouthAsia
 - InfrastructureAsAService
 - InfrastructureSecurity
@@ -784,6 +808,8 @@
 - MobileChat
 - MobileDevices
 - MobilePhone
+- MobilePos_01
+- MobilePos_02
 - Modernize
 - Monitor
 - MonitoredItemOnConveyor
@@ -802,6 +828,7 @@
 - Mqa
 - Mri
 - MriPatient
+- MultiModel
 - Multitask
 - Mumbai
 - Munich
@@ -826,6 +853,7 @@
 - NewRevenueStreams
 - Nice
 - NightClear
+- NoParking
 - NoSmoking
 - Notifications
 - NycBrooklyn
@@ -854,6 +882,7 @@
 - Ornament
 - OsakaTsutenkakuTower
 - Osprey
+- OutcomeFocused
 - Overcast
 - Overview
 - Paper
@@ -864,6 +893,7 @@
 - ParisLouvre
 - ParisNotreDame
 - ParisPompidouCenter
+- Parking
 - Parliament
 - PartnerRelationship
 - Partnership
@@ -887,6 +917,7 @@
 - PhpLanguage
 - PillBottle_01
 - Pills
+- PilotTest
 - Pipeline
 - PlanningAnalytics
 - PlasticBottle
@@ -923,6 +954,7 @@
 - Productivity
 - ProfessionalMarketplace
 - Progress
+- Prompt
 - ProtectCriticalAssets
 - ProvenTechnology
 - Public
@@ -973,6 +1005,7 @@
 - Resilience
 - Resilience_02
 - ResourceHealth
+- Resourceful
 - Resources
 - Retail
 - RetailSustainable
@@ -1027,6 +1060,7 @@
 - SecurityVisibility
 - SelectProduct
 - SelectRange
+- Sell
 - SeoulGyeongbokgungPalace
 - ServerOperatingSystems
 - ServerRack
@@ -1052,6 +1086,7 @@
 - Sneaker
 - Snow
 - Snowflake
+- SocialDistancing
 - SocialTile
 - SocialWork_01
 - SocialWork_02
@@ -1072,6 +1107,7 @@
 - Spotlight
 - Sprout
 - Spss
+- SpyreAccelerator
 - StackLimitation
 - Stage
 - Stairs
@@ -1153,6 +1189,7 @@
 - Telephone
 - Television
 - TelumIiChip
+- TelumIiProcessor
 - TemperatureHigh
 - TemperatureLow
 - TemporaryBadge
@@ -1207,6 +1244,7 @@
 - TrashNonBurnable
 - TravelAndExpenses
 - Tree
+- Tree_02
 - TreeDiagram
 - TreeMap
 - Trophy
