@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1333 pictograms from @carbon/pictograms@12.50.0
+> 1367 pictograms from @carbon/pictograms@12.52.0
 
 ## Usage
 
@@ -26,6 +26,7 @@
 - AdvancedThreats
 - Advocate
 - AdvocateMask
+- AedDefibrillator
 - Agile
 - AgileCoaching
 - Agility
@@ -80,9 +81,11 @@
 - ArgentinaObelisk
 - ArtTools_01
 - AsiaAustralia
+- Assess
 - AssessmentUsed
 - AssetManagement
 - Assets
+- Astronaut
 - Atlanta
 - AudioData
 - AuditTrail
@@ -176,6 +179,7 @@
 - ChartBubbleLine
 - ChartCandlestick
 - ChartCustom
+- ChartDonut
 - ChartErrorBar
 - ChartEvaluation
 - ChartHighLow
@@ -301,6 +305,7 @@
 - Connectivity
 - Console
 - ConsoleWireless
+- Constellation
 - Construct
 - ConstructionWorker
 - ConstructionWorkerMask
@@ -326,6 +331,7 @@
 - Coupon
 - CreditCard
 - Crop
+- Crossbill
 - Crosshairs
 - Cupcake
 - CurveCubic
@@ -376,6 +382,7 @@
 - DesignResearch
 - DesignAndDevelopment_01
 - DesignAndDevelopment_02
+- DesignSystemAlignment
 - DesignThinkingTeam
 - Desktop
 - Destination
@@ -452,6 +459,7 @@
 - EnterpriseDesignThinking_02
 - EnterpriseMessaging
 - Envelope
+- EpinephrineAutoInjectors
 - ErlenmeyerFlask
 - EscalatorDown
 - EscalatorUp
@@ -511,6 +519,7 @@
 - Firewall
 - FirstAid
 - Flag
+- Flamingo
 - FlashStorage
 - FlashingContent
 - Flexibility
@@ -523,6 +532,7 @@
 - Flower_01
 - Flower_02
 - FocusOnCode
+- FocusRoom
 - Fog
 - Folder
 - Football
@@ -609,6 +619,7 @@
 - HeatMap_01
 - HeatMap_02
 - HelpDesk
+- Heron
 - HighFive
 - HighPerformance
 - HighPerformanceComputing
@@ -690,6 +701,7 @@
 - Innovate
 - Insights
 - InspectData
+- Install
 - Insurance
 - Insurance_02
 - Integration
@@ -716,6 +728,7 @@
 - KeystoresExternal
 - KnowsDarkData
 - KochiHouseboat
+- Kookaburra
 - KualaLumpur
 - Kubernetes
 - KubernetesPod
@@ -734,6 +747,7 @@
 - LiftAndShift
 - Lightning
 - Link
+- Linuxone_5
 - Liquids
 - ListBullet
 - ListCheckbox
@@ -747,6 +761,7 @@
 - Lockers
 - London
 - LondonBigBen
+- Loon
 - LoopHearing
 - Love
 - LoweringRisk
@@ -799,10 +814,12 @@
 - Microphone
 - Microscope
 - Microservices
+- Migrate
 - Migration
 - MilanDuomoDiMilano
 - MilanSkyscrapers
 - Minimize
+- MissionControl
 - Mobile
 - MobileAdd
 - MobileChat
@@ -811,6 +828,7 @@
 - MobilePos_01
 - MobilePos_02
 - Modernize
+- Modernize_02
 - Monitor
 - MonitoredItemOnConveyor
 - MontrealOlympicStadium
@@ -849,13 +867,18 @@
 - Networking_04
 - Networking_05
 - Networking_06
+- Neurodiversity
 - NewFinancialCustomerExperiences
 - NewRevenueStreams
 - Nice
 - NightClear
+- Nighthawk
+- NoFood
+- NoLiquids
 - NoParking
 - NoSmoking
 - Notifications
+- Nuclear
 - NycBrooklyn
 - NycChryslerBuilding
 - NycManhattan_01
@@ -911,6 +934,7 @@
 - Person_07
 - Person_08
 - Person_09
+- PersonWorking
 - PersonalityInsights
 - PeruMachuPicchu
 - PetriCulture
@@ -940,6 +964,7 @@
 - Predictability
 - PredictiveAnalytics
 - Pregnant
+- Prepare
 - Prescription
 - Presentation
 - Presenter
@@ -964,6 +989,8 @@
 - Qiskit
 - QrCode
 - Quantum
+- QuantumComputer
+- QuantumComputer_02
 - QuantumSafe
 - QuantumComputing
 - Question
@@ -1210,6 +1237,8 @@
 - TimePlot
 - Toggle
 - Toilet
+- Toilet_02
+- Toilet_03
 - TokyoCherryBlossom
 - TokyoGates
 - TokyoTemple
@@ -1266,6 +1295,8 @@
 - UnstructuredData
 - Upload_01
 - Upload_02
+- Urinal_01
+- Urinal_02
 - UruguayPalacioSalvo
 - UruguaySolDeMayo
 - UseTheLanguageOfYourChoice
@@ -1302,6 +1333,7 @@
 - Warning_01
 - Warning_02
 - Washer
+- WashingHands
 - WashingtonDc
 - WashingtonDcCapitol
 - WashingtonDcMonument
@@ -1324,6 +1356,8 @@
 - Websphere
 - WeddingCake
 - Wheat
+- WheelchairUser
+- WheelchairUserActive
 - Whistle
 - WhitePaper
 - Wifi
