@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1367 pictograms from @carbon/pictograms@12.52.0
+> 1377 pictograms from @carbon/pictograms@12.55.0
 
 ## Usage
 
@@ -378,6 +378,7 @@
 - DeliveryTruck
 - DeployingContainers
 - Deployment
+- Design
 - DesignLeadership
 - DesignResearch
 - DesignAndDevelopment_01
@@ -635,6 +636,7 @@
 - HongKongCityscape
 - Hospital
 - Hpi
+- HumanInTheLoop
 - Humid
 - Hummingbird
 - Hurricane
@@ -793,6 +795,7 @@
 - Mas
 - MassDataMigration
 - MasterThreatHunting
+- MastersLeaderBoard
 - MathCurve
 - Maximize
 - McgillUniversityMorriceHall
@@ -923,6 +926,7 @@
 - Path
 - Pattern
 - PayForWhatYouUse
+- Pencil
 - Performance
 - Perfume
 - Person_01
@@ -976,6 +980,7 @@
 - PrivateNetwork_04
 - Process
 - ProcessAutomation
+- Product
 - Productivity
 - ProfessionalMarketplace
 - Progress
@@ -1008,6 +1013,7 @@
 - RealEstate
 - RealTime
 - Receipt
+- Recruitment_01
 - Recycle
 - RecycleBin
 - RedHatApplications
@@ -1122,6 +1128,7 @@
 - SoftIceCream
 - SoftlayerEnablement
 - Software
+- Software_02
 - SolarField
 - SolarPanel
 - Solve
@@ -1232,6 +1239,7 @@
 - TextToSpeech
 - ThisSideUp
 - ThreatManagement
+- Tickets
 - Time
 - TimeLapse
 - TimePlot
@@ -1307,6 +1315,7 @@
 - UserInterface
 - UserMask
 - UserProfile
+- UserResearchTools
 - UserSearch
 - Vancouver
 - Vault
@@ -1381,3 +1390,4 @@
 - Yoga_04
 - ZeroTrust
 - Zurich
+- ZurichSwissNationalMuseum
