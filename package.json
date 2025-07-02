@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@carbon/icon-helpers": "latest",
-    "@carbon/pictograms": "12.52.0",
+    "@carbon/pictograms": "12.55.0",
     "@types/bun": "latest",
     "culls": "^0.1.1",
     "sveld": "latest",
