@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1377 pictograms from @carbon/pictograms@12.55.0
+> 1378 pictograms from @carbon/pictograms@12.56.0
 
 ## Usage
 
@@ -669,6 +669,7 @@
 - IbmIbv
 - IbmIx
 - IbmOneMadisonAvenue
+- IbmPower11
 - IbmRpa
 - IbmUkLabsHursley
 - IbmZ

@@ -1,4 +1,4 @@
-// Bun Snapshot v1, https://goo.gl/fbAQLP
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
 
 exports[`imports 1`] = `
 [
@@ -657,6 +657,7 @@ exports[`imports 1`] = `
   "IbmIbv",
   "IbmIx",
   "IbmOneMadisonAvenue",
+  "IbmPower11",
   "IbmRpa",
   "IbmUkLabsHursley",
   "IbmZ",
