@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@carbon/icon-helpers": "latest",
-    "@carbon/pictograms": "12.55.0",
+    "@carbon/pictograms": "12.56.0",
     "@types/bun": "latest",
     "culls": "^0.1.1",
     "svelte": "^5.34.9",
