@@ -3,6 +3,6 @@ import { buildPictograms } from "../src/index.js";
 
 test("imports", async () => {
   const pictograms = await buildPictograms();
-  expect(pictograms.length).toEqual(1378);
+  expect(pictograms.length).toEqual(1394);
   expect(pictograms).toMatchSnapshot();
 });
