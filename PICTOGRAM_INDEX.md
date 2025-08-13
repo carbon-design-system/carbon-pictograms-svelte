@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1378 pictograms from @carbon/pictograms@12.56.0
+> 1394 pictograms from @carbon/pictograms@12.58.0
 
 ## Usage
 
@@ -220,6 +220,7 @@
 - CirclePacking
 - ClientFinancing_01
 - ClientFinancing_02
+- ClientSupport
 - ClothesRack_01
 - ClothesRack_02
 - Cloud
@@ -321,6 +322,7 @@
 - ContinuousSecurity
 - Contract
 - Control
+- ControlTower
 - ControlPanel
 - ControlsFramework
 - Conversation
@@ -346,6 +348,7 @@
 - CustomReports
 - CustomerService
 - Customizable
+- Cybersecurity
 - DallasReunionTower
 - DallasSkyline
 - Dashboard
@@ -507,6 +510,8 @@
 - FilterVariable
 - FilterAndGroupData
 - FinanceStrategy
+- FinanceAndOperations
+- FinanceAndSupplyChain
 - FinancialConsultant
 - FinancialGain
 - FinancialNetworks
@@ -569,6 +574,7 @@
 - GlobalFinanceNetwork
 - GlobalFinanceSterling
 - GlobalFootprint
+- GlobalInfrastructure
 - GlobalMarkets
 - GlobalMarketsBar
 - GlobalNetwork
@@ -990,6 +996,9 @@
 - ProvenTechnology
 - Public
 - PublicCloudToPrivateCloud
+- PunchingBag_01
+- PunchingBag_02
+- PunchingBag_03
 - Puzzle
 - QQPlot
 - Qiskit
@@ -1136,6 +1145,7 @@
 - Spaceship
 - Speech
 - SpeechToText
+- SpeedBag
 - Speedometer
 - SponsorUserProgram
 - Sports
@@ -1193,6 +1203,7 @@
 - SydneyMlcCentre
 - SydneyOperaHouse
 - Synergy
+- SystemsAndTools
 - SystemsDevopsAnalyze
 - SystemsDevopsBuild
 - SystemsDevopsCicdPipeline
@@ -1214,6 +1225,7 @@
 - TargetArea
 - Teacher
 - TeamAlignment
+- TeamRadio
 - Teammates
 - TechnicalOwner
 - TelAviv
@@ -1276,6 +1288,7 @@
 - Transparency_02
 - TransparencyAndTrust_01
 - TransparencyAndTrust_02
+- TransparentSupply
 - Trash
 - TrashBurnable
 - TrashContainer
@@ -1293,6 +1306,9 @@
 - TrustedUser
 - Tunnel
 - TwoPersonLift
+- UfcBelt
+- UfcFighting
+- UfcRing
 - UnauthorizedUserAccess
 - UnderUtilizedSecurity
 - UnifyEndpointManagement
