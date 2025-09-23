@@ -8,8 +8,8 @@
     "carbon-pictograms-svelte": "link:carbon-pictograms-svelte"
   },
   "devDependencies": {
-    "svelte": "^4.2.19",
-    "svelte-check": "^4.1.7",
-    "typescript": "^5.8.3"
+    "svelte": "^4.2.20",
+    "svelte-check": "^4.3.2",
+    "typescript": "^5.9.2"
   }
 }
