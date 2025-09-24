@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1394 pictograms from @carbon/pictograms@12.58.0
+> 1408 pictograms from @carbon/pictograms@12.61.0
 
 ## Usage
 
@@ -172,6 +172,7 @@
 - CargoCrane
 - CargoShip
 - Cell
+- Champagne
 - Chart_3D
 - ChartArea
 - ChartBar
@@ -331,6 +332,8 @@
 - CopenhagenSnekkja
 - Coronavirus
 - Coupon
+- CowboyHat
+- CowboyBoot
 - CreditCard
 - Crop
 - Crossbill
@@ -487,6 +490,12 @@
 - ExtractText
 - Eye
 - EyewashStation
+- F1Car_01
+- F1Car_02
+- F1Grid
+- F1Race
+- F1SteeringWheel
+- F1PitStopTrafficLight
 - FaceDissatisfied
 - FaceNeutral
 - FaceSatisfied
@@ -550,6 +559,7 @@
 - FountainDrinking
 - Fragile
 - FreeTrial
+- FrostTower
 - Fuel
 - FullyManaged
 - FunctionsAsAService
@@ -619,12 +629,14 @@
 - HardPrompt
 - Hazy
 - Headphones
+- Headset
 - Health
 - Healthcare
 - Heart
 - HeartHealth
 - HeatMap_01
 - HeatMap_02
+- Helmet
 - HelpDesk
 - Heron
 - HighFive
@@ -770,6 +782,7 @@
 - Lockers
 - London
 - LondonBigBen
+- Longhorn
 - Loon
 - LoopHearing
 - Love
@@ -1256,6 +1269,7 @@
 - Time
 - TimeLapse
 - TimePlot
+- Tire
 - Toggle
 - Toilet
 - Toilet_02
