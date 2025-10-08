@@ -30,4 +30,4 @@ jobs:
       - name: Publish package
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-        run: npm publish --provenance --access public
+        run: npm publish --provenance --access public --tag stable-12
