@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1408 pictograms from @carbon/pictograms@12.61.0
+> 1457 pictograms from @carbon/pictograms@12.62.0
 
 ## Usage
 
@@ -61,14 +61,17 @@
 - AmsterdamFarm
 - AmsterdamWindmill
 - Analytics
+- Analytics_02
 - Analyze
 - AnalyzeCode
 - AnalyzesData
 - AnalyzingContainers
+- Android
 - AnonymousUsers
 - Apartment
 - Api
 - ApiLifecycle
+- ApiManagement
 - AppDeveloper
 - AppModernization
 - Apple
@@ -190,6 +193,8 @@
 - ChartMultiType
 - ChartParallel
 - ChartPie
+- ChartPredictiveAnalyticsBar
+- ChartPredictiveAnalyticsLine
 - ChartQuadrantPlot
 - ChartRadar
 - ChartRiver
@@ -316,10 +321,13 @@
 - ContainerMicroservices
 - ContainerizedApplications
 - Containers
+- Containers_02
 - ContainersAndCloudNative
 - ContentDesign
 - ContentDeliveryNetwork
 - Continuous
+- ContinuousDelivery
+- ContinuousIntegration
 - ContinuousSecurity
 - Contract
 - Control
@@ -332,8 +340,8 @@
 - CopenhagenSnekkja
 - Coronavirus
 - Coupon
-- CowboyHat
 - CowboyBoot
+- CowboyHat
 - CreditCard
 - Crop
 - Crossbill
@@ -360,16 +368,20 @@
 - DataCenters
 - DataInsights
 - DataManagement
+- DataManagement_02
+- DataManagement_03
 - DataPrivacy
 - DataPrivacy_02
 - DataPrivacyKey
 - DataProcessing
 - DataProtectionDataSecurity
 - DataScience
+- DataScience_02
 - DataScientist
 - DataSecurity
 - DataSet
 - DataStorage
+- DataStore
 - DataTransfer
 - DataWarehousing
 - Database
@@ -378,6 +390,8 @@
 - DedicatedHost
 - DedicatedInstance
 - DeepLearning
+- DeepLearning_02
+- DeepLearning_03
 - Delete
 - DeliverInsights
 - Delivered
@@ -401,6 +415,8 @@
 - DevicesAtIbm
 - Devops
 - Devops_02
+- DevopsLoop_01
+- DevopsLoop_02
 - DevopsToolchain
 - Dialogue
 - Digital
@@ -439,6 +455,7 @@
 - Ecosystem
 - EcuadorQuito
 - Edge
+- EdgeComputing
 - Education
 - Efficient
 - EhningenTechCampus_01
@@ -493,9 +510,9 @@
 - F1Car_01
 - F1Car_02
 - F1Grid
+- F1PitStopTrafficLight
 - F1Race
 - F1SteeringWheel
-- F1PitStopTrafficLight
 - FaceDissatisfied
 - FaceNeutral
 - FaceSatisfied
@@ -559,6 +576,7 @@
 - FountainDrinking
 - Fragile
 - FreeTrial
+- FrontEndDevelopment
 - FrostTower
 - Fuel
 - FullyManaged
@@ -732,11 +750,15 @@
 - IntelligentInfrastructure
 - Intercom
 - InternetOfThings
+- InternetOfThings_02
+- InternetOfThings_03
 - Invoice
 - IotMunich
+- ItInfrastructure
 - ItInfrastructureSoftware
 - JapanMtFuji
 - Java
+- Java_02
 - Javascript
 - Juice
 - Justice
@@ -768,6 +790,7 @@
 - LiftAndShift
 - Lightning
 - Link
+- Linux
 - Linuxone_5
 - Liquids
 - ListBullet
@@ -828,6 +851,9 @@
 - MedicalStaff
 - Melbourne
 - Memory
+- Messaging_01
+- Messaging_02
+- Messaging_03
 - MetalCan
 - Meter
 - MexicoCityAngelOfIndependence
@@ -837,6 +863,7 @@
 - Microphone
 - Microscope
 - Microservices
+- Microservices_02
 - Migrate
 - Migration
 - MilanDuomoDiMilano
@@ -846,6 +873,7 @@
 - Mobile
 - MobileAdd
 - MobileChat
+- MobileDevelopment
 - MobileDevices
 - MobilePhone
 - MobilePos_01
@@ -870,11 +898,14 @@
 - Mri
 - MriPatient
 - MultiModel
+- MulticloudComputing
 - Multitask
 - Mumbai
 - Munich
 - Music
 - NaturalLanguageClassifier
+- NaturalLanguageProcessing_01
+- NaturalLanguageProcessing_02
 - NaturalLanguageUnderstanding
 - Network
 - Network_02
@@ -900,6 +931,8 @@
 - NoLiquids
 - NoParking
 - NoSmoking
+- NodeDotJs_01
+- NodeDotJs_02
 - Notifications
 - Nuclear
 - NycBrooklyn
@@ -908,6 +941,7 @@
 - NycManhattan_02
 - NycStatueOfLiberty
 - NycWorldTradeCenter
+- ObjectStorage
 - Observability_01
 - Observability_02
 - Office
@@ -916,6 +950,7 @@
 - Okinawa
 - OnPremise
 - OnPremiseToCloud
+- OnPremises_02
 - OpenSource
 - OperateOffline
 - OperatingSystem
@@ -963,6 +998,7 @@
 - PeruMachuPicchu
 - PetriCulture
 - PhpLanguage
+- PhpLanguage_02
 - PillBottle_01
 - Pills
 - PilotTest
@@ -971,6 +1007,7 @@
 - PlasticBottle
 - Plastics
 - PlatformAsAService
+- PlatformAsAService_02
 - PlayerFlow
 - PliLanguage
 - Podcast
@@ -1013,6 +1050,7 @@
 - PunchingBag_02
 - PunchingBag_03
 - Puzzle
+- Python
 - QQPlot
 - Qiskit
 - QrCode
@@ -1024,6 +1062,7 @@
 - Question
 - QuestionAndAnswer
 - RLanguage
+- RLanguageAndEnvironment
 - Racetrack
 - Raindrop
 - Rainy
@@ -1032,6 +1071,7 @@
 - RandomSamples
 - Rank
 - ReactToData
+- ReactiveSystems
 - ReadOnly
 - RealEstate
 - RealTime
@@ -1107,6 +1147,7 @@
 - SecureSearch
 - Security
 - Security_02
+- Security_03
 - SecurityAsAService
 - SecurityGroups
 - SecurityHygiene
@@ -1122,6 +1163,7 @@
 - ServerRack
 - Serverless
 - Serverless_02
+- Serverless_03
 - Servers
 - ShanghaiCityscape
 - ShanghaiOrientalPearlTower
@@ -1152,17 +1194,20 @@
 - SoftlayerEnablement
 - Software
 - Software_02
+- SoftwareDevelopment
 - SolarField
 - SolarPanel
 - Solve
 - Spaceship
 - Speech
 - SpeechToText
+- SpeechAndEmpathy_01
 - SpeedBag
 - Speedometer
 - SponsorUserProgram
 - Sports
 - Spotlight
+- Spring
 - Sprout
 - Spss
 - SpyreAccelerator
@@ -1211,11 +1256,13 @@
 - Sustainability_03
 - Sustainability_04
 - SustainabilityStrategy
+- SwiftAtIbm
 - SwipeLeft
 - SwipeRight
 - SydneyMlcCentre
 - SydneyOperaHouse
 - Synergy
+- Systems
 - SystemsAndTools
 - SystemsDevopsAnalyze
 - SystemsDevopsBuild
@@ -1240,6 +1287,7 @@
 - TeamAlignment
 - TeamRadio
 - Teammates
+- TechnicalDocumentGeneration
 - TechnicalOwner
 - TelAviv
 - Telecom
@@ -1369,6 +1417,7 @@
 - VisualDesign
 - VisualInsights
 - VisualRecognition
+- VisualRecognition_02
 - WalldorfIbmInnovationStudios
 - Warning_01
 - Warning_02
