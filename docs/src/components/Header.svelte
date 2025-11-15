@@ -33,10 +33,10 @@
     <HeaderAction transition={false}>
       <HeaderPanelLinks>
         <HeaderPanelDivider>Carbon Svelte portfolio</HeaderPanelDivider>
-        <HeaderPanelLink href="https://github.com/IBM/carbon-components-svelte">
+        <HeaderPanelLink href="https://github.com/carbon-design-system/carbon-components-svelte">
           Carbon Components Svelte
         </HeaderPanelLink>
-        <HeaderPanelLink href="https://github.com/IBM/carbon-icons-svelte">
+        <HeaderPanelLink href="https://github.com/carbon-design-system/carbon-icons-svelte">
           Carbon Icons Svelte
         </HeaderPanelLink>
         <HeaderPanelLink
@@ -44,7 +44,7 @@
         >
           Carbon Charts Svelte
         </HeaderPanelLink>
-        <HeaderPanelLink href="https://github.com/IBM/carbon-preprocess-svelte">
+        <HeaderPanelLink href="https://github.com/carbon-design-system/carbon-preprocess-svelte">
           Carbon Preprocess Svelte
         </HeaderPanelLink>
         <HeaderPanelDivider>Resources</HeaderPanelDivider>

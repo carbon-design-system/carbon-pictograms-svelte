@@ -6,7 +6,7 @@
 
 > [Carbon Design System](https://github.com/carbon-design-system) SVG pictograms as Svelte components.
 
-This zero dependency library builds [Carbon Design System pictograms](https://www.carbondesignsystem.com/guidelines/pictograms/library) as Svelte components. Although best paired with [carbon-components-svelte](https://github.com/IBM/carbon-components-svelte), this library can be consumed standalone.
+This zero dependency library builds [Carbon Design System pictograms](https://www.carbondesignsystem.com/guidelines/pictograms/library) as Svelte components. Although best paired with [carbon-components-svelte](https://github.com/carbon-design-system/carbon-components-svelte), this library can be consumed standalone.
 
 Try it in the [Svelte REPL](https://svelte.dev/repl/88b99674d0f24a3a8948d3760f8ba999).
 
