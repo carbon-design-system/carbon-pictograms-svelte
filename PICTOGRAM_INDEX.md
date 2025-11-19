@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1457 pictograms from @carbon/pictograms@12.62.0
+> 1467 pictograms from @carbon/pictograms@12.64.0
 
 ## Usage
 
@@ -115,6 +115,9 @@
 - BareMetal
 - BaselMunster
 - BaselTownHall
+- Bat_01
+- Bat_02
+- BatHanging
 - Bee
 - BeijingMunicipal
 - BeijingTower
@@ -704,6 +707,7 @@
 - IbmGranite
 - IbmIbv
 - IbmIx
+- IbmMachineLearningForZOs
 - IbmOneMadisonAvenue
 - IbmPower11
 - IbmRpa
@@ -1211,6 +1215,7 @@
 - Sprout
 - Spss
 - SpyreAccelerator
+- SpyreAcceleratorCard
 - StackLimitation
 - Stage
 - Stairs
@@ -1302,9 +1307,14 @@
 - TemperatureLow
 - TemporaryBadge
 - Tennis
+- TennisCourt
 - TennisBall
 - TennisNet
 - TennisRacquet
+- TennisScoreboard
+- TennisServe
+- TennisShot
+- TennisUmpireChair
 - TestTubes
 - TextData
 - TextEquivalent
