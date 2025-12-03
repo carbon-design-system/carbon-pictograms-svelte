@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1467 pictograms from @carbon/pictograms@12.64.0
+> 1517 pictograms from @carbon/pictograms@12.65.0
 
 ## Usage
 
@@ -94,6 +94,7 @@
 - AuditTrail
 - AugmentedReality
 - Austin
+- AustinTexas
 - AutomateModularManagement
 - Automated
 - AutomationDecision
@@ -128,6 +129,7 @@
 - BeverageCarton
 - Bicycle
 - BigData
+- Binocular
 - BirthdayCake
 - Blender
 - BlochSphere
@@ -152,12 +154,16 @@
 - BuildApplicationsAnywhere
 - Building
 - Bulldozer
+- Burger
 - Bus
 - BusinessAnalytics
 - BusinessContinuity
 - BusinessContinuity_02
 - CLanguage
 - CPlusPlusLanguage
+- Cactus_01
+- Cactus_02
+- CactusFlower
 - Cafe
 - CairoGizaPlateau
 - CairoGizaSphinx
@@ -177,6 +183,7 @@
 - Care
 - CargoCrane
 - CargoShip
+- Cat_01
 - Cell
 - Champagne
 - Chart_3D
@@ -192,6 +199,7 @@
 - ChartHighLow
 - ChartHistogram
 - ChartLine
+- ChartLollipop
 - ChartMultiLine
 - ChartMultiType
 - ChartParallel
@@ -227,6 +235,7 @@
 - CicsVsamRecoveryForZOs
 - CicsVsamTransparencyForZOs
 - CirclePacking
+- Cleat
 - ClientFinancing_01
 - ClientFinancing_02
 - ClientSupport
@@ -343,6 +352,7 @@
 - CopenhagenSnekkja
 - Coronavirus
 - Coupon
+- Cow
 - CowboyBoot
 - CowboyHat
 - CreditCard
@@ -440,6 +450,9 @@
 - DocumentSecurity
 - DocumentSecurity_02
 - Documentation
+- Dog_01
+- Dog_02
+- DogWalking
 - DoorHandle
 - Download_01
 - Download_02
@@ -517,6 +530,7 @@
 - F1Race
 - F1SteeringWheel
 - FaceDissatisfied
+- FaceMelting
 - FaceNeutral
 - FaceSatisfied
 - FaceVeryDissatisfied
@@ -570,9 +584,11 @@
 - FocusRoom
 - Fog
 - Folder
+- FoodTruck
 - Football
 - FootballField
 - FootballGoalPost
+- FootballPose
 - Forecasting
 - Forklift
 - FoundationModel
@@ -581,6 +597,7 @@
 - FreeTrial
 - FrontEndDevelopment
 - FrostTower
+- FrozenPipe
 - Fuel
 - FullyManaged
 - FunctionsAsAService
@@ -619,8 +636,11 @@
 - Goals
 - GolfBag
 - GolfBall
+- GolfCart
 - GolfClub
 - GolfHole
+- GolfPose_01
+- GolfPose_02
 - GovernUsersAndIdentities
 - Governance
 - Government_01
@@ -640,6 +660,7 @@
 - Hail
 - HailHeavy
 - HailMixed
+- HalfNote
 - HamburgPhilharmone
 - Handicap
 - HandicapActive
@@ -658,6 +679,7 @@
 - HeatMap_01
 - HeatMap_02
 - Helmet
+- HelmetFootball
 - HelpDesk
 - Heron
 - HighFive
@@ -667,12 +689,14 @@
 - HighSpeedDataTransport
 - HighVolumeData
 - HighlyAvailable
+- Hiking
 - Hills
 - HomeFront
 - HomeGarage
 - HomeProfile
 - HongKong
 - HongKongCityscape
+- Horse
 - Hospital
 - Hpi
 - HumanInTheLoop
@@ -793,6 +817,7 @@
 - Library
 - LiftAndShift
 - Lightning
+- Limes
 - Link
 - Linux
 - Linuxone_5
@@ -838,6 +863,9 @@
 - ManagingContainers
 - ManagingContractualFlow
 - ManagingItems
+- Mandolin
+- MargaritaGlass
+- MartiniGlass
 - Marketplace
 - Mas
 - MassDataMigration
@@ -854,6 +882,7 @@
 - MedicalCharts
 - MedicalStaff
 - Melbourne
+- MeltingIceCream
 - Memory
 - Messaging_01
 - Messaging_02
@@ -907,6 +936,7 @@
 - Mumbai
 - Munich
 - Music
+- Nachos
 - NaturalLanguageClassifier
 - NaturalLanguageProcessing_01
 - NaturalLanguageProcessing_02
@@ -937,6 +967,8 @@
 - NoSmoking
 - NodeDotJs_01
 - NodeDotJs_02
+- NorthAmerica
+- NorthernMockingbird
 - Notifications
 - Nuclear
 - NycBrooklyn
@@ -949,6 +981,7 @@
 - Observability_01
 - Observability_02
 - Office
+- OilLamp
 - OilPump
 - OilRig
 - Okinawa
@@ -970,6 +1003,7 @@
 - OutcomeFocused
 - Overcast
 - Overview
+- Paddleboarding
 - Paper
 - PaperClip
 - PaperConfidential
@@ -986,6 +1020,8 @@
 - Pattern
 - PayForWhatYouUse
 - Pencil
+- PeopleDancing
+- Pepper
 - Performance
 - Perfume
 - Person_01
@@ -997,16 +1033,19 @@
 - Person_07
 - Person_08
 - Person_09
+- PersonSweating
 - PersonWorking
 - PersonalityInsights
 - PeruMachuPicchu
 - PetriCulture
 - PhpLanguage
 - PhpLanguage_02
+- Piano
 - PillBottle_01
 - Pills
 - PilotTest
 - Pipeline
+- Pizza
 - PlanningAnalytics
 - PlasticBottle
 - Plastics
@@ -1016,6 +1055,8 @@
 - PliLanguage
 - Podcast
 - Police
+- Popsicle
+- PopsicleMelting
 - PopulationDiagram
 - PortlandBuilding
 - PoughkeepsieBridge
@@ -1122,6 +1163,7 @@
 - RotateDevice
 - SaasEnablement
 - SaasIntegration
+- Salad
 - SalesConnect
 - SalesforceIntegration
 - SampleFile
@@ -1161,6 +1203,7 @@
 - SecurityVisibility
 - SelectProduct
 - SelectRange
+- SelectricTypewriter
 - Sell
 - SeoulGyeongbokgungPalace
 - ServerOperatingSystems
@@ -1178,6 +1221,7 @@
 - ShoppingCart
 - Shower
 - Silence
+- SiliconWafer
 - Singapore
 - SingleSignOn
 - Slack
@@ -1217,11 +1261,13 @@
 - SpyreAccelerator
 - SpyreAcceleratorCard
 - StackLimitation
+- StadiumSeats
 - Stage
 - Stairs
 - StairsDown
 - StairsPlanView
 - StairsUp
+- Star
 - StartForFree
 - StartUps
 - StationHydration
@@ -1282,6 +1328,7 @@
 - TShirt
 - TabletDevice
 - TabletDeviceCheck
+- Taco
 - Tags
 - TaipeiBubbleTea
 - TapeStorage
@@ -1373,6 +1420,7 @@
 - Trophy
 - Troubleshooting
 - Trousers
+- Trumpet
 - Trust
 - Trusted
 - TrustedUser
@@ -1414,6 +1462,7 @@
 - VideoChat
 - VideoPlay
 - ViewGraphsAndDashboard
+- VinylRecord
 - Virtual
 - VirtualServer
 - VirtualStorage
@@ -1447,6 +1496,7 @@
 - WatsonxData
 - WatsonxGovernance
 - WavingHand
+- WaymoCar
 - Weather
 - WebBanners
 - WebDeveloper
