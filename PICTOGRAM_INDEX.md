@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1517 pictograms from @carbon/pictograms@12.65.0
+> 1520 pictograms from @carbon/pictograms@12.66.0
 
 ## Usage
 
@@ -921,6 +921,7 @@
 - MortarAndPestle
 - Moscow
 - Motion
+- MountainBiking
 - MovementInOverlappingNetworks
 - MovementOfGoods_01
 - MovementOfGoods_02
@@ -1111,6 +1112,7 @@
 - Racetrack
 - Raindrop
 - Rainy
+- RoadBiking
 - RainyHeavy
 - RaleighNc
 - RandomSamples
@@ -1232,6 +1234,7 @@
 - Sneaker
 - Snow
 - Snowflake
+- Snowboarding
 - SocialDistancing
 - SocialTile
 - SocialWork_01
