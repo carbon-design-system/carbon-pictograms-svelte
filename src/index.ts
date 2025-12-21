@@ -22,8 +22,9 @@ export type CarbonPictogramProps = SvelteHTMLElements["svg"] & {
   let libExport = "";
 
   const pictograms: string[] = [];
+  const writePromises: Promise<void>[] = [];
 
-  buildInfo.icons.forEach(async ({ output }) => {
+  for (const { output } of buildInfo.icons) {
     const { moduleName } = output[0];
 
     pictograms.push(moduleName);
@@ -33,12 +34,16 @@ export type CarbonPictogramProps = SvelteHTMLElements["svg"] & {
 
     const fileName = `lib/${moduleName}.svelte`;
 
-    Bun.write(fileName, template(output[0]));
-    Bun.write(
-      fileName + ".d.ts",
-      `export { ${moduleName} as default } from "./";\n`
+    writePromises.push(
+      Bun.write(fileName, template(output[0])),
+      Bun.write(
+        fileName + ".d.ts",
+        `export { ${moduleName} as default } from "./";\n`
+      )
     );
-  });
+  }
+
+  await Promise.all(writePromises);
 
   const packageMetadata = `${pictograms.length} pictograms from @carbon/pictograms@${pkg.devDependencies["@carbon/pictograms"]}`;
 
