@@ -18,8 +18,9 @@ export const buildPictograms = async () => {
   let imports = "";
 
   const pictograms: string[] = [];
+  const writePromises: Promise<unknown>[] = [];
 
-  buildInfo.icons.forEach(async ({ output }) => {
+  for (const { output } of buildInfo.icons) {
     const { moduleName } = output[0];
 
     imports += `export { default as ${moduleName} } from "./${moduleName}.svelte";\n`;
@@ -42,8 +43,10 @@ export const buildPictograms = async () => {
       default: false,
     };
 
-    await Bun.write(`lib/${moduleName}.svelte`, source);
-  });
+    writePromises.push(Bun.write(`lib/${moduleName}.svelte`, source));
+  }
+
+  await Promise.all(writePromises);
 
   const metadata = `${pictograms.length} pictograms from @carbon/pictograms@${devDependencies["@carbon/pictograms"]}`;
 
