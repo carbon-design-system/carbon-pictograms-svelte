@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1520 pictograms from @carbon/pictograms@12.66.0
+> 1537 pictograms from @carbon/pictograms@12.70.0
 
 ## Usage
 
@@ -236,6 +236,10 @@
 - CicsVsamTransparencyForZOs
 - CirclePacking
 - Cleat
+- CricketBall
+- CricketBatAndBall
+- CricketField
+- CricketHelmet
 - ClientFinancing_01
 - ClientFinancing_02
 - ClientSupport
@@ -355,6 +359,7 @@
 - Cow
 - CowboyBoot
 - CowboyHat
+- Crab
 - CreditCard
 - Crop
 - Crossbill
@@ -419,6 +424,8 @@
 - DesignSystemAlignment
 - DesignThinkingTeam
 - Desktop
+- Drone_1
+- Drone
 - Destination
 - DetectAndStopAdvancingThreats
 - DevAndTest
@@ -564,6 +571,7 @@
 - FireExtinguisher
 - FireHose
 - Firecracker
+- Fish
 - Firefighter
 - Firewall
 - FirstAid
@@ -894,6 +902,7 @@
 - Micro
 - Microorganisms
 - Microphone
+- Mouse
 - Microscope
 - Microservices
 - Microservices_02
@@ -970,6 +979,7 @@
 - NodeDotJs_02
 - NorthAmerica
 - NorthernMockingbird
+- Octopus
 - Notifications
 - Nuclear
 - NycBrooklyn
@@ -1077,6 +1087,7 @@
 - Presenter
 - Price
 - Printer
+- Radio
 - PrivateNetwork_01
 - PrivateNetwork_02
 - PrivateNetwork_03
@@ -1113,6 +1124,7 @@
 - Raindrop
 - Rainy
 - RoadBiking
+- Skiing
 - RainyHeavy
 - RaleighNc
 - RandomSamples
@@ -1180,6 +1192,8 @@
 - SaveTime
 - Scalable
 - Scale
+- SeaShell
+- Shrimp
 - Scale_02
 - ScalingContainers
 - ScanCode
@@ -1266,6 +1280,7 @@
 - StackLimitation
 - StadiumSeats
 - Stage
+- Starfish
 - Stairs
 - StairsDown
 - StairsPlanView
@@ -1353,6 +1368,7 @@
 - Television
 - TelumIiChip
 - TelumIiProcessor
+- VisualInspection
 - TemperatureHigh
 - TemperatureLow
 - TemporaryBadge
@@ -1507,6 +1523,7 @@
 - Websites
 - Websphere
 - WeddingCake
+- Whale
 - Wheat
 - WheelchairUser
 - WheelchairUserActive
