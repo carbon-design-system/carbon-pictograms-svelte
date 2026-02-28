@@ -1,7 +1,6 @@
 # carbon-pictograms-svelte
 
 [![NPM][npm]][npm-url]
-![GitHub](https://img.shields.io/github/license/ibm/carbon-pictograms-svelte?color=262626&style=for-the-badge)
 ![npm downloads to date](https://img.shields.io/npm/dt/carbon-pictograms-svelte?color=262626&style=for-the-badge)
 
 > [Carbon Design System](https://github.com/carbon-design-system) SVG pictograms as Svelte components.
