@@ -12,7 +12,7 @@
     Theme,
     SelectSkeleton,
   } from "carbon-components-svelte";
-  import FocusKey from "svelte-focus-key";
+  import FocusKey from "./FocusKey.svelte";
   import fuzzy from "fuzzy";
   import Header from "./Header.svelte";
   import * as pictograms from "../../../lib";
