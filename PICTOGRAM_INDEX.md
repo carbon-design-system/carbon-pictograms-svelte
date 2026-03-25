@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1537 pictograms from @carbon/pictograms@12.70.0
+> 1541 pictograms from @carbon/pictograms@12.72.0
 
 ## Usage
 
@@ -129,6 +129,9 @@
 - BeverageCarton
 - Bicycle
 - BigData
+- BinCompost
+- BinRecycle
+- BinSanitary
 - Binocular
 - BirthdayCake
 - Blender
@@ -312,7 +315,6 @@
 - Compliant
 - ComposerEdit
 - Compost
-- CompostBin
 - Compute
 - ConceptExpansion
 - ConceptInsights
@@ -404,6 +406,7 @@
 - DataWarehousing
 - Database
 - Db2
+- Db2GeniusHub
 - DecisionVelocity
 - DedicatedHost
 - DedicatedInstance
@@ -1018,6 +1021,8 @@
 - Paper
 - PaperClip
 - PaperConfidential
+- PaperCup
+- PaperCupWithMetalCan
 - ParisArcDeTriomphe
 - ParisEiffelTower
 - ParisLouvre
@@ -1137,7 +1142,6 @@
 - Receipt
 - Recruitment_01
 - Recycle
-- RecycleBin
 - RedHatApplications
 - RedefiningFinancialServices
 - ReducingCost
