@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1541 pictograms from @carbon/pictograms@12.72.0
+> 1549 pictograms from @carbon/pictograms@12.75.0
 
 ## Usage
 
@@ -680,6 +680,7 @@
 - HardDriveNetwork
 - HardIceCream
 - HardPrompt
+- HashicorpTerraform
 - Hazy
 - Headphones
 - Headset
@@ -725,8 +726,11 @@
 - HyperProtectCryptoService
 - HyperProtectDatabaseAsAService
 - HyperProtectVirtualServers
+- IbmAptio
 - IbmAutomationPlatform
+- IbmBob
 - IbmCloud
+- IbmConcert
 - IbmElm
 - IbmElmDcc
 - IbmElmGcm
@@ -741,6 +745,7 @@
 - IbmEngineeringWorkflowManagement
 - IbmGranite
 - IbmIbv
+- IbmInstana
 - IbmIx
 - IbmMachineLearningForZOs
 - IbmOneMadisonAvenue
@@ -1142,6 +1147,7 @@
 - Receipt
 - Recruitment_01
 - Recycle
+- RedHatAnsible
 - RedHatApplications
 - RedefiningFinancialServices
 - ReducingCost
@@ -1397,6 +1403,7 @@
 - Time
 - TimeLapse
 - TimePlot
+- Timesheet
 - Tire
 - Toggle
 - Toilet
@@ -1518,6 +1525,7 @@
 - WatsonxCodeAssistantForZRefactor
 - WatsonxData
 - WatsonxGovernance
+- WatsonxOrchestrate
 - WavingHand
 - WaymoCar
 - Weather
