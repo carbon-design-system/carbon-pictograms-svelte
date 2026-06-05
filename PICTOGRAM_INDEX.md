@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1549 pictograms from @carbon/pictograms@12.75.0
+> 1563 pictograms from @carbon/pictograms@12.77.0
 
 ## Usage
 
@@ -219,6 +219,7 @@
 - ChartTSne
 - ChartTwoYAxis
 - Cheese
+- Chennai
 - Cherries
 - Chicago
 - ChileEasterIsland
@@ -417,6 +418,7 @@
 - DeliverInsights
 - Delivered
 - DeliveryTruck
+- Denver
 - DeployingContainers
 - Deployment
 - Design
@@ -605,6 +607,7 @@
 - FoundationModel
 - FountainDrinking
 - Fragile
+- Frankfurt
 - FreeTrial
 - FrontEndDevelopment
 - FrostTower
@@ -827,6 +830,7 @@
 - Language_05
 - LanguageTranslation
 - Lantern
+- Laptop
 - Launch
 - Leader
 - Leadership
@@ -853,6 +857,8 @@
 - Longhorn
 - Loon
 - LoopHearing
+- LosAngeles
+- LotusFlower
 - Love
 - LoweringRisk
 - Luggage
@@ -900,6 +906,7 @@
 - Melbourne
 - MeltingIceCream
 - Memory
+- MenShowers
 - Messaging_01
 - Messaging_02
 - Messaging_03
@@ -907,6 +914,7 @@
 - Meter
 - MexicoCityAngelOfIndependence
 - MexicoCityMuseoSoumaya
+- Miami
 - Micro
 - Microorganisms
 - Microphone
@@ -1018,6 +1026,7 @@
 - Organization
 - Ornament
 - OsakaTsutenkakuTower
+- Oslo
 - Osprey
 - OutcomeFocused
 - Overcast
@@ -1057,6 +1066,7 @@
 - PersonSweating
 - PersonWorking
 - PersonalityInsights
+- Perth
 - PeruMachuPicchu
 - PetriCulture
 - PhpLanguage
@@ -1192,6 +1202,7 @@
 - SalesforceIntegration
 - SampleFile
 - SanFrancisco
+- SanJose
 - SanFranciscoFog
 - SaoPaulo
 - Sap
@@ -1358,6 +1369,7 @@
 - TabletDeviceCheck
 - Taco
 - Tags
+- Taipei
 - TaipeiBubbleTea
 - TapeStorage
 - TapeStorage_02
@@ -1369,6 +1381,7 @@
 - Teammates
 - TechnicalDocumentGeneration
 - TechnicalOwner
+- TechnologyZoneFinger
 - TelAviv
 - Telecom
 - Telecommunications
@@ -1549,6 +1562,7 @@
 - Wine
 - WirelessHome
 - WirelessModem
+- WomenShowers
 - WordCloud
 - Workday
 - Workflows
