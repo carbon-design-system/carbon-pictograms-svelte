@@ -1,5 +1,14 @@
-import { toString } from "@carbon/icon-helpers";
+import { formatAttributes, toString } from "@carbon/icon-helpers";
 import { PictogramOutput } from "@carbon/pictograms";
+
+const compactSvg = (svg: string) =>
+  svg.replace(/\s+/g, " ").replace(/> </g, "><").trim();
+
+const omitDuplicateSvgAttrs = ({
+  xmlns,
+  fill,
+  ...rest
+}: Record<string, string | number>) => rest;
 
 export function template({ descriptor }: PictogramOutput) {
   return `<script>
@@ -30,3 +39,17 @@ export function template({ descriptor }: PictogramOutput) {
   ${descriptor.content.map(toString).join("")}
 </svg>`;
 }
+
+export const templateSvg = ({ descriptor }: PictogramOutput) => {
+  const attrs = omitDuplicateSvgAttrs(descriptor?.attrs ?? {});
+  const content = descriptor?.content ?? [];
+  const formatted = formatAttributes({
+    ...attrs,
+    preserveAspectRatio: "xMidYMid meet",
+  });
+  const inner = content.map(toString).join("");
+
+  return compactSvg(
+    `<svg xmlns="http://www.w3.org/2000/svg" ${formatted} fill="currentColor">${inner}</svg>`
+  );
+};

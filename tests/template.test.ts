@@ -1,6 +1,6 @@
 import type { PictogramOutput } from "@carbon/pictograms";
 import { describe, expect, test } from "bun:test";
-import { template } from "../src/template.js";
+import { template, templateSvg } from "../src/template.js";
 
 describe("template", () => {
   test("should generate correct Svelte component template with minimal input", () => {
@@ -95,4 +95,62 @@ describe("template", () => {
     expect(result).toContain('d="M0 0h16v16H0z"');
     expect(result).toContain('d="M16 16h16v16H16z"');
   });
-}); 
+});
+
+describe("templateSvg", () => {
+  test("should generate correct SVG for pictogram", () => {
+    const input: PictogramOutput = {
+      moduleName: "TestPictogram",
+      filepath: "test-pictogram/index.js",
+      descriptor: {
+        elem: "svg",
+        attrs: {
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 0 32 32",
+          fill: "currentColor",
+          width: 64,
+          height: 64,
+        },
+        content: [
+          {
+            elem: "path",
+            attrs: { d: "M0 0h32v32H0z" },
+          },
+        ],
+        name: "test-pictogram",
+      },
+    };
+
+    const result = templateSvg(input);
+    expect(result).toContain('xmlns="http://www.w3.org/2000/svg"');
+    expect(result).toContain('width="64"');
+    expect(result).toContain('height="64"');
+    expect(result).toContain('fill="currentColor"');
+    expect(result).toContain('path d="M0 0h32v32H0z"');
+    expect(result).not.toMatch(/xmlns="[^"]+"[^>]*xmlns="/);
+    expect(result).not.toMatch(/fill="currentColor"[^>]*fill="currentColor"/);
+  });
+
+  test("should handle empty descriptor content", () => {
+    const input: PictogramOutput = {
+      moduleName: "EmptyPictogram",
+      filepath: "empty-pictogram/index.js",
+      descriptor: {
+        elem: "svg",
+        attrs: {
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 0 32 32",
+          fill: "currentColor",
+          width: 64,
+          height: 64,
+        },
+        content: [],
+        name: "empty-pictogram",
+      },
+    };
+
+    const result = templateSvg(input);
+    expect(result).toContain("<svg");
+    expect(result).not.toContain("path");
+  });
+});
