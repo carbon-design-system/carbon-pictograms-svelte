@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1563 pictograms from @carbon/pictograms@12.77.0
+> 1572 pictograms from @carbon/pictograms@12.79.0
 
 ## Usage
 
@@ -22,6 +22,7 @@
 - AdTech
 - AddDevice
 - AddDocument
+- AddCommentsMobile
 - AdvancedFraudProtection
 - AdvancedThreats
 - Advocate
@@ -313,6 +314,7 @@
 - Colors
 - CommercialFinancing_01
 - CommercialFinancing_02
+- CompleteWorkTechnician
 - Compliant
 - ComposerEdit
 - Compost
@@ -363,6 +365,7 @@
 - CowboyBoot
 - CowboyHat
 - Crab
+- CreateWork
 - CreditCard
 - Crop
 - Crossbill
@@ -730,6 +733,7 @@
 - HyperProtectDatabaseAsAService
 - HyperProtectVirtualServers
 - IbmAptio
+- IbmAtxOffice
 - IbmAutomationPlatform
 - IbmBob
 - IbmCloud
@@ -1172,6 +1176,7 @@
 - RenewTeam
 - Repeat
 - Report
+- ReportTimeTechnician
 - Research
 - ResellerPrograms
 - Reset
@@ -1185,6 +1190,7 @@
 - Retail
 - RetailSustainable
 - RetrieveAndRank
+- ReviewChecklist
 - RichTextFormat
 - RioDeJaneiro
 - Road
@@ -1309,6 +1315,7 @@
 - Star
 - StartForFree
 - StartUps
+- StartWorkTechnician
 - StationHydration
 - StationaryBicycle
 - Steel
@@ -1335,6 +1342,8 @@
 - Summit
 - Sunny
 - SunnyHazy
+- Supervisor
+- SupervisorCloseWork
 - SupplyChainOptimization_01
 - SupplyChainOptimization_02
 - SupplyChain_01
