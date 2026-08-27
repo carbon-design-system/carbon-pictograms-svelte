@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1572 pictograms from @carbon/pictograms@12.79.0
+> 1575 pictograms from @carbon/pictograms@12.83.0
 
 ## Usage
 
@@ -527,9 +527,9 @@
 - EventStreams
 - EventStreams_02
 - EventDriven
-- ExpandHorz
+- ExpandHorizontal
 - ExpandUser
-- ExpandVert
+- ExpandVertical
 - Expansion
 - Export_01
 - Export_02
@@ -800,6 +800,7 @@
 - Intelligence
 - IntelligentInfrastructure
 - Intercom
+- InternationalStandard
 - InternetOfThings
 - InternetOfThings_02
 - InternetOfThings_03
@@ -1484,6 +1485,8 @@
 - UnauthorizedUserAccess
 - UnderUtilizedSecurity
 - UnifyEndpointManagement
+- Union
+- UnionAct
 - UnitedGovernance
 - UniversalExperiences
 - University
