@@ -18,7 +18,28 @@
   import * as pictograms from "../../../lib";
 
   const { match } = fuzzy;
-  const pictogramNames = Object.keys(pictograms);
+
+  /** Keep in sync with `RENAMED_PICTOGRAMS` in `src/index.ts`. */
+  /** @type {Record<string, string>} */
+  const aliasToCanonical = {
+    ExpandHorz: "ExpandHorizontal",
+    ExpandVert: "ExpandVertical",
+  };
+
+  const pictogramNames = Object.keys(pictograms).filter(
+    (name) => aliasToCanonical[name] == null
+  );
+  const canonicalSet = new Set(pictogramNames);
+
+  /** @type {Record<string, string[]>} */
+  const canonicalToAliases = {};
+  for (const [oldName, canonicalName] of Object.entries(aliasToCanonical)) {
+    (canonicalToAliases[canonicalName] ??= []).push(oldName);
+  }
+
+  const searchModuleNames = [
+    ...new Set([...pictogramNames, ...Object.keys(aliasToCanonical)]),
+  ];
 
   let ref = null;
   let moduleName = null;
@@ -27,9 +48,18 @@
   /** @type {import("svelte").ComponentProps<Theme>["theme"]} */
   let theme = "white";
 
-  $: filteredModuleNames = pictogramNames.filter((name) =>
-    match(value.trim().replace(/\s+/g, ""), name)
-  );
+  $: searchTerm = value.trim().replace(/\s+/g, "");
+  $: filteredModuleNames =
+    searchTerm === ""
+      ? pictogramNames
+      : [
+          ...new Set(
+            searchModuleNames
+              .filter((name) => match(searchTerm, name))
+              .map((name) => aliasToCanonical[name] ?? name)
+              .filter((name) => canonicalSet.has(name))
+          ),
+        ];
   $: mounted = typeof document !== "undefined";
   $: code = `<script>\n  import ${moduleName} from "carbon-pictograms-svelte/lib/${moduleName}.svelte";\n<\/script>\n\n<${moduleName} />`;
   $: if (mounted) {
@@ -111,7 +141,9 @@
             {@const isFiltered = filteredModuleNames.includes(pictogram)}
             <li style:display={isFiltered ? "inline" : "none"}>
               <ClickableTile
-                title={pictogram}
+                title={canonicalToAliases[pictogram]
+                  ? `${pictogram} (aliases: ${canonicalToAliases[pictogram].join(", ")})`
+                  : pictogram}
                 on:click={() => (moduleName = pictogram)}
               >
                 <svelte:component this={pictograms[pictogram]} />
