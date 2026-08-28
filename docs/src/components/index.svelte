@@ -17,7 +17,7 @@
   import Header from "./Header.svelte";
   import { BUILD_INFO_URL } from "../constants";
 
-  /** @typedef {{ order: string[]; byModuleName: Record<string, string>; total: number }} BuildInfo */
+  /** @typedef {{ order: string[]; byModuleName: Record<string, string>; total: number; renamedPictograms?: Record<string, string> }} BuildInfo */
 
   /** @type {BuildInfo | null} */
   let data = null;
@@ -47,11 +47,27 @@
   let moduleName = null;
 
   $: searchTerm = value.trim().replace(WHITESPACE_REGEX, "");
+  $: aliasToCanonical = data?.renamedPictograms ?? {};
+  $: canonicalSet = new Set(data?.order ?? []);
+  $: searchModuleNames = data
+    ? [...new Set([...data.order, ...Object.keys(aliasToCanonical)])]
+    : [];
+  $: canonicalToAliases = (() => {
+    /** @type {Record<string, string[]>} */
+    const result = {};
+    for (const [oldName, canonicalName] of Object.entries(aliasToCanonical)) {
+      (result[canonicalName] ??= []).push(oldName);
+    }
+    return result;
+  })();
   $: filteredModuleNamesSet =
     !data || searchTerm === ""
-      ? new Set(data?.order ?? [])
+      ? canonicalSet
       : new Set(
-          data.order.filter((name) => match(searchTerm, name))
+          searchModuleNames
+            .filter((name) => match(searchTerm, name))
+            .map((name) => aliasToCanonical[name] ?? name)
+            .filter((name) => canonicalSet.has(name))
         );
 
   /** @type {import("svelte").ComponentProps<Theme>["theme"]} */
@@ -143,7 +159,9 @@
               {@const isFiltered = filteredModuleNamesSet.has(pictogram)}
               <li style:display={isFiltered ? "inline" : "none"}>
                 <ClickableTile
-                  title={pictogram}
+                  title={canonicalToAliases[pictogram]
+                    ? `${pictogram} (aliases: ${canonicalToAliases[pictogram].join(", ")})`
+                    : pictogram}
                   on:click={() => (moduleName = pictogram)}
                 >
                   {@html data.byModuleName[pictogram]}
