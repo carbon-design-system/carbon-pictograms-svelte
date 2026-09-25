@@ -1,9 +1,8 @@
 import metadata_latest from "@carbon/pictograms/metadata.json" with { type: "json" };
 import { createHash } from "node:crypto";
-import { mkdir, readdir, unlink } from "node:fs/promises";
-import { $ } from "bun";
+import { mkdir, readdir, rm, unlink } from "node:fs/promises";
 import pkg from "../package.json" with { type: "json" };
-import { template, templateSvg } from "./template.js";
+import { renderContent, template, templateSvg } from "./template.js";
 
 type MetadataSource = typeof metadata_latest;
 
@@ -66,10 +65,29 @@ Object.entries(DEPRECATED_PICTOGRAMS).forEach(
   }
 );
 
+/**
+ * Writes `files` to `dir`, removing any existing entries not in `files`.
+ * Overwriting in place is much faster than wiping and recreating the
+ * directory's thousands of files. Stale entries are removed before
+ * writing so that a case-only rename is not clobbered on
+ * case-insensitive filesystems.
+ */
+const syncDir = async (dir: string, files: Map<string, string>) => {
+  await mkdir(dir, { recursive: true });
+
+  await Promise.all(
+    (await readdir(dir))
+      .filter((file) => !files.has(file))
+      .map((file) => rm(`${dir}/${file}`, { recursive: true, force: true }))
+  );
+
+  await Promise.all(
+    Array.from(files, ([file, content]) => Bun.write(`${dir}/${file}`, content))
+  );
+};
+
 export const buildPictograms = async () => {
   console.time("Built in");
-  await $`rm -rf lib`;
-  await $`mkdir lib`;
 
   let definitions = `import type { Component } from "svelte";
 import type { SvelteHTMLElements } from "svelte/elements";
@@ -86,26 +104,26 @@ export type CarbonPictogramProps = SvelteHTMLElements["svg"] & {
 
   const pictograms: string[] = [];
   const byModuleName: Record<string, string> = {};
-  const writePromises: Promise<number>[] = [];
+  const libFiles = new Map<string, string>();
 
   for (const { output } of metadata.icons) {
     const pictogramOutput = output[0];
     const { moduleName } = pictogramOutput;
 
+    const inner = renderContent(pictogramOutput.descriptor);
+
     pictograms.push(moduleName);
-    byModuleName[moduleName] = templateSvg(pictogramOutput);
+    byModuleName[moduleName] = templateSvg(pictogramOutput, inner);
 
     definitions += `export declare const ${moduleName}: Component<CarbonPictogramProps>;\n`;
     libExport += `export { default as ${moduleName} } from "./${moduleName}.svelte";\n`;
 
-    const fileName = `lib/${moduleName}.svelte`;
+    const fileName = `${moduleName}.svelte`;
 
-    writePromises.push(
-      Bun.write(fileName, template(pictogramOutput)),
-      Bun.write(
-        fileName + ".d.ts",
-        `export { ${moduleName} as default } from "./";\n`
-      )
+    libFiles.set(fileName, template(pictogramOutput, inner));
+    libFiles.set(
+      fileName + ".d.ts",
+      `export { ${moduleName} as default } from "./";\n`
     );
   }
 
@@ -121,29 +139,28 @@ export type CarbonPictogramProps = SvelteHTMLElements["svg"] & {
 
     libExport += `export { default as ${oldName} } from "./${oldName}.svelte";\n`;
 
-    const fileName = `lib/${oldName}.svelte`;
+    const fileName = `${oldName}.svelte`;
 
-    writePromises.push(
-      Bun.write(fileName, templateAlias(newName)),
-      Bun.write(
-        fileName + ".d.ts",
-        `export { default } from "./${newName}.svelte";\n`
-      )
+    libFiles.set(fileName, templateAlias(newName));
+    libFiles.set(
+      fileName + ".d.ts",
+      `export { default } from "./${newName}.svelte";\n`
     );
   });
 
-  await Promise.all(writePromises);
-
   const packageMetadata = `${pictograms.length} pictograms from @carbon/pictograms@${pkg.devDependencies["@carbon/pictograms"]}`;
 
-  await Bun.write(
-    "lib/index.d.ts",
+  libFiles.set(
+    "index.d.ts",
     `// Type definitions for ${pkg.name}
 // ${packageMetadata}
 
 ${definitions}`
   );
-  await Bun.write("lib/index.js", libExport);
+  libFiles.set("index.js", libExport);
+
+  await syncDir("lib", libFiles);
+
   await Bun.write(
     "PICTOGRAM_INDEX.md",
     `

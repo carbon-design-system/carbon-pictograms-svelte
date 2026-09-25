@@ -10,7 +10,13 @@ const omitDuplicateSvgAttrs = ({
   ...rest
 }: Record<string, string | number>) => rest;
 
-export function template({ descriptor }: PictogramOutput) {
+export const renderContent = (descriptor: PictogramOutput["descriptor"]) =>
+  (descriptor?.content ?? []).map(toString).join("");
+
+export function template(
+  { descriptor }: PictogramOutput,
+  inner = renderContent(descriptor)
+) {
   return `<script>
   /**
    * Specify the pictogram title.
@@ -36,18 +42,19 @@ export function template({ descriptor }: PictogramOutput) {
   {title}
   {...attributes}
   {...$$restProps}>
-  ${descriptor.content.map(toString).join("")}
+  ${inner}
 </svg>`;
 }
 
-export const templateSvg = ({ descriptor }: PictogramOutput) => {
+export const templateSvg = (
+  { descriptor }: PictogramOutput,
+  inner = renderContent(descriptor)
+) => {
   const attrs = omitDuplicateSvgAttrs(descriptor?.attrs ?? {});
-  const content = descriptor?.content ?? [];
   const formatted = formatAttributes({
     ...attrs,
     preserveAspectRatio: "xMidYMid meet",
   });
-  const inner = content.map(toString).join("");
 
   return compactSvg(
     `<svg xmlns="http://www.w3.org/2000/svg" ${formatted} fill="currentColor">${inner}</svg>`
