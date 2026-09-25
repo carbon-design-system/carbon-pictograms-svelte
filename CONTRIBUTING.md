@@ -133,7 +133,7 @@ bun test tests/template.test.ts  # a single file
 When pictograms are added or removed (including `RENAMED_PICTOGRAMS` aliases), update the count:
 
 ```ts
-expect(pictograms.length).toEqual(1577);
+expect(pictograms.length).toEqual(1578);
 ```
 
 Run `bun test`. If the name list changed, read the snapshot diff before regenerating. Use `bun test --update-snapshots` on purpose. A snapshot diff is a behavior change.

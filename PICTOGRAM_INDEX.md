@@ -1,6 +1,6 @@
 # Pictogram Index
 
-> 1575 pictograms from @carbon/pictograms@12.83.0
+> 1576 pictograms from @carbon/pictograms@12.85.0
 
 ## Usage
 
@@ -736,6 +736,7 @@
 - IbmAtxOffice
 - IbmAutomationPlatform
 - IbmBob
+- IbmChampionStar
 - IbmCloud
 - IbmConcert
 - IbmElm
