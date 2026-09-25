@@ -24,6 +24,17 @@ test("imports", async () => {
   expect(index).not.toMatch(/^- ExpandVert$/m);
 });
 
+test("removes stale files from lib", async () => {
+  await Bun.write("lib/Stale.svelte", "");
+  await Bun.write("lib/Stale.svelte.d.ts", "");
+
+  await buildPictograms();
+
+  expect(await Bun.file("lib/Stale.svelte").exists()).toBe(false);
+  expect(await Bun.file("lib/Stale.svelte.d.ts").exists()).toBe(false);
+  expect(await Bun.file("lib/ExpandHorizontal.svelte").exists()).toBe(true);
+});
+
 test("throws when rename alias target is missing", () => {
   expect(() => {
     assertRenameAliasTarget("OldName", "MissingName", {});
