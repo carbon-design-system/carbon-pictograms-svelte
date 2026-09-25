@@ -5,7 +5,7 @@ import { template } from "../src/template";
 
 test("imports", async () => {
   const pictograms = await buildPictograms();
-  expect(pictograms.length).toEqual(1577);
+  expect(pictograms.length).toEqual(1578);
   expect(pictograms).toMatchSnapshot();
 
   const expandHorz = await Bun.file("lib/ExpandHorz.svelte").text();
@@ -18,7 +18,7 @@ test("imports", async () => {
   );
 
   const index = await Bun.file("PICTOGRAM_INDEX.md").text();
-  expect(index).toContain("1575 pictograms from @carbon/pictograms@12.83.0");
+  expect(index).toContain("1576 pictograms from @carbon/pictograms@12.85.0");
   expect(index).not.toMatch(/^- ExpandHorz$/m);
   expect(index).not.toMatch(/^- ExpandVert$/m);
 }, 30_000);
