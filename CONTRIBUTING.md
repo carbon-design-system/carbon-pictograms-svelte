@@ -66,6 +66,27 @@ When iterating locally, scope test runs to what you changed. The full suite rege
 
 `@carbon/pictograms` sometimes removes or renames pictograms between minor versions. We don't remove pictograms in minor releases of this library. [`src/index.ts`](src/index.ts) enforces that with two tables.
 
+### Removal or rename?
+
+Carbon doesn't always call out renames. A rename looks like a removal plus an unrelated addition in the [`PICTOGRAM_INDEX.md`](PICTOGRAM_INDEX.md) diff (e.g. `ExpandHorz` gone, `ExpandHorizontal` new in 12.83).
+
+Unlike icons, pictogram renames often come with a redraw, so identical SVG content isn't a reliable test. `ExpandHorz` and `ExpandHorizontal` have different paths. Compare the metadata instead: a rename keeps the `category` and most of the `aliases` search terms, and the `friendlyName` usually just expands an abbreviation. Pin the previous version temporarily as an alias and run:
+
+```sh
+bun add -d "@carbon/pictograms-prev@npm:@carbon/pictograms@12.79.0"
+bun -e '
+const o = (await import("@carbon/pictograms-prev/metadata.json", { with: { type: "json" } })).default;
+const n = (await import("@carbon/pictograms/metadata.json", { with: { type: "json" } })).default;
+const find = (m, name) => m.icons.find((i) => i.output[0].moduleName === name);
+const show = (m, name) => { const p = find(m, name); console.log(name, p.category, p.friendlyName, p.aliases); };
+show(o, "ExpandHorz");
+show(n, "ExpandHorizontal");
+'
+bun remove @carbon/pictograms-prev
+```
+
+Then eyeball both in the docs preview. Same concept: it's a rename, use [`RENAMED_PICTOGRAMS`](#renamed-pictograms-upstream-rename). The old name then renders the new drawing. Nothing equivalent: it's a removal, use [`DEPRECATED_PICTOGRAMS`](#deprecated-pictograms-upstream-removal), which keeps the old drawing.
+
 ### Deprecated pictograms (upstream removal)
 
 When Carbon drops a pictogram, add it to `DEPRECATED_PICTOGRAMS` with the `@carbon/pictograms` version that still has it:
@@ -152,12 +173,14 @@ Run `bun run prepack` first so `lib/` exists, then `bun run test:types`. CI runs
 
 Most releases are just a dependency bump for new Carbon pictograms.
 
-1. Bump `devDependencies["@carbon/pictograms"]` in `package.json`.
-2. `bun install`
-3. Check what Carbon added, removed, or renamed. Grep the new `metadata.json` if you need to.
-4. Handle removals and renames before building ([Backwards compatibility](#backwards-compatibility)).
-5. `bun run prepack`
-6. Update the pictogram count in [`tests/index.test.ts`](tests/index.test.ts) if the total changed. The assertion includes rename aliases.
+Carbon's monorepo release tags (e.g. `v11.118.0`) don't match the `@carbon/pictograms` version, and the per-package release notes don't reliably say whether pictograms changed. Go by npm and the build output instead: `npm view @carbon/pictograms version` gives the latest, and the [`PICTOGRAM_INDEX.md`](PICTOGRAM_INDEX.md) diff shows what actually changed. If the bump adds no pictograms (the diff only touches the header version), there's nothing worth shipping; discard it and wait for the next release.
+
+1. `bun add -d -E @carbon/pictograms@<version>` (exact pin, updates `package.json` and `bun.lock`).
+2. `bun test`. It fails on the pictogram count if anything was added or removed. That's expected.
+3. Read the [`PICTOGRAM_INDEX.md`](PICTOGRAM_INDEX.md) diff. Apart from the header, every `-` line is an upstream removal or rename.
+4. Handle removals and renames before going further ([Backwards compatibility](#backwards-compatibility)).
+5. Update the pictogram count in [`tests/index.test.ts`](tests/index.test.ts) if the total changed. The assertion includes rename aliases.
+6. `bun run prepack` (`bun test --update-snapshots` once the snapshot diff looks right).
 7. Review [`PICTOGRAM_INDEX.md`](PICTOGRAM_INDEX.md), the snapshot, and any new alias files in `lib/` locally (`lib/` is not committed).
 8. Commit with a conventional message (below).
 
@@ -224,7 +247,18 @@ feat(deps-dev): upgrade `@carbon/pictograms` 12.75.0 --> 12.77.0
 - upgrade `@carbon/pictograms` to v12.77.0 (net +14 pictograms)
 ```
 
-Compute net pictograms as new header count minus old (e.g. 1563 − 1549 = +14 in [#118](https://github.com/carbon-design-system/carbon-pictograms-svelte/pull/118)). If Carbon only changed existing SVGs and the count is unchanged, say so: `(no new pictograms)`.
+Compute net pictograms as new header count minus old (e.g. 1563 − 1549 = +14 in [#118](https://github.com/carbon-design-system/carbon-pictograms-svelte/pull/118)). Use the singular for one: `(net +1 pictogram)`. If Carbon only changed existing SVGs and the count is unchanged, say so: `(no new pictograms)`.
+
+Rename aliases don't count. The header lists canonical names only, so a rename is a wash there, even though the test count and snapshot go up by one alias each. 12.83 is `net +3 pictograms` (header 1572 → 1575), not +5 (test count 1572 → 1577 after the `ExpandHorz` / `ExpandVert` aliases).
+
+**Renames in the changelog.** List renames as their own bullet so users know the old name is now an alias:
+
+```markdown
+**Features**
+
+- upgrade `@carbon/pictograms` to v12.83.0 (net +3 pictograms)
+- rename `ExpandHorz` -> `ExpandHorizontal`, `ExpandVert` -> `ExpandVertical` (old names kept as aliases)
+```
 
 **When it's not a clean upgrade.** If Carbon removed or renamed pictograms, don't ship only the version bump. Update `DEPRECATED_PICTOGRAMS` or `RENAMED_PICTOGRAMS` in [`src/index.ts`](src/index.ts) first ([Backwards compatibility](#backwards-compatibility)), then run the workflow above. Renames may also touch [`src/global.d.ts`](src/global.d.ts) or docs preview code. Those changes can live in the same PR as the bump or in a follow-up before the npm release (the 12.83 `ExpandHorz` / `ExpandVert` aliases are the first `RENAMED_PICTOGRAMS` entries).
 
@@ -234,7 +268,7 @@ Compute net pictograms as new header count minus old (e.g. 1563 − 1549 = +14 i
 
 1. `bun run prepack` passes (build, pictogram count, snapshot).
 2. `bun run test:types` passes (Svelte 4 and 5).
-3. The snapshot diff lists only the pictograms you expect from Carbon's release notes or metadata diff.
+3. The snapshot diff has only `+` lines. A `-` line means an upstream removal or rename slipped through.
 4. [`PICTOGRAM_INDEX.md`](PICTOGRAM_INDEX.md) header version matches `package.json`.
 
 ## Docs site
@@ -310,23 +344,83 @@ Maintainers only from here.
 
 ### Release
 
-[`release.yml`](.github/workflows/release.yml) publishes to NPM with [provenance](https://docs.npmjs.com/generating-provenance-statements) when a `v*` tag is pushed. It installs, runs `bun run prepack`, prunes with `bunx culls --preserve=svelte`, and runs `npm publish --provenance --access public`.
+[`release.yml`](.github/workflows/release.yml) publishes to NPM with [provenance](https://docs.npmjs.com/generating-provenance-statements) when a `v*` tag is pushed. It installs, runs `bun run prepack`, prunes with `bunx culls --preserve=svelte`, and runs `npm publish`.
 
-Bump the version in `package.json`, update [`CHANGELOG.md`](CHANGELOG.md), then:
+Two release lines are maintained:
+
+| Branch | Version | npm dist-tag | GitHub release |
+| :--- | :--- | :--- | :--- |
+| `master` | `13.x` | `latest` | Marked latest |
+| `v12` | `12.x` | `stable-12` | Not latest |
+
+Each branch carries its own `release.yml`. The one on `v12` publishes with `--tag stable-12`, so a `v12.*` tag must point at a `v12` commit. Otherwise it'd publish under `latest`.
+
+Every `@carbon/pictograms` upgrade ships on both lines as a minor bump, with the same changelog text. Release `v12` first and `master` second, so the 13.x GitHub release ends up as latest.
+
+Commits and tags are GPG-signed (`git commit -S`, `git tag -s`). Release commits are pushed straight to the branch; no PR.
+
+Use a detached HEAD (`git switch --detach origin/<branch>`) when working from a worktree, so the release doesn't collide with `master` or `v12` being checked out elsewhere.
+
+#### 1. Release `v12`
+
+Cherry-pick every `master` commit that should ship since the last release, oldest first. Usually that's just the upgrade PR. When a rename fix landed separately, take both: 12.83 shipped as #122 (the bump) plus #123 (the aliases).
 
 ```sh
+git fetch origin --tags
+git switch --detach origin/v12
+git cherry-pick <upgrade-sha> [<follow-up-sha> ...]   # no -x
 bun install
-bun run prepack
-git commit -am "v13.18.0"
-git tag v13.18.0
-git push origin v13.18.0
+bun test                                               # must pass before tagging
 ```
 
-If the workflow succeeds, the new version is on NPM.
+If `bun.lock` conflicts (devDependencies have drifted between branches), keep `v12`'s lockfile with `git checkout HEAD -- bun.lock`, run `bun install`, `git add bun.lock`, and `git cherry-pick --continue`.
 
-### Post-release checklist
+Bump `version` in `package.json` and prepend to [`CHANGELOG.md`](CHANGELOG.md):
 
-After the package is on NPM:
+```markdown
+## [12.33.0](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v12.33.0) - 2026-09-24
 
-1. Create a [new release](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/new) on GitHub. Click "Generate release notes", then drop CI-only noise.
-2. Mark it as the latest release.
+**Features**
+
+- upgrade `@carbon/pictograms` to v12.85.0 (net +1 pictogram)
+```
+
+Then commit, tag, and push:
+
+```sh
+git commit -am "v12.33.0"
+git tag -s v12.33.0 -m v12.33.0
+git push origin HEAD:v12
+git push origin v12.33.0
+```
+
+Create the GitHub release, not marked latest. Leave the title empty (GitHub shows the tag). The body repeats the changelog entry, with the pictogram count linking to the `PICTOGRAM_INDEX.md` diff of the cherry-picked upgrade commit (`89088ec…` is the SHA-256 of `PICTOGRAM_INDEX.md`, GitHub's per-file diff anchor):
+
+```sh
+gh release create v12.33.0 --latest=false --title "" --notes '**Features**
+
+- upgrade `@carbon/pictograms` to v12.85.0 (net [+1 pictogram](https://github.com/carbon-design-system/carbon-pictograms-svelte/commit/<v12-upgrade-sha>#diff-89088eceee17faca761d4a34d1c180367eb7386e5ae644aa884cd2dd58eeb3a9))'
+```
+
+#### 2. Release `master`
+
+```sh
+git switch --detach origin/master
+# bump package.json version, prepend the CHANGELOG.md entry (same text, 13.x version)
+git commit -am "v13.21.0"
+git tag -s v13.21.0 -m v13.21.0
+git push origin HEAD:master
+git push origin v13.21.0
+
+gh release create v13.21.0 --latest --title "" --notes '…'  # link to the master upgrade commit
+```
+
+#### 3. Verify
+
+```sh
+gh run list --workflow release.yml -L 2           # both publish runs succeed
+npm view carbon-pictograms-svelte dist-tags       # latest: 13.x, stable-12: 12.x
+gh release list -L 3                              # 13.x is Latest, 12.x isn't
+```
+
+npm can lag a minute or two behind a successful publish. If the workflow log shows `+ carbon-pictograms-svelte@<version>` but `npm view` 404s or still shows the old dist-tags, wait and re-check before assuming something broke.
