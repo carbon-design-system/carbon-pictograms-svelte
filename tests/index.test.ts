@@ -19,7 +19,7 @@ test("imports", async () => {
   );
 
   const index = await Bun.file("PICTOGRAM_INDEX.md").text();
-  expect(index).toContain("1576 pictograms from @carbon/pictograms@12.85.0");
+  expect(index).toContain("1576 pictograms from @carbon/pictograms@12.88.0");
   expect(index).not.toMatch(/^- ExpandHorz$/m);
   expect(index).not.toMatch(/^- ExpandVert$/m);
 });
