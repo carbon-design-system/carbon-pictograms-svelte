@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [13.21.1](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v13.21.1) - 2026-11-22
+
+**Fixes**
+
+- fix TypeScript definitions for Svelte 4, which doesn't export the `Component` type, and allow `data-*` props on Svelte 3
+- mark package as side-effect free so bundlers can drop unused pictograms from barrel imports
+- type deep imports under `moduleResolution: "nodenext"` by sharing one `lib/pictogram.d.ts` instead of a stub per pictogram
+
 ## [13.21.0](https://github.com/carbon-design-system/carbon-pictograms-svelte/releases/tag/v13.21.0) - 2026-09-24
 
 **Features**
