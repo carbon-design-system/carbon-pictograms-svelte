@@ -42,7 +42,7 @@ bun install
 | `bun test` | Run all tests. [`prepack`](package.json) calls this, so it's also the full build. |
 | `bun run prepack` | Same as `bun test`. Builds `lib/`, regenerates [`PICTOGRAM_INDEX.md`](PICTOGRAM_INDEX.md) and docs assets, runs snapshot and unit tests. |
 | `bun run build:docs-assets` | Run `buildPictograms()` only, no tests. Used by the docs site's `predev` / `prebuild` hooks. |
-| `bun run test:types` | Link the local package and run `svelte-check` in [`tests/svelte@4/`](tests/svelte@4/) and [`tests/svelte@5/`](tests/svelte@5/). |
+| `bun run test:types` | Pack the local package and run `svelte-check` in [`tests/svelte@3/`](tests/svelte@3/), [`tests/svelte@4/`](tests/svelte@4/), and [`tests/svelte@5/`](tests/svelte@5/). |
 
 When iterating locally, scope test runs to what you changed. The full suite regenerates thousands of pictogram files and takes a while.
 
@@ -122,7 +122,7 @@ Don't remove a `DEPRECATED_PICTOGRAMS` or `RENAMED_PICTOGRAMS` entry in a minor 
 
 ## Svelte version compatibility
 
-Svelte 4 and 5 are supported in `13.x`. Type-check coverage lives in `tests/svelte@4/` and `tests/svelte@5/`.
+Svelte 4 and 5 are supported in `13.x`. Type-check coverage lives in `tests/svelte@4/` and `tests/svelte@5/`. `13.x` doesn't support Svelte 3, but carbon-components-svelte type-checks against it, so `tests/svelte@3/` keeps the types from breaking there. For example, Svelte 3's `svelte/elements` has no `data-*` index signature, so `CarbonPictogramProps` declares one.
 
 For Svelte 3, pin [`carbon-pictograms-svelte@12.12.0`](https://github.com/carbon-design-system/carbon-pictograms-svelte/tree/v12.12.0). Template changes shouldn't break Svelte 4 barrel imports or `CarbonPictogramProps`.
 
@@ -165,7 +165,9 @@ Run `bun test`. If the name list changed, read the snapshot diff before regenera
 
 ### Type checks
 
-[`tests/test-types.ts`](tests/test-types.ts) (`bun run test:types`) runs `bun link` at the repo root, then installs and runs `svelte-check` in each `tests/svelte@*` project. Those projects import from the barrel, import `carbon-pictograms-svelte/lib/<Pictogram>.svelte` directly, use `CarbonPictogramProps`, and check `ComponentProps` on Svelte 5 vs `satisfies CarbonPictogramProps` on Svelte 4.
+[`tests/test-types.ts`](tests/test-types.ts) (`bun run test:types`) packs the repo with `bun pm pack`, extracts the tarball into each `tests/svelte@*` project's `node_modules`, and runs `svelte-check` there. Don't switch back to `bun link`: through a symlink, `lib/index.d.ts` resolves `svelte` from the repo root (Svelte 5), so the Svelte 4 project never sees Svelte 4's types. Those projects import from the barrel, import `carbon-pictograms-svelte/lib/<Pictogram>.svelte` directly, use `CarbonPictogramProps`, and use `@ts-expect-error` on a bad `title` to prove pictograms aren't silently untyped. `tests/svelte@4` sets `skipLibCheck: false` so it also type-checks `lib/index.d.ts` against Svelte 4.
+
+`lib/index.d.ts` can only import types that both Svelte 4 and 5 export. `Component` is Svelte 5 only, so the pictogram type picks a function or class shape based on whether `svelte` exports `mount`.
 
 Run `bun run prepack` first so `lib/` exists, then `bun run test:types`. CI runs both.
 

@@ -10,33 +10,28 @@
   import Airplane from "carbon-pictograms-svelte/lib/Airplane.svelte";
   import BerlinTower from "carbon-pictograms-svelte/lib/BerlinTower.svelte";
   import type { CarbonPictogramProps } from "carbon-pictograms-svelte";
-  import { mount } from "svelte";
 
-   // Use the exported `CarbonPictogramProps` type for typing objects since the 
-  // idiomatic `ComponentProps` utility is not compatible with `Component` in Svelte 4.
-  const props= {
-    fill: "red",
-  } satisfies CarbonPictogramProps;
-
-  // Instead, you can use a const assertion for type safety.
-  const component_props = {
+  const props = {
     fill: "red",
     "data-test": "id",
-  } as const;
+  } satisfies CarbonPictogramProps;
 
-  // @ts-expect-error (Svelte components are no longer classes)
-  // See https://svelte.dev/docs/svelte/v5-migration-guide#Components-are-no-longer-classes
-  const icon_class = new Airplane({ target: document.body, props });
-  
-  // Instead, use the `mount` function to manually instantiate the component.
-  mount(Airplane, { target: document.body, props: component_props });
+  // Svelte 4 components are classes.
+  const pictogram = new Airplane({ target: document.body, props });
+  pictogram.$destroy();
+
+  // Props are type-checked for barrel and direct imports.
+  // @ts-expect-error (`title` must be a string)
+  new AiEthics({ target: document.body, props: { title: 1 } });
+  // @ts-expect-error (`title` must be a string)
+  new Airplane({ target: document.body, props: { title: 1 } });
 
   const component = AssetManagement;
 </script>
 
 <AddDevice data-test-id="" aria-label="Add Device" />
 <ActiveServer class="class" style="fill: red" title="" tabindex={0} />
-<BerlinTower fill="#000" />
+<BerlinTower fill="#000" on:click={() => {}} />
 
 <Airplane aria-label="Airplane" />
 
