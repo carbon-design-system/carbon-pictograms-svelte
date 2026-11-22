@@ -1,8 +1,5 @@
 import metadata_latest from "@carbon/pictograms/metadata.json" assert { type: "json" };
 import { $ } from "bun";
-import { ComponentParser } from "sveld";
-import type { ParsedExports } from "sveld/lib/parse-exports";
-import writeTsDefinitions from "sveld/lib/writer/writer-ts-definitions";
 import { devDependencies, name } from "../package.json" assert { type: "json" };
 import { template } from "./template";
 
@@ -67,16 +64,47 @@ Object.entries(DEPRECATED_PICTOGRAMS).forEach(
   }
 );
 
+/**
+ * Every pictogram has the same type, so the barrel declares one class per
+ * pictogram that extends `CarbonPictogram`, and the `./lib/*.svelte` export
+ * points deep imports at a single `pictogram.d.ts` instead of a
+ * `.svelte.d.ts` per pictogram.
+ */
+const definitionsPreamble = `import { SvelteComponentTyped } from "svelte";
+import type { SvelteHTMLElements } from "svelte/elements";
+
+type $RestProps = SvelteHTMLElements["svg"];
+
+type $Props = {
+  /**
+   * Specify the pictogram title.
+   * @default undefined
+   */
+  title?: string;
+
+  [key: \`data-\${string}\`]: any;
+};
+
+export type CarbonPictogramProps = Omit<$RestProps, keyof $Props> & $Props;
+
+export declare class CarbonPictogram extends SvelteComponentTyped<
+  CarbonPictogramProps,
+  Record<string, any>,
+  Record<string, never>
+> {}
+`;
+
+/** Each pictogram's class, plus the \`<Name>Props\` alias earlier versions exported. */
+const declarePictogram = (moduleName: string) =>
+  `export declare class ${moduleName} extends CarbonPictogram {}\nexport type ${moduleName}Props = CarbonPictogramProps;\n`;
+
 export const buildPictograms = async () => {
   console.time("Built in");
   await $`rm -rf lib`;
   await $`mkdir lib`;
 
-  const parser = new ComponentParser();
-  const components = new Map();
-  const exports: ParsedExports = {};
-
   let imports = "";
+  let definitions = "";
 
   const pictograms: string[] = [];
   const byModuleName: Record<string, string> = {};
@@ -89,83 +117,42 @@ export const buildPictograms = async () => {
     pictograms.push(moduleName);
     byModuleName[moduleName] = moduleName;
 
-    const source = template(output[0]);
-    const ts_file_path = `./${moduleName}.svelte.d.ts`;
+    definitions += declarePictogram(moduleName);
 
-    components.set(moduleName, {
-      moduleName,
-      filePath: ts_file_path,
-      ...parser.parseSvelteComponent(source, {
-        moduleName,
-        filePath: ts_file_path,
-      }),
-    });
-
-    exports[moduleName] = {
-      source: `./${moduleName}.svelte`,
-      default: false,
-    };
-
-    writePromises.push(Bun.write(`lib/${moduleName}.svelte`, source));
+    writePromises.push(Bun.write(`lib/${moduleName}.svelte`, template(output[0])));
   }
 
   Object.entries(RENAMED_PICTOGRAMS).forEach(([oldName, newName]) => {
     assertRenameAliasTarget(oldName, newName, byModuleName);
 
+    definitions += declarePictogram(oldName);
+
     if (collidesOnCaseInsensitiveFs(oldName, newName)) {
       imports += `export { default as ${oldName} } from "./${newName}.svelte";\n`;
-      exports[oldName] = {
-        source: `./${newName}.svelte`,
-        default: false,
-      };
       return;
     }
 
     imports += `export { default as ${oldName} } from "./${oldName}.svelte";\n`;
 
-    const source = templateAlias(newName);
-    const ts_file_path = `./${oldName}.svelte.d.ts`;
-    const fileName = `lib/${oldName}.svelte`;
-
-    components.set(oldName, {
-      moduleName: oldName,
-      filePath: ts_file_path,
-      ...parser.parseSvelteComponent(source, {
-        moduleName: oldName,
-        filePath: ts_file_path,
-      }),
-    });
-
-    exports[oldName] = {
-      source: `./${oldName}.svelte`,
-      default: false,
-    };
-
-    writePromises.push(Bun.write(fileName, source));
+    writePromises.push(Bun.write(`lib/${oldName}.svelte`, templateAlias(newName)));
   });
 
   await Promise.all(writePromises);
 
   const packageMetadata = `${pictograms.length} pictograms from @carbon/pictograms@${devDependencies["@carbon/pictograms"]}`;
 
-  await writeTsDefinitions(components, {
-    preamble: `// Type definitions for ${name}\n// ${packageMetadata}\n\n`,
-    exports,
-    inputDir: "lib",
-    outDir: "lib",
-  });
+  await Bun.write(
+    "lib/index.d.ts",
+    `// Type definitions for ${name}\n// ${packageMetadata}\n\n${definitionsPreamble}\n${definitions}`
+  );
 
-  await Promise.all(
-    Object.entries(RENAMED_PICTOGRAMS)
-      .filter(
-        ([oldName, newName]) => !collidesOnCaseInsensitiveFs(oldName, newName)
-      )
-      .map(([oldName, newName]) =>
-        Bun.write(
-          `lib/${oldName}.svelte.d.ts`,
-          `export { default } from "./${newName}.svelte";\n`
-        )
-      )
+  await Bun.write(
+    "lib/pictogram.d.ts",
+    `import type { ${pictograms[0]} } from "./index.js";
+
+declare const _default: typeof ${pictograms[0]};
+export default _default;
+`
   );
 
   await Bun.write("lib/index.js", imports);
