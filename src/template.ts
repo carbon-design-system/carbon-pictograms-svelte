@@ -28,12 +28,10 @@ export function template(
   $: attributes = {
     "aria-hidden": labelled ? undefined : true,
     role: labelled ? "img" : undefined,
-    focusable: Number($$props["tabindex"]) === 0  ? true : undefined,
   };
 </script>
 
 <svg
-  preserveAspectRatio="xMidYMid meet"
   xmlns="${descriptor.attrs.xmlns}"
   viewBox="${descriptor.attrs.viewBox}"
   width="${descriptor.attrs.width}"
