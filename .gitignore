@@ -5,3 +5,4 @@ dist
 lib
 docs/public/build-info*.json
 docs/src/generated/
+tests/*.tgz

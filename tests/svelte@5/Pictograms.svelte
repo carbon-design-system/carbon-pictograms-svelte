@@ -32,6 +32,12 @@
   // Instead, use the `mount` function to manually instantiate the component.
   mount(Airplane, { target: document.body, props: component_props });
 
+  // Props are type-checked for barrel and direct imports.
+  // @ts-expect-error (`title` must be a string)
+  mount(AiEthics, { target: document.body, props: { title: 1 } });
+  // @ts-expect-error (`title` must be a string)
+  mount(Airplane, { target: document.body, props: { title: 1 } });
+
   const component = AssetManagement;
 </script>
 

@@ -89,7 +89,7 @@ const syncDir = async (dir: string, files: Map<string, string>) => {
 export const buildPictograms = async () => {
   console.time("Built in");
 
-  let definitions = `import type { Component } from "svelte";
+  let definitions = `import type { ComponentConstructorOptions, SvelteComponent } from "svelte";
 import type { SvelteHTMLElements } from "svelte/elements";
 
 export type CarbonPictogramProps = SvelteHTMLElements["svg"] & {
@@ -98,7 +98,25 @@ export type CarbonPictogramProps = SvelteHTMLElements["svg"] & {
    * @default undefined
    */
   title?: string;
-}\n\n`;
+
+  /**
+   * Svelte 3's \`svelte/elements\` doesn't allow \`data-*\` attributes;
+   * Svelte 4 and 5 already do.
+   */
+  [key: \`data-\${string}\`]: any;
+}
+
+/**
+ * Svelte 5 components are functions and Svelte 4 components are classes.
+ * Svelte 4 doesn't export the \`Component\` type, so detect Svelte 5 by
+ * \`mount\` (a Svelte 5 export) and spell out each shape with types that
+ * both versions export.
+ */
+type CarbonPictogram = typeof import("svelte") extends { mount: any }
+  ? (this: void, internals: unknown, props: CarbonPictogramProps) => {}
+  : new (
+      options: ComponentConstructorOptions<CarbonPictogramProps>
+    ) => SvelteComponent<CarbonPictogramProps, Record<string, any>, {}>;\n\n`;
 
   let libExport = "";
 
@@ -115,7 +133,7 @@ export type CarbonPictogramProps = SvelteHTMLElements["svg"] & {
     pictograms.push(moduleName);
     byModuleName[moduleName] = templateSvg(pictogramOutput, inner);
 
-    definitions += `export declare const ${moduleName}: Component<CarbonPictogramProps>;\n`;
+    definitions += `export declare const ${moduleName}: CarbonPictogram;\n`;
     libExport += `export { default as ${moduleName} } from "./${moduleName}.svelte";\n`;
 
     const fileName = `${moduleName}.svelte`;
@@ -130,7 +148,7 @@ export type CarbonPictogramProps = SvelteHTMLElements["svg"] & {
   Object.entries(RENAMED_PICTOGRAMS).forEach(([oldName, newName]) => {
     assertRenameAliasTarget(oldName, newName, byModuleName);
 
-    definitions += `export declare const ${oldName}: Component<CarbonPictogramProps>;\n`;
+    definitions += `export declare const ${oldName}: CarbonPictogram;\n`;
 
     if (collidesOnCaseInsensitiveFs(oldName, newName)) {
       libExport += `export { default as ${oldName} } from "./${newName}.svelte";\n`;
