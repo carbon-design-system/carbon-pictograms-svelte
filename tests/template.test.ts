@@ -36,7 +36,9 @@ describe("template", () => {
     expect(result).toContain('width="64"');
     expect(result).toContain('height="64"');
     expect(result).toContain('fill="currentColor"');
-    expect(result).toContain('preserveAspectRatio="xMidYMid meet"');
+    // `xMidYMid meet` is the SVG default, and only IE11 reads `focusable`.
+    expect(result).not.toContain("preserveAspectRatio");
+    expect(result).not.toContain("focusable");
     expect(result).toContain('d="M16 2l14 28H2L16 2z"');
   });
 
@@ -61,7 +63,7 @@ describe("template", () => {
     const result = template(input);
     expect(result).toContain("<svg");
     expect(result).not.toContain("path");
-    expect(result).toContain('preserveAspectRatio="xMidYMid meet"');
+    expect(result).not.toContain("preserveAspectRatio");
   });
 
   test("should handle complex content structures", () => {
