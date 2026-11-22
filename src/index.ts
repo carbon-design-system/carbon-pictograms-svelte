@@ -139,10 +139,6 @@ type CarbonPictogram = typeof import("svelte") extends { mount: any }
     const fileName = `${moduleName}.svelte`;
 
     libFiles.set(fileName, template(pictogramOutput, inner));
-    libFiles.set(
-      fileName + ".d.ts",
-      `export { ${moduleName} as default } from "./";\n`
-    );
   }
 
   Object.entries(RENAMED_PICTOGRAMS).forEach(([oldName, newName]) => {
@@ -160,10 +156,6 @@ type CarbonPictogram = typeof import("svelte") extends { mount: any }
     const fileName = `${oldName}.svelte`;
 
     libFiles.set(fileName, templateAlias(newName));
-    libFiles.set(
-      fileName + ".d.ts",
-      `export { default } from "./${newName}.svelte";\n`
-    );
   });
 
   const packageMetadata = `${pictograms.length} pictograms from @carbon/pictograms@${pkg.devDependencies["@carbon/pictograms"]}`;
@@ -176,6 +168,18 @@ type CarbonPictogram = typeof import("svelte") extends { mount: any }
 ${definitions}`
   );
   libFiles.set("index.js", libExport);
+
+  // Every pictogram has the same type, so the \`./lib/*.svelte\` export points
+  // at one declaration instead of a \`.svelte.d.ts\` stub per pictogram. It
+  // borrows the type of one barrel export so the two can't drift apart.
+  libFiles.set(
+    "pictogram.d.ts",
+    `import type { ${pictograms[0]} } from "./index.js";
+
+declare const _default: typeof ${pictograms[0]};
+export default _default;
+`
+  );
 
   await syncDir("lib", libFiles);
 

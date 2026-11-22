@@ -42,7 +42,7 @@ bun install
 | `bun test` | Run all tests. [`prepack`](package.json) calls this, so it's also the full build. |
 | `bun run prepack` | Same as `bun test`. Builds `lib/`, regenerates [`PICTOGRAM_INDEX.md`](PICTOGRAM_INDEX.md) and docs assets, runs snapshot and unit tests. |
 | `bun run build:docs-assets` | Run `buildPictograms()` only, no tests. Used by the docs site's `predev` / `prebuild` hooks. |
-| `bun run test:types` | Pack the local package and run `svelte-check` in [`tests/svelte@3/`](tests/svelte@3/), [`tests/svelte@4/`](tests/svelte@4/), and [`tests/svelte@5/`](tests/svelte@5/). |
+| `bun run test:types` | Pack the local package and run `svelte-check` in [`tests/svelte@3/`](tests/svelte@3/), [`tests/svelte@4/`](tests/svelte@4/), [`tests/svelte@5/`](tests/svelte@5/), and [`tests/svelte@5-nodenext/`](tests/svelte@5-nodenext/). |
 
 When iterating locally, scope test runs to what you changed. The full suite regenerates thousands of pictogram files and takes a while.
 
@@ -53,7 +53,7 @@ When iterating locally, scope test runs to what you changed. The full suite rege
 3. [`src/template.ts`](src/template.ts) turns a `PictogramOutput` descriptor into a Svelte component string: props, accessibility attributes, SVG markup. [`templateSvg`](src/template.ts) produces the compact inline SVG for the docs preview grid.
 4. `buildPictograms()` writes:
    - `lib/<PictogramName>.svelte`, one component per pictogram
-   - `lib/<PictogramName>.svelte.d.ts`, per-pictogram type stub re-exporting from the barrel
+   - `lib/pictogram.d.ts`, one declaration shared by every pictogram; the `./lib/*.svelte` export (and `typesVersions`, for `moduleResolution: "node"`) points deep imports at it
    - `lib/index.js` and `lib/index.d.ts`, barrel export and `CarbonPictogramProps` type
    - [`PICTOGRAM_INDEX.md`](PICTOGRAM_INDEX.md), committed pictogram list
    - `docs/public/build-info.<hash>.json` and [`docs/src/generated/build-info-url.ts`](docs/src/generated/build-info-url.ts), hashed preview data for the docs site (gitignored, regenerated each build)
@@ -122,7 +122,7 @@ Don't remove a `DEPRECATED_PICTOGRAMS` or `RENAMED_PICTOGRAMS` entry in a minor 
 
 ## Svelte version compatibility
 
-Svelte 4 and 5 are supported in `13.x`. Type-check coverage lives in `tests/svelte@4/` and `tests/svelte@5/`. `13.x` doesn't support Svelte 3, but carbon-components-svelte type-checks against it, so `tests/svelte@3/` keeps the types from breaking there. For example, Svelte 3's `svelte/elements` has no `data-*` index signature, so `CarbonPictogramProps` declares one.
+Svelte 4 and 5 are supported in `13.x`. Type-check coverage lives in `tests/svelte@4/` and `tests/svelte@5/`. `tests/svelte@5-nodenext/` checks that deep imports stay typed under `"moduleResolution": "NodeNext"`. `13.x` doesn't support Svelte 3, but carbon-components-svelte type-checks against it, so `tests/svelte@3/` keeps the types from breaking there. For example, Svelte 3's `svelte/elements` has no `data-*` index signature, so `CarbonPictogramProps` declares one.
 
 For Svelte 3, pin [`carbon-pictograms-svelte@12.12.0`](https://github.com/carbon-design-system/carbon-pictograms-svelte/tree/v12.12.0). Template changes shouldn't break Svelte 4 barrel imports or `CarbonPictogramProps`.
 
