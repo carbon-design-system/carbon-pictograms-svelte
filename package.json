@@ -16,6 +16,7 @@
       "import": "./lib/*.svelte"
     }
   },
+  "sideEffects": false,
   "scripts": {
     "prepack": "bun test",
     "build:docs-assets": "bun -e \"import { buildPictograms } from './src/index.ts'; await buildPictograms();\"",
