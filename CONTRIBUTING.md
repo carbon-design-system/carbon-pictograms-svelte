@@ -363,6 +363,8 @@ Commits and tags are GPG-signed (`git commit -S`, `git tag -s`). Release commits
 
 Use a detached HEAD (`git switch --detach origin/<branch>`) when working from a worktree, so the release doesn't collide with `master` or `v12` being checked out elsewhere.
 
+`v12` and `master` have different devDependencies, and `bun install` doesn't remove packages the other branch left in `node_modules`. A leftover package can break `bun run test:types`: after releasing `v12`, `svelte-check` on `master` picked up `v12`'s `svelte-preprocess` and failed to parse a test project. After switching branches, run `rm -rf node_modules && bun install`.
+
 #### 1. Release `v12`
 
 Cherry-pick every `master` commit that should ship since the last release, oldest first. Usually that's just the upgrade PR. When a rename fix landed separately, take both: 12.83 shipped as #122 (the bump) plus #123 (the aliases).
